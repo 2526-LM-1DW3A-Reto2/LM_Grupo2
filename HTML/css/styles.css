@@ -659,12 +659,12 @@ table tbody tr:nth-child(3) {
 }
 
 /* Contenido del artículo */
-.news-content {
+.contenidoNoticias {
   padding: 2.5rem;
 }
 
 /* Metadatos del artículo */
-.news-meta {
+.metaNoticias {
   color: var(--primary);
   font-size: 0.85rem;
   font-weight: 600;

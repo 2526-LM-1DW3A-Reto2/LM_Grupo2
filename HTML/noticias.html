@@ -7,401 +7,631 @@
 -->
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <!-- Configuración básica -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Metadatos SEO -->
-    <meta name="description" content="Últimas noticias del balonmano español - Resultados, análisis y actualidad de la liga nacional">
-    <meta name="keywords" content="noticias balonmano, actualidad, resultados, análisis, España">
-    <meta name="author" content="Federación Española de Balonmano">
-    <meta name="robots" content="index, follow">
-    
+    <meta
+      name="description"
+      content="Últimas noticias del balonmano español - Resultados, análisis y actualidad de la liga nacional"
+    />
+    <meta
+      name="keywords"
+      content="noticias balonmano, actualidad, resultados, análisis, España"
+    />
+    <meta name="author" content="Federación Española de Balonmano" />
+    <meta name="robots" content="index, follow" />
+
     <!-- Open Graph -->
-    <meta property="og:title" content="Noticias - Federación Española de Balonmano">
-    <meta property="og:description" content="Toda la actualidad del balonmano español">
-    <meta property="og:type" content="website">
-    
+    <meta
+      property="og:title"
+      content="Noticias - Federación Española de Balonmano"
+    />
+    <meta
+      property="og:description"
+      content="Toda la actualidad del balonmano español"
+    />
+    <meta property="og:type" content="website" />
+
     <!-- Título -->
     <title>Noticias y Actualidad - Federación Española de Balonmano</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
-    <link rel="shortcut icon" href="imagenes/favicon.ico">
-    
-    <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <!-- CABECERA PRINCIPAL -->
-    <header id="inicio">
-        <div class="header-content">
-            <div class="logo-section">
-                <div class="logo" title="Federación Española de Balonmano">
-                     <img src="imagenes/logo.png" 
-                         alt="Partido de balonmano en el Palau Blaugrana" 
-                         title="Logo"
-                         width="80"
-                         height="80"
-                         border="0"
-                         hspace="10"
-                         vspace="10">
-                </div>
-                <div class="header-title">
-                    <h1>FEDERACIÓN ESPAÑOLA DE BALONMANO</h1>
-                    <p>Excelencia, Pasión y Compromiso</p>
-                </div>
-            </div>
-        </div>
-    </header>
 
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <nav>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico" />
+    <link rel="shortcut icon" href="imagenes/favicon.ico" />
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- CABECERA PRINCIPAL -->
+    <header class="header" id="inicio">
+      <div class="headerContenido">
+        <div class="headerLogo">
+          <div class="logo" title="Federación Española de Balonmano">
+            <img
+              src="imagenes/logo.png"
+              alt="Partido de balonmano en el Palau Blaugrana"
+              title="Logo"
+              width="80"
+              height="80"
+              border="0"
+              hspace="10"
+              vspace="10"
+            />
+          </div>
+          <div class="headerTitulo">
+            <h1>FEDERACIÓN ESPAÑOLA DE BALONMANO</h1>
+            <p>Excelencia, Pasión y Compromiso</p>
+          </div>
+        </div>
+      </div>
+      <!-- MENÚ DE NAVEGACIÓN -->
+      <nav>
         <ul>
-            <li><a href="index.html" title="Ir a inicio">Inicio</a></li>
-            <li><a href="equipos.html" title="Ver equipos">Equipos</a></li>
-            <li><a href="calendario.html" title="Ver calendario">Calendario</a></li>
-            <li><a href="clasificacion.html" title="Ver clasificación">Clasificación</a></li>
-            <li><a href="noticias.html" class="active" title="Noticias actuales">Noticias</a></li>
+          <li><a href="index.html" title="Ir a inicio">Inicio</a></li>
+          <li>
+            <a href="equipos.html" title="Ver equipos">Equipos</a>
+          </li>
+          <li>
+            <a href="calendario.html" title="Ver calendario">Calendario</a>
+          </li>
+          <li>
+            <a href="clasificacion.html" title="Ver clasificación"
+              >Clasificación</a
+            >
+          </li>
+          <li>
+            <a href="noticias.html" class="active" title="Ver noticias"
+              >Noticias</a
+            >
+          </li>
         </ul>
-    </nav>
+      </nav>
+    </header>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main>
-        <h1 class="page-title">Noticias y Actualidad</h1>
-        
-        <!-- Navegación rápida interna -->
-        <div class="quick-nav" style="margin-bottom: 3rem; text-align: center;">
-            <a href="#noticia-barcelona" class="btn-interno" title="Ir a noticia Barcelona">Barcelona Invicto</a>
-            <a href="#noticia-sostenibilidad" class="btn-interno" style="margin-left: 1rem;" title="Ir a noticia sostenibilidad">Programa Sostenible</a>
-        </div>
+      <h1 class="page-title">Noticias y Actualidad</h1>
 
-        <!-- NOTICIA DESTACADA 1 -->
-        <article class="news-article" id="noticia-barcelona">
-            <!-- Imagen con todos los atributos requeridos -->
-            <img src="imagenes/barcelona-atletico.jpg" 
-                 alt="Jugadores del FC Barcelona celebrando victoria contra Atlético Madrid en el Palau Blaugrana" 
-                 title="FC Barcelona 32-28 Atlético Madrid"
-                 class="news-image"
-                 width="1200"
-                 height="600"
-                 border="0"
-                 hspace="0"
-                 vspace="0">
-            
-            <div class="news-content">
-                <!-- Metadatos de la noticia -->
-                <div class="news-meta">📅 8 de octubre de 2025 • Competición Nacional</div>
-                
-                <!-- Título de la noticia -->
-                <h3>El FC Barcelona se mantiene invicto y arrasa en el clásico frente al Atlético</h3>
-                
-                <!-- Contenido de la noticia -->
-                <p>El FC Barcelona demostró por qué es el líder indiscutible de la competición al imponerse con contundencia por 32-28 al Atlético Madrid en un vibrante derbi disputado en el Palau Blaugrana. El equipo culé exhibió su mejor versión ante más de 7,000 espectadores que disfrutaron de un espectáculo de balonmano de altísimo nivel.</p>
-                
-                <p>Los azulgranas dominaron el encuentro desde el inicio, desplegando un juego coral espectacular con una defensa férrea que neutralizó los ataques del conjunto colchonero. Con este triunfo, el Barça se mantiene como único líder invicto con pleno de victorias, acumulando 10 puntos y 18 goles de diferencia positiva.</p>
-                
-                <p>El máximo goleador del partido fue el extremo izquierdo barcelonista con 9 goles, secundado por el lateral derecho con 7 tantos fundamentales. Por parte del Atlético, destacó la actuación del portero que evitó una derrota más abultada con múltiples paradas decisivas.</p>
-                
-                <!-- Enlace relacionado externo -->
-                <p style="margin-top: 1.5rem;">
-                    <a href="https://www.eurohandball.com/" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       title="Ver más noticias internacionales">
-                        🌐 Ver cobertura europea del partido
-                    </a>
-                </p>
-            </div>
-        </article>
+      <!-- Navegación rápida interna -->
+      <div class="quick-nav" style="margin-bottom: 3rem; text-align: center">
+        <a
+          href="#noticia-barcelona"
+          class="btnInterno"
+          title="Ir a noticia Barcelona"
+          >Barcelona Invicto</a
+        >
+        <a
+          href="#noticia-sostenibilidad"
+          class="btnInterno"
+          style="margin-left: 1rem"
+          title="Ir a noticia sostenibilidad"
+          >Programa Sostenible</a
+        >
+      </div>
 
-        <!-- GALERÍA DE IMÁGENES DE LA JORNADA -->
-        <section class="section" id="galeria-jornada">
-            <h2>Mejores Momentos de la Jornada</h2>
-            <div class="image-gallery">
-                <!-- Imagen 1 -->
-                <figure class="gallery-item">
-                    <img src="imagenes/valencia-sevilla.jpg" 
-                         alt="Lance del partido entre Valencia HC y Sevilla BM con empate a 29 goles" 
-                         title="Valencia HC 29-29 Sevilla BM"
-                         width="400"
-                         height="300"
-                         border="0"
-                         align="center"
-                         hspace="10"
-                         vspace="10">
-                    <figcaption>Empate emocionante en Valencia</figcaption>
-                </figure>
-                
-                <!-- Imagen 2 -->
-                <figure class="gallery-item">
-                    <img src="imagenes/zaragoza-victoria.jpg" 
-                         alt="Jugadores del Zaragoza BM celebrando gol contra Bilbao HC" 
-                         title="Zaragoza BM en acción"
-                         width="400"
-                         height="300"
-                         border="0"
-                         hspace="10"
-                         vspace="10">
-                    <figcaption>Zaragoza BM consolida su segunda plaza</figcaption>
-                </figure>
-                
-                <!-- Imagen 3 -->
-                <figure class="gallery-item">
-                    <img src="imagenes/vigo-ataque.jpg" 
-                         alt="Ataque del Vigo BM durante su victoria ante Granada HC" 
-                         title="Vigo BM 31-26 Granada HC"
-                         width="400"
-                         height="300"
-                         border="0"
-                         align="center"
-                         hspace="10"
-                         vspace="10">
-                    <figcaption>Vigo BM goleó al Granada HC</figcaption>
-                </figure>
-            </div>
-        </section>
+      <!-- NOTICIA DESTACADA 1 -->
+      <article class="articulosNoticias" id="noticia-barcelona">
+        <!-- Imagen con todos los atributos requeridos -->
+        <img
+          src="imagenes/barcelona-atletico.jpg"
+          alt="Jugadores del FC Barcelona celebrando victoria contra Atlético Madrid en el Palau Blaugrana"
+          title="FC Barcelona 32-28 Atlético Madrid"
+          class="news-image"
+          width="1200"
+          height="600"
+          border="0"
+          hspace="0"
+          vspace="0"
+        />
 
-        <!-- VIDEO RESUMEN DE LA JORNADA -->
-        <section class="section" id="video-resumen">
-            <h2>📺 Resumen en Video - Jornada 5</h2>
-            <div class="video-container">
-                <!-- Video con múltiples formatos -->
-                <video width="100%" height="100%" controls poster="imagenes/video-jornada5.jpg">
-                    <source src="videos/resumen-jornada5.mp4" type="video/mp4">
-                    <source src="videos/resumen-jornada5.webm" type="video/webm">
-                    <source src="videos/resumen-jornada5.ogg" type="video/ogg">
-                    Tu navegador no soporta el elemento de video.
-                    <a href="videos/resumen-jornada5.mp4" title="Descargar video">Descargar video resumen</a>
-                </video>
-            </div>
-            <p style="text-align: center; margin-top: 1rem; color: #666;">
-                <em>Todos los goles y mejores jugadas de la jornada 5</em>
-            </p>
-        </section>
+        <div class="contenidoNoticias">
+          <!-- Metadatos de la noticia -->
+          <div class="metaNoticias">
+            📅 8 de octubre de 2025 • Competición Nacional
+          </div>
 
-        <!-- NOTICIA 2: EMPATE VALENCIA-SEVILLA -->
-        <article class="news-article" id="noticia-empate">
-            <img src="imagenes/empate-valencia.jpg" 
-                 alt="Acción de juego durante el empate entre Valencia HC y Sevilla BM" 
-                 title="Partido emocionante con empate 29-29"
-                 class="news-image"
-                 width="1200"
-                 height="600"
-                 border="0">
-            
-            <div class="news-content">
-                <div class="news-meta">📅 7 de octubre de 2025 • Análisis del Partido</div>
-                <h3>Empate vibrante entre Valencia HC y Sevilla BM en un partido de infarto</h3>
-                
-                <p>El Pabellón Fuente de San Luis fue testigo de uno de los partidos más emocionantes de la jornada, con un empate a 29 goles que dejó satisfechos a ambos conjuntos. El encuentro tuvo de todo: jugadas espectaculares, paradas imposibles, goles sobre la bocina y una intensidad que mantuvo en vilo a los más de 8,000 aficionados presentes.</p>
-                
-                <p>El Valencia HC, que buscaba consolidar su posición en la zona alta de la tabla, se adelantó en múltiples ocasiones durante el partido, pero el Sevilla BM demostró su carácter competitivo igualando el marcador en los momentos clave.</p>
-            </div>
-        </article>
+          <!-- Título de la noticia -->
+          <h3>
+            El FC Barcelona se mantiene invicto y arrasa en el clásico frente al
+            Atlético
+          </h3>
 
-        <!-- AUDIO: DECLARACIONES POST-PARTIDO -->
-        <section class="section" id="audio-declaraciones">
-            <h2>🎙️ Declaraciones del Entrenador</h2>
-            <div class="audio-container">
-                <audio controls preload="metadata">
-                    <source src="audio/entrevista-entrenador.mp3" type="audio/mpeg">
-                    <source src="audio/entrevista-entrenador.ogg" type="audio/ogg">
-                    <source src="audio/entrevista-entrenador.wav" type="audio/wav">
-                    Tu navegador no soporta el elemento de audio.
-                    <a href="audio/entrevista-entrenador.mp3" title="Descargar entrevista">Descargar entrevista</a>
-                </audio>
-                <p style="margin-top: 1rem; text-align: center;">
-                    <em>Entrevista exclusiva con el entrenador del FC Barcelona tras la victoria</em>
-                </p>
-            </div>
-        </section>
+          <!-- Contenido de la noticia -->
+          <p>
+            El FC Barcelona demostró por qué es el líder indiscutible de la
+            competición al imponerse con contundencia por 32-28 al Atlético
+            Madrid en un vibrante derbi disputado en el Palau Blaugrana. El
+            equipo culé exhibió su mejor versión ante más de 7,000 espectadores
+            que disfrutaron de un espectáculo de balonmano de altísimo nivel.
+          </p>
 
-        <!-- NOTICIA 3: SOSTENIBILIDAD -->
-        <article class="news-article" id="noticia-sostenibilidad">
-            <img src="imagenes/sostenibilidad.jpg" 
-                 alt="Presentación del programa de sostenibilidad de la Federación Española de Balonmano" 
-                 title="Programa de Sostenibilidad 2024/2025"
-                 class="news-image"
-                 width="1200"
-                 height="600"
-                 border="0"
-                 hspace="0"
-                 vspace="0">
-            
-            <div class="news-content">
-                <div class="news-meta">📅 5 de octubre de 2025 • Responsabilidad Social</div>
-                <h3>La Federación Española presenta su revolucionario programa de sostenibilidad</h3>
-                
-                <p>En una jornada histórica para el balonmano español, la Federación ha presentado oficialmente su ambicioso programa de sostenibilidad para la temporada 2024/2025, convirtiéndose en pionera entre las federaciones deportivas nacionales en implementar criterios ambientales y sociales de manera integral en su gestión.</p>
-                
-                <p>El programa, desarrollado en colaboración con expertos en sostenibilidad y medio ambiente, incluye medidas revolucionarias como la certificación ISO 14001 para todos los pabellones oficiales, la instalación de paneles solares en las instalaciones federativas, la reducción del 40% en el consumo de plásticos de un solo uso, y la promoción activa del transporte compartido y sostenible.</p>
-                
-                <p>"Queremos que el balonmano español sea referente mundial no solo en lo deportivo, sino también en sostenibilidad, responsabilidad social y compromiso con las futuras generaciones", declaró el presidente de la Federación.</p>
-                
-                <!-- Lista de medidas de sostenibilidad -->
-                <div style="margin-top: 2rem; background: #f8f9fa; padding: 2rem; border-radius: 15px;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem;">Medidas Principales del Programa:</h4>
-                    <ol style="margin-left: 2rem; line-height: 2;">
-                        <li>Certificación ISO 14001:2015 en todos los pabellones</li>
-                        <li>Instalación de paneles solares fotovoltaicos</li>
-                        <li>Reducción del 40% de plásticos de un solo uso</li>
-                        <li>Sistema de medición de huella de carbono</li>
-                        <li>Promoción del transporte sostenible</li>
-                        <li>Programa de reciclaje y economía circular</li>
-                        <li>Formación en sostenibilidad para clubes</li>
-                    </ol>
-                </div>
-            </div>
-        </article>
+          <p>
+            Los azulgranas dominaron el encuentro desde el inicio, desplegando
+            un juego coral espectacular con una defensa férrea que neutralizó
+            los ataques del conjunto colchonero. Con este triunfo, el Barça se
+            mantiene como único líder invicto con pleno de victorias, acumulando
+            10 puntos y 18 goles de diferencia positiva.
+          </p>
 
-        <!-- MÁS NOTICIAS -->
-        <section class="section" id="otras-noticias">
-            <h2>Otras Noticias Destacadas</h2>
-            
-            <!-- Grid de noticias breves -->
-            <div class="cards">
-                <article class="card">
-                    <div class="card-icon">⚡</div>
-                    <h3>Zaragoza BM Imparable</h3>
-                    <p>El conjunto maño logró su cuarta victoria consecutiva y se consolida en la segunda posición de la tabla con un juego brillante y una defensa sólida.</p>
-                    <p style="margin-top: 1rem;">
-                        <a href="#" title="Leer más" style="color: var(--primary); font-weight: 600;">Leer más →</a>
-                    </p>
-                </article>
-                
-                <article class="card">
-                    <div class="card-icon">🏆</div>
-                    <h3>Vigo BM en Racha</h3>
-                    <p>El equipo gallego suma su tercera victoria en las últimas cuatro jornadas y escala hasta la cuarta posición, demostrando un gran nivel competitivo.</p>
-                    <p style="margin-top: 1rem;">
-                        <a href="#" title="Leer más" style="color: var(--primary); font-weight: 600;">Leer más →</a>
-                    </p>
-                </article>
-                
-                <article class="card">
-                    <div class="card-icon">📊</div>
-                    <h3>Estadísticas Jornada 5</h3>
-                    <p>Análisis detallado de los números de la jornada: goleadores, asistencias, paradas y todas las estadísticas relevantes del fin de semana.</p>
-                    <p style="margin-top: 1rem;">
-                        <a href="#" title="Ver estadísticas" style="color: var(--primary); font-weight: 600;">Ver estadísticas →</a>
-                    </p>
-                </article>
-            </div>
-        </section>
+          <p>
+            El máximo goleador del partido fue el extremo izquierdo barcelonista
+            con 9 goles, secundado por el lateral derecho con 7 tantos
+            fundamentales. Por parte del Atlético, destacó la actuación del
+            portero que evitó una derrota más abultada con múltiples paradas
+            decisivas.
+          </p>
 
-        <!-- ENLACES DE INTERÉS EXTERNOS -->
-        <section class="section" id="enlaces-relacionados">
-            <h2>🔗 Enlaces de Interés</h2>
-            <ul class="links-externos">
-                <li>
-                    <a href="https://www.ihf.info/" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       title="Noticias internacionales de balonmano">
-                        🌐 Federación Internacional de Balonmano (IHF)
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.eurohandball.com/" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       title="Noticias europeas de balonmano">
-                        🇪🇺 Federación Europea de Balonmano (EHF)
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.marca.com/balonmano.html" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       title="Noticias deportivas nacionales">
-                        📰 Noticias en Marca - Balonmano
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.coe.es/" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       title="Comité Olímpico Español">
-                        🏅 Comité Olímpico Español
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <!-- BOTÓN VOLVER ARRIBA -->
-        <div style="text-align: center; margin: 3rem 0;">
-            <a href="#inicio" class="btn-interno" title="Volver al inicio de la página">
-                ⬆ Volver arriba
+          <!-- Enlace relacionado externo -->
+          <p style="margin-top: 1.5rem">
+            <a
+              href="https://www.eurohandball.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Ver más noticias internacionales"
+            >
+              🌐 Ver cobertura europea del partido
             </a>
+          </p>
         </div>
+      </article>
+
+      <!-- GALERÍA DE IMÁGENES DE LA JORNADA -->
+      <section class="seccion" id="galeria-jornada">
+        <h2>Mejores Momentos de la Jornada</h2>
+        <div class="galeriaImagenes">
+          <!-- Imagen 1 -->
+          <figure class="gallery-item">
+            <img
+              src="imagenes/valencia-sevilla.jpg"
+              alt="Lance del partido entre Valencia HC y Sevilla BM con empate a 29 goles"
+              title="Valencia HC 29-29 Sevilla BM"
+              width="400"
+              height="300"
+              border="0"
+              align="center"
+              hspace="10"
+              vspace="10"
+            />
+            <figcaption>Empate emocionante en Valencia</figcaption>
+          </figure>
+
+          <!-- Imagen 2 -->
+          <figure class="gallery-item">
+            <img
+              src="imagenes/zaragoza-victoria.jpg"
+              alt="Jugadores del Zaragoza BM celebrando gol contra Bilbao HC"
+              title="Zaragoza BM en acción"
+              width="400"
+              height="300"
+              border="0"
+              hspace="10"
+              vspace="10"
+            />
+            <figcaption>Zaragoza BM consolida su segunda plaza</figcaption>
+          </figure>
+
+          <!-- Imagen 3 -->
+          <figure class="gallery-item">
+            <img
+              src="imagenes/vigo-ataque.jpg"
+              alt="Ataque del Vigo BM durante su victoria ante Granada HC"
+              title="Vigo BM 31-26 Granada HC"
+              width="400"
+              height="300"
+              border="0"
+              align="center"
+              hspace="10"
+              vspace="10"
+            />
+            <figcaption>Vigo BM goleó al Granada HC</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- VIDEO RESUMEN DE LA JORNADA -->
+      <section class="seccion" id="video-resumen">
+        <h2>📺 Resumen en Video - Jornada 5</h2>
+        <div class="video-container">
+          <!-- Video con múltiples formatos -->
+          <video
+            width="100%"
+            height="100%"
+            controls
+            poster="imagenes/video-jornada5.jpg"
+          >
+            <source src="videos/resumen-jornada5.mp4" type="video/mp4" />
+            <source src="videos/resumen-jornada5.webm" type="video/webm" />
+            <source src="videos/resumen-jornada5.ogg" type="video/ogg" />
+            Tu navegador no soporta el elemento de video.
+            <a href="videos/resumen-jornada5.mp4" title="Descargar video"
+              >Descargar video resumen</a
+            >
+          </video>
+        </div>
+        <p style="text-align: center; margin-top: 1rem; color: #666">
+          <em>Todos los goles y mejores jugadas de la jornada 5</em>
+        </p>
+      </section>
+
+      <!-- NOTICIA 2: EMPATE VALENCIA-SEVILLA -->
+      <article class="articulosNoticias" id="noticia-empate">
+        <img
+          src="imagenes/empate-valencia.jpg"
+          alt="Acción de juego durante el empate entre Valencia HC y Sevilla BM"
+          title="Partido emocionante con empate 29-29"
+          class="news-image"
+          width="1200"
+          height="600"
+          border="0"
+        />
+
+        <div class="contenidoNoticias">
+          <div class="metaNoticias">
+            📅 7 de octubre de 2025 • Análisis del Partido
+          </div>
+          <h3>
+            Empate vibrante entre Valencia HC y Sevilla BM en un partido de
+            infarto
+          </h3>
+
+          <p>
+            El Pabellón Fuente de San Luis fue testigo de uno de los partidos
+            más emocionantes de la jornada, con un empate a 29 goles que dejó
+            satisfechos a ambos conjuntos. El encuentro tuvo de todo: jugadas
+            espectaculares, paradas imposibles, goles sobre la bocina y una
+            intensidad que mantuvo en vilo a los más de 8,000 aficionados
+            presentes.
+          </p>
+
+          <p>
+            El Valencia HC, que buscaba consolidar su posición en la zona alta
+            de la tabla, se adelantó en múltiples ocasiones durante el partido,
+            pero el Sevilla BM demostró su carácter competitivo igualando el
+            marcador en los momentos clave.
+          </p>
+        </div>
+      </article>
+
+      <!-- AUDIO: DECLARACIONES POST-PARTIDO -->
+      <section class="seccion" id="audio-declaraciones">
+        <h2>🎙️ Declaraciones del Entrenador</h2>
+        <div class="audioContenedor">
+          <audio controls preload="metadata">
+            <source src="audio/entrevista-entrenador.mp3" type="audio/mpeg" />
+            <source src="audio/entrevista-entrenador.ogg" type="audio/ogg" />
+            <source src="audio/entrevista-entrenador.wav" type="audio/wav" />
+            Tu navegador no soporta el elemento de audio.
+            <a
+              href="audio/entrevista-entrenador.mp3"
+              title="Descargar entrevista"
+              >Descargar entrevista</a
+            >
+          </audio>
+          <p style="margin-top: 1rem; text-align: center">
+            <em
+              >Entrevista exclusiva con el entrenador del FC Barcelona tras la
+              victoria</em
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- NOTICIA 3: SOSTENIBILIDAD -->
+      <article class="articulosNoticias" id="noticia-sostenibilidad">
+        <img
+          src="imagenes/sostenibilidad.jpg"
+          alt="Presentación del programa de sostenibilidad de la Federación Española de Balonmano"
+          title="Programa de Sostenibilidad 2024/2025"
+          class="news-image"
+          width="1200"
+          height="600"
+          border="0"
+          hspace="0"
+          vspace="0"
+        />
+
+        <div class="contenidoNoticias">
+          <div class="metaNoticias">
+            📅 5 de octubre de 2025 • Responsabilidad Social
+          </div>
+          <h3>
+            La Federación Española presenta su revolucionario programa de
+            sostenibilidad
+          </h3>
+
+          <p>
+            En una jornada histórica para el balonmano español, la Federación ha
+            presentado oficialmente su ambicioso programa de sostenibilidad para
+            la temporada 2024/2025, convirtiéndose en pionera entre las
+            federaciones deportivas nacionales en implementar criterios
+            ambientales y sociales de manera integral en su gestión.
+          </p>
+
+          <p>
+            El programa, desarrollado en colaboración con expertos en
+            sostenibilidad y medio ambiente, incluye medidas revolucionarias
+            como la certificación ISO 14001 para todos los pabellones oficiales,
+            la instalación de paneles solares en las instalaciones federativas,
+            la reducción del 40% en el consumo de plásticos de un solo uso, y la
+            promoción activa del transporte compartido y sostenible.
+          </p>
+
+          <p>
+            "Queremos que el balonmano español sea referente mundial no solo en
+            lo deportivo, sino también en sostenibilidad, responsabilidad social
+            y compromiso con las futuras generaciones", declaró el presidente de
+            la Federación.
+          </p>
+
+          <!-- Lista de medidas de sostenibilidad -->
+          <div
+            style="
+              margin-top: 2rem;
+              background: #f8f9fa;
+              padding: 2rem;
+              border-radius: 15px;
+            "
+          >
+            <h4 style="color: var(--primary); margin-bottom: 1rem">
+              Medidas Principales del Programa:
+            </h4>
+            <ol style="margin-left: 2rem; line-height: 2">
+              <li>Certificación ISO 14001:2015 en todos los pabellones</li>
+              <li>Instalación de paneles solares fotovoltaicos</li>
+              <li>Reducción del 40% de plásticos de un solo uso</li>
+              <li>Sistema de medición de huella de carbono</li>
+              <li>Promoción del transporte sostenible</li>
+              <li>Programa de reciclaje y economía circular</li>
+              <li>Formación en sostenibilidad para clubes</li>
+            </ol>
+          </div>
+        </div>
+      </article>
+
+      <!-- MÁS NOTICIAS -->
+      <section class="seccion" id="otras-noticias">
+        <h2>Otras Noticias Destacadas</h2>
+
+        <!-- Grid de noticias breves -->
+        <div class="cardContenedor">
+          <article class="card">
+            <div class="cardIcono">⚡</div>
+            <h3>Zaragoza BM Imparable</h3>
+            <p>
+              El conjunto maño logró su cuarta victoria consecutiva y se
+              consolida en la segunda posición de la tabla con un juego
+              brillante y una defensa sólida.
+            </p>
+            <p style="margin-top: 1rem">
+              <a
+                href="#"
+                title="Leer más"
+                style="color: var(--primary); font-weight: 600"
+                >Leer más →</a
+              >
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="cardIcono">🏆</div>
+            <h3>Vigo BM en Racha</h3>
+            <p>
+              El equipo gallego suma su tercera victoria en las últimas cuatro
+              jornadas y escala hasta la cuarta posición, demostrando un gran
+              nivel competitivo.
+            </p>
+            <p style="margin-top: 1rem">
+              <a
+                href="#"
+                title="Leer más"
+                style="color: var(--primary); font-weight: 600"
+                >Leer más →</a
+              >
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="cardIcono">📊</div>
+            <h3>Estadísticas Jornada 5</h3>
+            <p>
+              Análisis detallado de los números de la jornada: goleadores,
+              asistencias, paradas y todas las estadísticas relevantes del fin
+              de semana.
+            </p>
+            <p style="margin-top: 1rem">
+              <a
+                href="#"
+                title="Ver estadísticas"
+                style="color: var(--primary); font-weight: 600"
+                >Ver estadísticas →</a
+              >
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ENLACES DE INTERÉS EXTERNOS -->
+      <section class="seccion" id="enlaces-relacionados">
+        <h2>🔗 Enlaces de Interés</h2>
+        <ul class="linksExternos">
+          <li>
+            <a
+              href="https://www.ihf.info/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Noticias internacionales de balonmano"
+            >
+              🌐 Federación Internacional de Balonmano (IHF)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.eurohandball.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Noticias europeas de balonmano"
+            >
+              🇪🇺 Federación Europea de Balonmano (EHF)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.marca.com/balonmano.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Noticias deportivas nacionales"
+            >
+              📰 Noticias en Marca - Balonmano
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.coe.es/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Comité Olímpico Español"
+            >
+              🏅 Comité Olímpico Español
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- BOTÓN VOLVER ARRIBA -->
+      <div style="text-align: center; margin: 3rem 0">
+        <a
+          href="#inicio"
+          class="btnInterno"
+          title="Volver al inicio de la página"
+        >
+          ⬆ Volver arriba
+        </a>
+      </div>
     </main>
 
     <!-- PIE DE PÁGINA -->
     <footer>
-        <div class="footer-content">
-            <!-- Sección 1: Información de la Federación -->
-            <div class="footer-section">
-                <h3>Federación Española de Balonmano</h3>
-                <p>Liderando el balonmano nacional desde 1942 con pasión, profesionalidad y compromiso con la excelencia deportiva.</p>
-                <p style="margin-top: 1.5rem;">
-                    <strong>Sede Central:</strong><br>
-                    Calle del Deporte Español, 28<br>
-                    28046 Madrid<br>
-                    España
-                </p>
-            </div>
-            
-            <!-- Sección 2: Contacto -->
-            <div class="footer-section">
-                <h3>Contacto Oficial</h3>
-                <ul>
-                    <li>📞 Teléfono: <a href="tel:+34915476200" title="Llamar a la federación">+34 91 547 62 00</a></li>
-                    <li>📧 Email: <a href="mailto:info@rfebm.es" title="Enviar correo">info@rfebm.es</a></li>
-                    <li>📠 Fax: +34 91 547 62 01</li>
-                    <li>🌐 Web: <a href="https://www.rfebm.es" target="_blank" title="Visitar web oficial">www.rfebm.es</a></li>
-                </ul>
-                <h3 style="margin-top: 1.5rem;">Horario de Atención</h3>
-                <p>Lunes a Viernes: 9:00 - 14:00 h<br>y 16:00 - 19:00 h</p>
-            </div>
-            
-            <!-- Sección 3: Enlaces de Interés -->
-            <div class="footer-section">
-                <h3>Enlaces de Interés</h3>
-                <ul>
-                    <li><a href="#" title="Consultar normativa oficial">Normativa y Reglamentos</a></li>
-                    <li><a href="#" title="Solicitar licencia federativa">Licencias Federativas</a></li>
-                    <li><a href="#" title="Cursos para entrenadores">Formación de Entrenadores</a></li>
-                    <li><a href="#" title="Información para árbitros">Escuela de Árbitros</a></li>
-                    <li><a href="#" title="Ver protocolo sostenible">Protocolo Sostenibilidad</a></li>
-                    <li><a href="#" title="Política de privacidad">Protección de Datos</a></li>
-                </ul>
-            </div>
-            
-            <!-- Sección 4: Redes Sociales y Certificaciones -->
-            <div class="footer-section">
-                <h3>Síguenos en Redes</h3>
-                <div class="social-links">
-                    <a href="https://facebook.com/rfebm" target="_blank" rel="noopener noreferrer" title="Facebook oficial">f</a>
-                    <a href="https://twitter.com/rfebm" target="_blank" rel="noopener noreferrer" title="Twitter oficial">𝕏</a>
-                    <a href="https://instagram.com/rfebm" target="_blank" rel="noopener noreferrer" title="Instagram oficial">📷</a>
-                    <a href="https://youtube.com/rfebm" target="_blank" rel="noopener noreferrer" title="Canal YouTube">▶</a>
-                    <a href="https://linkedin.com/company/rfebm" target="_blank" rel="noopener noreferrer" title="LinkedIn">in</a>
-                </div>
-                
-                <h3 style="margin-top: 2rem;">Certificaciones</h3>
-                <p><strong>🌱 ISO 14001:2015</strong><br>Gestión Ambiental</p>
-                <p style="margin-top: 0.8rem;"><strong>⭐ ISO 9001:2015</strong><br>Gestión de Calidad</p>
-                <p style="margin-top: 0.8rem;"><strong>♿ Accesibilidad</strong><br>Compromiso inclusión</p>
-            </div>
+      <div class="footerContenido">
+        <!-- Sección 1: Información de la Federación -->
+        <div class="footerSeccion">
+          <h3>Federación Española de Balonmano</h3>
+          <p>
+            Liderando el balonmano nacional desde 1942 con pasión,
+            profesionalidad y compromiso con la excelencia deportiva.
+          </p>
+          <p style="margin-top: 1.5rem">
+            <strong>Sede Central:</strong><br />
+            Calle del Deporte Español, 28<br />
+            28046 Madrid<br />
+            España
+          </p>
         </div>
-        
-        <!-- Pie de página inferior -->
-        <div class="footer-bottom">
-            <p>&copy; 2025 Federación Española de Balonmano (RFEBM). Todos los derechos reservados.</p>
-            <p style="margin-top: 0.8rem;">Proyecto de Transformación Digital 2024/2025</p>
+
+        <!-- Sección 2: Contacto -->
+        <div class="footerSeccion">
+          <h3>Contacto Oficial</h3>
+          <ul>
+            <li>
+              📞 Teléfono: <a href="tel:+34915476200">+34 91 547 62 00</a>
+            </li>
+            <li>📧 Email: <a href="mailto:info@rfebm.es">info@rfebm.es</a></li>
+            <li>📠 Fax: +34 91 547 62 01</li>
+            <li>
+              🌐 Web:
+              <a href="https://www.rfebm.es" target="_blank">www.rfebm.es</a>
+            </li>
+          </ul>
+          <h3 style="margin-top: 1.5rem">Horario de Atención</h3>
+          <p>Lunes a Viernes: 9:00 - 14:00 h<br />y 16:00 - 19:00 h</p>
         </div>
+
+        <!-- Sección 3: Enlaces de Interés -->
+        <div class="footerSeccion">
+          <h3>Enlaces de Interés</h3>
+          <ul>
+            <li>
+              <a href="#" title="Consultar normativa"
+                >Normativa y Reglamentos</a
+              >
+            </li>
+            <li>
+              <a href="#" title="Solicitar licencia">Licencias Federativas</a>
+            </li>
+            <li>
+              <a href="#" title="Cursos de entrenadores"
+                >Formación de Entrenadores</a
+              >
+            </li>
+            <li>
+              <a href="#" title="Información de árbitros"
+                >Escuela de Árbitros</a
+              >
+            </li>
+            <li>
+              <a href="#" title="Ver protocolo">Protocolo Sostenibilidad</a>
+            </li>
+            <li>
+              <a href="#" title="Política de privacidad">Protección de Datos</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Sección 4: Redes Sociales -->
+        <div class="footerSeccion">
+          <h3>Síguenos en Redes</h3>
+          <div class="redesLinks">
+            <a
+              href="https://facebook.com/rfebm"
+              target="_blank"
+              title="Facebook"
+              >f</a
+            >
+            <a href="https://twitter.com/rfebm" target="_blank" title="Twitter"
+              >𝕏</a
+            >
+            <a
+              href="https://instagram.com/rfebm"
+              target="_blank"
+              title="Instagram"
+              >📷</a
+            >
+            <a href="https://youtube.com/rfebm" target="_blank" title="YouTube"
+              >▶</a
+            >
+            <a
+              href="https://linkedin.com/company/rfebm"
+              target="_blank"
+              title="LinkedIn"
+              >in</a
+            >
+          </div>
+
+          <!-- Certificaciones -->
+          <h3 style="margin-top: 2rem">Certificaciones</h3>
+          <p><strong>🌱 ISO 14001:2015</strong><br />Gestión Ambiental</p>
+          <p style="margin-top: 0.8rem">
+            <strong>⭐ ISO 9001:2015</strong><br />Gestión de Calidad
+          </p>
+          <p style="margin-top: 0.8rem">
+            <strong>♿ Accesibilidad</strong><br />Compromiso inclusión
+          </p>
+        </div>
+      </div>
+
+      <!-- Pie de página inferior -->
+      <div class="footerAbajo">
+        <p>
+          &copy; 2025 Federación Española de Balonmano (RFEBM). Todos los
+          derechos reservados.
+        </p>
+        <p style="margin-top: 0.8rem">
+          Proyecto de Transformación Digital 2024/2025
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
