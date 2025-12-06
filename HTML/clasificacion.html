@@ -1,0 +1,496 @@
+<!-- 
+    PÁGINA DE CLASIFICACIÓN - FEDERACIÓN ESPAÑOLA DE BALONMANO
+    Proyecto de Transformación Digital 2024/2025
+    Autor: [Tu Nombre]
+    Fecha: Octubre 2025
+    Descripción: Clasificación general de la liga con estadísticas y criterios de desempate
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Metadatos SEO -->
+    <meta name="description" content="Clasificación actualizada de la liga española de balonmano - Puntos, partidos, goles y posiciones de todos los equipos">
+    <meta name="keywords" content="clasificación, tabla, posiciones, puntos, liga balonmano, España">
+    <meta name="author" content="Federación Española de Balonmano">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Clasificación - Federación Española de Balonmano">
+    <meta property="og:description" content="Tabla de clasificación actualizada de la liga">
+    <meta property="og:type" content="website">
+    
+    <!-- Título -->
+    <title>Clasificación General - Federación Española de Balonmano</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+    <link rel="shortcut icon" href="imagenes/favicon.ico">
+    
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- CABECERA PRINCIPAL -->
+    <header id="inicio">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo" title="Federación Española de Balonmano">
+                     <img src="imagenes/logo.png" 
+                         alt="Partido de balonmano en el Palau Blaugrana" 
+                         title="Logo"
+                         width="80"
+                         height="80"
+                         border="0"
+                         hspace="10"
+                         vspace="10">
+                </div>
+                <div class="header-title">
+                    <h1>FEDERACIÓN ESPAÑOLA DE BALONMANO</h1>
+                    <p>Excelencia, Pasión y Compromiso</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Ir a inicio">Inicio</a></li>
+            <li><a href="equipos.html" title="Ver equipos">Equipos</a></li>
+            <li><a href="calendario.html" title="Ver calendario">Calendario</a></li>
+            <li><a href="clasificacion.html" class="active" title="Ver clasificación">Clasificación</a></li>
+            <li><a href="noticias.html" title="Ver noticias">Noticias</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <h1 class="page-title">Clasificación General</h1>
+        
+        <!-- Navegación rápida interna -->
+        <div class="quick-nav" style="margin-bottom: 3rem; text-align: center;">
+            <a href="#tabla-clasificacion" class="btn-interno" title="Ir a tabla">Ver Tabla</a>
+            <a href="#criterios-desempate" class="btn-interno" style="margin-left: 1rem;" title="Ver criterios">Criterios</a>
+            <a href="#estadisticas" class="btn-interno" style="margin-left: 1rem;" title="Ver estadísticas">Estadísticas</a>
+        </div>
+
+        <!-- TABLA DE CLASIFICACIÓN -->
+        <section class="section" id="tabla-clasificacion">
+            <div class="table-container">
+                <table>
+                    <!-- Cabecera de la tabla -->
+                    <thead>
+                        <tr>
+                            <th title="Posición">Pos</th>
+                            <th title="Nombre del equipo">Equipo</th>
+                            <th title="Partidos Jugados">PJ</th>
+                            <th title="Partidos Ganados">PG</th>
+                            <th title="Partidos Empatados">PE</th>
+                            <th title="Partidos Perdidos">PP</th>
+                            <th title="Goles a Favor">GF</th>
+                            <th title="Goles en Contra">GC</th>
+                            <th title="Diferencia de Goles">DIF</th>
+                            <th title="Puntos Totales">PTS</th>
+                        </tr>
+                    </thead>
+                    <!-- Cuerpo de la tabla -->
+                    <tbody>
+                        <!-- Primer puesto -->
+                        <tr>
+                            <td><strong>1</strong></td>
+                            <td><strong>FC Barcelona</strong></td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>156</td>
+                            <td>138</td>
+                            <td>+18</td>
+                            <td><strong>10</strong></td>
+                        </tr>
+                        <!-- Segundo puesto -->
+                        <tr>
+                            <td><strong>2</strong></td>
+                            <td><strong>Zaragoza BM</strong></td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>148</td>
+                            <td>135</td>
+                            <td>+13</td>
+                            <td><strong>8</strong></td>
+                        </tr>
+                        <!-- Tercer puesto -->
+                        <tr>
+                            <td><strong>3</strong></td>
+                            <td><strong>Valencia HC</strong></td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>145</td>
+                            <td>136</td>
+                            <td>+9</td>
+                            <td><strong>8</strong></td>
+                        </tr>
+                        <!-- Resto de equipos -->
+                        <tr>
+                            <td>4</td>
+                            <td>Vigo BM</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>142</td>
+                            <td>138</td>
+                            <td>+4</td>
+                            <td><strong>7</strong></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Sevilla BM</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>140</td>
+                            <td>139</td>
+                            <td>+1</td>
+                            <td><strong>6</strong></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Atlético Madrid</td>
+                            <td>5</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>135</td>
+                            <td>145</td>
+                            <td>-10</td>
+                            <td><strong>3</strong></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Bilbao HC</td>
+                            <td>5</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>4</td>
+                            <td>130</td>
+                            <td>146</td>
+                            <td>-16</td>
+                            <td><strong>2</strong></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Granada HC</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td>125</td>
+                            <td>144</td>
+                            <td>-19</td>
+                            <td><strong>0</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- GALERÍA DE IMÁGENES - MOMENTOS DESTACADOS -->
+        <section class="section" id="galeria-clasificacion">
+            <h2>Momentos Destacados de la Temporada</h2>
+            <div class="image-gallery">
+                <!-- Imagen 1: Líder -->
+                <figure class="gallery-item">
+                    <img src="imagenes/barcelona-lider.jpg" 
+                         alt="FC Barcelona celebrando su liderato invicto en la competición" 
+                         title="FC Barcelona - Líder invicto"
+                         width="800"
+                         height="600"
+                         border="0"
+                         align="center"
+                         hspace="10"
+                         vspace="10">
+                    <figcaption>FC Barcelona mantiene el liderato invicto</figcaption>
+                </figure>
+                
+                <!-- Imagen 2: Batalla por el podio -->
+                <figure class="gallery-item">
+                    <img src="imagenes/podio-batalla.jpg" 
+                         alt="Jugadores de Zaragoza BM y Valencia HC disputando la segunda posición" 
+                         title="Lucha por el segundo puesto"
+                         width="800"
+                         height="600"
+                         border="0"
+                         hspace="10"
+                         vspace="10">
+                    <figcaption>Intensa batalla por el podio</figcaption>
+                </figure>
+                
+                <!-- Imagen 3: Emoción -->
+                <figure class="gallery-item">
+                    <img src="imagenes/emocion-liga.jpg" 
+                         alt="Aficionados celebrando en las gradas durante un partido emocionante" 
+                         title="La pasión de la afición"
+                         width="800"
+                         height="600"
+                         border="0"
+                         align="center"
+                         hspace="10"
+                         vspace="10">
+                    <figcaption>La pasión del balonmano español</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- CRITERIOS DE DESEMPATE -->
+        <section class="section" id="criterios-desempate">
+            <h2>Criterios de Desempate</h2>
+            <div class="criterios-box">
+                <p><strong>En caso de empate a puntos entre dos o más equipos, se aplicarán los siguientes criterios en orden de preferencia:</strong></p>
+                <ol>
+                    <li><strong>Diferencia de goles</strong> en los enfrentamientos directos entre los equipos empatados (goles a favor menos goles en contra en partidos mutuos)</li>
+                    <li><strong>Mayor número de goles a favor</strong> en los enfrentamientos directos entre los equipos empatados</li>
+                    <li><strong>Diferencia general de goles</strong> en toda la competición (todos los partidos de la temporada)</li>
+                    <li><strong>Mayor número de goles a favor</strong> en toda la competición regular</li>
+                    <li><strong>Menor número de sanciones disciplinarias</strong> acumuladas (tarjetas amarillas y rojas convertidas a puntos de penalización)</li>
+                    <li><strong>Fair Play</strong> - Mejor comportamiento deportivo evaluado por el comité técnico de la federación</li>
+                    <li>En caso de persistir el empate después de aplicar todos los criterios anteriores, se realizará un <strong>sorteo oficial</strong> en presencia de representantes de ambos clubes y la federación</li>
+                </ol>
+                <p style="margin-top: 1.5rem;"><em><strong>Leyenda de la tabla:</strong> PJ (Partidos Jugados), PG (Partidos Ganados), PE (Partidos Empatados), PP (Partidos Perdidos), GF (Goles a Favor), GC (Goles en Contra), DIF (Diferencia de Goles), PTS (Puntos Totales)</em></p>
+                <p><strong>Sistema de puntuación oficial:</strong> Victoria = 2 puntos | Empate = 1 punto | Derrota = 0 puntos</p>
+            </div>
+        </section>
+
+        <!-- VIDEO: ANÁLISIS DE LA CLASIFICACIÓN -->
+        <section class="section" id="video-analisis">
+            <h2>📺 Análisis de la Clasificación</h2>
+            <div class="video-container">
+                <video width="100%" height="100%" controls poster="imagenes/video-clasificacion-poster.jpg">
+                    <source src="videos/analisis-clasificacion.mp4" type="video/mp4">
+                    <source src="videos/analisis-clasificacion.webm" type="video/webm">
+                    <source src="videos/analisis-clasificacion.ogg" type="video/ogg">
+                    Tu navegador no soporta el elemento de video.
+                    <a href="videos/analisis-clasificacion.mp4" title="Descargar video">Descargar análisis en video</a>
+                </video>
+            </div>
+            <p style="text-align: center; margin-top: 1rem; color: #666;">
+                <em>Análisis experto de la situación actual de la tabla</em>
+            </p>
+        </section>
+
+        <!-- AUDIO: COMENTARIOS DEL EXPERTO -->
+        <section class="section" id="audio-comentario">
+            <h2>🎙️ Comentario Experto sobre la Clasificación</h2>
+            <div class="audio-container">
+                <audio controls preload="metadata">
+                    <source src="audio/comentario-clasificacion.mp3" type="audio/mpeg">
+                    <source src="audio/comentario-clasificacion.ogg" type="audio/ogg">
+                    <source src="audio/comentario-clasificacion.wav" type="audio/wav">
+                    Tu navegador no soporta el elemento de audio.
+                    <a href="audio/comentario-clasificacion.mp3" title="Descargar audio">Descargar comentario</a>
+                </audio>
+                <p style="margin-top: 1rem; text-align: center;">
+                    <em>Análisis en profundidad de la clasificación actual por nuestro experto</em>
+                </p>
+            </div>
+        </section>
+
+        <!-- ESTADÍSTICAS DESTACADAS -->
+        <section class="section" id="estadisticas">
+            <h2>Estadísticas Destacadas</h2>
+            <div class="cards">
+                <!-- Card 1: Líder Invicto -->
+                <article class="card">
+                    <div class="card-icon">👑</div>
+                    <h3>Líder Invicto</h3>
+                    <p>El <strong>FC Barcelona</strong> se mantiene como único equipo invicto de la competición con 5 victorias consecutivas, demostrando su superioridad en todas las facetas del juego.</p>
+                </article>
+                
+                <!-- Card 2: Lucha por el Podio -->
+                <article class="card">
+                    <div class="card-icon">⚔️</div>
+                    <h3>Lucha por el Podio</h3>
+                    <p><strong>Zaragoza BM</strong> y <strong>Valencia HC</strong> comparten 8 puntos en la zona noble de la tabla, protagonizando una emocionante batalla por la segunda posición.</p>
+                </article>
+                
+                <!-- Card 3: Máximo Goleador -->
+                <article class="card">
+                    <div class="card-icon">📊</div>
+                    <h3>Máximo Goleador</h3>
+                    <p>El FC Barcelona lidera también en ataque con 156 goles a favor, mientras que el Valencia HC presenta la mejor defensa con solo 136 goles en contra.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- COMPARATIVA ESTADÍSTICA -->
+        <section class="section" id="comparativa">
+            <h2>Comparativa Estadística</h2>
+            <div class="criterios-box">
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem;">Rankings por Categoría</h3>
+                
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color: var(--accent); margin-bottom: 0.5rem;">🥇 Mejor Ataque</h4>
+                    <ol style="margin-left: 2rem;">
+                        <li>FC Barcelona - 156 goles</li>
+                        <li>Zaragoza BM - 148 goles</li>
+                        <li>Valencia HC - 145 goles</li>
+                    </ol>
+                </div>
+                
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color: var(--accent); margin-bottom: 0.5rem;">🛡️ Mejor Defensa</h4>
+                    <ol style="margin-left: 2rem;">
+                        <li>Zaragoza BM - 135 goles en contra</li>
+                        <li>Valencia HC - 136 goles en contra</li>
+                        <li>FC Barcelona - 138 goles en contra</li>
+                    </ol>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--accent); margin-bottom: 0.5rem;">⚡ Mayor Diferencia de Goles</h4>
+                    <ol style="margin-left: 2rem;">
+                        <li>FC Barcelona - +18</li>
+                        <li>Zaragoza BM - +13</li>
+                        <li>Valencia HC - +9</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- EVOLUCIÓN DE LA CLASIFICACIÓN -->
+        <section class="section" id="evolucion">
+            <h2>📈 Evolución de la Temporada</h2>
+            <div class="cards">
+                <article class="card">
+                    <div class="card-icon">📅</div>
+                    <h3>Jornada 1-2</h3>
+                    <p>Inicio equilibrado con varios equipos compartiendo la cima. El Barcelona empezó a marcar diferencias desde la primera jornada.</p>
+                </article>
+                
+                <article class="card">
+                    <div class="card-icon">📅</div>
+                    <h3>Jornada 3-4</h3>
+                    <p>El Barcelona consolida su liderato. Zaragoza y Valencia emergen como claros candidatos al segundo puesto.</p>
+                </article>
+                
+                <article class="card">
+                    <div class="card-icon">📅</div>
+                    <h3>Jornada 5 (Actual)</h3>
+                    <p>El Barcelona mantiene el pleno de victorias. La lucha por el podio se intensifica con solo 5 jornadas disputadas.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ENLACES EXTERNOS -->
+        <section class="section" id="enlaces-stats">
+            <h2>🔗 Estadísticas y Análisis</h2>
+            <ul class="links-externos">
+                <li>
+                    <a href="https://www.asobal.es/clasificacion" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       title="Clasificación oficial ASOBAL">
+                        📊 Clasificación Oficial ASOBAL
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.eurohandball.com/rankings/" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       title="Rankings europeos">
+                        🌍 Rankings Europeos EHF
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.sofascore.com/es/balonmano" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       title="Estadísticas en vivo">
+                        📈 Estadísticas en Vivo - SofaScore
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- BOTÓN VOLVER ARRIBA -->
+        <div style="text-align: center; margin: 3rem 0;">
+            <a href="#inicio" class="btn-interno" title="Volver al inicio de la página">
+                ⬆ Volver arriba
+            </a>
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="footer-content">
+            <!-- Sección 1 -->
+            <div class="footer-section">
+                <h3>Federación Española de Balonmano</h3>
+                <p>Liderando el balonmano nacional desde 1942 con pasión, profesionalidad y compromiso con la excelencia deportiva.</p>
+                <p style="margin-top: 1.5rem;">
+                    <strong>Sede Central:</strong><br>
+                    Calle del Deporte Español, 28<br>
+                    28046 Madrid<br>
+                    España
+                </p>
+            </div>
+            
+            <!-- Sección 2 -->
+            <div class="footer-section">
+                <h3>Contacto Oficial</h3>
+                <ul>
+                    <li>📞 Teléfono: <a href="tel:+34915476200" title="Llamar">+34 91 547 62 00</a></li>
+                    <li>📧 Email: <a href="mailto:info@rfebm.es" title="Enviar email">info@rfebm.es</a></li>
+                    <li>📠 Fax: +34 91 547 62 01</li>
+                    <li>🌐 Web: <a href="https://www.rfebm.es" target="_blank" title="Web oficial">www.rfebm.es</a></li>
+                </ul>
+                <h3 style="margin-top: 1.5rem;">Horario de Atención</h3>
+                <p>Lunes a Viernes: 9:00 - 14:00 h<br>y 16:00 - 19:00 h</p>
+            </div>
+            
+            <!-- Sección 3 -->
+            <div class="footer-section">
+                <h3>Enlaces de Interés</h3>
+                <ul>
+                    <li><a href="#" title="Normativa">Normativa y Reglamentos</a></li>
+                    <li><a href="#" title="Licencias">Licencias Federativas</a></li>
+                    <li><a href="#" title="Formación">Formación de Entrenadores</a></li>
+                    <li><a href="#" title="Árbitros">Escuela de Árbitros</a></li>
+                    <li><a href="#" title="Sostenibilidad">Protocolo Sostenibilidad</a></li>
+                    <li><a href="#" title="Privacidad">Protección de Datos</a></li>
+                </ul>
+            </div>
+            
+            <!-- Sección 4 -->
+            <div class="footer-section">
+                <h3>Síguenos en Redes</h3>
+                <div class="social-links">
+                    <a href="https://facebook.com/rfebm" target="_blank" rel="noopener noreferrer" title="Facebook">f</a>
+                    <a href="https://twitter.com/rfebm" target="_blank" rel="noopener noreferrer" title="Twitter">𝕏</a>
+                    <a href="https://instagram.com/rfebm" target="_blank" rel="noopener noreferrer" title="Instagram">📷</a>
+                    <a href="https://youtube.com/rfebm" target="_blank" rel="noopener noreferrer" title="YouTube">▶</a>
+                    <a href="https://linkedin.com/company/rfebm" target="_blank" rel="noopener noreferrer" title="LinkedIn">in</a>
+                </div>
+                <h3 style="margin-top: 2rem;">Certificaciones</h3>
+                <p><strong>🌱 ISO 14001:2015</strong><br>Gestión Ambiental</p>
+                <p style="margin-top: 0.8rem;"><strong>⭐ ISO 9001:2015</strong><br>Gestión de Calidad</p>
+                <p style="margin-top: 0.8rem;"><strong>♿ Accesibilidad</strong><br>Compromiso inclusión</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Federación Española de Balonmano (RFEBM). Todos los derechos reservados.</p>
+            <p style="margin-top: 0.8rem;">Proyecto de Transformación Digital 2024/2025</p>
+        </div>
+    </footer>
+</body>
+</html>

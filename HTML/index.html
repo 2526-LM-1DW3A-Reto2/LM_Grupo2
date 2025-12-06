@@ -1,0 +1,398 @@
+<!-- 
+    PÁGINA PRINCIPAL - FEDERACIÓN ESPAÑOLA DE BALONMANO
+    Proyecto de Transformación Digital 2024/2025
+    Grupo: 1
+    Fecha: Octubre 2025
+    Descripción: Página de inicio de la web de la Federación Española de Balonmano
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración de caracteres y viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Metadatos SEO -->
+    <meta name="description" content="Federación Española de Balonmano - Portal oficial con resultados, clasificación, calendario y noticias de la liga nacional de balonmano">
+    <meta name="keywords" content="balonmano, España, federación, RFEBM, liga, clasificación, resultados">
+    <meta name="author" content="Federación Española de Balonmano">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Federación Española de Balonmano">
+    <meta property="og:description" content="Portal oficial del balonmano español">
+    <meta property="og:type" content="website">
+    
+    <!-- Título de la página -->
+    <title>Federación Española de Balonmano - Inicio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+    <link rel="shortcut icon" href="imagenes/favicon.ico">
+    
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- CABECERA PRINCIPAL -->
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <!-- Logo de la federación -->
+                <div class="logo" title="Federación Española de Balonmano">
+                    <img src="imagenes/logo.png" 
+                         alt="Partido de balonmano en el Palau Blaugrana" 
+                         title="Logo"
+                         width="80"
+                         height="80"
+                         border="0"
+                         hspace="10"
+                         vspace="10">
+                </div>
+                <div class="header-title">
+                    <h1>FEDERACIÓN ESPAÑOLA DE BALONMANO</h1>
+                    <p>Excelencia, Pasión y Compromiso</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active" title="Página de inicio">Inicio</a></li>
+            <li><a href="equipos.html" title="Ver equipos participantes">Equipos</a></li>
+            <li><a href="calendario.html" title="Calendario de partidos">Calendario</a></li>
+            <li><a href="clasificacion.html" title="Clasificación general">Clasificación</a></li>
+            <li><a href="noticias.html" title="Últimas noticias">Noticias</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- Sección Hero con estadísticas -->
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <h2>La Casa del Balonmano Español</h2>
+                <p>Promoviendo la excelencia deportiva con innovación, sostenibilidad y pasión por el balonmano desde 1942</p>
+                
+                <!-- Estadísticas principales -->
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Equipos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">14</span>
+                        <span class="stat-label">Jornadas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">112</span>
+                        <span class="stat-label">Jugadores</span>
+                    </div>
+                </div>
+                
+                <!-- Enlace interno (marcador) -->
+                <p style="margin-top: 2rem;">
+                    <a href="#ultimos-resultados" class="btn-interno" title="Ver últimos resultados">
+                        Ver Últimos Resultados ⬇
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Tarjetas informativas -->
+        <div class="cards">
+            <!-- Card 1: Temporada -->
+            <article class="card">
+                <div class="card-icon">🏆</div>
+                <h3>Temporada 2024/2025</h3>
+                <p>La temporada más competitiva en la historia de la federación, con 8 equipos de élite luchando por el campeonato nacional y la gloria deportiva.</p>
+            </article>
+            
+            <!-- Card 2: Transformación Digital -->
+            <article class="card">
+                <div class="card-icon">⚡</div>
+                <h3>Transformación Digital</h3>
+                <p>Pioneros en innovación tecnológica aplicada al deporte, mejorando la experiencia de aficionados, jugadores y clubes.</p>
+            </article>
+            
+            <!-- Card 3: Sostenibilidad -->
+            <article class="card">
+                <div class="card-icon">🌱</div>
+                <h3>Compromiso Sostenible</h3>
+                <p>Liderando el cambio hacia un deporte más responsable con el medio ambiente y socialmente comprometido con las futuras generaciones.</p>
+            </article>
+        </div>
+
+        <!-- Galería de imágenes -->
+        <section class="section" id="galeria">
+            <h2>Galería de Imágenes</h2>
+            <div class="image-gallery">
+                <!-- Imagen 1 -->
+                <figure class="gallery-item">
+                    <img src="imagenes/partido1.jpg" 
+                         alt="Partido de balonmano en el Palau Blaugrana" 
+                         title="FC Barcelona vs Atlético Madrid"
+                         width="400"
+                         height="300"
+                         border="0"
+                         hspace="10"
+                         vspace="10">
+                    <figcaption>Emocionante partido en el Palau Blaugrana</figcaption>
+                </figure>
+                
+                <!-- Imagen 2 -->
+                <figure class="gallery-item">
+                    <img src="imagenes/equipo.jpg" 
+                         alt="Plantilla completa del Valencia HC" 
+                         title="Valencia HC - Temporada 2024/25"
+                         width="400"
+                         height="300"
+                         border="0"
+                         align="center"
+                         hspace="10"
+                         vspace="10">
+                    <figcaption>Valencia HC - Equipo titular</figcaption>
+                </figure>
+                
+                <!-- Imagen 3 -->
+                <figure class="gallery-item">
+                    <img src="imagenes/celebracion.jpg" 
+                         alt="Jugadores celebrando victoria" 
+                         title="Celebración del Zaragoza BM"
+                         width="400"
+                         height="300"
+                         border="0"
+                         hspace="10"
+                         vspace="10">
+                    <figcaption>Zaragoza BM celebra su victoria</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Últimos resultados con marcador de destino -->
+        <section class="section" id="ultimos-resultados">
+            <h2>Últimos Resultados</h2>
+            
+            <!-- Match Card 1 -->
+            <div class="match-card">
+                <div class="match-teams">
+                    <div class="team">
+                        <img src="/imagenes/imagenes_Logos/BARCELONA.png" 
+                            alt="escudo FC Barcelona" 
+                            width="50"
+                            height="50"/>
+                        <div class="team-name">FC Barcelona</div>
+                    </div>
+                    <div class="match-score">32 - 28</div>
+                    <div class="team">
+                        <img src="/imagenes/imagenes_Logos/ATLETICO MADRID.png" 
+                            alt="escudo Atletico Madrid" 
+                            width="50"
+                            height="50"/>
+                        <div class="team-name">Atlético Madrid</div>
+                    </div>
+                </div>
+                <div class="match-info">
+                    <div class="match-date">Jornada 5</div>
+                    <small>05/10/2025</small>
+                </div>
+            </div>
+            
+            <!-- Match Card 2 -->
+            <div class="match-card">
+                <div class="match-teams">
+                    <div class="team">
+                        <img src="/imagenes/imagenes_Logos/VALENCIA.png" 
+                            alt="escudo Valencia HC" 
+                            width="100"
+                            height="100"/>
+                        <div class="team-name">Valencia HC</div>
+                    </div>
+                    <div class="match-score">29 - 29</div>
+                    <div class="team">
+                        <img src="/imagenes/imagenes_Logos/SEVILLA BM.png" 
+                            alt="escudo Sevilla BM" 
+                            width="50"
+                            height="50"/>
+                        <div class="team-name">Sevilla BM</div>
+                    </div>
+                </div>
+                <div class="match-info">
+                    <div class="match-date">Jornada 5</div>
+                    <small>05/10/2025</small>
+                </div>
+            </div>
+            
+            <!-- Match Card 3 -->
+            <div class="match-card">
+                <div class="match-teams">
+                    <div class="team">
+                        <img src="/imagenes/imagenes_Logos/ZARAGOZA BM.png" 
+                            alt="escudo Zaragoza BM" 
+                            width="80"
+                            height="80"/>
+                        <div class="team-name">Zaragoza BM</div>
+                    </div>
+                    <div class="match-score">30 - 27</div>
+                    <div class="team">
+                        <img src="/imagenes/imagenes_Logos/BILBAO.png" 
+                            alt="escudo Bilbao HC" 
+                            width="50"
+                            height="50"/>
+                        <div class="team-name">Bilbao HC</div>
+                    </div>
+                </div>
+                <div class="match-info">
+                    <div class="match-date">Jornada 5</div>
+                    <small>06/10/2025</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vídeo destacado -->
+        <section class="section" id="video-destacado">
+            <h2>Balonmano de Élite</h2>
+            <div class="video-container">
+                <!-- Video con múltiples formatos para compatibilidad -->
+                <video width="100%" height="100%" controls poster="imagenes/video-poster.jpg">
+                    <source src="videos/resumen-jornada.mp4" type="video/mp4">
+                    <source src="videos/resumen-jornada.webm" type="video/webm">
+                    <source src="videos/resumen-jornada.ogg" type="video/ogg">
+                    Tu navegador no soporta el elemento de video. 
+                    <a href="videos/resumen-jornada.mp4">Descargar video</a>
+                </video>
+            </div>
+            
+            <!-- Alternativa con iframe de YouTube -->
+            <div class="video-container" style="margin-top: 2rem;">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                        title="Resumen de la jornada - YouTube">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Audio: Himno de la federación -->
+        <section class="section" id="audio-himno">
+            <h2>Himno de la Federación</h2>
+            <div class="audio-container">
+                <audio controls preload="metadata">
+                    <source src="audio/himno-federacion.mp3" type="audio/mpeg">
+                    <source src="audio/himno-federacion.ogg" type="audio/ogg">
+                    <source src="audio/himno-federacion.wav" type="audio/wav">
+                    Tu navegador no soporta el elemento de audio.
+                    <a href="audio/himno-federacion.mp3">Descargar audio</a>
+                </audio>
+                <p style="margin-top: 1rem; text-align: center;">
+                    <em>Himno oficial de la Federación Española de Balonmano</em>
+                </p>
+            </div>
+        </section>
+
+        <!-- Enlaces externos importantes -->
+        <section class="section" id="enlaces-externos">
+            <h2>Enlaces de Interés</h2>
+            <ul class="links-externos">
+                <li>
+                    <a href="https://www.ihf.info/" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       title="Federación Internacional de Balonmano">
+                        🌐 Federación Internacional de Balonmano (IHF)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.eurohandball.com/" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       title="Federación Europea de Balonmano">
+                        🇪🇺 Federación Europea de Balonmano (EHF)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.coe.es/" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       title="Comité Olímpico Español">
+                        🏅 Comité Olímpico Español (COE)
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="footer-content">
+            <!-- Sección 1: Información de la Federación -->
+            <div class="footer-section">
+                <h3>Federación Española de Balonmano</h3>
+                <p>Liderando el balonmano nacional desde 1942 con pasión, profesionalidad y compromiso con la excelencia deportiva.</p>
+                <p style="margin-top: 1.5rem;">
+                    <strong>Sede Central:</strong><br>
+                    Calle del Deporte Español, 28<br>
+                    28046 Madrid<br>
+                    España
+                </p>
+            </div>
+            
+            <!-- Sección 2: Contacto -->
+            <div class="footer-section">
+                <h3>Contacto Oficial</h3>
+                <ul>
+                    <li>📞 Teléfono: <a href="tel:+34915476200">+34 91 547 62 00</a></li>
+                    <li>📧 Email: <a href="mailto:info@rfebm.es">info@rfebm.es</a></li>
+                    <li>📠 Fax: +34 91 547 62 01</li>
+                    <li>🌐 Web: <a href="https://www.rfebm.es" target="_blank">www.rfebm.es</a></li>
+                </ul>
+                <h3 style="margin-top: 1.5rem;">Horario de Atención</h3>
+                <p>Lunes a Viernes: 9:00 - 14:00 h<br>y 16:00 - 19:00 h</p>
+            </div>
+            
+            <!-- Sección 3: Enlaces de Interés -->
+            <div class="footer-section">
+                <h3>Enlaces de Interés</h3>
+                <ul>
+                    <li><a href="#" title="Consultar normativa">Normativa y Reglamentos</a></li>
+                    <li><a href="#" title="Solicitar licencia">Licencias Federativas</a></li>
+                    <li><a href="#" title="Cursos de entrenadores">Formación de Entrenadores</a></li>
+                    <li><a href="#" title="Información de árbitros">Escuela de Árbitros</a></li>
+                    <li><a href="#" title="Ver protocolo">Protocolo Sostenibilidad</a></li>
+                    <li><a href="#" title="Política de privacidad">Protección de Datos</a></li>
+                </ul>
+            </div>
+            
+            <!-- Sección 4: Redes Sociales -->
+            <div class="footer-section">
+                <h3>Síguenos en Redes</h3>
+                <div class="social-links">
+                    <a href="https://facebook.com/rfebm" target="_blank" title="Facebook">f</a>
+                    <a href="https://twitter.com/rfebm" target="_blank" title="Twitter">𝕏</a>
+                    <a href="https://instagram.com/rfebm" target="_blank" title="Instagram">📷</a>
+                    <a href="https://youtube.com/rfebm" target="_blank" title="YouTube">▶</a>
+                    <a href="https://linkedin.com/company/rfebm" target="_blank" title="LinkedIn">in</a>
+                </div>
+                
+                <!-- Certificaciones -->
+                <h3 style="margin-top: 2rem;">Certificaciones</h3>
+                <p><strong>🌱 ISO 14001:2015</strong><br>Gestión Ambiental</p>
+                <p style="margin-top: 0.8rem;"><strong>⭐ ISO 9001:2015</strong><br>Gestión de Calidad</p>
+                <p style="margin-top: 0.8rem;"><strong>♿ Accesibilidad</strong><br>Compromiso inclusión</p>
+            </div>
+        </div>
+        
+        <!-- Pie de página inferior -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Federación Española de Balonmano (RFEBM). Todos los derechos reservados.</p>
+            <p style="margin-top: 0.8rem;">Proyecto de Transformación Digital 2024/2025</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="#inicio" title="Volver arriba">⬆ Volver arriba</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
