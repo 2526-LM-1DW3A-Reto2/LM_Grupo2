@@ -553,7 +553,7 @@ table tbody tr:nth-child(3) {
 /* ================================= */
 /* GRID DE EQUIPOS */
 /* ================================= */
-.team-grid {
+.gridEquipos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2rem;
@@ -561,7 +561,7 @@ table tbody tr:nth-child(3) {
 }
 
 /* Tarjeta de equipo */
-.team-card {
+.cardEquipo {
   background: white;
   border-radius: 20px;
   padding: 2rem;
@@ -573,7 +573,7 @@ table tbody tr:nth-child(3) {
 }
 
 /* Overlay de fondo en team cards */
-.team-card::before {
+.cardEquipo::before {
   content: "";
   position: absolute;
   top: 0;
@@ -585,12 +585,12 @@ table tbody tr:nth-child(3) {
   transition: opacity 0.3s ease;
 }
 
-.team-card:hover::before {
+.cardEquipo:hover::before {
   opacity: 0.05;
 }
 
 /* Efecto hover en team cards */
-.team-card:hover {
+.cardEquipo:hover {
   transform: translateY(-15px) scale(1.02);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
@@ -614,7 +614,7 @@ table tbody tr:nth-child(3) {
 }
 
 /* Título de la tarjeta de equipo */
-.team-card h3 {
+.cardEquipo h3 {
   font-size: 1.3rem;
   color: var(--dark);
   margin-bottom: 1rem;
@@ -624,7 +624,7 @@ table tbody tr:nth-child(3) {
 }
 
 /* Texto de la tarjeta de equipo */
-.team-card p {
+.cardEquipo p {
   color: #666;
   font-size: 0.9rem;
   margin: 0.5rem 0;
@@ -880,7 +880,7 @@ footer::before {
 /* ================================= */
 
 /* Título principal de página */
-.page-title {
+.tituloPagina {
   font-size: 3rem;
   font-weight: 800;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -893,7 +893,7 @@ footer::before {
 }
 
 /* Línea decorativa bajo el título */
-.page-title::after {
+.tituloPagina::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -920,7 +920,7 @@ footer::before {
 /* ================================= */
 /* CAJA DE CRITERIOS */
 /* ================================= */
-.criterios-box {
+.cajaCriterios {
   background: linear-gradient(
     135deg,
     rgba(196, 30, 58, 0.05),
@@ -932,25 +932,25 @@ footer::before {
 }
 
 /* Lista ordenada en criterios */
-.criterios-box ol {
+.cajaCriterios ol {
   margin-left: 2rem;
   margin-top: 1.5rem;
 }
 
 /* Items de la lista de criterios */
-.criterios-box li {
+.cajaCriterios li {
   margin-bottom: 1rem;
   color: var(--dark);
   line-height: 1.8;
 }
 
 /* Texto en negrita de criterios */
-.criterios-box strong {
+.cajaCriterios strong {
   color: var(--primary);
 }
 
 /* Párrafos adicionales en criterios */
-.criterios-box p {
+.cajaCriterios p {
   margin-top: 1.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -1006,7 +1006,7 @@ footer::before {
   }
 
   /* Título de página en móvil */
-  .page-title {
+  .tituloPagina {
     font-size: 2rem;
   }
 

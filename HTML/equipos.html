@@ -7,464 +7,644 @@
 -->
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <!-- Configuración básica -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Metadatos SEO -->
-    <meta name="description" content="Conoce todos los equipos de la liga española de balonmano - Plantillas, estadios, entrenadores y más información">
-    <meta name="keywords" content="equipos, balonmano, España, Barcelona, Madrid, Valencia, plantillas">
-    <meta name="author" content="Federación Española de Balonmano">
-    <meta name="robots" content="index, follow">
-    
+    <meta
+      name="description"
+      content="Conoce todos los equipos de la liga española de balonmano - Plantillas, estadios, entrenadores y más información"
+    />
+    <meta
+      name="keywords"
+      content="equipos, balonmano, España, Barcelona, Madrid, Valencia, plantillas"
+    />
+    <meta name="author" content="Federación Española de Balonmano" />
+    <meta name="robots" content="index, follow" />
+
     <!-- Open Graph -->
-    <meta property="og:title" content="Equipos - Federación Española de Balonmano">
-    <meta property="og:description" content="Información completa de todos los equipos participantes">
-    <meta property="og:type" content="website">
-    
+    <meta
+      property="og:title"
+      content="Equipos - Federación Española de Balonmano"
+    />
+    <meta
+      property="og:description"
+      content="Información completa de todos los equipos participantes"
+    />
+    <meta property="og:type" content="website" />
+
     <!-- Título -->
     <title>Equipos Participantes - Federación Española de Balonmano</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
-    <link rel="shortcut icon" href="imagenes/favicon.ico">
-    
-    <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <!-- CABECERA PRINCIPAL -->
-    <header id="inicio">
-        <div class="header-content">
-            <div class="logo-section">
-                <div class="logo" title="Federación Española de Balonmano">
-                     <img src="imagenes/logo.png" 
-                         alt="Partido de balonmano en el Palau Blaugrana" 
-                         title="Logo"
-                         width="80"
-                         height="80"
-                         border="0"
-                         hspace="10"
-                         vspace="10">
-                </div>
-                <div class="header-title">
-                    <h1>FEDERACIÓN ESPAÑOLA DE BALONMANO</h1>
-                    <p>Excelencia, Pasión y Compromiso</p>
-                </div>
-            </div>
-        </div>
-    </header>
 
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <nav>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico" />
+    <link rel="shortcut icon" href="imagenes/favicon.ico" />
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- CABECERA PRINCIPAL -->
+    <header class="header" id="inicio">
+      <div class="headerContenido">
+        <div class="headerLogo">
+          <div class="logo" title="Federación Española de Balonmano">
+            <img
+              src="imagenes/logo.png"
+              alt="Partido de balonmano en el Palau Blaugrana"
+              title="Logo"
+              width="80"
+              height="80"
+              border="0"
+              hspace="10"
+              vspace="10"
+            />
+          </div>
+          <div class="headerTitulo">
+            <h1>FEDERACIÓN ESPAÑOLA DE BALONMANO</h1>
+            <p>Excelencia, Pasión y Compromiso</p>
+          </div>
+        </div>
+      </div>
+      <!-- MENÚ DE NAVEGACIÓN -->
+      <nav>
         <ul>
-            <li><a href="index.html" title="Ir a inicio">Inicio</a></li>
-            <li><a href="equipos.html" class="active" title="Ver equipos">Equipos</a></li>
-            <li><a href="calendario.html" title="Ver calendario">Calendario</a></li>
-            <li><a href="clasificacion.html" title="Ver clasificación">Clasificación</a></li>
-            <li><a href="noticias.html" title="Ver noticias">Noticias</a></li>
+          <li><a href="index.html" title="Ir a inicio">Inicio</a></li>
+          <li>
+            <a href="equipos.html" class="active" title="Ver equipos"
+              >Equipos</a
+            >
+          </li>
+          <li>
+            <a href="calendario.html" title="Ver calendario">Calendario</a>
+          </li>
+          <li>
+            <a href="clasificacion.html" title="Ver clasificación"
+              >Clasificación</a
+            >
+          </li>
+          <li><a href="noticias.html" title="Ver noticias">Noticias</a></li>
         </ul>
-    </nav>
+      </nav>
+    </header>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main>
-        <h1 class="page-title">Equipos Temporada 2024/2025</h1>
-        
-        <!-- Navegación rápida interna -->
-        <div class="quick-nav" style="margin-bottom: 3rem; text-align: center;">
-            <a href="#fc-barcelona" class="btn-interno" title="Ir a FC Barcelona">FC Barcelona</a>
-            <a href="#valencia-hc" class="btn-interno" style="margin-left: 1rem;" title="Ir a Valencia HC">Valencia HC</a>
-            <a href="#galeria-equipos" class="btn-interno" style="margin-left: 1rem;" title="Ver galería">Galería de Equipos</a>
-        </div>
+      <h1 class="tituloPagina">Equipos Temporada 2024/2025</h1>
 
-        <!-- GRID DE EQUIPOS CON ID PARA MARCADORES -->
-        <div class="team-grid">
-            <!-- Equipo 1: FC Barcelona -->
-            <article class="team-card" id="fc-barcelona">
-                <img src="/imagenes/imagenes_Logos/BARCELONA.png" 
-                    alt="escudo FC Barcelona" 
-                    width="50"
-                    height="50"/>
-                <h3>FC Barcelona</h3>
-                <p><strong>Fundado:</strong> 1942</p>
-                <p><strong>Estadio:</strong> Palau Blaugrana</p>
-                <p><strong>Capacidad:</strong> 7,585</p>
-                <p><strong>Jugadores:</strong> 16</p>
-                <p><strong>Entrenador:</strong> Carlos Ortega</p>
-                <p style="margin-top: 1rem;">
-                    <a href="https://www.fcbarcelona.es/es/balonmano" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       title="Web oficial FC Barcelona">
-                        🌐 Web oficial
-                    </a>
-                </p>
-            </article>
+      <!-- Navegación rápida interna -->
+      <div class="quick-nav" style="margin-bottom: 3rem; text-align: center">
+        <a href="#fc-barcelona" class="btnInterno" title="Ir a FC Barcelona"
+          >FC Barcelona</a
+        >
+        <a
+          href="#valencia-hc"
+          class="btnInterno"
+          style="margin-left: 1rem"
+          title="Ir a Valencia HC"
+          >Valencia HC</a
+        >
+        <a
+          href="#galeria-equipos"
+          class="btnInterno"
+          style="margin-left: 1rem"
+          title="Ver galería"
+          >Galería de Equipos</a
+        >
+      </div>
 
-            <!-- Equipo 2: Atlético Madrid -->
-            <article class="team-card" id="atletico-madrid">
-                <img src="/imagenes/imagenes_Logos/ATLETICO MADRID.png" 
-                    alt="escudo Atletico Madrid" 
-                    width="50"
-                    height="50"/>
-                <h3>Atlético Madrid</h3>
-                <p><strong>Fundado:</strong> 1958</p>
-                <p><strong>Estadio:</strong> Vistalegre Arena</p>
-                <p><strong>Capacidad:</strong> 15,000</p>
-                <p><strong>Jugadores:</strong> 15</p>
-                <p><strong>Entrenador:</strong> Raúl González</p>
-                <p style="margin-top: 1rem;">
-                    <a href="https://www.atleticodemadrid.com/balonmano" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       title="Web oficial Atlético Madrid">
-                        🌐 Web oficial
-                    </a>
-                </p>
-            </article>
-
-            <!-- Equipo 3: Valencia HC -->
-            <article class="team-card" id="valencia-hc">
-                <img src="/imagenes/imagenes_Logos/VALENCIA.png" 
-                    alt="escudo Valencia HC" 
-                    width="100"
-                    height="100"/>
-                <h3>Valencia HC</h3>
-                <p><strong>Fundado:</strong> 1952</p>
-                <p><strong>Estadio:</strong> Fuente San Luis</p>
-                <p><strong>Capacidad:</strong> 9,000</p>
-                <p><strong>Jugadores:</strong> 14</p>
-                <p><strong>Entrenador:</strong> David Pisonero</p>
-                <p style="margin-top: 1rem;">
-                    <a href="#" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       title="Web oficial Valencia HC">
-                        🌐 Web oficial
-                    </a>
-                </p>
-            </article>
-
-            <!-- Equipo 4: Sevilla BM -->
-            <article class="team-card" id="sevilla-bm">
-                <img src="/imagenes/imagenes_Logos/SEVILLA BM.png" 
-                    alt="escudo Sevilla BM" 
-                    width="50"
-                    height="50"/>
-                <h3>Sevilla BM</h3>
-                <p><strong>Fundado:</strong> 1985</p>
-                <p><strong>Estadio:</strong> San Pablo</p>
-                <p><strong>Capacidad:</strong> 7,200</p>
-                <p><strong>Jugadores:</strong> 14</p>
-                <p><strong>Entrenador:</strong> Antonio Serradilla</p>
-                <p style="margin-top: 1rem;">
-                    <a href="#" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       title="Web oficial Sevilla BM">
-                        🌐 Web oficial
-                    </a>
-                </p>
-            </article>
-
-            <!-- Equipo 5: Zaragoza BM -->
-            <article class="team-card" id="zaragoza-bm">
-                <img src="/imagenes/imagenes_Logos/ZARAGOZA BM.png" 
-                    alt="escudo Zaragoza BM" 
-                    width="80"
-                    height="80"/>
-                <h3>Zaragoza BM</h3>
-                <p><strong>Fundado:</strong> 1933</p>
-                <p><strong>Estadio:</strong> Príncipe Felipe</p>
-                <p><strong>Capacidad:</strong> 10,744</p>
-                <p><strong>Jugadores:</strong> 15</p>
-                <p><strong>Entrenador:</strong> Jordi Ribera</p>
-                <p style="margin-top: 1rem;">
-                    <a href="#" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       title="Web oficial Zaragoza BM">
-                        🌐 Web oficial
-                    </a>
-                </p>
-            </article>
-
-            <!-- Equipo 6: Bilbao HC -->
-            <article class="team-card" id="bilbao-hc">
-                <img src="/imagenes/imagenes_Logos/BILBAO.png" 
-                    alt="escudo Bilbao HC" 
-                    width="50"
-                    height="50"/>
-                <h3>Bilbao HC</h3>
-                <p><strong>Fundado:</strong> 1990</p>
-                <p><strong>Estadio:</strong> Bilbao Arena</p>
-                <p><strong>Capacidad:</strong> 10,000</p>
-                <p><strong>Jugadores:</strong> 14</p>
-                <p><strong>Entrenador:</strong> Iñaki Aniz</p>
-                <p style="margin-top: 1rem;">
-                    <a href="#" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       title="Web oficial Bilbao HC">
-                        🌐 Web oficial
-                    </a>
-                </p>
-            </article>
-
-            <!-- Equipo 7: Granada HC -->
-            <article class="team-card" id="granada-hc">
-                <img src="/imagenes/imagenes_Logos/GRANADA.png" 
-                    alt="escudo Granada HC" 
-                    width="40"
-                    height="50"/>
-                <h3>Granada HC</h3>
-                <p><strong>Fundado:</strong> 1990</p>
-                <p><strong>Estadio:</strong> Palacio Deportes</p>
-                <p><strong>Capacidad:</strong> 8,000</p>
-                <p><strong>Jugadores:</strong> 13</p>
-                <p><strong>Entrenador:</strong> Manuel Montoya</p>
-                <p style="margin-top: 1rem;">
-                    <a href="#" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       title="Web oficial Granada HC">
-                        🌐 Web oficial
-                    </a>
-                </p>
-            </article>
-
-            <!-- Equipo 8: Vigo BM -->
-            <article class="team-card" id="vigo-bm">
-                <img src="/imagenes/imagenes_Logos/VIGO.png" 
-                    alt="escudo  Vigo BM" 
-                    width="40"
-                    height="50"/>
-                <h3>Vigo BM</h3>
-                <p><strong>Fundado:</strong> 1971</p>
-                <p><strong>Estadio:</strong> Fontes do Sar</p>
-                <p><strong>Capacidad:</strong> 6,500</p>
-                <p><strong>Jugadores:</strong> 15</p>
-                <p><strong>Entrenador:</strong> Alejandro Pose</p>
-                <p style="margin-top: 1rem;">
-                    <a href="#" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       title="Web oficial Vigo BM">
-                        🌐 Web oficial
-                    </a>
-                </p>
-            </article>
-        </div>
-
-        <!-- GALERÍA DE IMÁGENES DE EQUIPOS -->
-        <section class="section" id="galeria-equipos">
-            <h2>Galería Fotográfica de Equipos</h2>
-            <div class="image-gallery">
-                <!-- Imagen 1: FC Barcelona -->
-                <figure class="gallery-item">
-                    <img src="imagenes/equipo-barcelona.jpg" 
-                         alt="Plantilla completa del FC Barcelona posando en el Palau Blaugrana" 
-                         title="FC Barcelona - Temporada 2024/25"
-                         width="800"
-                         height="600"
-                         border="0"
-                         align="center"
-                         hspace="10"
-                         vspace="10">
-                    <figcaption>FC Barcelona - Campeón vigente</figcaption>
-                </figure>
-                
-                <!-- Imagen 2: Valencia HC -->
-                <figure class="gallery-item">
-                    <img src="imagenes/equipo-valencia.jpg" 
-                         alt="Valencia HC en formación antes de un partido oficial" 
-                         title="Valencia HC - Equipo titular"
-                         width="800"
-                         height="600"
-                         border="0"
-                         hspace="10"
-                         vspace="10">
-                    <figcaption>Valencia HC - En formación</figcaption>
-                </figure>
-                
-                <!-- Imagen 3: Zaragoza BM -->
-                <figure class="gallery-item">
-                    <img src="imagenes/equipo-zaragoza.jpg" 
-                         alt="Jugadores del Zaragoza BM celebrando victoria en el Príncipe Felipe" 
-                         title="Zaragoza BM celebrando"
-                         width="800"
-                         height="400"
-                         border="0"
-                         align="center"
-                         hspace="10"
-                         vspace="10">
-                    <figcaption>Zaragoza BM - Celebración de victoria</figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <!-- VIDEO: PRESENTACIÓN DE EQUIPOS -->
-        <section class="section" id="video-equipos">
-            <h2>📺 Vídeo Presentación Equipos 2024/25</h2>
-            <div class="video-container">
-                <video width="100%" height="100%" controls poster="imagenes/video-equipos-poster.jpg">
-                    <source src="videos/presentacion-equipos.mp4" type="video/mp4">
-                    <source src="videos/presentacion-equipos.webm" type="video/webm">
-                    <source src="videos/presentacion-equipos.ogg" type="video/ogg">
-                    Tu navegador no soporta el elemento de video.
-                    <a href="videos/presentacion-equipos.mp4" title="Descargar video">Descargar video</a>
-                </video>
-            </div>
-            <p style="text-align: center; margin-top: 1rem; color: #666;">
-                <em>Presentación oficial de todos los equipos participantes</em>
-            </p>
-        </section>
-
-        <!-- INFORMACIÓN ADICIONAL -->
-        <section class="section" id="info-equipos">
-            <h2>Información de los Equipos</h2>
-            <div class="cards">
-                <!-- Card 1 -->
-                <article class="card">
-                    <div class="card-icon">👥</div>
-                    <h3>Plantillas Completas</h3>
-                    <p>Cada equipo cuenta con una plantilla de entre 13 y 16 jugadores profesionales, distribuidos en las diferentes posiciones: porteros, extremos, laterales, centrales y pivotes.</p>
-                </article>
-                
-                <!-- Card 2 -->
-                <article class="card">
-                    <div class="card-icon">🏟️</div>
-                    <h3>Instalaciones de Élite</h3>
-                    <p>Todos los pabellones cumplen con los más altos estándares de calidad establecidos por la federación, garantizando la mejor experiencia tanto para jugadores como para aficionados.</p>
-                </article>
-                
-                <!-- Card 3 -->
-                <article class="card">
-                    <div class="card-icon">⚙️</div>
-                    <h3>Cuerpo Técnico</h3>
-                    <p>Los equipos cuentan con entrenadores de primer nivel, preparadores físicos especializados, fisioterapeutas y todo el staff necesario para competir al máximo nivel.</p>
-                </article>
-            </div>
-        </section>
-
-        <!-- ESTADÍSTICAS DE LOS EQUIPOS -->
-        <section class="section" id="estadisticas-equipos">
-            <h2>Estadísticas por Equipo</h2>
-            <div class="criterios-box">
-                <h3 style="color: var(--primary); margin-bottom: 1.5rem;">Datos Destacados de la Temporada</h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 1rem;">🏆 <strong>Líder:</strong> FC Barcelona con 10 puntos y 5 victorias consecutivas</li>
-                    <li style="margin-bottom: 1rem;">⚡ <strong>Más goleador:</strong> FC Barcelona con 156 goles a favor</li>
-                    <li style="margin-bottom: 1rem;">🛡️ <strong>Mejor defensa:</strong> Valencia HC con solo 136 goles en contra</li>
-                    <li style="margin-bottom: 1rem;">🏠 <strong>Mayor capacidad:</strong> Atlético Madrid con 15,000 espectadores</li>
-                    <li style="margin-bottom: 1rem;">📅 <strong>Más veterano:</strong> Zaragoza BM fundado en 1933</li>
-                    <li style="margin-bottom: 1rem;">👨‍👩‍👧‍👦 <strong>Plantilla más amplia:</strong> FC Barcelona con 16 jugadores</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- ENLACES EXTERNOS DE INTERÉS -->
-        <section class="section" id="enlaces-equipos">
-            <h2>🔗 Más Información</h2>
-            <ul class="links-externos">
-                <li>
-                    <a href="https://www.asobal.es/" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       title="Liga ASOBAL oficial">
-                        🏆 Liga ASOBAL - Competición Oficial
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.eurohandball.com/ehf-champions-league/" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       title="Champions League de Balonmano">
-                        🌟 EHF Champions League
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.transfermarkt.es/balonmano" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       title="Fichajes y traspasos">
-                        📊 Transfermarkt - Fichajes
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <!-- BOTÓN VOLVER ARRIBA -->
-        <div style="text-align: center; margin: 3rem 0;">
-            <a href="#inicio" class="btn-interno" title="Volver al inicio de la página">
-                ⬆ Volver arriba
+      <!-- GRID DE EQUIPOS CON ID PARA MARCADORES -->
+      <div class="gridEquipos">
+        <!-- Equipo 1: FC Barcelona -->
+        <article class="cardEquipo" id="fc-barcelona">
+          <img
+            src="imagenes/imagenes_Logos/BARCELONA.png"
+            alt="escudo FC Barcelona"
+            width="50"
+            height="50"
+          />
+          <h3>FC Barcelona</h3>
+          <p><strong>Fundado:</strong> 1942</p>
+          <p><strong>Estadio:</strong> Palau Blaugrana</p>
+          <p><strong>Capacidad:</strong> 7,585</p>
+          <p><strong>Jugadores:</strong> 16</p>
+          <p><strong>Entrenador:</strong> Carlos Ortega</p>
+          <p style="margin-top: 1rem">
+            <a
+              href="https://www.fcbarcelona.es/es/balonmano"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Web oficial FC Barcelona"
+            >
+              🌐 Web oficial
             </a>
+          </p>
+        </article>
+
+        <!-- Equipo 2: Atlético Madrid -->
+        <article class="cardEquipo" id="atletico-madrid">
+          <img
+            src="imagenes/imagenes_Logos/ATLETICO MADRID.png"
+            alt="escudo Atletico Madrid"
+            width="50"
+            height="50"
+          />
+          <h3>Atlético Madrid</h3>
+          <p><strong>Fundado:</strong> 1958</p>
+          <p><strong>Estadio:</strong> Vistalegre Arena</p>
+          <p><strong>Capacidad:</strong> 15,000</p>
+          <p><strong>Jugadores:</strong> 15</p>
+          <p><strong>Entrenador:</strong> Raúl González</p>
+          <p style="margin-top: 1rem">
+            <a
+              href="https://www.atleticodemadrid.com/balonmano"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Web oficial Atlético Madrid"
+            >
+              🌐 Web oficial
+            </a>
+          </p>
+        </article>
+
+        <!-- Equipo 3: Valencia HC -->
+        <article class="cardEquipo" id="valencia-hc">
+          <img
+            src="imagenes/imagenes_Logos/VALENCIA.png"
+            alt="escudo Valencia HC"
+            width="100"
+            height="100"
+          />
+          <h3>Valencia HC</h3>
+          <p><strong>Fundado:</strong> 1952</p>
+          <p><strong>Estadio:</strong> Fuente San Luis</p>
+          <p><strong>Capacidad:</strong> 9,000</p>
+          <p><strong>Jugadores:</strong> 14</p>
+          <p><strong>Entrenador:</strong> David Pisonero</p>
+          <p style="margin-top: 1rem">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Web oficial Valencia HC"
+            >
+              🌐 Web oficial
+            </a>
+          </p>
+        </article>
+
+        <!-- Equipo 4: Sevilla BM -->
+        <article class="cardEquipo" id="sevilla-bm">
+          <img
+            src="imagenes/imagenes_Logos/SEVILLA BM.png"
+            alt="escudo Sevilla BM"
+            width="50"
+            height="50"
+          />
+          <h3>Sevilla BM</h3>
+          <p><strong>Fundado:</strong> 1985</p>
+          <p><strong>Estadio:</strong> San Pablo</p>
+          <p><strong>Capacidad:</strong> 7,200</p>
+          <p><strong>Jugadores:</strong> 14</p>
+          <p><strong>Entrenador:</strong> Antonio Serradilla</p>
+          <p style="margin-top: 1rem">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Web oficial Sevilla BM"
+            >
+              🌐 Web oficial
+            </a>
+          </p>
+        </article>
+
+        <!-- Equipo 5: Zaragoza BM -->
+        <article class="cardEquipo" id="zaragoza-bm">
+          <img
+            src="imagenes/imagenes_Logos/ZARAGOZA BM.png"
+            alt="escudo Zaragoza BM"
+            width="80"
+            height="80"
+          />
+          <h3>Zaragoza BM</h3>
+          <p><strong>Fundado:</strong> 1933</p>
+          <p><strong>Estadio:</strong> Príncipe Felipe</p>
+          <p><strong>Capacidad:</strong> 10,744</p>
+          <p><strong>Jugadores:</strong> 15</p>
+          <p><strong>Entrenador:</strong> Jordi Ribera</p>
+          <p style="margin-top: 1rem">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Web oficial Zaragoza BM"
+            >
+              🌐 Web oficial
+            </a>
+          </p>
+        </article>
+
+        <!-- Equipo 6: Bilbao HC -->
+        <article class="cardEquipo" id="bilbao-hc">
+          <img
+            src="imagenes/imagenes_Logos/BILBAO.png"
+            alt="escudo Bilbao HC"
+            width="50"
+            height="50"
+          />
+          <h3>Bilbao HC</h3>
+          <p><strong>Fundado:</strong> 1990</p>
+          <p><strong>Estadio:</strong> Bilbao Arena</p>
+          <p><strong>Capacidad:</strong> 10,000</p>
+          <p><strong>Jugadores:</strong> 14</p>
+          <p><strong>Entrenador:</strong> Iñaki Aniz</p>
+          <p style="margin-top: 1rem">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Web oficial Bilbao HC"
+            >
+              🌐 Web oficial
+            </a>
+          </p>
+        </article>
+
+        <!-- Equipo 7: Granada HC -->
+        <article class="cardEquipo" id="granada-hc">
+          <img
+            src="imagenes/imagenes_Logos/GRANADA.png"
+            alt="escudo Granada HC"
+            width="40"
+            height="50"
+          />
+          <h3>Granada HC</h3>
+          <p><strong>Fundado:</strong> 1990</p>
+          <p><strong>Estadio:</strong> Palacio Deportes</p>
+          <p><strong>Capacidad:</strong> 8,000</p>
+          <p><strong>Jugadores:</strong> 13</p>
+          <p><strong>Entrenador:</strong> Manuel Montoya</p>
+          <p style="margin-top: 1rem">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Web oficial Granada HC"
+            >
+              🌐 Web oficial
+            </a>
+          </p>
+        </article>
+
+        <!-- Equipo 8: Vigo BM -->
+        <article class="cardEquipo" id="vigo-bm">
+          <img
+            src="imagenes/imagenes_Logos/VIGO.png"
+            alt="escudo  Vigo BM"
+            width="40"
+            height="50"
+          />
+          <h3>Vigo BM</h3>
+          <p><strong>Fundado:</strong> 1971</p>
+          <p><strong>Estadio:</strong> Fontes do Sar</p>
+          <p><strong>Capacidad:</strong> 6,500</p>
+          <p><strong>Jugadores:</strong> 15</p>
+          <p><strong>Entrenador:</strong> Alejandro Pose</p>
+          <p style="margin-top: 1rem">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Web oficial Vigo BM"
+            >
+              🌐 Web oficial
+            </a>
+          </p>
+        </article>
+      </div>
+
+      <!-- GALERÍA DE IMÁGENES DE EQUIPOS -->
+      <section class="seccion" id="galeria-equipos">
+        <h2>Galería Fotográfica de Equipos</h2>
+        <div class="galeriaImagenes">
+          <!-- Imagen 1: FC Barcelona -->
+          <figure class="galeriaItem">
+            <img
+              src="imagenes/equipo-barcelona.jpg"
+              alt="Plantilla completa del FC Barcelona posando en el Palau Blaugrana"
+              title="FC Barcelona - Temporada 2024/25"
+              width="800"
+              height="600"
+              border="0"
+              align="center"
+              hspace="10"
+              vspace="10"
+            />
+            <figcaption>FC Barcelona - Campeón vigente</figcaption>
+          </figure>
+
+          <!-- Imagen 2: Valencia HC -->
+          <figure class="galeriaItem">
+            <img
+              src="imagenes/equipo-valencia.jpg"
+              alt="Valencia HC en formación antes de un partido oficial"
+              title="Valencia HC - Equipo titular"
+              width="800"
+              height="600"
+              border="0"
+              hspace="10"
+              vspace="10"
+            />
+            <figcaption>Valencia HC - En formación</figcaption>
+          </figure>
+
+          <!-- Imagen 3: Zaragoza BM -->
+          <figure class="galeriaItem">
+            <img
+              src="imagenes/equipo-zaragoza.jpg"
+              alt="Jugadores del Zaragoza BM celebrando victoria en el Príncipe Felipe"
+              title="Zaragoza BM celebrando"
+              width="800"
+              height="400"
+              border="0"
+              align="center"
+              hspace="10"
+              vspace="10"
+            />
+            <figcaption>Zaragoza BM - Celebración de victoria</figcaption>
+          </figure>
         </div>
+      </section>
+
+      <!-- VIDEO: PRESENTACIÓN DE EQUIPOS -->
+      <section class="seccion" id="video-equipos">
+        <h2>📺 Vídeo Presentación Equipos 2024/25</h2>
+        <div class="videoContenedor">
+          <video
+            width="100%"
+            height="100%"
+            controls
+            poster="imagenes/video-equipos-poster.jpg"
+          >
+            <source src="videos/presentacion-equipos.mp4" type="video/mp4" />
+            <source src="videos/presentacion-equipos.webm" type="video/webm" />
+            <source src="videos/presentacion-equipos.ogg" type="video/ogg" />
+            Tu navegador no soporta el elemento de video.
+            <a href="videos/presentacion-equipos.mp4" title="Descargar video"
+              >Descargar video</a
+            >
+          </video>
+        </div>
+        <p style="text-align: center; margin-top: 1rem; color: #666">
+          <em>Presentación oficial de todos los equipos participantes</em>
+        </p>
+      </section>
+
+      <!-- INFORMACIÓN ADICIONAL -->
+      <section class="seccion" id="info-equipos">
+        <h2>Información de los Equipos</h2>
+        <div class="cardContenedor">
+          <!-- Card 1 -->
+          <article class="card">
+            <div class="cardIcono">👥</div>
+            <h3>Plantillas Completas</h3>
+            <p>
+              Cada equipo cuenta con una plantilla de entre 13 y 16 jugadores
+              profesionales, distribuidos en las diferentes posiciones:
+              porteros, extremos, laterales, centrales y pivotes.
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="cardIcono">🏟️</div>
+            <h3>Instalaciones de Élite</h3>
+            <p>
+              Todos los pabellones cumplen con los más altos estándares de
+              calidad establecidos por la federación, garantizando la mejor
+              experiencia tanto para jugadores como para aficionados.
+            </p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <div class="cardIcono">⚙️</div>
+            <h3>Cuerpo Técnico</h3>
+            <p>
+              Los equipos cuentan con entrenadores de primer nivel, preparadores
+              físicos especializados, fisioterapeutas y todo el staff necesario
+              para competir al máximo nivel.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ESTADÍSTICAS DE LOS EQUIPOS -->
+      <section class="seccion" id="estadisticas-equipos">
+        <h2>Estadísticas por Equipo</h2>
+        <div class="cajaCriterios">
+          <h3 style="color: var(--primary); margin-bottom: 1.5rem">
+            Datos Destacados de la Temporada
+          </h3>
+          <ul style="list-style: none; padding: 0">
+            <li style="margin-bottom: 1rem">
+              🏆 <strong>Líder:</strong> FC Barcelona con 10 puntos y 5
+              victorias consecutivas
+            </li>
+            <li style="margin-bottom: 1rem">
+              ⚡ <strong>Más goleador:</strong> FC Barcelona con 156 goles a
+              favor
+            </li>
+            <li style="margin-bottom: 1rem">
+              🛡️ <strong>Mejor defensa:</strong> Valencia HC con solo 136 goles
+              en contra
+            </li>
+            <li style="margin-bottom: 1rem">
+              🏠 <strong>Mayor capacidad:</strong> Atlético Madrid con 15,000
+              espectadores
+            </li>
+            <li style="margin-bottom: 1rem">
+              📅 <strong>Más veterano:</strong> Zaragoza BM fundado en 1933
+            </li>
+            <li style="margin-bottom: 1rem">
+              👨‍👩‍👧‍👦 <strong>Plantilla más amplia:</strong> FC Barcelona con 16
+              jugadores
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ENLACES EXTERNOS DE INTERÉS -->
+      <section class="seccion" id="enlaces-equipos">
+        <h2>🔗 Más Información</h2>
+        <ul class="linksExternos">
+          <li>
+            <a
+              href="https://www.asobal.es/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Liga ASOBAL oficial"
+            >
+              🏆 Liga ASOBAL - Competición Oficial
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.eurohandball.com/ehf-champions-league/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Champions League de Balonmano"
+            >
+              🌟 EHF Champions League
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.transfermarkt.es/balonmano"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Fichajes y traspasos"
+            >
+              📊 Transfermarkt - Fichajes
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- BOTÓN VOLVER ARRIBA -->
+      <div style="text-align: center; margin: 3rem 0">
+        <a
+          href="#inicio"
+          class="btnInterno"
+          title="Volver al inicio de la página"
+        >
+          ⬆ Volver arriba
+        </a>
+      </div>
     </main>
 
     <!-- PIE DE PÁGINA -->
     <footer>
-        <div class="footer-content">
-            <!-- Sección 1 -->
-            <div class="footer-section">
-                <h3>Federación Española de Balonmano</h3>
-                <p>Liderando el balonmano nacional desde 1942 con pasión, profesionalidad y compromiso con la excelencia deportiva.</p>
-                <p style="margin-top: 1.5rem;">
-                    <strong>Sede Central:</strong><br>
-                    Calle del Deporte Español, 28<br>
-                    28046 Madrid<br>
-                    España
-                </p>
-            </div>
-            
-            <!-- Sección 2 -->
-            <div class="footer-section">
-                <h3>Contacto Oficial</h3>
-                <ul>
-                    <li>📞 Teléfono: <a href="tel:+34915476200" title="Llamar">+34 91 547 62 00</a></li>
-                    <li>📧 Email: <a href="mailto:info@rfebm.es" title="Enviar email">info@rfebm.es</a></li>
-                    <li>📠 Fax: +34 91 547 62 01</li>
-                    <li>🌐 Web: <a href="https://www.rfebm.es" target="_blank" title="Web oficial">www.rfebm.es</a></li>
-                </ul>
-                <h3 style="margin-top: 1.5rem;">Horario de Atención</h3>
-                <p>Lunes a Viernes: 9:00 - 14:00 h<br>y 16:00 - 19:00 h</p>
-            </div>
-            
-            <!-- Sección 3 -->
-            <div class="footer-section">
-                <h3>Enlaces de Interés</h3>
-                <ul>
-                    <li><a href="#" title="Normativa">Normativa y Reglamentos</a></li>
-                    <li><a href="#" title="Licencias">Licencias Federativas</a></li>
-                    <li><a href="#" title="Formación">Formación de Entrenadores</a></li>
-                    <li><a href="#" title="Árbitros">Escuela de Árbitros</a></li>
-                    <li><a href="#" title="Sostenibilidad">Protocolo Sostenibilidad</a></li>
-                    <li><a href="#" title="Privacidad">Protección de Datos</a></li>
-                </ul>
-            </div>
-            
-            <!-- Sección 4 -->
-            <div class="footer-section">
-                <h3>Síguenos en Redes</h3>
-                <div class="social-links">
-                    <a href="https://facebook.com/rfebm" target="_blank" rel="noopener noreferrer" title="Facebook">f</a>
-                    <a href="https://twitter.com/rfebm" target="_blank" rel="noopener noreferrer" title="Twitter">𝕏</a>
-                    <a href="https://instagram.com/rfebm" target="_blank" rel="noopener noreferrer" title="Instagram">📷</a>
-                    <a href="https://youtube.com/rfebm" target="_blank" rel="noopener noreferrer" title="YouTube">▶</a>
-                    <a href="https://linkedin.com/company/rfebm" target="_blank" rel="noopener noreferrer" title="LinkedIn">in</a>
-                </div>
-                <h3 style="margin-top: 2rem;">Certificaciones</h3>
-                <p><strong>🌱 ISO 14001:2015</strong><br>Gestión Ambiental</p>
-                <p style="margin-top: 0.8rem;"><strong>⭐ ISO 9001:2015</strong><br>Gestión de Calidad</p>
-                <p style="margin-top: 0.8rem;"><strong>♿ Accesibilidad</strong><br>Compromiso inclusión</p>
-            </div>
+      <div class="footerContenido">
+        <!-- Sección 1: Información de la Federación -->
+        <div class="footerSeccion">
+          <h3>Federación Española de Balonmano</h3>
+          <p>
+            Liderando el balonmano nacional desde 1942 con pasión,
+            profesionalidad y compromiso con la excelencia deportiva.
+          </p>
+          <p style="margin-top: 1.5rem">
+            <strong>Sede Central:</strong><br />
+            Calle del Deporte Español, 28<br />
+            28046 Madrid<br />
+            España
+          </p>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2025 Federación Española de Balonmano (RFEBM). Todos los derechos reservados.</p>
-            <p style="margin-top: 0.8rem;">Proyecto de Transformación Digital 2024/2025</p>
+
+        <!-- Sección 2: Contacto -->
+        <div class="footerSeccion">
+          <h3>Contacto Oficial</h3>
+          <ul>
+            <li>
+              📞 Teléfono: <a href="tel:+34915476200">+34 91 547 62 00</a>
+            </li>
+            <li>📧 Email: <a href="mailto:info@rfebm.es">info@rfebm.es</a></li>
+            <li>📠 Fax: +34 91 547 62 01</li>
+            <li>
+              🌐 Web:
+              <a href="https://www.rfebm.es" target="_blank">www.rfebm.es</a>
+            </li>
+          </ul>
+          <h3 style="margin-top: 1.5rem">Horario de Atención</h3>
+          <p>Lunes a Viernes: 9:00 - 14:00 h<br />y 16:00 - 19:00 h</p>
         </div>
+
+        <!-- Sección 3: Enlaces de Interés -->
+        <div class="footerSeccion">
+          <h3>Enlaces de Interés</h3>
+          <ul>
+            <li>
+              <a href="#" title="Consultar normativa"
+                >Normativa y Reglamentos</a
+              >
+            </li>
+            <li>
+              <a href="#" title="Solicitar licencia">Licencias Federativas</a>
+            </li>
+            <li>
+              <a href="#" title="Cursos de entrenadores"
+                >Formación de Entrenadores</a
+              >
+            </li>
+            <li>
+              <a href="#" title="Información de árbitros"
+                >Escuela de Árbitros</a
+              >
+            </li>
+            <li>
+              <a href="#" title="Ver protocolo">Protocolo Sostenibilidad</a>
+            </li>
+            <li>
+              <a href="#" title="Política de privacidad">Protección de Datos</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Sección 4: Redes Sociales -->
+        <div class="footerSeccion">
+          <h3>Síguenos en Redes</h3>
+          <div class="redesLinks">
+            <a
+              href="https://facebook.com/rfebm"
+              target="_blank"
+              title="Facebook"
+              >f</a
+            >
+            <a href="https://twitter.com/rfebm" target="_blank" title="Twitter"
+              >𝕏</a
+            >
+            <a
+              href="https://instagram.com/rfebm"
+              target="_blank"
+              title="Instagram"
+              >📷</a
+            >
+            <a href="https://youtube.com/rfebm" target="_blank" title="YouTube"
+              >▶</a
+            >
+            <a
+              href="https://linkedin.com/company/rfebm"
+              target="_blank"
+              title="LinkedIn"
+              >in</a
+            >
+          </div>
+
+          <!-- Certificaciones -->
+          <h3 style="margin-top: 2rem">Certificaciones</h3>
+          <p><strong>🌱 ISO 14001:2015</strong><br />Gestión Ambiental</p>
+          <p style="margin-top: 0.8rem">
+            <strong>⭐ ISO 9001:2015</strong><br />Gestión de Calidad
+          </p>
+          <p style="margin-top: 0.8rem">
+            <strong>♿ Accesibilidad</strong><br />Compromiso inclusión
+          </p>
+        </div>
+      </div>
+
+      <!-- Pie de página inferior -->
+      <div class="footerAbajo">
+        <p>
+          &copy; 2025 Federación Española de Balonmano (RFEBM). Todos los
+          derechos reservados.
+        </p>
+        <p style="margin-top: 0.8rem">
+          Proyecto de Transformación Digital 2024/2025
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
