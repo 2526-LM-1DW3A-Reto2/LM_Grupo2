@@ -405,7 +405,7 @@ table {
 }
 
 /* Cabecera de la tabla */
-table thead {
+.tableTh {
   background: linear-gradient(135deg, var(--dark), var(--accent));
 }
 
