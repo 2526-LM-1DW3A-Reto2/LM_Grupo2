@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="clasificacion.xsl" type="text/xsl"?>
+<clasificacion
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="clasificacion.xsd">
+    
+    <equipo>
+        <posicion>1</posicion>
+        <nombre>Atlético de Madrid</nombre>
+        <pj>14</pj>
+        <pg>10</pg>
+        <pe>3</pe>
+        <pp>1</pp>
+        <gf>435</gf>
+        <gc>380</gc>
+        <dif>+55</dif>
+        <pts>23</pts>
+    </equipo>
+    <equipo>
+        <posicion>2</posicion>
+        <nombre>Vigo BM</nombre>
+        <pj>14</pj>
+        <pg>10</pg>
+        <pe>2</pe>
+        <pp>2</pp>
+        <gf>440</gf>
+        <gc>395</gc>
+        <dif>+45</dif>
+        <pts>22</pts>
+    </equipo>
+    <equipo>
+        <posicion>3</posicion>
+        <nombre>Granada HC</nombre>
+        <pj>14</pj>
+        <pg>8</pg>
+        <pe>4</pe>
+        <pp>2</pp>
+        <gf>420</gf>
+        <gc>388</gc>
+        <dif>+32</dif>
+        <pts>20</pts>
+    </equipo>
+    <equipo>
+        <posicion>4</posicion>
+        <nombre>Valencia HC</nombre>
+        <pj>14</pj>
+        <pg>7</pg>
+        <pe>5</pe>
+        <pp>2</pp>
+        <gf>405</gf>
+        <gc>385</gc>
+        <dif>+20</dif>
+        <pts>19</pts>
+    </equipo>
+    <equipo>
+        <posicion>5</posicion>
+        <nombre>FC Barcelona</nombre>
+        <pj>14</pj>
+        <pg>6</pg>
+        <pe>5</pe>
+        <pp>3</pp>
+        <gf>415</gf>
+        <gc>400</gc>
+        <dif>+15</dif>
+        <pts>17</pts>
+    </equipo>
+    <equipo>
+        <posicion>6</posicion>
+        <nombre>Sevilla BM</nombre>
+        <pj>14</pj>
+        <pg>4</pg>
+        <pe>4</pe>
+        <pp>6</pp>
+        <gf>380</gf>
+        <gc>405</gc>
+        <dif>-25</dif>
+        <pts>12</pts>
+    </equipo>
+    <equipo>
+        <posicion>7</posicion>
+        <nombre>Bilbao HC</nombre>
+        <pj>14</pj>
+        <pg>3</pg>
+        <pe>2</pe>
+        <pp>9</pp>
+        <gf>360</gf>
+        <gc>425</gc>
+        <dif>-65</dif>
+        <pts>8</pts>
+    </equipo>
+    <equipo>
+        <posicion>8</posicion>
+        <nombre>Zaragoza BM</nombre>
+        <pj>14</pj>
+        <pg>1</pg>
+        <pe>1</pe>
+        <pp>12</pp>
+        <gf>350</gf>
+        <gc>440</gc>
+        <dif>-90</dif>
+        <pts>3</pts>
+    </equipo>
+</clasificacion>
