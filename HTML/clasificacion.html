@@ -45,7 +45,9 @@
     <!-- Hoja de estilos -->
     <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- Archivo JavaScript -->
+    <!-- Importamos JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Enlazamos con el archivo script.js -->
     <script src="js/script.js"></script>
   </head>
   <body>
@@ -122,6 +124,23 @@
       <!-- TABLA DE CLASIFICACIÓN CON XML  -->
       <section class="seccion">
         <h2>Tabla de clasificación</h2>
+        <figure class="temporadasDropdown">
+          <button class="btnTemporadas btnInterno">Cambiar temporada</button>
+          <div class="dropdownContent">
+            <a href="xml/clasificacion2025_2026.xml" class="linkClasificacion"
+              >2025-2026</a
+            >
+            <a href="xml/clasificacion2024_2025.xml" class="linkClasificacion"
+              >2024-2025</a
+            >
+            <a href="xml/clasificacion2023_2024.xml" class="linkClasificacion"
+              >2023-2024</a
+            >
+            <a href="xml/clasificacion2022_2023.xml" class="linkClasificacion"
+              >2022-2023</a
+            >
+          </div>
+        </figure>
         <section id="tabla-clasificacion"></section>
       </section>
 

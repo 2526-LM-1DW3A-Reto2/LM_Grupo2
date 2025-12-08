@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clasificacion
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="clasificacion.xsd">
+    <temporada>2022 - 2023</temporada>
+    <equipo>
+        <posicion>1</posicion>
+        <nombre>Valencia HC</nombre>
+        <pj>14</pj>
+        <pg>13</pg>
+        <pe>0</pe>
+        <pp>1</pp>
+        <gf>490</gf>
+        <gc>370</gc>
+        <dif>+120</dif>
+        <pts>26</pts>
+    </equipo>
+    <equipo>
+        <posicion>2</posicion>
+        <nombre>Granada HC</nombre>
+        <pj>14</pj>
+        <pg>10</pg>
+        <pe>3</pe>
+        <pp>1</pp>
+        <gf>465</gf>
+        <gc>380</gc>
+        <dif>+85</dif>
+        <pts>23</pts>
+    </equipo>
+    <equipo>
+        <posicion>3</posicion>
+        <nombre>Vigo BM</nombre>
+        <pj>14</pj>
+        <pg>8</pg>
+        <pe>4</pe>
+        <pp>2</pp>
+        <gf>435</gf>
+        <gc>390</gc>
+        <dif>+45</dif>
+        <pts>20</pts>
+    </equipo>
+    <equipo>
+        <posicion>4</posicion>
+        <nombre>Atlético de Madrid</nombre>
+        <pj>14</pj>
+        <pg>7</pg>
+        <pe>4</pe>
+        <pp>3</pp>
+        <gf>420</gf>
+        <gc>405</gc>
+        <dif>+15</dif>
+        <pts>18</pts>
+    </equipo>
+    <equipo>
+        <posicion>5</posicion>
+        <nombre>Bilbao HC</nombre>
+        <pj>14</pj>
+        <pg>5</pg>
+        <pe>3</pe>
+        <pp>6</pp>
+        <gf>390</gf>
+        <gc>410</gc>
+        <dif>-20</dif>
+        <pts>13</pts>
+    </equipo>
+    <equipo>
+        <posicion>6</posicion>
+        <nombre>FC Barcelona</nombre>
+        <pj>14</pj>
+        <pg>4</pg>
+        <pe>3</pe>
+        <pp>7</pp>
+        <gf>385</gf>
+        <gc>420</gc>
+        <dif>-35</dif>
+        <pts>11</pts>
+    </equipo>
+    <equipo>
+        <posicion>7</posicion>
+        <nombre>Zaragoza BM</nombre>
+        <pj>14</pj>
+        <pg>2</pg>
+        <pe>2</pe>
+        <pp>10</pp>
+        <gf>360</gf>
+        <gc>440</gc>
+        <dif>-80</dif>
+        <pts>6</pts>
+    </equipo>
+    <equipo>
+        <posicion>8</posicion>
+        <nombre>Sevilla BM</nombre>
+        <pj>14</pj>
+        <pg>0</pg>
+        <pe>1</pe>
+        <pp>13</pp>
+        <gf>350</gf>
+        <gc>455</gc>
+        <dif>-105</dif>
+        <pts>1</pts>
+    </equipo>
+</clasificacion>

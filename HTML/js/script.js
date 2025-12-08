@@ -1,44 +1,76 @@
+// Define las rutas y selectores
 const xslFile = "xml/clasificacion.xsl";
-// Define el archivo XML que quieres cargar por defecto: la temporada actual.
-const xmlFile = "xml/clasificacion2025_2026.xml";
+const xmlFileDefault = "xml/clasificacion2025_2026.xml"; // Archivo XML de la temporada actual
+const containerId = "#tabla-clasificacion";
+const linkClass = ".linkClasificacion";
 
-// Función auxiliar para cargar cualquier archivo (XML o XSL)
-function cargarArchivo(filename, callback) {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      callback(this.responseXML);
-    } else if (this.readyState == 4 && this.status != 200) {
-      // Muestra error si el archivo no se encuentra (404) o hay otro problema
-      document.getElementById("tabla-clasificacion").innerHTML =
-        "<p>Error al cargar el archivo: " +
-        filename +
-        " (Revisa la ruta y el nombre del archivo)</p>";
-    }
-  };
-  xhttp.open("GET", filename, true);
-  xhttp.send();
-}
+let xslDoc = null; // Variable para almacenar el XSLT
 
-// 1. Carga inicial del XSLT y el XML
-cargarArchivo(xslFile, function (xslDoc) {
-  // Si el XSLT carga correctamente, procedemos a cargar el XML
-  cargarArchivo(xmlFile, function (xmlDoc) {
-    if (xmlDoc) {
-      // 2. Crear y aplicar el procesador XSLT
+// --- Función de Carga y Transformación ---
+function loadAndTransformXML(xmlFileName) {
+  if (!xslDoc) {
+    $(containerId).html(
+      "<p>Error: XSLT no cargado. No se puede realizar la transformación.</p>"
+    );
+    return;
+  }
+
+  $(containerId).html("Cargando clasificación de " + xmlFileName + "...");
+
+  $.ajax({
+    url: xmlFileName,
+    dataType: "xml",
+  })
+    .done(function (xmlDoc) {
+      // 1. Crear y aplicar el procesador XSLT (JS Nativo)
       const xsltProcessor = new XSLTProcessor();
       xsltProcessor.importStylesheet(xslDoc);
 
-      // 3. Transformación
+      // 2. Transformación
       const resultDocument = xsltProcessor.transformToFragment(
         xmlDoc,
         document
       );
 
-      // 4. Inserción en el contenedor
-      const container = document.getElementById("tabla-clasificacion");
-      container.innerHTML = ""; // Limpia cualquier mensaje de carga
-      container.appendChild(resultDocument);
-    }
+      // 3. Inserción en el contenedor usando jQuery
+      $(containerId).empty();
+      $(containerId).append(resultDocument);
+    })
+    .fail(function () {
+      $(containerId).html(
+        "<p>Error al cargar el XML: " +
+          xmlFileName +
+          " (Revisa que el archivo exista en esa ruta).</p>"
+      );
+    });
+}
+
+// --- Lógica Principal de Inicialización y Eventos ---
+$(document).ready(function () {
+  // 1. Cargar el XSLT una única vez al inicio de la página.
+  $.ajax({
+    url: xslFile,
+    dataType: "xml",
+  })
+    .done(function (doc) {
+      xslDoc = doc;
+
+      // 💡 LLAMADA CRUCIAL AÑADIDA:
+      // Una vez que el XSLT está listo, cargamos la tabla por defecto.
+      loadAndTransformXML(xmlFileDefault);
+    })
+    .fail(function () {
+      $(containerId).html(
+        "<p>Error crítico: No se pudo cargar el archivo XSLT.</p>"
+      );
+    });
+
+  // 2. Añadir el Listener de Clic a los enlaces del menú
+  $(linkClass).on("click", function (event) {
+    event.preventDefault();
+
+    const xmlToLoad = $(this).attr("href");
+
+    loadAndTransformXML(xmlToLoad);
   });
 });

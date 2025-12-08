@@ -3,6 +3,7 @@
     <xs:element name="clasificacion">
         <xs:complexType>
             <xs:sequence>
+                <xs:element name="temporada" type="xs:string" />
                 <xs:element name="equipo" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>

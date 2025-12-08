@@ -391,6 +391,44 @@ main {
 /* ================================= */
 /* TABLAS */
 /* ================================= */
+/* .temporadasDropdown {
+  display: flex;
+  flex-direction: row;
+} */
+.temporadasDropdown {
+  display: inline-block;
+}
+.temporadasDropdown .btnTemporadas {
+  display: inline-block;
+  background-color: grey;
+  font-family: inherit;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+.temporadasDropdown a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.temporadasDropdown .dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: lightgray;
+  min-width: 200px;
+  box-shadow: 4px 4px 10px hsla(0, 0%, 0%, 80%);
+}
+.temporadasDropdown:hover button {
+  background-color: black;
+}
+.temporadasDropdown:hover .dropdownContent {
+  display: block;
+}
+.temporadasDropdown a:hover {
+  background-color: grey;
+}
 .tablaContenedor {
   background: white;
   border-radius: 25px;
@@ -402,8 +440,13 @@ main {
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 3rem;
 }
-
+.tableTemporada {
+  color: black;
+  padding: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
 /* Cabecera de la tabla */
 .tableTh {
   background: linear-gradient(135deg, var(--dark), var(--accent));
