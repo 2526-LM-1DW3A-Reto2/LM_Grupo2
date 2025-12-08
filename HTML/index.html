@@ -41,6 +41,11 @@
 
     <!-- Hoja de estilos externa -->
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Importamos JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Enlazamos con el archivo script.js -->
+    <script src="js/script.js"></script>
   </head>
   <body>
     <!-- CABECERA PRINCIPAL -->
@@ -66,7 +71,13 @@
           </div>
         </div>
       </div>
-      <nav>
+      <div class="contenedorBurger">
+        <a class="btnBurger" id="btnToggle">
+          <p>Menú</p>
+          <img src="imagenes/menu.png" alt="" />
+        </a>
+      </div>
+      <nav id="menu">
         <ul>
           <li>
             <a href="index.html" class="active" title="Página de inicio"

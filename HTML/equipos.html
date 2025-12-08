@@ -44,12 +44,18 @@
 
     <!-- Hoja de estilos -->
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Importamos JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Enlazamos con el archivo script.js -->
+    <script src="js/script.js"></script>
   </head>
   <body>
     <!-- CABECERA PRINCIPAL -->
-    <header class="header" id="inicio">
+    <header class="header">
       <div class="headerContenido">
         <div class="headerLogo">
+          <!-- Logo de la federación -->
           <div class="logo" title="Federación Española de Balonmano">
             <img
               src="imagenes/logo.png"
@@ -68,24 +74,36 @@
           </div>
         </div>
       </div>
-      <!-- MENÚ DE NAVEGACIÓN -->
-      <nav>
+      <div class="contenedorBurger">
+        <a class="btnBurger" id="btnToggle">
+          <p>Menú</p>
+          <img src="imagenes/menu.png" alt="" />
+        </a>
+      </div>
+      <nav id="menu">
         <ul>
-          <li><a href="index.html" title="Ir a inicio">Inicio</a></li>
           <li>
-            <a href="equipos.html" class="active" title="Ver equipos"
+            <a href="index.html" title="Página de inicio">Inicio</a>
+          </li>
+          <li>
+            <a
+              href="equipos.html"
+              class="active"
+              title="Ver equipos participantes"
               >Equipos</a
             >
           </li>
           <li>
-            <a href="calendario.html" title="Ver calendario">Calendario</a>
+            <a href="calendario.html" title="Calendario de partidos"
+              >Calendario</a
+            >
           </li>
           <li>
-            <a href="clasificacion.html" title="Ver clasificación"
+            <a href="clasificacion.html" title="Clasificación general"
               >Clasificación</a
             >
           </li>
-          <li><a href="noticias.html" title="Ver noticias">Noticias</a></li>
+          <li><a href="noticias.html" title="Últimas noticias">Noticias</a></li>
         </ul>
       </nav>
     </header>

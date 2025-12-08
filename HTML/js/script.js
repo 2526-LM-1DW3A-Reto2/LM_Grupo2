@@ -78,3 +78,10 @@ $(document).ready(function () {
     loadAndTransformXML(xmlToLoad);
   });
 });
+
+// --- Lógica Principal de Inicialización y Eventos ---
+$(document).ready(function () {
+    $("#btnToggle").on("click", function() {
+        $("#menu").toggle();
+    });
+});

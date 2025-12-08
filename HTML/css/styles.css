@@ -65,6 +65,7 @@ body {
   background: var(--primary);
   opacity: 0.1;
   border-radius: 50%;
+  z-index: 1;
 }
 
 /* Contenedor del contenido de la cabecera */
@@ -132,7 +133,6 @@ body {
   backdrop-filter: blur(10px);
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
 }
-
 /* Lista del menú de navegación */
 .header nav ul {
   list-style: none;
@@ -176,6 +176,23 @@ body {
 
 .header nav ul li a.active {
   color: var(--primary);
+}
+.contenedorBurger {
+  width: auto;
+  display: none;
+  justify-content: center;
+}
+.btnBurger {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  text-decoration: none;
+  z-index: 1000;
+}
+.btnBurger img {
+  width: 25px;
 }
 
 /* ================================= */
@@ -1077,6 +1094,26 @@ footer::before {
   /* Footer en móvil */
   .footerContenido {
     padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .header nav {
+    width: 100%;
+  }
+  #menu {
+    display: none;
+  }
+  .header nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .header nav ul li a.active::before {
+    width: 100%;
+  }
+  .contenedorBurger {
+    display: flex;
+    padding: 0 0 1rem 0;
   }
 }
 
