@@ -1,10 +1,17 @@
 // Define las rutas y selectores
 const xslFile = "xml/clasificacion.xsl";
 const xmlFileDefault = "xml/clasificacion2025_2026.xml"; // Archivo XML de la temporada actual
-const containerId = "#tabla-clasificacion";
+const containerId = "#tablaClasificacion";
 const linkClass = ".linkClasificacion";
 
 let xslDoc = null; // Variable para almacenar el XSLT
+
+function loadFile(fileName) {
+  return $.ajax({
+    url: fileName,
+    dataType: "xml",
+  });
+}
 
 // --- Función de Carga y Transformación ---
 function loadAndTransformXML(xmlFileName) {
@@ -48,10 +55,7 @@ function loadAndTransformXML(xmlFileName) {
 // --- Lógica Principal de Inicialización y Eventos ---
 $(document).ready(function () {
   // 1. Cargar el XSLT una única vez al inicio de la página.
-  $.ajax({
-    url: xslFile,
-    dataType: "xml",
-  })
+  loadFile(xslFile)
     .done(function (doc) {
       xslDoc = doc;
 
