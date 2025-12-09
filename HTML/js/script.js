@@ -24,10 +24,7 @@ function loadAndTransformXML(xmlFileName) {
 
   $(containerId).html("Cargando clasificación de " + xmlFileName + "...");
 
-  $.ajax({
-    url: xmlFileName,
-    dataType: "xml",
-  })
+  loadFile(xmlFileName)
     .done(function (xmlDoc) {
       // 1. Crear y aplicar el procesador XSLT (JS Nativo)
       const xsltProcessor = new XSLTProcessor();
