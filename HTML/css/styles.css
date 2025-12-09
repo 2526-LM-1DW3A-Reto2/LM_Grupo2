@@ -90,20 +90,21 @@ body {
 /* Estilos del logo */
 .logo {
   width: 80px;
-  height: 80px;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2.5rem;
   box-shadow: 0 10px 30px rgba(8, 8, 8, 0.3);
-  transform: rotate(-5deg);
+  transform: rotate(0deg);
   transition: all 0.3s ease;
 }
-
+.logo img {
+  width: 80px;
+}
 /* Efecto hover en el logo */
 .logo:hover {
-  transform: rotate(0deg) scale(1.05);
+  transform: rotate(5deg) scale(1.05);
 }
 
 /* Título de la cabecera */
@@ -695,7 +696,7 @@ table tbody tr:nth-child(3) {
 /* ================================= */
 /* ARTÍCULOS DE NOTICIAS */
 /* ================================= */
-.news-article {
+.articulosNoticias {
   background: white;
   border-radius: 25px;
   overflow: hidden;
@@ -705,13 +706,13 @@ table tbody tr:nth-child(3) {
 }
 
 /* Efecto hover en artículos */
-.news-article:hover {
+.articulosNoticias:hover {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   transform: translateY(-5px);
 }
 
 /* Imagen del artículo */
-.news-image {
+.noticiaImagen {
   width: 100%;
   height: 350px;
   object-fit: cover;
@@ -734,7 +735,7 @@ table tbody tr:nth-child(3) {
 }
 
 /* Título del artículo */
-.news-article h3 {
+.articulosNoticias h3 {
   font-size: 1.8rem;
   color: var(--dark);
   margin-bottom: 1rem;
