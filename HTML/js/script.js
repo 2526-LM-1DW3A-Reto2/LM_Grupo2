@@ -1,6 +1,6 @@
 // Define las rutas y selectores
-const xslFile = "xml/clasificacion.xsl";
-const xmlFileDefault = "xml/clasificacion2025_2026.xml"; // Archivo XML de la temporada actual
+const xslFile = "xml/clasificacion/clasificacion.xsl";
+const xmlFileDefault = "xml/clasificacion/clasificacion2025_2026.xml"; // Archivo XML de la temporada actual
 const containerId = "#tablaClasificacion";
 const linkClass = ".linkClasificacion";
 
