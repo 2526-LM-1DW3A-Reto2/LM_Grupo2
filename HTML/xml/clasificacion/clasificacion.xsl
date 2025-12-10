@@ -18,8 +18,8 @@
           <th>PP</th>
           <th>GF</th>
           <th>GC</th>
-          <th>Dif.</th>
-          <th>Pts.</th>
+          <th>Dif</th>
+          <th>Pts</th>
         </tr>
       </thead>
       

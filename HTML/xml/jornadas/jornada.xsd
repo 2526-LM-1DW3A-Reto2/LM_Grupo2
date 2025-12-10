@@ -7,7 +7,9 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="equipoLocal" type="xs:string" />
+                            <xs:element name="escudoLocal" type="xs:string" />
                             <xs:element name="equipoVisitante" type="xs:string" />
+                            <xs:element name="escudoVisitante" type="xs:string" />
                             <xs:element name="golesLocal" type="xs:int" />
                             <xs:element name="golesVisitante" type="xs:int" />
                             <xs:element name="fecha" type="xs:string" />

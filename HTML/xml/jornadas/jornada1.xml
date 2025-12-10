@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="jornada.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<?xml-stylesheet href="file.xsl" type="text/xsl"?>
+<?xml-stylesheet href="jornada.xsl" type="text/xsl"?>
 <jornada>
     <partido>
         <equipoLocal>FC Barcelona</equipoLocal>
+        <escudoLocal>BARCELONA.png</escudoLocal>
         <equipoVisitante>Atlético de Madrid</equipoVisitante>
+        <escudoVisitante>ATLETICO MADRID.png</escudoVisitante>
         <golesLocal>32</golesLocal>
         <golesVisitante>28</golesVisitante>
         <fecha>05/10/2025</fecha>
@@ -12,7 +14,9 @@
     </partido>
     <partido>
         <equipoLocal>Valencia HC</equipoLocal>
+        <escudoLocal>VALENCIA.png</escudoLocal>
         <equipoVisitante>Sevila BM</equipoVisitante>
+        <escudoVisitante>SEVILLA BM.png</escudoVisitante>   
         <golesLocal>29</golesLocal>
         <golesVisitante>29</golesVisitante>
         <fecha>05/10/2025</fecha>
@@ -20,7 +24,9 @@
     </partido>
     <partido>
         <equipoLocal>Zaragoza BM</equipoLocal>
+        <escudoLocal>ZARAGOZA BM.png</escudoLocal>
         <equipoVisitante>Bilbao HC</equipoVisitante>
+        <escudoVisitante>BILBAO.png</escudoVisitante>
         <golesLocal>32</golesLocal>
         <golesVisitante>27</golesVisitante>
         <fecha>06/10/2025</fecha>
@@ -28,7 +34,9 @@
     </partido>
     <partido>
         <equipoLocal>Granada HC</equipoLocal>
+        <escudoLocal>GRANADA.png</escudoLocal>
         <equipoVisitante>Vigo BM</equipoVisitante>
+        <escudoVisitante>VIGO.png</escudoVisitante>
         <golesLocal>26</golesLocal>
         <golesVisitante>31</golesVisitante>
         <fecha>06/10/2025</fecha>
