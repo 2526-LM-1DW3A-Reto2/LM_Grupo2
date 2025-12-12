@@ -1,3 +1,5 @@
+// FUNCIÓN DE CARGA PARA LA CLASIFICACIÓN DE EQUIPOS
+
 // Define las rutas y selectores
 const xslFile = "xml/clasificacion/clasificacion.xsl";
 const xmlFileDefault = "xml/clasificacion/clasificacion2025_2026.xml"; // Archivo XML de la temporada actual
@@ -76,6 +78,8 @@ $(document).ready(function () {
   });
 });
 
+// FUNCIÓN DEl MENU DESPLEGABLE
+
 // --- Lógica Principal de Inicialización y Eventos ---
 $(document).ready(function () {
     $("#btnToggle").on("click", function() {
@@ -83,3 +87,65 @@ $(document).ready(function () {
     });
 });
 
+// FUNCIÓN DE CARGA DE JORNADAS
+$(document).ready(function() {
+    
+    // Define las rutas de los archivos y el ID del contenedor
+    const xmlFile = "xml/jornadas/jornada5.xml";
+    const xslFile = "xml/jornadas/jornada.xsl";
+    const containerId = "#contJornada";
+    
+    let xslDoc = null; 
+
+    // Función para cargar cualquier archivo XML o XSLT de forma asíncrona
+    function loadFile(fileName) {
+        return $.ajax({
+            url: fileName,
+            dataType: "xml"
+        });
+    }
+
+    // Función para realizar la transformación XSLT e inyectar el resultado
+    function transformAndDisplay(xmlDoc, xslDoc) {
+        try {
+            // 1. Crear el procesador XSLT
+            const xsltProcessor = new XSLTProcessor();
+            xsltProcessor.importStylesheet(xslDoc);
+            
+            // 2. Ejecutar la transformación
+            const resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
+            
+            // 3. Inyectar el resultado en el article
+            $(containerId).empty().append(resultDocument);
+
+        } catch (e) {
+            $(containerId).html("<p>Error de Transformación XSLT. Revisa la sintaxis del XML o XSL.</p>");
+        }
+    }
+
+    // --- Lógica Principal ---
+    
+    // 1. Cargar el XSLT primero
+    loadFile(xslFile)
+        .done(function (doc) {
+            xslDoc = doc; // Guarda el documento XSLT
+            
+            // 2. Si el XSLT carga, cargar el XML de la jornada 5
+            return loadFile(xmlFile); 
+        })
+        .then(function (xmlDoc) {
+            // 3. Si ambos cargan, transformar y mostrar
+            transformAndDisplay(xmlDoc, xslDoc);
+        })
+        .fail(function (jqXHR) {
+            // Manejar errores de carga
+            let errorMsg = `Error al cargar un archivo (${jqXHR.status}). Revisa las rutas: `;
+            if (xslDoc === null) {
+                errorMsg += xslFile;
+            } else {
+                errorMsg += xmlFile;
+            }
+            $(containerId).html(`<p>${errorMsg}</p>`);
+        });
+
+});

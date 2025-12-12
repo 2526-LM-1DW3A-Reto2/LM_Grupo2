@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="jornada.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<?xml-stylesheet href="jornada.xsl" type="text/xsl"?>
-<jornada>
+<jornada 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="jornada.xsd">
     <partido>
         <equipoLocal>FC Barcelona</equipoLocal>
         <escudoLocal>BARCELONA.png</escudoLocal>
