@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="clasificacion.xsl" type="text/xsl"?>
-<clasificacion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="clasificacion.xsd">
+<clasificacion>
     <temporada>2025 - 2026</temporada>
     <equipo>
         <posicion>1</posicion>
