@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<federacionBalonmano>
+<federacionBalonmano xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="general.xsd">
     <temporadas>
         <temporada id="2021_2022">
             <equipos>
@@ -601,5 +601,8 @@
                 </jugador>
             </jugadores>
         </temporada>
+        <clasificacion>
+             
+        </clasificacion>
     </temporadas>
 </federacionBalonmano>
