@@ -40,18 +40,6 @@
     </equipo>
     <equipo>
         <posicion>4</posicion>
-        <nombre>Vigo BM</nombre>
-        <pj>5</pj>
-        <pg>3</pg>
-        <pe>1</pe>
-        <pp>1</pp>
-        <gf>142</gf>
-        <gc>138</gc>
-        <dif>+4</dif>
-        <pts>7</pts>
-    </equipo>
-    <equipo>
-        <posicion>5</posicion>
         <nombre>Sevilla BM</nombre>
         <pj>5</pj>
         <pg>2</pg>
@@ -63,7 +51,7 @@
         <pts>6</pts>
     </equipo>
     <equipo>
-        <posicion>6</posicion>
+        <posicion>5</posicion>
         <nombre>Atlético de Madrid</nombre>
         <pj>5</pj>
         <pg>1</pg>
@@ -75,7 +63,7 @@
         <pts>3</pts>
     </equipo>
     <equipo>
-        <posicion>7</posicion>
+        <posicion>6</posicion>
         <nombre>Bilbao HC</nombre>
         <pj>5</pj>
         <pg>1</pg>
@@ -85,17 +73,5 @@
         <gc>146</gc>
         <dif>-16</dif>
         <pts>2</pts>
-    </equipo>
-    <equipo>
-        <posicion>8</posicion>
-        <nombre>Granada HC</nombre>
-        <pj>5</pj>
-        <pg>0</pg>
-        <pe>0</pe>
-        <pp>5</pp>
-        <gf>125</gf>
-        <gc>144</gc>
-        <dif>-19</dif>
-        <pts>0</pts>
     </equipo>
 </clasificacion>
