@@ -1,35 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    
     <xs:element name="federacionBalonmano">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="temporadas">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="temporada">
+
+                            <!-- Temporada -->
+                            <xs:element name="temporada" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
+
+                                        <!-- Equipos -->
                                         <xs:element name="equipos">
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element name="equipo" maxOccurs="unbounded">
                                                         <xs:complexType>
                                                             <xs:sequence>
-                                                                <xs:element name="nombre"
-                                                                    type="xs:string" />
+                                                                <xs:element name="nombre" type="xs:string"/>
                                                                 <xs:element name="escudo">
                                                                     <xs:complexType>
-                                                                        <xs:attribute name="url"
-                                                                            use="required" />
+                                                                        <xs:attribute name="url" type="xs:anyURI" use="required"/>
                                                                     </xs:complexType>
                                                                 </xs:element>
                                                             </xs:sequence>
-                                                            <xs:attribute name="id" use="required" />
+                                                            <xs:attribute name="id" type="xs:ID" use="required"/>
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
+
+                                        <!-- Jornadas -->
                                         <xs:element name="jornadas">
                                             <xs:complexType>
                                                 <xs:sequence>
@@ -39,130 +45,75 @@
                                                                 <xs:element name="partidos">
                                                                     <xs:complexType>
                                                                         <xs:sequence>
-                                                                            <xs:element
-                                                                                name="partido"
-                                                                                maxOccurs="unbounded">
+                                                                            <xs:element name="partido" maxOccurs="unbounded">
                                                                                 <xs:complexType>
                                                                                     <xs:sequence>
-                                                                                        <xs:element
-                                                                                            name="golesLocal"
-                                                                                            type="xs:string" />
-                                                                                        <xs:element
-                                                                                            name="golesVisitante"
-                                                                                            type="xs:string" />
-                                                                                        <xs:element
-                                                                                            name="estado"
-                                                                                            type="xs:string" />
+                                                                                        <xs:element name="golesLocal" type="xs:nonNegativeInteger"/><!--El tipo de type son números enteros y no puede ser negativos-->
+                                                                                        <xs:element name="golesVisitante" type="xs:nonNegativeInteger"/>
+                                                                                        <xs:element name="estado">
+                                                                                            <xs:simpleType>
+                                                                                                <xs:restriction base="xs:string">
+                                                                                                    <xs:enumeration value="jugado"/>
+                                                                                                    <xs:enumeration value="pendiente"/>
+                                                                                                    <xs:enumeration value="suspendido"/>
+                                                                                                </xs:restriction>
+                                                                                            </xs:simpleType>
+                                                                                        </xs:element>
                                                                                     </xs:sequence>
-                                                                                    <xs:attribute
-                                                                                        name="id"
-                                                                                        type="xs:ID"
-                                                                                        use="required" />
-                                                                                    <xs:attribute
-                                                                                        name="local"
-                                                                                        use="required">
-                                                                                        <xs:simpleType>
-                                                                                            <xs:restriction
-                                                                                                base="xs:string">
-                                                                                                <xs:enumeration
-                                                                                                    value="E001" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E002" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E003" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E004" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E005" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E006" />
-                                                                                            </xs:restriction>
-                                                                                        </xs:simpleType>
-                                                                                    </xs:attribute>
-                                                                                    <xs:attribute
-                                                                                        name="visitante"
-                                                                                        use="required">
-                                                                                        <xs:simpleType>
-                                                                                            <xs:restriction
-                                                                                                base="xs:string">
-                                                                                                <xs:enumeration
-                                                                                                    value="E001" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E002" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E003" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E004" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E005" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E006" />
-                                                                                            </xs:restriction>
-                                                                                        </xs:simpleType>
-                                                                                    </xs:attribute>
+                                                                                    <xs:attribute name="id" type="xs:ID" use="required"/><!--id se define como xs:ID porque identifica de forma única -->
+                                                                                    <xs:attribute name="local" type="xs:IDREF" use="required"/><!--Se usa xs:anyURI porque el atributo url almacena direcciones de recursos válidas-->
+                                                                                    <xs:attribute name="visitante" type="xs:IDREF" use="required"/>
                                                                                 </xs:complexType>
                                                                             </xs:element>
                                                                         </xs:sequence>
                                                                     </xs:complexType>
                                                                 </xs:element>
                                                             </xs:sequence>
-                                                            <xs:attribute name="id" type="xs:ID"
-                                                                use="required" />
+                                                            <xs:attribute name="id" type="xs:ID" use="required"/>
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
+
+                                        <!-- Jugadores -->
                                         <xs:element name="jugadores">
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element name="jugador" maxOccurs="unbounded">
                                                         <xs:complexType>
                                                             <xs:sequence>
-                                                                <xs:element name="nombre"
-                                                                    type="xs:string" />
-                                                                <xs:element name="altura"
-                                                                    type="xs:string" />
-                                                                <xs:element name="peso"
-                                                                    type="xs:string" />
-                                                                <xs:element name="dorsal"
-                                                                    type="xs:string" />
+                                                                <xs:element name="nombre" type="xs:string"/>
+                                                                <xs:element name="altura" type="xs:decimal"/>
+                                                                <xs:element name="peso" type="xs:decimal"/>
+                                                                <xs:element name="dorsal" type="xs:positiveInteger"/><!--El tipo de type solo permite números enteros-->
                                                                 <xs:element name="foto">
                                                                     <xs:complexType>
-                                                                        <xs:attribute name="url"
-                                                                            use="required" fixed="" />
+                                                                        <xs:attribute name="url" type="xs:anyURI" use="required"/>
                                                                     </xs:complexType>
                                                                 </xs:element>
                                                             </xs:sequence>
-                                                            <xs:attribute name="id" type="xs:ID"
-                                                                use="required" />
-                                                            <xs:attribute name="equipo"
-                                                                use="required">
-                                                                <xs:simpleType>
-                                                                    <xs:restriction base="xs:string">
-                                                                        <xs:enumeration value="E001" />
-                                                                        <xs:enumeration value="E002" />
-                                                                        <xs:enumeration value="E003" />
-                                                                        <xs:enumeration value="E004" />
-                                                                        <xs:enumeration value="E005" />
-                                                                        <xs:enumeration value="E006" />
-                                                                    </xs:restriction>
-                                                                </xs:simpleType>
-                                                            </xs:attribute>
+                                                            <xs:attribute name="id" type="xs:ID" use="required"/>
+                                                            <xs:attribute name="equipo" type="xs:IDREF" use="required"/> <!--equipo se define como xs:IDREF porque referencia al identificador de un equipo existente-->
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
+
                                     </xs:sequence>
-                                    <xs:attribute name="id" use="required" />
+                                    <xs:attribute name="id" type="xs:string" use="required"/>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="clasificacion" type="xs:string" />
+
+                            <!-- Clasificación -->
+                            <xs:element name="clasificacion" type="xs:string"/>
+
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
 </xs:schema>
