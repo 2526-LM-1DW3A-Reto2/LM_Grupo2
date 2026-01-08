@@ -15,30 +15,6 @@
     </equipo>
     <equipo>
         <posicion>2</posicion>
-        <nombre>Granada HC</nombre>
-        <pj>14</pj>
-        <pg>10</pg>
-        <pe>3</pe>
-        <pp>1</pp>
-        <gf>465</gf>
-        <gc>380</gc>
-        <dif>+85</dif>
-        <pts>23</pts>
-    </equipo>
-    <equipo>
-        <posicion>3</posicion>
-        <nombre>Vigo BM</nombre>
-        <pj>14</pj>
-        <pg>8</pg>
-        <pe>4</pe>
-        <pp>2</pp>
-        <gf>435</gf>
-        <gc>390</gc>
-        <dif>+45</dif>
-        <pts>20</pts>
-    </equipo>
-    <equipo>
-        <posicion>4</posicion>
         <nombre>Atlético de Madrid</nombre>
         <pj>14</pj>
         <pg>7</pg>
@@ -50,7 +26,7 @@
         <pts>18</pts>
     </equipo>
     <equipo>
-        <posicion>5</posicion>
+        <posicion>3</posicion>
         <nombre>Bilbao HC</nombre>
         <pj>14</pj>
         <pg>5</pg>
@@ -62,7 +38,7 @@
         <pts>13</pts>
     </equipo>
     <equipo>
-        <posicion>6</posicion>
+        <posicion>4</posicion>
         <nombre>FC Barcelona</nombre>
         <pj>14</pj>
         <pg>4</pg>
@@ -74,7 +50,7 @@
         <pts>11</pts>
     </equipo>
     <equipo>
-        <posicion>7</posicion>
+        <posicion>5</posicion>
         <nombre>Zaragoza BM</nombre>
         <pj>14</pj>
         <pg>2</pg>
@@ -86,7 +62,7 @@
         <pts>6</pts>
     </equipo>
     <equipo>
-        <posicion>8</posicion>
+        <posicion>6</posicion>
         <nombre>Sevilla BM</nombre>
         <pj>14</pj>
         <pg>0</pg>
