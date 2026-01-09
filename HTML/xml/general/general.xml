@@ -9,19 +9,19 @@
                     <escudo url="./imagenes/imagenes_Logos/BARCELONA.png"/>
                 </equipo>
                 <equipo id="E002">
-                    <nombre>Zaragoza BM</nombre>
+                    <nombre>Atlético Madrid</nombre>
                     <escudo url="./imagenes/imagenes_Logos/ZARAGOZABM.png"/>
                 </equipo>
                 <equipo id="E003">
-                    <nombre>Valencia HC</nombre>
+                    <nombre>Sevilla BM</nombre>
                     <escudo url="./imagenes/imagenes_Logos/VALENCIA.png"/>
                 </equipo>
                 <equipo id="E004">
-                    <nombre>Vigo BM</nombre>
+                    <nombre>Zaragoza BM</nombre>
                     <escudo url="./imagenes/imagenes_Logos/VIGO.png"/>
                 </equipo>
                 <equipo id="E005">
-                    <nombre>Sevilla BM</nombre>
+                    <nombre>Valencia HC</nombre>
                     <escudo url="./imagenes/imagenes_Logos/SEVILLABM.png"/>
                 </equipo>
                 <equipo id="E006">
@@ -30,190 +30,199 @@
                 </equipo>
             </equipos>
             <jornadas>
-                <jornada id="J001">
+                <jornada id="J021">
                     <partidos>
-                        <partido id="P1_1" local="E001" visitante="E005">
+                        <partido id="P21_1" local="E001" visitante="E002">
+                            <golesLocal>34</golesLocal>
+                            <golesVisitante>35</golesVisitante>
+                            <estado>Finalizado</estado>
+                        </partido>
+                        <partido id="P21_2" local="E003" visitante="E004">
+                            <golesLocal>23</golesLocal>
+                            <golesVisitante>35</golesVisitante>
+                            <estado>Finalizado</estado>
+                        </partido>
+                        <partido id="P21_3" local="E005" visitante="E006">
+                            <golesLocal>25</golesLocal>
+                            <golesVisitante>32</golesVisitante>
+                            <estado>Finalizado</estado>
+                        </partido>
+                    </partidos>
+                </jornada>
+
+                <jornada id="J022">
+                    <partidos>
+                        <partido id="P22_1" local="E001" visitante="E002">
+                            <golesLocal>35</golesLocal>
+                            <golesVisitante>27</golesVisitante>
+                            <estado>Finalizado</estado>
+                        </partido>
+                        <partido id="P22_2" local="E003" visitante="E004">
+                            <golesLocal>26</golesLocal>
+                            <golesVisitante>29</golesVisitante>
+                            <estado>Finalizado</estado>
+                        </partido>
+                        <partido id="P22_3" local="E005" visitante="E006">
+                            <golesLocal>32</golesLocal>
+                            <golesVisitante>23</golesVisitante>
+                            <estado>Finalizado</estado>
+                        </partido>
+                    </partidos>
+                </jornada>
+
+                <jornada id="J023">
+                    <partidos>
+                        <partido id="P23_1" local="E001" visitante="E002">
+                            <golesLocal>32</golesLocal>
+                            <golesVisitante>22</golesVisitante>
+                            <estado>Finalizado</estado>
+                        </partido>
+                        <partido id="P23_2" local="E003" visitante="E004">
+                            <golesLocal>26</golesLocal>
+                            <golesVisitante>28</golesVisitante>
+                            <estado>Finalizado</estado>
+                        </partido>
+                        <partido id="P23_3" local="E005" visitante="E006">
+                            <golesLocal>27</golesLocal>
+                            <golesVisitante>31</golesVisitante>
+                            <estado>Finalizado</estado>
+                        </partido>
+                    </partidos>
+                </jornada>
+
+                <jornada id="J024">
+                    <partidos>
+                        <partido id="P24_1" local="E001" visitante="E002">
+                            <golesLocal>22</golesLocal>
+                            <golesVisitante>29</golesVisitante>
+                            <estado>Finalizado</estado>
+                        </partido>
+                        <partido id="P24_2" local="E003" visitante="E004">
+                            <golesLocal>29</golesLocal>
+                            <golesVisitante>20</golesVisitante>
+                            <estado>Finalizado</estado>
+                        </partido>
+                        <partido id="P24_3" local="E005" visitante="E006">
+                            <golesLocal>27</golesLocal>
+                            <golesVisitante>24</golesVisitante>
+                            <estado>Finalizado</estado>
+                        </partido>
+                    </partidos>
+                </jornada>
+
+                <jornada id="J025">
+                    <partidos>
+                        <partido id="P25_1" local="E001" visitante="E002">
+                            <golesLocal>35</golesLocal>
+                            <golesVisitante>22</golesVisitante>
+                            <estado>Finalizado</estado>
+                        </partido>
+                        <partido id="P25_2" local="E003" visitante="E004">
+                            <golesLocal>30</golesLocal>
+                            <golesVisitante>33</golesVisitante>
+                            <estado>Finalizado</estado>
+                        </partido>
+                        <partido id="P25_3" local="E005" visitante="E006">
+                            <golesLocal>23</golesLocal>
+                            <golesVisitante>30</golesVisitante>
+                            <estado>Finalizado</estado>
+                        </partido>
+                    </partidos>
+                </jornada>
+
+                <jornada id="J026">
+                    <partidos>
+                        <partido id="P26_1" local="E001" visitante="E002">
                             <golesLocal>0</golesLocal>
                             <golesVisitante>0</golesVisitante>
                             <estado>Sin jugar</estado>
                         </partido>
-                        <partido id="P1_2" local="E002" visitante="E004">
+                        <partido id="P26_2" local="E003" visitante="E004">
                             <golesLocal>0</golesLocal>
                             <golesVisitante>0</golesVisitante>
                             <estado>Sin jugar</estado>
                         </partido>
-                        <partido id="P1_3" local="E003" visitante="E006">
+                        <partido id="P26_3" local="E005" visitante="E006">
                             <golesLocal>0</golesLocal>
                             <golesVisitante>0</golesVisitante>
                             <estado>Sin jugar</estado>
                         </partido>
                     </partidos>
                 </jornada>
-                <jornada id="J002">
+
+                <jornada id="J027">
                     <partidos>
-                        <partido id="P2_1" local="E005" visitante="E004">
+                        <partido id="P27_1" local="E001" visitante="E002">
                             <golesLocal>0</golesLocal>
                             <golesVisitante>0</golesVisitante>
                             <estado>Sin jugar</estado>
                         </partido>
-                        <partido id="P2_2" local="E001" visitante="E003">
+                        <partido id="P27_2" local="E003" visitante="E004">
                             <golesLocal>0</golesLocal>
                             <golesVisitante>0</golesVisitante>
                             <estado>Sin jugar</estado>
                         </partido>
-                        <partido id="P2_3" local="E006" visitante="E002">
+                        <partido id="P27_3" local="E005" visitante="E006">
                             <golesLocal>0</golesLocal>
                             <golesVisitante>0</golesVisitante>
                             <estado>Sin jugar</estado>
                         </partido>
                     </partidos>
                 </jornada>
-                <jornada id="J003">
+
+                <jornada id="J028">
                     <partidos>
-                        <partido id="P3_1" local="E004" visitante="E003">
+                        <partido id="P28_1" local="E001" visitante="E002">
                             <golesLocal>0</golesLocal>
                             <golesVisitante>0</golesVisitante>
                             <estado>Sin jugar</estado>
                         </partido>
-                        <partido id="P3_2" local="E005" visitante="E006">
+                        <partido id="P28_2" local="E003" visitante="E004">
                             <golesLocal>0</golesLocal>
                             <golesVisitante>0</golesVisitante>
                             <estado>Sin jugar</estado>
                         </partido>
-                        <partido id="P3_3" local="E002" visitante="E001">
+                        <partido id="P8_3" local="E005" visitante="E006">
                             <golesLocal>0</golesLocal>
                             <golesVisitante>0</golesVisitante>
                             <estado>Sin jugar</estado>
                         </partido>
                     </partidos>
                 </jornada>
-                <jornada id="J004">
+
+                <jornada id="J029">
                     <partidos>
-                        <partido id="P4_1" local="E003" visitante="E006">
+                        <partido id="P29_1" local="E001" visitante="E002">
                             <golesLocal>0</golesLocal>
                             <golesVisitante>0</golesVisitante>
                             <estado>Sin jugar</estado>
                         </partido>
-                        <partido id="P4_2" local="E004" visitante="E002">
+                        <partido id="P29_2" local="E003" visitante="E004">
                             <golesLocal>0</golesLocal>
                             <golesVisitante>0</golesVisitante>
                             <estado>Sin jugar</estado>
                         </partido>
-                        <partido id="P4_3" local="E001" visitante="E005">
+                        <partido id="P29_3" local="E005" visitante="E006">
                             <golesLocal>0</golesLocal>
                             <golesVisitante>0</golesVisitante>
                             <estado>Sin jugar</estado>
                         </partido>
                     </partidos>
                 </jornada>
-                <jornada id="J005">
+
+                <jornada id="J030">
                     <partidos>
-                        <partido id="P5_1" local="E006" visitante="E001">
+                        <partido id="P30_1" local="E001" visitante="E002">
                             <golesLocal>0</golesLocal>
                             <golesVisitante>0</golesVisitante>
                             <estado>Sin jugar</estado>
                         </partido>
-                        <partido id="P5_2" local="E003" visitante="E005">
+                        <partido id="P30_2" local="E003" visitante="E004">
                             <golesLocal>0</golesLocal>
                             <golesVisitante>0</golesVisitante>
                             <estado>Sin jugar</estado>
                         </partido>
-                        <partido id="P5_3" local="E002" visitante="E004">
-                            <golesLocal>0</golesLocal>
-                            <golesVisitante>0</golesVisitante>
-                            <estado>Sin jugar</estado>
-                        </partido>
-                    </partidos>
-                </jornada>
-                <jornada id="J006">
-                    <partidos>
-                        <partido id="P6_1" local="E005" visitante="E001">
-                            <golesLocal>0</golesLocal>
-                            <golesVisitante>0</golesVisitante>
-                            <estado>Sin jugar</estado>
-                        </partido>
-                        <partido id="P6_2" local="E004" visitante="E002">
-                            <golesLocal>0</golesLocal>
-                            <golesVisitante>0</golesVisitante>
-                            <estado>Sin jugar</estado>
-                        </partido>
-                        <partido id="P6_3" local="E006" visitante="E003">
-                            <golesLocal>0</golesLocal>
-                            <golesVisitante>0</golesVisitante>
-                            <estado>Sin jugar</estado>
-                        </partido>
-                    </partidos>
-                </jornada>
-                <jornada id="J007">
-                    <partidos>
-                        <partido id="P7_1" local="E004" visitante="E005">
-                            <golesLocal>0</golesLocal>
-                            <golesVisitante>0</golesVisitante>
-                            <estado>Sin jugar</estado>
-                        </partido>
-                        <partido id="P7_2" local="E003" visitante="E001">
-                            <golesLocal>0</golesLocal>
-                            <golesVisitante>0</golesVisitante>
-                            <estado>Sin jugar</estado>
-                        </partido>
-                        <partido id="P7_3" local="E002" visitante="E006">
-                            <golesLocal>0</golesLocal>
-                            <golesVisitante>0</golesVisitante>
-                            <estado>Sin jugar</estado>
-                        </partido>
-                    </partidos>
-                </jornada>
-                <jornada id="J008">
-                    <partidos>
-                        <partido id="P8_1" local="E003" visitante="E004">
-                            <golesLocal>0</golesLocal>
-                            <golesVisitante>0</golesVisitante>
-                            <estado>Sin jugar</estado>
-                        </partido>
-                        <partido id="P8_2" local="E006" visitante="E005">
-                            <golesLocal>0</golesLocal>
-                            <golesVisitante>0</golesVisitante>
-                            <estado>Sin jugar</estado>
-                        </partido>
-                        <partido id="P8_3" local="E001" visitante="E002">
-                            <golesLocal>0</golesLocal>
-                            <golesVisitante>0</golesVisitante>
-                            <estado>Sin jugar</estado>
-                        </partido>
-                    </partidos>
-                </jornada>
-                <jornada id="J009">
-                    <partidos>
-                        <partido id="P9_1" local="E006" visitante="E003">
-                            <golesLocal>0</golesLocal>
-                            <golesVisitante>0</golesVisitante>
-                            <estado>Sin jugar</estado>
-                        </partido>
-                        <partido id="P9_2" local="E002" visitante="E004">
-                            <golesLocal>0</golesLocal>
-                            <golesVisitante>0</golesVisitante>
-                            <estado>Sin jugar</estado>
-                        </partido>
-                        <partido id="P9_3" local="E005" visitante="E001">
-                            <golesLocal>0</golesLocal>
-                            <golesVisitante>0</golesVisitante>
-                            <estado>Sin jugar</estado>
-                        </partido>
-                    </partidos>
-                </jornada>
-                <jornada id="J010">
-                    <partidos>
-                        <partido id="P10_1" local="E001" visitante="E006">
-                            <golesLocal>0</golesLocal>
-                            <golesVisitante>0</golesVisitante>
-                            <estado>Sin jugar</estado>
-                        </partido>
-                        <partido id="P10_2" local="E005" visitante="E003">
-                            <golesLocal>0</golesLocal>
-                            <golesVisitante>0</golesVisitante>
-                            <estado>Sin jugar</estado>
-                        </partido>
-                        <partido id="P10_3" local="E004" visitante="E002">
+                        <partido id="P30_3" local="E005" visitante="E006">
                             <golesLocal>0</golesLocal>
                             <golesVisitante>0</golesVisitante>
                             <estado>Sin jugar</estado>
@@ -714,49 +723,34 @@
                     <foto url=""/>
                 </jugador>
             </jugadores>
-        <Entrenadores>
-            <Entrenador id="EN001" equipo="E001">
-                <nombre>Pep Guardiola</nombre>
+            <entrenadores>
+                <Entrenador id="EN001" equipo="E001">
+                    <nombre>Corinne Diacre</nombre>
+                    <nacionalidad>Francia</nacionalidad>
+                </Entrenador>
+                <Entrenador id="EN002" equipo="E002">
+                    <nombre>Xavi Pascual</nombre>
+                    <nacionalidad>España</nacionalidad>
+                </Entrenador>
+                <Entrenador id="EN003" equipo="E003">
+                    <nombre>Sarina Wiegman</nombre>
+                    <nacionalidad>Países Bajos</nacionalidad>
+                </Entrenador>
+                <Entrenador id="EN004" equipo="E004">
+                <nombre>Montse Puche</nombre>
                 <nacionalidad>España</nacionalidad>
-                <experiencia>16 años</experiencia>
-                <Anodeeleccion>2016</Anodeeleccion>
-            </Entrenador>
-            <Entrenador id="EN002" equipo="E002">
-                <nombre>Carlo Ancelotti</nombre>
-                <nacionalidad>Italia</nacionalidad>
-                <experiencia>28 años</experiencia>
-                <Anodeeleccion>2021</Anodeeleccion>
-            </Entrenador>
-            <Entrenador id="EN003" equipo="E003">
-                 <nombre>Jürgen Klopp</nombre>
-                 <nacionalidad>Alemania</nacionalidad>
-                 <experiencia>23 años</experiencia>
-                <Anodeeleccion>2015</Anodeeleccion>
-              </Entrenador>
-            <Entrenador id="EN004" equipo="E004">
-               <nombre>Diego Simeone</nombre>
-               <nacionalidad>Argentina</nacionalidad>
-               <experiencia>18 años</experiencia>
-               <Anodeeleccion>2011</Anodeeleccion>
-            </Entrenador>
-            <Entrenador id="EN005" equipo="E005">
-                <nombre>Luis de la Fuente</nombre>
-                <nacionalidad>España</nacionalidad>
-                <experiencia>11 años</experiencia>
-                <Anodeeleccion>2022</Anodeeleccion>
-            </Entrenador>
-            <Entrenador id="EN006" equipo="E006">
-                <nombre>Lionel Scaloni</nombre>
-                <nacionalidad>Argentina</nacionalidad>
-                <experiencia>6 años</experiencia>
-                <Anodeeleccion>2018</Anodeeleccion>
-            </Entrenador>
-        </Entrenadores>
-    </temporada>
-        <clasificacion>
-            <EDER_PUTO>
-                <PENES_DUROS>1</PENES_DUROS>
-            </EDER_PUTO>
-        </clasificacion>
+                </Entrenador>
+                <Entrenador id="EN005" equipo="E005">
+                    <nombre>Cristina Cabeza</nombre>
+                    <nacionalidad>España</nacionalidad>
+                </Entrenador>
+                <Entrenador id="EN006" equipo="E006">
+                    <nombre>Iraia Iturregi</nombre>
+                    <nacionalidad>España</nacionalidad>
+                </Entrenador>
+            </entrenadores>
+            <clasificacion>
+            </clasificacion>
+        </temporada>
     </temporadas>
 </federacionBalonmano>
