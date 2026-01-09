@@ -723,32 +723,6 @@
                     <foto url=""/>
                 </jugador>
             </jugadores>
-            <entrenadores>
-                <Entrenador id="EN001" equipo="E001">
-                    <nombre>Corinne Diacre</nombre>
-                    <nacionalidad>Francia</nacionalidad>
-                </Entrenador>
-                <Entrenador id="EN002" equipo="E002">
-                    <nombre>Xavi Pascual</nombre>
-                    <nacionalidad>España</nacionalidad>
-                </Entrenador>
-                <Entrenador id="EN003" equipo="E003">
-                    <nombre>Sarina Wiegman</nombre>
-                    <nacionalidad>Países Bajos</nacionalidad>
-                </Entrenador>
-                <Entrenador id="EN004" equipo="E004">
-                <nombre>Montse Puche</nombre>
-                <nacionalidad>España</nacionalidad>
-                </Entrenador>
-                <Entrenador id="EN005" equipo="E005">
-                    <nombre>Cristina Cabeza</nombre>
-                    <nacionalidad>España</nacionalidad>
-                </Entrenador>
-                <Entrenador id="EN006" equipo="E006">
-                    <nombre>Iraia Iturregi</nombre>
-                    <nacionalidad>España</nacionalidad>
-                </Entrenador>
-            </entrenadores>
             <clasificacion>
             </clasificacion>
         </temporada>

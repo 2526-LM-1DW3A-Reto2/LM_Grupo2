@@ -12,7 +12,7 @@
                                         <xs:element name="equipos">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="equipo" minOccurs="6" maxOccurs="unbounded">
+                                                    <xs:element name="equipo" maxOccurs="unbounded">
                                                         <xs:complexType>
                                                             <xs:sequence>
                                                                 <xs:element name="nombre"
@@ -46,10 +46,10 @@
                                                                                     <xs:sequence>
                                                                                         <xs:element
                                                                                             name="golesLocal"
-                                                                                            type="xs:int" />
+                                                                                            type="xs:string" />
                                                                                         <xs:element
                                                                                             name="golesVisitante"
-                                                                                            type="xs:int" />
+                                                                                            type="xs:string" />
                                                                                         <xs:element
                                                                                             name="estado"
                                                                                             type="xs:string" />
@@ -116,7 +116,7 @@
                                                                 <xs:element name="peso"
                                                                     type="xs:string" />
                                                                 <xs:element name="dorsal"
-                                                                    type="xs:int" />
+                                                                    type="xs:string" />
                                                                 <xs:element name="posicion"
                                                                     type="xs:string" />
                                                                 <xs:element name="foto">
@@ -141,26 +141,6 @@
                                                                     </xs:restriction>
                                                                 </xs:simpleType>
                                                             </xs:attribute>
-                                                        </xs:complexType>
-                                                    </xs:element>
-                                                </xs:sequence>
-                                            </xs:complexType>
-                                        </xs:element>
-                                        <xs:element name="entrenadores">
-                                            <xs:complexType>
-                                                <xs:sequence>
-                                                    <xs:element name="Entrenador"
-                                                        maxOccurs="unbounded">
-                                                        <xs:complexType>
-                                                            <xs:sequence>
-                                                                <xs:element name="nombre"
-                                                                    type="xs:string" />
-                                                                <xs:element name="nacionalidad"
-                                                                    type="xs:string" />
-                                                            </xs:sequence>
-                                                            <xs:attribute name="id" use="required" />
-                                                            <xs:attribute name="equipo"
-                                                                use="required" />
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
