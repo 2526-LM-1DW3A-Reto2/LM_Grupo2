@@ -46,10 +46,10 @@
                                                                                     <xs:sequence>
                                                                                         <xs:element
                                                                                             name="golesLocal"
-                                                                                            type="xs:string" />
+                                                                                            type="xs:int" />
                                                                                         <xs:element
                                                                                             name="golesVisitante"
-                                                                                            type="xs:string" />
+                                                                                            type="xs:int" />
                                                                                         <xs:element
                                                                                             name="estado"
                                                                                             type="xs:string" />
@@ -116,7 +116,7 @@
                                                                 <xs:element name="peso"
                                                                     type="xs:string" />
                                                                 <xs:element name="dorsal"
-                                                                    type="xs:string" />
+                                                                    type="xs:int" />
                                                                 <xs:element name="posicion"
                                                                     type="xs:string" />
                                                                 <xs:element name="foto">
