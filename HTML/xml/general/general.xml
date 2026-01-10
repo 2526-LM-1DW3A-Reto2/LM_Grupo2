@@ -234,80 +234,80 @@
                 <jugador id="JU001" equipo="E001">
                     <nombre>Eder Sánchez</nombre>
                     <nacionalidad>España</nacionalidad>
-                    <altura>176cm</altura>
-                    <peso>73kg</peso>
+                    <altura>182cm</altura>
+                    <peso>80kg</peso>
                     <dorsal>24</dorsal>
-                    <posicion>Defensa</posicion>
+                    <posicion>Extremo Izquierdo</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU002" equipo="E001">
                     <nombre>Rodney Javier Guachire</nombre>
                     <nacionalidad>Paraguay</nacionalidad>
-                    <altura>172cm</altura>
-                    <peso>50kg</peso>
+                    <altura>175cm</altura>
+                    <peso>72kg</peso>
                     <dorsal>33</dorsal>
-                    <posicion>Mediocampista</posicion>
+                    <posicion>Lateral Izquierdo</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU003" equipo="E001">
                     <nombre>Alex Xabier</nombre>
                     <nacionalidad>España</nacionalidad>
-                    <altura>176cm</altura>
-                    <peso>90kg</peso>
+                    <altura>188cm</altura>
+                    <peso>85kg</peso>
                     <dorsal>10</dorsal>
-                    <posicion>Delantero</posicion>
+                    <posicion>Central</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU004" equipo="E001">
                     <nombre>Igor López</nombre>
                     <nacionalidad>España</nacionalidad>
-                    <altura>173cm</altura>
-                    <peso>68kg</peso>
+                    <altura>180cm</altura>
+                    <peso>78kg</peso>
                     <dorsal>20</dorsal>
-                    <posicion>Defensa</posicion>
+                    <posicion>Extremo Derecho</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU005" equipo="E001">
                     <nombre>Jaciel Jesús Vilorio</nombre>
                     <nacionalidad>Republica Dominicana</nacionalidad>
-                    <altura>181cm</altura>
-                    <peso>75kg</peso>
+                    <altura>177cm</altura>
+                    <peso>74kg</peso>
                     <dorsal>60</dorsal>
-                    <posicion>Mediocampista</posicion>
+                    <posicion>Lateral Derecho</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU006" equipo="E001">
                     <nombre>Yulian</nombre>
                     <nacionalidad>colombia</nacionalidad>
-                    <altura>170cm</altura>
-                    <peso>65kg</peso>
+                    <altura>179cm</altura>
+                    <peso>73kg</peso>
                     <dorsal>78</dorsal>
-                    <posicion>Delantero</posicion>
+                    <posicion>Pivote</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU007" equipo="E001">
                     <nombre>Hugo Barrios</nombre>
                     <nacionalidad>España</nacionalidad>
-                    <altura>178cm</altura>
-                    <peso>74kg</peso>
+                    <altura>184cm</altura>
+                    <peso>82kg</peso>
                     <dorsal>80</dorsal>
-                    <posicion>Defensa</posicion>
+                    <posicion>Extremo Izquierdo</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU008" equipo="E001">
                     <nombre>Erik Rodríguez</nombre>
                     <nacionalidad>Portugal</nacionalidad>
-                    <altura>160cm</altura>
-                    <peso>70kg</peso>
+                    <altura>173cm</altura>
+                    <peso>69kg</peso>
                     <dorsal>50</dorsal>
-                    <posicion>Mediocampista</posicion>
+                    <posicion>Lateral Izquierdo</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU009" equipo="E001">
                     <nombre>Daniel Herrera</nombre>
                     <nacionalidad>Italia</nacionalidad>
-                    <altura>185cm</altura>
-                    <peso>80kg</peso>
+                    <altura>191cm</altura>
+                    <peso>88kg</peso>
                     <dorsal>12</dorsal>
                     <posicion>Portero</posicion>
                     <foto url=""/>
@@ -316,8 +316,8 @@
                 <jugador id="JU010" equipo="E002">
                     <nombre>Javier Torres</nombre>
                     <nacionalidad>España</nacionalidad>
-                    <altura>176cm</altura>
-                    <peso>73kg</peso>
+                    <altura>190cm</altura>
+                    <peso>86kg</peso>
                     <dorsal>1</dorsal>
                     <posicion>Portero</posicion>
                     <foto url=""/>
@@ -325,73 +325,73 @@
                 <jugador id="JU011" equipo="E002">
                     <nombre>Lucas Silva</nombre>
                     <nacionalidad>Brasil</nacionalidad>
-                    <altura>172cm</altura>
-                    <peso>70kg</peso>
+                    <altura>183cm</altura>
+                    <peso>81kg</peso>
                     <dorsal>2</dorsal>
-                    <posicion>Defensa</posicion>
+                    <posicion>Extremo Izquierdo</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU012" equipo="E002">
                     <nombre>Andrés Iniesta</nombre>
                     <nacionalidad>España</nacionalidad>
-                    <altura>176cm</altura>
-                    <peso>75kg</peso>
+                    <altura>171cm</altura>
+                    <peso>68kg</peso>
                     <dorsal>3</dorsal>
-                    <posicion>Mediocampista</posicion>
+                    <posicion>Central</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU013" equipo="E002">
                     <nombre>Felipe Melo</nombre>
                     <nacionalidad>Brasil</nacionalidad>
-                    <altura>173cm</altura>
-                    <peso>80kg</peso>
+                    <altura>183cm</altura>
+                    <peso>83kg</peso>
                     <dorsal>4</dorsal>
-                    <posicion>Mediocampista</posicion>
+                    <posicion>Pivote</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU014" equipo="E002">
                     <nombre>Gabriel Barbosa</nombre>
                     <nacionalidad>Brasil</nacionalidad>
-                    <altura>181cm</altura>
-                    <peso>78kg</peso>
+                    <altura>178cm</altura>
+                    <peso>75kg</peso>
                     <dorsal>5</dorsal>
-                    <posicion>Delantero</posicion>
+                    <posicion>Extremo Derecho</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU015" equipo="E002">
                     <nombre>Oscar Martínez</nombre>
                     <nacionalidad>España</nacionalidad>
-                    <altura>170cm</altura>
-                    <peso>65kg</peso>
+                    <altura>185cm</altura>
+                    <peso>80kg</peso>
                     <dorsal>6</dorsal>
-                    <posicion>Defensa</posicion>
+                    <posicion>Lateral Izquierdo</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU016" equipo="E002">
                     <nombre>Pablo Hernández</nombre>
                     <nacionalidad>España</nacionalidad>
-                    <altura>178cm</altura>
-                    <peso>74kg</peso>
+                    <altura>174cm</altura>
+                    <peso>70kg</peso>
                     <dorsal>7</dorsal>
-                    <posicion>Mediocampista</posicion>
+                    <posicion>Lateral Derecho</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU017" equipo="E002">
                     <nombre>Mateo García</nombre>
                     <nacionalidad>Portugal</nacionalidad>
-                    <altura>160cm</altura>
-                    <peso>70kg</peso>
+                    <altura>176cm</altura>
+                    <peso>72kg</peso>
                     <dorsal>8</dorsal>
-                    <posicion>Mediocampista</posicion>
+                    <posicion>Central</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU018" equipo="E002">
                     <nombre>Nicolás Otamendi</nombre>
                     <nacionalidad>Argentina</nacionalidad>
-                    <altura>185cm</altura>
-                    <peso>80kg</peso>
+                    <altura>183cm</altura>
+                    <peso>82kg</peso>
                     <dorsal>9</dorsal>
-                    <posicion>Defensa</posicion>
+                    <posicion>Extremo Izquierdo</posicion>
                     <foto url=""/>
                 </jugador>
 
@@ -401,16 +401,16 @@
                     <altura>165cm</altura>
                     <peso>60kg</peso>
                     <dorsal>10</dorsal>
-                    <posicion>Mediocampista</posicion>
+                    <posicion>Central</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU020" equipo="E003">
                     <nombre>Kylian Mbappé</nombre>
                     <nacionalidad>Francia</nacionalidad>
                     <altura>178cm</altura>
-                    <peso>73kg</peso>
+                    <peso>75kg</peso>
                     <dorsal>7</dorsal>
-                    <posicion>Delantero</posicion>
+                    <posicion>Extremo Derecho</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU021" equipo="E003">
@@ -419,7 +419,7 @@
                     <altura>175cm</altura>
                     <peso>68kg</peso>
                     <dorsal>11</dorsal>
-                    <posicion>Delantero</posicion>
+                    <posicion>Extremo Izquierdo</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU022" equipo="E003">
@@ -428,7 +428,7 @@
                     <altura>170cm</altura>
                     <peso>72kg</peso>
                     <dorsal>30</dorsal>
-                    <posicion>Delantero</posicion>
+                    <posicion>Central</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU023" equipo="E003">
@@ -437,7 +437,7 @@
                     <altura>184cm</altura>
                     <peso>82kg</peso>
                     <dorsal>4</dorsal>
-                    <posicion>Defensa</posicion>
+                    <posicion>Pivote</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU024" equipo="E003">
@@ -453,9 +453,9 @@
                     <nombre>Achraf Hakimi</nombre>
                     <nacionalidad>Marueccos</nacionalidad>
                     <altura>181cm</altura>
-                    <peso>75kg</peso>
+                    <peso>73kg</peso>
                     <dorsal>2</dorsal>
-                    <posicion>Defensa</posicion>
+                    <posicion>Extremo Derecho</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU026" equipo="E003">
@@ -464,7 +464,7 @@
                     <altura>183cm</altura>
                     <peso>79kg</peso>
                     <dorsal>3</dorsal>
-                    <posicion>Defensa</posicion>
+                    <posicion>Extremo Izquierdo</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU027" equipo="E003">
@@ -473,7 +473,7 @@
                     <altura>178cm</altura>
                     <peso>75kg</peso>
                     <dorsal>18</dorsal>
-                    <posicion>Delantero</posicion>
+                    <posicion>Lateral Derecho</posicion>
                     <foto url=""/>
                 </jugador>
 
@@ -483,7 +483,7 @@
                     <altura>185cm</altura>
                     <peso>81kg</peso>
                     <dorsal>9</dorsal>
-                    <posicion>Delantero</posicion>
+                    <posicion>Pivote</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU029" equipo="E004">
@@ -492,7 +492,7 @@
                     <altura>176cm</altura>
                     <peso>73kg</peso>
                     <dorsal>7</dorsal>
-                    <posicion>Delantero</posicion>
+                    <posicion>Extremo Izquierdo</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU030" equipo="E004">
@@ -501,7 +501,7 @@
                     <altura>172cm</altura>
                     <peso>66kg</peso>
                     <dorsal>10</dorsal>
-                    <posicion>Mediocampista</posicion>
+                    <posicion>Central</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU031" equipo="E004">
@@ -510,7 +510,7 @@
                     <altura>183cm</altura>
                     <peso>76kg</peso>
                     <dorsal>8</dorsal>
-                    <posicion>Mediocampista</posicion>
+                    <posicion>Central</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU032" equipo="E004">
@@ -528,7 +528,7 @@
                     <altura>185cm</altura>
                     <peso>84kg</peso>
                     <dorsal>14</dorsal>
-                    <posicion>Mediocampista</posicion>
+                    <posicion>Pivote</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU034" equipo="E004">
@@ -537,7 +537,7 @@
                     <altura>180cm</altura>
                     <peso>78kg</peso>
                     <dorsal>4</dorsal>
-                    <posicion>Defensa</posicion>
+                    <posicion>Lateral Izquierdo</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU035" equipo="E004">
@@ -546,16 +546,16 @@
                     <altura>186cm</altura>
                     <peso>78kg</peso>
                     <dorsal>3</dorsal>
-                    <posicion>Defensa</posicion>
+                    <posicion>Extremo Izquierdo</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU036" equipo="E004">
                     <nombre>Rodrygo</nombre>
                     <nacionalidad>Brasil</nacionalidad>
-                    <altura>175cm</altura>
-                    <peso>64kg</peso>
+                    <altura>174cm</altura>
+                    <peso>65kg</peso>
                     <dorsal>11</dorsal>
-                    <posicion>Delantero</posicion>
+                    <posicion>Extremo Derecho</posicion>
                     <foto url=""/>
                 </jugador>
 
@@ -565,7 +565,7 @@
                     <altura>175cm</altura>
                     <peso>71kg</peso>
                     <dorsal>11</dorsal>
-                    <posicion>Delantero</posicion>
+                    <posicion>Extremo Derecho</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU038" equipo="E005">
@@ -574,7 +574,7 @@
                     <altura>193cm</altura>
                     <peso>92kg</peso>
                     <dorsal>4</dorsal>
-                    <posicion>Defensa</posicion>
+                    <posicion>Pivote</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU039" equipo="E005">
@@ -592,7 +592,7 @@
                     <altura>180cm</altura>
                     <peso>70kg</peso>
                     <dorsal>66</dorsal>
-                    <posicion>Defensa</posicion>
+                    <posicion>Extremo Derecho</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU041" equipo="E005">
@@ -601,7 +601,7 @@
                     <altura>181cm</altura>
                     <peso>76kg</peso>
                     <dorsal>9</dorsal>
-                    <posicion>Delantero</posicion>
+                    <posicion>Central</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU042" equipo="E005">
@@ -610,7 +610,7 @@
                     <altura>174cm</altura>
                     <peso>70kg</peso>
                     <dorsal>6</dorsal>
-                    <posicion>Mediocampista</posicion>
+                    <posicion>Central</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU043" equipo="E005">
@@ -619,7 +619,7 @@
                     <altura>188cm</altura>
                     <peso>78kg</peso>
                     <dorsal>3</dorsal>
-                    <posicion>Mediocampista</posicion>
+                    <posicion>Pivote</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU044" equipo="E005">
@@ -628,16 +628,16 @@
                     <altura>178cm</altura>
                     <peso>70kg</peso>
                     <dorsal>26</dorsal>
-                    <posicion>Defensa</posicion>
+                    <posicion>Extremo Izquierdo</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU045" equipo="E005">
                     <nombre>Jordan Henderson</nombre>
                     <nacionalidad>Inglaterra</nacionalidad>
                     <altura>182cm</altura>
-                    <peso>67kg</peso>
+                    <peso>77kg</peso>
                     <dorsal>14</dorsal>
-                    <posicion>Mediocampista</posicion>
+                    <posicion>Central</posicion>
                     <foto url=""/>
                 </jugador>
 
@@ -656,7 +656,7 @@
                     <altura>185cm</altura>
                     <peso>81kg</peso>
                     <dorsal>9</dorsal>
-                    <posicion>Delantero</posicion>
+                    <posicion>Pivote</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU048" equipo="E006">
@@ -665,7 +665,7 @@
                     <altura>186cm</altura>
                     <peso>75kg</peso>
                     <dorsal>25</dorsal>
-                    <posicion>Mediocampista</posicion>
+                    <posicion>Central</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU049" equipo="E006">
@@ -674,7 +674,7 @@
                     <altura>177cm</altura>
                     <peso>75kg</peso>
                     <dorsal>6</dorsal>
-                    <posicion>Mediocampista</posicion>
+                    <posicion>Central</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU050" equipo="E006">
@@ -683,7 +683,7 @@
                     <altura>183cm</altura>
                     <peso>75kg</peso>
                     <dorsal>10</dorsal>
-                    <posicion>Delantero</posicion>
+                    <posicion>Extremo Izquierdo</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU051" equipo="E006">
@@ -692,7 +692,7 @@
                     <altura>176cm</altura>
                     <peso>77kg</peso>
                     <dorsal>7</dorsal>
-                    <posicion>Delantero</posicion>
+                    <posicion>Extremo Derecho</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU052" equipo="E006">
@@ -701,7 +701,7 @@
                     <altura>183cm</altura>
                     <peso>75kg</peso>
                     <dorsal>19</dorsal>
-                    <posicion>Defensa</posicion>
+                    <posicion>Extremo Izquierdo</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU053" equipo="E006">
@@ -710,7 +710,7 @@
                     <altura>178cm</altura>
                     <peso>71kg</peso>
                     <dorsal>29</dorsal>
-                    <posicion>Delantero</posicion>
+                    <posicion>Extremo Derecho</posicion>
                     <foto url=""/>
                 </jugador>
                 <jugador id="JU054" equipo="E006">
@@ -719,7 +719,7 @@
                     <altura>186cm</altura>
                     <peso>90kg</peso>
                     <dorsal>2</dorsal>
-                    <posicion>Defensa</posicion>
+                    <posicion>Pivote</posicion>
                     <foto url=""/>
                 </jugador>
             </jugadores>
