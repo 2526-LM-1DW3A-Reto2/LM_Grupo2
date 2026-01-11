@@ -1,45 +1,48 @@
 <!-- 
-    PÁGINA PRINCIPAL - FEDERACIÓN ESPAÑOLA DE BALONMANO
+    PÁGINA DE JUGADORES - FEDERACIÓN ESPAÑOLA DE BALONMANO
     Proyecto de Transformación Digital 2025/2026
-    Grupo: 1
-    Fecha: Octubre 2025
-    Descripción: Página de inicio de la web de la Federación Española de Balonmano
+    Fecha: Enero 2026
+    Descripción: Información detallada de todos los jugadores de la liga
+    Compatible con XML de aplicación Java
 -->
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <!-- Configuración de caracteres y viewport -->
+    <!-- Configuración básica -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Metadatos SEO -->
     <meta
       name="description"
-      content="Federación Española de Balonmano - Portal oficial con resultados, clasificación, calendario y noticias de la liga nacional de balonmano"
+      content="Conoce todos los jugadores de la liga española de balonmano - Perfiles, estadísticas y equipos"
     />
     <meta
       name="keywords"
-      content="balonmano, España, federación, RFEBM, liga, clasificación, resultados"
+      content="jugadores, balonmano, España, Barcelona, Valencia, Athletic, plantillas"
     />
     <meta name="author" content="Federación Española de Balonmano" />
     <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph para redes sociales -->
-    <meta property="og:title" content="Federación Española de Balonmano" />
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Jugadores - Federación Española de Balonmano"
+    />
     <meta
       property="og:description"
-      content="Portal oficial del balonmano español"
+      content="Información completa de todos los jugadores participantes"
     />
     <meta property="og:type" content="website" />
 
-    <!-- Título de la página -->
-    <title>Federación Española de Balonmano - Inicio</title>
+    <!-- Título -->
+    <title>Jugadores - Federación Española de Balonmano</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico" />
     <link rel="shortcut icon" href="imagenes/favicon.ico" />
 
-    <!-- Hoja de estilos externa -->
+    <!-- Hoja de estilos -->
     <link rel="stylesheet" href="css/styles.css" />
 
     <!-- Importamos JQuery -->
@@ -56,7 +59,7 @@
           <div class="logo" title="Federación Española de Balonmano">
             <img
               src="imagenes/imagenes_Logos/logoFederacion.webp"
-              alt="Partido de balonmano en el Palau Blaugrana"
+              alt="Logo Federación Española de Balonmano"
               title="Logo"
             />
           </div>
@@ -69,7 +72,7 @@
       <div class="contenedorBurger">
         <a class="btnBurger" id="btnToggle">
           <p>Menú</p>
-          <img src="imagenes/menu.png" alt="" />
+          <img src="imagenes/menu.png" alt="Menú" />
         </a>
       </div>
       <nav id="menu">
@@ -81,28 +84,153 @@
             <a href="equipos.html" title="Ver equipos participantes">Equipos</a>
           </li>
           <li>
-            <a href="jugadores.html" class="active" title="Ver jugadores"
-              >Jugadores</a
-            >
+            <a href="jugadores.html" class="active" title="Ver jugadores">Jugadores</a>
           </li>
           <li>
-            <a href="calendario.html" title="Calendario de partidos"
-              >Calendario</a
-            >
+            <a href="calendario.html" title="Calendario de partidos">Calendario</a>
           </li>
           <li>
-            <a href="clasificacion.html" title="Clasificación general"
-              >Clasificación</a
-            >
+            <a href="clasificacion.html" title="Clasificación general">Clasificación</a>
           </li>
           <li><a href="noticias.html" title="Últimas noticias">Noticias</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- MENÚ DE NAVEGACIÓN -->
-
     <!-- CONTENIDO PRINCIPAL -->
+    <main>
+      <h1 class="tituloPagina">Jugadores</h1>
+
+      <!-- Navegación rápida interna -->
+      <div class="quick-nav" style="margin-bottom: 3rem; text-align: center">
+        <a href="#estadisticas" class="btnInterno" title="Ver estadísticas">Estadísticas</a>
+        <a href="#filtros" class="btnInterno" style="margin-left: 1rem" title="Ver filtros">Filtrar</a>
+        <a href="#grid-jugadores" class="btnInterno" style="margin-left: 1rem" title="Ver jugadores">Jugadores</a>
+        <a href="#info-jugadores" class="btnInterno" style="margin-left: 1rem" title="Ver información">Información</a>
+      </div>
+
+      <!-- SELECTOR DE TEMPORADA -->
+      <div class="selectorTemporadaContainer" style="text-align: center; margin-bottom: 2rem;">
+        <label for="selectorTemporada" style="font-size: 1.1rem; font-weight: 600; color: var(--dark); margin-right: 1rem;">
+          📅 Seleccionar Temporada:
+        </label>
+        <select id="selectorTemporada" style="padding: 0.8rem 1.5rem; border: 2px solid var(--primary); border-radius: 10px; font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 600; color: var(--dark); cursor: pointer; background: white;">
+          <!-- Las opciones se cargarán dinámicamente -->
+        </select>
+      </div>
+
+      <!-- FILTROS DE BÚSQUEDA -->
+      <div class="filtrosJugadores" id="filtros">
+        <div class="filtroItem">
+          <label for="filtroEquipo">🏆 Filtrar por Equipo</label>
+          <select id="filtroEquipo">
+            <option value="todos">Todos los equipos</option>
+            <!-- Las opciones se cargarán dinámicamente desde XML -->
+          </select>
+        </div>
+        
+        <div class="filtroItem">
+          <label for="buscarJugador">🔍 Buscar Jugador</label>
+          <input type="text" id="buscarJugador" placeholder="Nombre del jugador...">
+        </div>
+        
+        <div class="filtroItem">
+          <label for="filtroPosicion">⚽ Filtrar por Posición</label>
+          <select id="filtroPosicion">
+            <option value="todos">Todas las posiciones</option>
+            <option value="Portero">Portero</option>
+            <option value="Extremo Izquierdo">Extremo Izquierdo</option>
+            <option value="Extremo Derecho">Extremo Derecho</option>
+            <option value="Lateral Izquierdo">Lateral Izquierdo</option>
+            <option value="Lateral Derecho">Lateral Derecho</option>
+            <option value="Central">Central</option>
+            <option value="Pivote">Pivote</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- ESTADÍSTICAS DESTACADAS -->
+      <section class="estadisticasDestacadas" id="estadisticas">
+        <h2 style="color: var(--primary); margin-bottom: 1.5rem; text-align: center;">📊 Estadísticas de la Liga</h2>
+        <div class="statsGrid">
+          <div class="statCard">
+            <span class="statNumero" id="totalJugadores">0</span>
+            <span class="statLabel">Jugadores Total</span>
+          </div>
+          <div class="statCard">
+            <span class="statNumero" id="totalEquipos">0</span>
+            <span class="statLabel">Equipos</span>
+          </div>
+          <div class="statCard">
+            <span class="statNumero" id="totalNacionalidades">0</span>
+            <span class="statLabel">Nacionalidades</span>
+          </div>
+          <div class="statCard">
+            <span class="statNumero" id="edadPromedio">0</span>
+            <span class="statLabel">Edad Promedio</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mensaje de carga -->
+      <div id="mensajeCarga" style="text-align: center; padding: 3rem;">
+        <p style="font-size: 1.2rem; color: var(--primary);">⏳ Cargando jugadores desde XML...</p>
+      </div>
+
+      <!-- GRID DE JUGADORES -->
+      <section class="seccion" id="grid-jugadores">
+        <h2>Jugadores de la Liga</h2>
+        <div class="gridJugadores" id="gridJugadores" style="display: none;">
+          <!-- Los jugadores se cargarán aquí dinámicamente desde XML -->
+        </div>
+      </section>
+      
+      <!-- Mensaje si no hay resultados -->
+      <div class="noResultados" id="noResultados" style="display: none;">
+        <h3>😔 No se encontraron jugadores</h3>
+        <p>Intenta cambiar los filtros de búsqueda</p>
+      </div>
+
+      <!-- INFORMACIÓN ADICIONAL -->
+      <section class="seccion" id="info-jugadores" style="margin-top: 4rem;">
+        <h2>Información sobre los Jugadores</h2>
+        <div class="cardContenedor">
+          <!-- Card 1 -->
+          <article class="card">
+            <div class="cardIcono">⭐</div>
+            <h3>Profesionales de Élite</h3>
+            <p>
+              Todos los jugadores de la liga son profesionales de alto nivel que cumplen con los estándares más exigentes de la federación, garantizando espectáculo y calidad en cada partido.
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="cardIcono">🎯</div>
+            <h3>Formación Continua</h3>
+            <p>
+              Los jugadores reciben formación técnica y táctica constante de sus cuerpos técnicos, además de preparación física especializada y seguimiento médico personalizado.
+            </p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <div class="cardIcono">🏅</div>
+            <h3>Diversidad Internacional</h3>
+            <p>
+              La liga cuenta con jugadores de múltiples nacionalidades, enriqueciendo la competición con diferentes estilos de juego y experiencias internacionales.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- BOTÓN VOLVER ARRIBA -->
+      <div style="text-align: center; margin: 3rem 0">
+        <a href="#" class="btnInterno" title="Volver al inicio de la página">
+          ⬆ Volver arriba
+        </a>
+      </div>
+    </main>
 
     <!-- PIE DE PÁGINA -->
     <footer>
