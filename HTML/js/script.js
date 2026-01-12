@@ -1,8 +1,8 @@
 // FUNCIÓN DE CARGA PARA LA CLASIFICACIÓN DE EQUIPOS
 
 // Define las rutas y selectores
-const xslFile = "xml/clasificacion/clasificacion.xsl";
-const xmlFileDefault = "xml/clasificacion/clasificacion2025_2026.xml"; // Archivo XML de la temporada actual
+const xslFile = "xml/general/general.xsl";
+const xmlFileDefault = "xml/general/general.xml"; // Archivo XML de la temporada actual
 const containerId = "#tablaClasificacion";
 const linkClass = ".linkClasificacion";
 
