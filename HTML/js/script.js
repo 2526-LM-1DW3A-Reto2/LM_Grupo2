@@ -123,3 +123,35 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function() {
+    // Cargamos ambos archivos simultáneamente
+    $.when(
+        $.ajax({ transport: "xml", url: "xml/data/general.xml", dataType: "xml" }),
+        $.ajax({ transport: "xml", url: "xml/XSLT/jugadores.xsl", dataType: "xml" })
+    ).done(function(xmlResponse, xslResponse) {
+        
+        // Obtenemos los documentos de las respuestas
+        const xml = xmlResponse[0];
+        const xsl = xslResponse[0];
+
+        // Verificamos si el navegador soporta XSLTProcessor (Chrome, Firefox, Safari, Edge)
+        if (window.XSLTProcessor) {
+            const xsltProcessor = new XSLTProcessor();
+            xsltProcessor.importStylesheet(xsl);
+            
+            // Realizamos la transformación
+            const resultDocument = xsltProcessor.transformToFragment(xml, document);
+            
+            // Inyectamos el resultado en la sección
+            $("#gridJugadores").empty().append(resultDocument);
+        } 
+        // Soporte para navegadores muy antiguos (Internet Explorer)
+        else if (window.ActiveXObject || "ActiveXObject" in window) {
+            const ex = xml.transformNode(xsl);
+            $("#gridJugadores").html(ex);
+        }
+    }).fail(function() {
+        console.error("Error al cargar los archivos XML o XSL.");
+        $("#gridJugadores").html("<p>Error al cargar la información de los jugadores.</p>");
+    });
+});
