@@ -121,37 +121,212 @@ $(document).ready(function () {
 
     loadAndTransformXML(xmlToLoad);
   });
+
+  // 4. Cargar jugadores si estamos en la página de jugadores
+  if ($('#gridJugadores').length) {
+    cargarJugadores();
+  }
+  
+  // 5. Eventos de filtros de jugadores
+  $(document).on('change', '#filtroEquipo', aplicarFiltros);
+  $(document).on('change', '#filtroPosicion', aplicarFiltros);
+  $(document).on('keyup', '#buscarJugador', aplicarFiltros);
 });
 
-$(document).ready(function() {
-    // Cargamos ambos archivos simultáneamente
-    $.when(
-        $.ajax({ transport: "xml", url: "xml/data/general.xml", dataType: "xml" }),
-        $.ajax({ transport: "xml", url: "xml/XSLT/jugadores.xsl", dataType: "xml" })
-    ).done(function(xmlResponse, xslResponse) {
-        
-        // Obtenemos los documentos de las respuestas
-        const xml = xmlResponse[0];
-        const xsl = xslResponse[0];
+// --- FUNCIONES PARA JUGADORES ---
 
-        // Verificamos si el navegador soporta XSLTProcessor (Chrome, Firefox, Safari, Edge)
-        if (window.XSLTProcessor) {
-            const xsltProcessor = new XSLTProcessor();
-            xsltProcessor.importStylesheet(xsl);
+function cargarJugadores() {
+    // Mostrar mensaje de carga
+    $('#mensajeCarga').show();
+    if ($('#gridJugadores').length) {
+        $('#gridJugadores').empty();
+    }
+
+    // Cargar el archivo XML
+    $.ajax({
+        url: 'xml/data/general.xml',
+        dataType: 'text',
+        success: function(xmlText) {
+            // Parseamos el XML
+            const xmlDoc = $.parseXML(xmlText);
             
-            // Realizamos la transformación
-            const resultDocument = xsltProcessor.transformToFragment(xml, document);
-            
-            // Inyectamos el resultado en la sección
-            $("#gridJugadores").empty().append(resultDocument);
-        } 
-        // Soporte para navegadores muy antiguos (Internet Explorer)
-        else if (window.ActiveXObject || "ActiveXObject" in window) {
-            const ex = xml.transformNode(xsl);
-            $("#gridJugadores").html(ex);
+            // Cargar el archivo XSLT
+            $.ajax({
+                url: 'xml/XSLT/jugadores.xsl',
+                dataType: 'text',
+                success: function(xsltText) {
+                    // Parseamos el XSLT
+                    const xsltDoc = $.parseXML(xsltText);
+                    
+                    // Realizar la transformación
+                    const processor = new XSLTProcessor();
+                    processor.importStylesheet(xsltDoc);
+                    const resultDoc = processor.transformToFragment(xmlDoc, document);
+                    
+                    // Insertar el resultado en el contenedor
+                    if ($('#gridJugadores').length) {
+                        $('#gridJugadores').empty().append(resultDoc);
+                    }
+                    
+                    // Ocultar mensaje de carga
+                    $('#mensajeCarga').hide();
+                    
+                    // Cargar filtros dinámicamente
+                    cargarFiltros(xmlDoc);
+                    
+                    // Cargar estadísticas
+                    cargarEstadisticas(xmlDoc);
+                    
+                    // Aplicar filtros si existen
+                    aplicarFiltros();
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error cargando XSLT:', error);
+                    $('#mensajeCarga').html('<p style="color: red;">❌ Error al cargar el archivo XSLT.</p>');
+                }
+            });
+        },
+        error: function(xhr, status, error) {
+            console.error('Error cargando XML:', error);
+            $('#mensajeCarga').html('<p style="color: red;">❌ Error al cargar el archivo XML de jugadores.</p>');
         }
-    }).fail(function() {
-        console.error("Error al cargar los archivos XML o XSL.");
-        $("#gridJugadores").html("<p>Error al cargar la información de los jugadores.</p>");
     });
-});
+}
+
+function cargarFiltros(xmlDoc) {
+    // Obtener equipos únicos del XML
+    const equipos = new Set();
+    $(xmlDoc).find('temporada').each(function() {
+        $(this).find('equipo').each(function() {
+            // Obtener solo el elemento nombre directo, no anidado
+            const nombreEquipo = $(this).children('nombre').first().text().trim();
+            if (nombreEquipo) {
+                equipos.add(nombreEquipo);
+            }
+        });
+    });
+    
+    // Agregar opciones al select de equipos (ordenadas alfabéticamente)
+    const $filtroEquipo = $('#filtroEquipo');
+    const equiposOrdenados = Array.from(equipos).sort();
+    equiposOrdenados.forEach(function(equipo) {
+        $filtroEquipo.append($('<option></option>').val(equipo).text(equipo));
+    });
+}
+
+function cargarEstadisticas(xmlDoc) {
+    // Total de jugadores únicos
+    const jugadoresUnicos = new Set();
+    $(xmlDoc).find('jugador').each(function() {
+        const nombre = $(this).find('nombre').text();
+        jugadoresUnicos.add(nombre);
+    });
+    $('#totalJugadores').text(jugadoresUnicos.size);
+    
+    // Total de equipos
+    const equipos = new Set();
+    $(xmlDoc).find('equipo').each(function() {
+        const nombreEquipo = $(this).find('nombre').text();
+        if (nombreEquipo) {
+            equipos.add(nombreEquipo);
+        }
+    });
+    $('#totalEquipos').text(equipos.size);
+    
+    // Altura promedio
+    let sumaAlturas = 0;
+    let conteoAlturas = 0;
+    $(xmlDoc).find('jugador').each(function() {
+        const altura = parseFloat($(this).find('altura').text());
+        if (!isNaN(altura)) {
+            sumaAlturas += altura;
+            conteoAlturas++;
+        }
+    });
+    const alturaPromedio = conteoAlturas > 0 ? (sumaAlturas / conteoAlturas).toFixed(2) : 0;
+    $('#edadPromedio').text(alturaPromedio + ' m');
+    
+    // Nacionalidades (si existen en el XML)
+    const nacionalidades = new Set();
+    $(xmlDoc).find('jugador').each(function() {
+        const nacionalidad = $(this).find('nacionalidad').text();
+        if (nacionalidad) {
+            nacionalidades.add(nacionalidad);
+        }
+    });
+    $('#totalNacionalidades').text(nacionalidades.size);
+}
+
+function aplicarFiltros() {
+    const equipoSeleccionado = $('#filtroEquipo').val();
+    const posicionSeleccionada = $('#filtroPosicion').val();
+    const nombreBuscado = $('#buscarJugador').val().toLowerCase();
+    
+    let contadorVisibles = 0;
+    
+    // Filtrar las tarjetas de jugadores
+    $('.cardJugador').each(function() {
+        const $card = $(this);
+        
+        // Obtener datos de la tarjeta
+        const nombre = $card.find('h3').text().toLowerCase();
+        
+        // Obtener todo el contenido de texto
+        const textoCompleto = $card.text();
+        
+        // Extraer el equipo (búsqueda más flexible)
+        let equipoCard = '';
+        const regexEquipo = /Equipo:\s*([^\n]+)/;
+        const matchEquipo = textoCompleto.match(regexEquipo);
+        if (matchEquipo) {
+            equipoCard = matchEquipo[1].trim();
+        }
+        
+        // Extraer la posición
+        let posicionCard = '';
+        const regexPosicion = /Posición:\s*([^\n]+)/;
+        const matchPosicion = textoCompleto.match(regexPosicion);
+        if (matchPosicion) {
+            posicionCard = matchPosicion[1].trim();
+        }
+        
+        // Aplicar filtros
+        let mostrar = true;
+        
+        // Filtro por equipo
+        if (equipoSeleccionado && equipoSeleccionado !== 'todos') {
+            if (!equipoCard || equipoCard !== equipoSeleccionado) {
+                mostrar = false;
+            }
+        }
+        
+        // Filtro por posición
+        if (posicionSeleccionada && posicionSeleccionada !== 'todos') {
+            if (!posicionCard || posicionCard !== posicionSeleccionada) {
+                mostrar = false;
+            }
+        }
+        
+        // Filtro por nombre
+        if (nombreBuscado && nombreBuscado.trim() !== '') {
+            if (!nombre.includes(nombreBuscado)) {
+                mostrar = false;
+            }
+        }
+        
+        // Mostrar u ocultar
+        if (mostrar) {
+            $card.show();
+            contadorVisibles++;
+        } else {
+            $card.hide();
+        }
+    });
+    
+    // Mostrar mensaje si no hay resultados
+    if (contadorVisibles === 0) {
+        $('#noResultados').show();
+    } else {
+        $('#noResultados').hide();
+    }
+}
