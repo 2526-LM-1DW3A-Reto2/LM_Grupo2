@@ -6,33 +6,32 @@
                 <xs:element name="temporadas">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="temporada">
+                            <xs:element name="temporada" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="equipos">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="equipo" minOccurs="6" maxOccurs="unbounded">
+                                                    <xs:element name="equipo" maxOccurs="unbounded">
                                                         <xs:complexType>
                                                             <xs:sequence>
                                                                 <xs:element name="nombre"
                                                                     type="xs:string" />
                                                                 <xs:element name="ganados"
-                                                                    type="xs:int" />
+                                                                    type="xs:string" />
                                                                 <xs:element name="perdidos"
-                                                                    type="xs:int" />
+                                                                    type="xs:string" />
                                                                 <xs:element name="empatados"
-                                                                    type="xs:int" />
+                                                                    type="xs:string" />
                                                                 <xs:element name="golesFavor"
-                                                                    type="xs:int" />
+                                                                    type="xs:string" />
                                                                 <xs:element name="golesContra"
-                                                                    type="xs:int" />
+                                                                    type="xs:string" />
                                                                 <xs:element name="jugadores">
                                                                     <xs:complexType>
                                                                         <xs:sequence>
                                                                             <xs:element
                                                                                 name="jugador"
-                                                                                minOccurs="9"
                                                                                 maxOccurs="unbounded">
                                                                                 <xs:complexType>
                                                                                     <xs:sequence>
@@ -66,7 +65,6 @@
                                                                                     </xs:sequence>
                                                                                     <xs:attribute
                                                                                         name="id"
-                                                                                        type="xs:ID"
                                                                                         use="required" />
                                                                                     <xs:attribute
                                                                                         name="equipo"
@@ -133,7 +131,6 @@
                                                                                     </xs:sequence>
                                                                                     <xs:attribute
                                                                                         name="id"
-                                                                                        type="xs:ID"
                                                                                         use="required" />
                                                                                     <xs:attribute
                                                                                         name="local"
@@ -171,8 +168,7 @@
                                                                     </xs:complexType>
                                                                 </xs:element>
                                                             </xs:sequence>
-                                                            <xs:attribute name="id" type="xs:ID"
-                                                                use="required" />
+                                                            <xs:attribute name="id" use="required" />
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>

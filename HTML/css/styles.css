@@ -447,12 +447,11 @@ main {
 .temporadasDropdown a:hover {
   background-color: grey;
 }
-.tablaContenedor {
-  background: white;
-  border-radius: 25px;
-  overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+#selectorTemporada option {
+  background-color: lightgray;
+  width: 200px;
 }
+
 
 /* Tabla general */
 table {
@@ -463,17 +462,17 @@ table {
 .tableTemporada {
   color: black;
   padding: 0 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 /* Cabecera de la tabla */
-.tableTh {
+.tableTemporada thead {
   background: linear-gradient(135deg, var(--dark), var(--accent));
 }
 
 /* Celdas de cabecera */
 table th {
   padding: 1.5rem 1rem;
-  text-align: left;
+  text-align: centerleft;
   color: white;
   font-weight: 600;
   text-transform: uppercase;
@@ -486,6 +485,7 @@ table td {
   padding: 1.5rem 1rem;
   color: var(--dark);
   border-bottom: 1px solid #f0f0f0;
+  text-align: center;
 }
 
 /* Filas del cuerpo de la tabla */
@@ -501,14 +501,16 @@ table tbody tr:hover {
 
 /* Primera fila (líder) con fondo especial */
 table tbody tr:nth-child(1) {
-  background: linear-gradient(90deg, rgba(196, 30, 58, 0.1), transparent);
+  background: linear-gradient(90deg, rgba(255, 217, 0, 0.227), transparent);
   font-weight: 600;
 }
 
 /* Segunda y tercera fila (podio) */
-table tbody tr:nth-child(2),
-table tbody tr:nth-child(3) {
-  background: linear-gradient(90deg, rgba(255, 196, 0, 0.1), transparent);
+table tbody tr:nth-child(2) {
+  background: linear-gradient(90deg, rgba(109, 109, 109, 0.186), transparent);
+}
+table tbody tr:last-child {
+  background: linear-gradient(90deg, rgba(255, 0, 0, 0.073), transparent);
 }
 
 /* ================================= */
@@ -1294,6 +1296,14 @@ footer::before {
   nav ul li a {
     padding: 1rem 1.5rem;
   }
+  .tablaContenedor {
+  overflow-x: auto;
+  width: 100%;
+  }
+  #selectorTemporada option {
+    font-size: 10px;
+    
+  }
 }
 
 /* Móviles y pantallas pequeñas */
@@ -1343,6 +1353,18 @@ footer::before {
   /* Cards en columna en móvil */
   .cards {
     grid-template-columns: 1fr;
+  }
+  .tablaContenedor {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  table thead th {
+    font-size: 12px;
+    padding: 10px;
+  }
+  table tbody td {
+    font-size: 10px;
+    padding: 10px 0;
   }
 
   /* Footer en móvil */

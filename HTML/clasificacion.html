@@ -133,31 +133,13 @@
       <section class="seccion">
         <h2>Tabla de clasificación</h2>
         <figure class="temporadasDropdown">
-          <button class="btnTemporadas btnInterno">Cambiar temporada</button>
-          <div class="dropdownContent">
-            <a
-              href="xml/clasificacion/clasificacion2025_2026.xml"
-              class="linkClasificacion"
-              >2025-2026</a
-            >
-            <a
-              href="xml/clasificacion/clasificacion2024_2025.xml"
-              class="linkClasificacion"
-              >2024-2025</a
-            >
-            <a
-              href="xml/clasificacion/clasificacion2023_2024.xml"
-              class="linkClasificacion"
-              >2023-2024</a
-            >
-            <a
-              href="xml/clasificacion/clasificacion2022_2023.xml"
-              class="linkClasificacion"
-              >2022-2023</a
-            >
-          </div>
+          <select id="selectorTemporada" class="btnTemporadas btnInterno">
+            <option value="">Cargando temporadas...</option>
+          </select>
         </figure>
-        <section id="tablaClasificacion"></section>
+        <div class="tablaContenedor">
+          <section id="tablaClasificacion"></section>
+        </div>
       </section>
 
       <!-- TABLA DE CLASIFICACIÓN -->
@@ -323,122 +305,6 @@
               experto</em
             >
           </p>
-        </div>
-      </section>
-
-      <!-- ESTADÍSTICAS DESTACADAS -->
-      <section class="seccion" id="estadisticas">
-        <h2>Estadísticas Destacadas</h2>
-        <div class="cardContenedor">
-          <!-- Card 1: Líder Invicto -->
-          <article class="card">
-            <div class="cardIcono">👑</div>
-            <h3>Líder Invicto</h3>
-            <p>
-              El <strong>FC Barcelona</strong> se mantiene como único equipo
-              invicto de la competición con 5 victorias consecutivas,
-              demostrando su superioridad en todas las facetas del juego.
-            </p>
-          </article>
-
-          <!-- Card 2: Lucha por el Podio -->
-          <article class="card">
-            <div class="cardIcono">⚔️</div>
-            <h3>Lucha por el Podio</h3>
-            <p>
-              <strong>Zaragoza BM</strong> y
-              <strong>Valencia HC</strong> comparten 8 puntos en la zona noble
-              de la tabla, protagonizando una emocionante batalla por la segunda
-              posición.
-            </p>
-          </article>
-
-          <!-- Card 3: Máximo Goleador -->
-          <article class="card">
-            <div class="cardIcono">📊</div>
-            <h3>Máximo Goleador</h3>
-            <p>
-              El FC Barcelona lidera también en ataque con 156 goles a favor,
-              mientras que el Valencia HC presenta la mejor defensa con solo 136
-              goles en contra.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <!-- COMPARATIVA ESTADÍSTICA -->
-      <section class="seccion" id="comparativa">
-        <h2>Comparativa Estadística</h2>
-        <div class="cajaCriterios">
-          <h3 style="color: var(--primary); margin-bottom: 1.5rem">
-            Rankings por Categoría
-          </h3>
-
-          <div style="margin-bottom: 2rem">
-            <h4 style="color: var(--accent); margin-bottom: 0.5rem">
-              🥇 Mejor Ataque
-            </h4>
-            <ol style="margin-left: 2rem">
-              <li>FC Barcelona - 156 goles</li>
-              <li>Zaragoza BM - 148 goles</li>
-              <li>Valencia HC - 145 goles</li>
-            </ol>
-          </div>
-
-          <div style="margin-bottom: 2rem">
-            <h4 style="color: var(--accent); margin-bottom: 0.5rem">
-              🛡️ Mejor Defensa
-            </h4>
-            <ol style="margin-left: 2rem">
-              <li>Zaragoza BM - 135 goles en contra</li>
-              <li>Valencia HC - 136 goles en contra</li>
-              <li>FC Barcelona - 138 goles en contra</li>
-            </ol>
-          </div>
-
-          <div>
-            <h4 style="color: var(--accent); margin-bottom: 0.5rem">
-              ⚡ Mayor Diferencia de Goles
-            </h4>
-            <ol style="margin-left: 2rem">
-              <li>FC Barcelona - +18</li>
-              <li>Zaragoza BM - +13</li>
-              <li>Valencia HC - +9</li>
-            </ol>
-          </div>
-        </div>
-      </section>
-
-      <!-- EVOLUCIÓN DE LA CLASIFICACIÓN -->
-      <section class="seccion" id="evolucion">
-        <h2>📈 Evolución de la Temporada</h2>
-        <div class="cardContenedor">
-          <article class="card">
-            <div class="cardIcono">📅</div>
-            <h3>Jornada 1-2</h3>
-            <p>
-              Inicio equilibrado con varios equipos compartiendo la cima. El
-              Barcelona empezó a marcar diferencias desde la primera jornada.
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="cardIcono">📅</div>
-            <h3>Jornada 3-4</h3>
-            <p>
-              El Barcelona consolida su liderato. Zaragoza y Valencia emergen
-              como claros candidatos al segundo puesto.
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="cardIcono">📅</div>
-            <h3>Jornada 5 (Actual)</h3>
-            <p>
-              El Barcelona mantiene el pleno de victorias. La lucha por el podio
-              se intensifica con solo 5 jornadas disputadas.
-            </p>
-          </article>
         </div>
       </section>
 
