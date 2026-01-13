@@ -14,6 +14,7 @@
                     <jugadores>
                         <jugador id="JU001" equipo="E001">
                             <nombre>Eder Sánchez</nombre>
+                            <edad>28</edad>
                             <nacionalidad>España</nacionalidad>
                             <altura>182cm</altura>
                             <peso>80kg</peso>
@@ -23,6 +24,7 @@
                         </jugador>
                         <jugador id="JU002" equipo="E001">
                             <nombre>Rodney Javier Guachire</nombre>
+                            <edad>34</edad>
                             <nacionalidad>Paraguay</nacionalidad>
                             <altura>175cm</altura>
                             <peso>72kg</peso>
@@ -32,6 +34,7 @@
                         </jugador>
                         <jugador id="JU003" equipo="E001">
                             <nombre>Alex Xabier</nombre>
+                            <edad>31</edad>
                             <nacionalidad>España</nacionalidad>
                             <altura>188cm</altura>
                             <peso>85kg</peso>
@@ -41,6 +44,7 @@
                         </jugador>
                         <jugador id="JU004" equipo="E001">
                             <nombre>Igor López</nombre>
+                            <edad>25</edad>
                             <nacionalidad>España</nacionalidad>
                             <altura>180cm</altura>
                             <peso>78kg</peso>
@@ -50,6 +54,7 @@
                         </jugador>
                         <jugador id="JU005" equipo="E001">
                             <nombre>Jaciel Jesús Vilorio</nombre>
+                            <edad>29</edad>
                             <nacionalidad>Republica Dominicana</nacionalidad>
                             <altura>177cm</altura>
                             <peso>74kg</peso>
@@ -59,6 +64,7 @@
                         </jugador>
                         <jugador id="JU006" equipo="E001">
                             <nombre>Yulian</nombre>
+                            <edad>23</edad>
                             <nacionalidad>colombia</nacionalidad>
                             <altura>179cm</altura>
                             <peso>73kg</peso>
@@ -68,6 +74,7 @@
                         </jugador>
                         <jugador id="JU007" equipo="E001">
                             <nombre>Hugo Barrios</nombre>
+                            <edad>27</edad>
                             <nacionalidad>España</nacionalidad>
                             <altura>184cm</altura>
                             <peso>82kg</peso>
@@ -77,6 +84,7 @@
                         </jugador>
                         <jugador id="JU008" equipo="E001">
                             <nombre>Erik Rodríguez</nombre>
+                            <edad>32</edad>
                             <nacionalidad>Portugal</nacionalidad>
                             <altura>173cm</altura>
                             <peso>69kg</peso>
@@ -86,6 +94,7 @@
                         </jugador>
                         <jugador id="JU009" equipo="E001">
                             <nombre>Daniel Herrera</nombre>
+                            <edad>35</edad>
                             <nacionalidad>Italia</nacionalidad>
                             <altura>191cm</altura>
                             <peso>88kg</peso>
@@ -106,6 +115,7 @@
                     <jugadores>
                         <jugador id="JU010" equipo="E002">
                             <nombre>Javier Torres</nombre>
+                            <edad>37</edad>
                             <nacionalidad>España</nacionalidad>
                             <altura>190cm</altura>
                             <peso>86kg</peso>
@@ -115,6 +125,7 @@
                         </jugador>
                         <jugador id="JU011" equipo="E002">
                             <nombre>Lucas Silva</nombre>
+                            <edad>26</edad>
                             <nacionalidad>Brasil</nacionalidad>
                             <altura>183cm</altura>
                             <peso>81kg</peso>
@@ -124,6 +135,7 @@
                         </jugador>
                         <jugador id="JU012" equipo="E002">
                             <nombre>Andrés Iniesta</nombre>
+                            <edad>38</edad>
                             <nacionalidad>España</nacionalidad>
                             <altura>171cm</altura>
                             <peso>68kg</peso>
@@ -133,6 +145,7 @@
                         </jugador>
                         <jugador id="JU013" equipo="E002">
                             <nombre>Felipe Melo</nombre>
+                            <edad>36</edad>
                             <nacionalidad>Brasil</nacionalidad>
                             <altura>183cm</altura>
                             <peso>83kg</peso>
@@ -142,6 +155,7 @@
                         </jugador>
                         <jugador id="JU014" equipo="E002">
                             <nombre>Gabriel Barbosa</nombre>
+                            <edad>27</edad>
                             <nacionalidad>Brasil</nacionalidad>
                             <altura>178cm</altura>
                             <peso>75kg</peso>
@@ -151,6 +165,7 @@
                         </jugador>
                         <jugador id="JU015" equipo="E002">
                             <nombre>Oscar Martínez</nombre>
+                            <edad>30</edad>
                             <nacionalidad>España</nacionalidad>
                             <altura>185cm</altura>
                             <peso>80kg</peso>
@@ -160,6 +175,7 @@
                         </jugador>
                         <jugador id="JU016" equipo="E002">
                             <nombre>Pablo Hernández</nombre>
+                            <edad>24</edad>
                             <nacionalidad>España</nacionalidad>
                             <altura>174cm</altura>
                             <peso>70kg</peso>
@@ -169,6 +185,7 @@
                         </jugador>
                         <jugador id="JU017" equipo="E002">
                             <nombre>Mateo García</nombre>
+                            <edad>28</edad>
                             <nacionalidad>Portugal</nacionalidad>
                             <altura>176cm</altura>
                             <peso>72kg</peso>
@@ -178,6 +195,7 @@
                         </jugador>
                         <jugador id="JU018" equipo="E002">
                             <nombre>Nicolás Otamendi</nombre>
+                            <edad>33</edad>
                             <nacionalidad>Argentina</nacionalidad>
                             <altura>183cm</altura>
                             <peso>82kg</peso>
@@ -198,6 +216,7 @@
                     <jugadores>
                         <jugador id="JU019" equipo="E003">
                             <nombre>Marco Verratti</nombre>
+                            <edad>29</edad>
                             <nacionalidad>Italia</nacionalidad>
                             <altura>165cm</altura>
                             <peso>60kg</peso>
@@ -207,6 +226,7 @@
                         </jugador>
                         <jugador id="JU020" equipo="E003">
                             <nombre>Kylian Mbappé</nombre>
+                            <edad>23</edad>
                             <nacionalidad>Francia</nacionalidad>
                             <altura>178cm</altura>
                             <peso>75kg</peso>
@@ -216,6 +236,7 @@
                         </jugador>
                         <jugador id="JU021" equipo="E003">
                             <nombre>Neymar Jr</nombre>
+                            <edad>30</edad>
                             <nacionalidad>Brasil</nacionalidad>
                             <altura>175cm</altura>
                             <peso>68kg</peso>
@@ -225,6 +246,7 @@
                         </jugador>
                         <jugador id="JU022" equipo="E003">
                             <nombre>Lionel Messi</nombre>
+                            <edad>35</edad>
                             <nacionalidad>Argentina</nacionalidad>
                             <altura>170cm</altura>
                             <peso>72kg</peso>
@@ -234,6 +256,7 @@
                         </jugador>
                         <jugador id="JU023" equipo="E003">
                             <nombre>Sergio Ramos</nombre>
+                            <edad>36</edad>
                             <nacionalidad>España</nacionalidad>
                             <altura>184cm</altura>
                             <peso>82kg</peso>
@@ -243,6 +266,7 @@
                         </jugador>
                         <jugador id="JU024" equipo="E003">
                             <nombre>Gianluigi Donnarumma</nombre>
+                            <edad>24</edad>
                             <nacionalidad>Italia</nacionalidad>
                             <altura>196cm</altura>
                             <peso>90kg</peso>
@@ -252,6 +276,7 @@
                         </jugador>
                         <jugador id="JU025" equipo="E003">
                             <nombre>Achraf Hakimi</nombre>
+                            <edad>24</edad>
                             <nacionalidad>Marueccos</nacionalidad>
                             <altura>181cm</altura>
                             <peso>73kg</peso>
@@ -261,6 +286,7 @@
                         </jugador>
                         <jugador id="JU026" equipo="E003">
                             <nombre>Marquinhos</nombre>
+                            <edad>28</edad>
                             <nacionalidad>Brasil</nacionalidad>
                             <altura>183cm</altura>
                             <peso>79kg</peso>
@@ -270,6 +296,7 @@
                         </jugador>
                         <jugador id="JU027" equipo="E003">
                             <nombre>Ángel Di María</nombre>
+                            <edad>33</edad>
                             <nacionalidad>Argentina</nacionalidad>
                             <altura>178cm</altura>
                             <peso>75kg</peso>
@@ -290,6 +317,7 @@
                     <jugadores>
                         <jugador id="JU028" equipo="E004">
                             <nombre>Karim Benzema</nombre>
+                            <edad>33</edad>
                             <nacionalidad>Francia</nacionalidad>
                             <altura>185cm</altura>
                             <peso>81kg</peso>
@@ -299,6 +327,7 @@
                         </jugador>
                         <jugador id="JU029" equipo="E004">
                             <nombre>Vinícius Júnior</nombre>
+                            <edad>22</edad>
                             <nacionalidad>Brasil</nacionalidad>
                             <altura>176cm</altura>
                             <peso>73kg</peso>
@@ -308,6 +337,7 @@
                         </jugador>
                         <jugador id="JU030" equipo="E004">
                             <nombre>Luka Modrić</nombre>
+                            <edad>36</edad>
                             <nacionalidad>Croacia</nacionalidad>
                             <altura>172cm</altura>
                             <peso>66kg</peso>
@@ -317,6 +347,7 @@
                         </jugador>
                         <jugador id="JU031" equipo="E004">
                             <nombre>Toni Kroos</nombre>
+                            <edad>32</edad>
                             <nacionalidad>Alemania</nacionalidad>
                             <altura>183cm</altura>
                             <peso>76kg</peso>
@@ -326,6 +357,7 @@
                         </jugador>
                         <jugador id="JU032" equipo="E004">
                             <nombre>Thibaut Courtois</nombre>
+                            <edad>31</edad>
                             <nacionalidad>Bélgica</nacionalidad>
                             <altura>200cm</altura>
                             <peso>96kg</peso>
@@ -335,6 +367,7 @@
                         </jugador>
                         <jugador id="JU033" equipo="E004">
                             <nombre>Casemiro</nombre>
+                            <edad>30</edad>
                             <nacionalidad>Brasil</nacionalidad>
                             <altura>185cm</altura>
                             <peso>84kg</peso>
@@ -344,6 +377,7 @@
                         </jugador>
                         <jugador id="JU034" equipo="E004">
                             <nombre>David Alaba</nombre>
+                            <edad>30</edad>
                             <nacionalidad>Austria</nacionalidad>
                             <altura>180cm</altura>
                             <peso>78kg</peso>
@@ -353,6 +387,7 @@
                         </jugador>
                         <jugador id="JU035" equipo="E004">
                             <nombre>Éder Militão</nombre>
+                            <edad>24</edad>
                             <nacionalidad>Brasil</nacionalidad>
                             <altura>186cm</altura>
                             <peso>78kg</peso>
@@ -362,6 +397,7 @@
                         </jugador>
                         <jugador id="JU036" equipo="E004">
                             <nombre>Rodrygo</nombre>
+                            <edad>21</edad>
                             <nacionalidad>Brasil</nacionalidad>
                             <altura>174cm</altura>
                             <peso>65kg</peso>
@@ -382,6 +418,7 @@
                     <jugadores>
                         <jugador id="JU037" equipo="E005">
                             <nombre>Mohamed Salah</nombre>
+                            <edad>31</edad>
                             <nacionalidad>Egipto</nacionalidad>
                             <altura>175cm</altura>
                             <peso>71kg</peso>
@@ -391,6 +428,7 @@
                         </jugador>
                         <jugador id="JU038" equipo="E005">
                             <nombre>Virgil van Dijk</nombre>
+                            <edad>32</edad>
                             <nacionalidad>Países Bajos</nacionalidad>
                             <altura>193cm</altura>
                             <peso>92kg</peso>
@@ -400,6 +438,7 @@
                         </jugador>
                         <jugador id="JU039" equipo="E005">
                             <nombre>Alisson Becker</nombre>
+                            <edad>30</edad>
                             <nacionalidad>Brasil</nacionalidad>
                             <altura>191cm</altura>
                             <peso>91kg</peso>
@@ -409,6 +448,7 @@
                         </jugador>
                         <jugador id="JU040" equipo="E005">
                             <nombre>Trent Alexander-Arnold</nombre>
+                            <edad>25</edad>
                             <nacionalidad>Inglaterra</nacionalidad>
                             <altura>180cm</altura>
                             <peso>70kg</peso>
@@ -418,6 +458,7 @@
                         </jugador>
                         <jugador id="JU041" equipo="E005">
                             <nombre>Roberto Firmino</nombre>
+                            <edad>31</edad>
                             <nacionalidad>Brasil</nacionalidad>
                             <altura>181cm</altura>
                             <peso>76kg</peso>
@@ -427,6 +468,7 @@
                         </jugador>
                         <jugador id="JU042" equipo="E005">
                             <nombre>Thiago Alcântara</nombre>
+                            <edad>31</edad>
                             <nacionalidad>España</nacionalidad>
                             <altura>174cm</altura>
                             <peso>70kg</peso>
@@ -436,6 +478,7 @@
                         </jugador>
                         <jugador id="JU043" equipo="E005">
                             <nombre>Fabinho</nombre>
+                            <edad>28</edad>
                             <nacionalidad>Brasil</nacionalidad>
                             <altura>188cm</altura>
                             <peso>78kg</peso>
@@ -445,6 +488,7 @@
                         </jugador>
                         <jugador id="JU044" equipo="E005">
                             <nombre>Andrew Robertson</nombre>
+                            <edad>29</edad>
                             <nacionalidad>Escocia</nacionalidad>
                             <altura>178cm</altura>
                             <peso>70kg</peso>
@@ -454,6 +498,7 @@
                         </jugador>
                         <jugador id="JU045" equipo="E005">
                             <nombre>Jordan Henderson</nombre>
+                            <edad>32</edad>
                             <nacionalidad>Inglaterra</nacionalidad>
                             <altura>182cm</altura>
                             <peso>77kg</peso>
@@ -474,6 +519,7 @@
                     <jugadores>
                         <jugador id="JU046" equipo="E006">
                             <nombre>Manuel Neuer</nombre>
+                            <edad>37</edad>
                             <nacionalidad>Alemania</nacionalidad>
                             <altura>193cm</altura>
                             <peso>92kg</peso>
@@ -483,6 +529,7 @@
                         </jugador>
                         <jugador id="JU047" equipo="E006">
                             <nombre>Robert Lewandowski</nombre>
+                            <edad>33</edad>
                             <nacionalidad>Polonia</nacionalidad>
                             <altura>185cm</altura>
                             <peso>81kg</peso>
@@ -492,6 +539,7 @@
                         </jugador>
                         <jugador id="JU048" equipo="E006">
                             <nombre>Thomas Müller</nombre>
+                            <edad>33</edad>
                             <nacionalidad>Alemania</nacionalidad>
                             <altura>186cm</altura>
                             <peso>75kg</peso>
@@ -501,6 +549,7 @@
                         </jugador>
                         <jugador id="JU049" equipo="E006">
                             <nombre>Joshua Kimmich</nombre>
+                            <edad>27</edad>
                             <nacionalidad>Alemania</nacionalidad>
                             <altura>177cm</altura>
                             <peso>75kg</peso>
@@ -510,6 +559,7 @@
                         </jugador>
                         <jugador id="JU050" equipo="E006">
                             <nombre>Leroy Sané</nombre>
+                            <edad>26</edad>
                             <nacionalidad>Alemania</nacionalidad>
                             <altura>183cm</altura>
                             <peso>75kg</peso>
@@ -519,6 +569,7 @@
                         </jugador>
                         <jugador id="JU051" equipo="E006">
                             <nombre>Serge Gnabry</nombre>
+                            <edad>28</edad>
                             <nacionalidad>Alemania</nacionalidad>
                             <altura>176cm</altura>
                             <peso>77kg</peso>
@@ -528,6 +579,7 @@
                         </jugador>
                         <jugador id="JU052" equipo="E006">
                             <nombre>Alphonso Davies</nombre>
+                            <edad>23</edad>
                             <nacionalidad>Canadá</nacionalidad>
                             <altura>183cm</altura>
                             <peso>75kg</peso>
@@ -537,6 +589,7 @@
                         </jugador>
                         <jugador id="JU053" equipo="E006">
                             <nombre>Kingsley Coman</nombre>
+                            <edad>25</edad>
                             <nacionalidad>Francia</nacionalidad>
                             <altura>178cm</altura>
                             <peso>71kg</peso>
@@ -546,6 +599,7 @@
                         </jugador>
                         <jugador id="JU054" equipo="E006">
                             <nombre>Dayot Upamecano</nombre>
+                            <edad>25</edad>
                             <nacionalidad>Francia</nacionalidad>
                             <altura>186cm</altura>
                             <peso>90kg</peso>

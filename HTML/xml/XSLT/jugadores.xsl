@@ -10,6 +10,7 @@
             <h3><xsl:value-of select="nombre"/></h3>
             <p><strong>Equipo: </strong> <xsl:value-of select="ancestor::equipo/nombre"/></p>
             <p><strong>Nacionalidad: </strong> <xsl:value-of select="nacionalidad"/></p>
+            <p><strong>Edad: </strong> <xsl:value-of select="edad"/> años</p>
             <p><strong>Altura: </strong> <xsl:value-of select="altura"/></p>
             <p><strong>Peso: </strong> <xsl:value-of select="peso"/></p>
             <p><strong>Dorsal: </strong> <xsl:value-of select="dorsal"/></p>
