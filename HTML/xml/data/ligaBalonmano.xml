@@ -1,8 +1,44 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ligaBalonmano xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ligaBalonmano.xsd">
-  <equipos>
-  </equipos>
-  <jugadores>
+    <equipos>
+        <equipo>
+            <idEquipo>1</idEquipo>
+            <nombreEquipo>FC Barcelona</nombreEquipo>
+            <fundacion>1942</fundacion>
+            <escudo url=""/>
+        </equipo>
+        <equipo>
+            <idEquipo></idEquipo>2
+            <nombreEquipo>Atlético de Madrid</nombreEquipo>
+            <fundacion>1954</fundacion>
+            <escudo url=""/>
+        </equipo>
+        <equipo>
+            <idEquipo>3</idEquipo>
+            <nombreEquipo>Sevila BM</nombreEquipo>
+            <fundacion>1964</fundacion>
+            <escudo url=""/>
+        </equipo>
+        <equipo>
+            <idEquipo>4</idEquipo>
+            <nombreEquipo>Zaragoza BM</nombreEquipo>
+            <fundacion>1923</fundacion>
+            <escudo url=""/>
+        </equipo>
+        <equipo>
+            <idEquipo>5</idEquipo>
+            <nombreEquipo>Valencia HC</nombreEquipo>
+            <fundacion>1963</fundacion>
+            <escudo url=""/>
+        </equipo>
+        <equipo>
+            <idEquipo>6</idEquipo>
+            <nombreEquipo>Athletic Club</nombreEquipo>
+            <fundacion>1898</fundacion>
+            <escudo url=""/>
+        </equipo>
+    </equipos>
+    <jugadores>
         <jugador>
             <idJugador>1</idJugador>
             <nombreJugador>Achraf Hakimi</nombreJugador>
@@ -544,4 +580,275 @@
             <foto url="Yulian.png"/>
         </jugador>
     </jugadores>
+    <partidos>
+        <!-- Jornada 1 -->
+        <partido>
+            <idPartido>1</idPartido>
+            <idEquipoLocal>1</idEquipoLocal>
+            <idEquipoVisitante>6</idEquipoVisitante>
+            <golesLocal>28</golesLocal>
+            <golesVisitante>22</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>2</idPartido>
+            <idEquipoLocal>2</idEquipoLocal>
+            <idEquipoVisitante>5</idEquipoVisitante>
+            <golesLocal>24</golesLocal>
+            <golesVisitante>26</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>3</idPartido>
+            <idEquipoLocal>3</idEquipoLocal>
+            <idEquipoVisitante>4</idEquipoVisitante>
+            <golesLocal>21</golesLocal>
+            <golesVisitante>23</golesVisitante>
+        </partido>
+        <!-- Jornada 2 -->
+        <partido>
+            <idPartido>4</idPartido>
+            <idEquipoLocal>1</idEquipoLocal>
+            <idEquipoVisitante>5</idEquipoVisitante>
+            <golesLocal>27</golesLocal>
+            <golesVisitante>25</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>5</idPartido>
+            <idEquipoLocal>6</idEquipoLocal>
+            <idEquipoVisitante>4</idEquipoVisitante>
+            <golesLocal>19</golesLocal>
+            <golesVisitante>21</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>6</idPartido>
+            <idEquipoLocal>2</idEquipoLocal>
+            <idEquipoVisitante>3</idEquipoVisitante>
+            <golesLocal>22</golesLocal>
+            <golesVisitante>20</golesVisitante>
+        </partido>
+        <!-- Jornada 3 -->
+        <partido>
+            <idPartido>7</idPartido>
+            <idEquipoLocal>1</idEquipoLocal>
+            <idEquipoVisitante>4</idEquipoVisitante>
+            <golesLocal>26</golesLocal>
+            <golesVisitante>24</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>8</idPartido>
+            <idEquipoLocal>5</idEquipoLocal>
+            <idEquipoVisitante>3</idEquipoVisitante>
+            <golesLocal>23</golesLocal>
+            <golesVisitante>28</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>9</idPartido>
+            <idEquipoLocal>6</idEquipoLocal>
+            <idEquipoVisitante>2</idEquipoVisitante>
+            <golesLocal>20</golesLocal>
+            <golesVisitante>22</golesVisitante>
+        </partido>
+        <!-- Jornada 4 -->
+        <partido>
+            <idPartido>10</idPartido>
+            <idEquipoLocal>1</idEquipoLocal>
+            <idEquipoVisitante>3</idEquipoVisitante>
+            <golesLocal>24</golesLocal>
+            <golesVisitante>26</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>11</idPartido>
+            <idEquipoLocal>4</idEquipoLocal>
+            <idEquipoVisitante>2</idEquipoVisitante>
+            <golesLocal>21</golesLocal>
+            <golesVisitante>20</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>12</idPartido>
+            <idEquipoLocal>5</idEquipoLocal>
+            <idEquipoVisitante>6</idEquipoVisitante>
+            <golesLocal>29</golesLocal>
+            <golesVisitante>27</golesVisitante>
+        </partido>
+        <!-- Jornada 5 -->
+        <partido>
+            <idPartido>13</idPartido>
+            <idEquipoLocal>1</idEquipoLocal>
+            <idEquipoVisitante>2</idEquipoVisitante>
+            <golesLocal>25</golesLocal>
+            <golesVisitante>23</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>14</idPartido>
+            <idEquipoLocal>3</idEquipoLocal>
+            <idEquipoVisitante>6</idEquipoVisitante>
+            <golesLocal>22</golesLocal>
+            <golesVisitante>24</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>15</idPartido>
+            <idEquipoLocal>4</idEquipoLocal>
+            <idEquipoVisitante>5</idEquipoVisitante>
+            <golesLocal>20</golesLocal>
+            <golesVisitante>22</golesVisitante>
+        </partido>
+        <!-- Jornada 6 (vuelta) -->
+        <partido>
+            <idPartido>16</idPartido>
+            <idEquipoLocal>6</idEquipoLocal>
+            <idEquipoVisitante>1</idEquipoVisitante>
+            <golesLocal>23</golesLocal>
+            <golesVisitante>27</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>17</idPartido>
+            <idEquipoLocal>5</idEquipoLocal>
+            <idEquipoVisitante>2</idEquipoVisitante>
+            <golesLocal>26</golesLocal>
+            <golesVisitante>24</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>18</idPartido>
+            <idEquipoLocal>4</idEquipoLocal>
+            <idEquipoVisitante>3</idEquipoVisitante>
+            <golesLocal>22</golesLocal>
+            <golesVisitante>21</golesVisitante>
+        </partido>
+        <!-- Jornada 7 (vuelta) -->
+        <partido>
+            <idPartido>19</idPartido>
+            <idEquipoLocal>5</idEquipoLocal>
+            <idEquipoVisitante>1</idEquipoVisitante>
+            <golesLocal>24</golesLocal>
+            <golesVisitante>26</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>20</idPartido>
+            <idEquipoLocal>4</idEquipoLocal>
+            <idEquipoVisitante>6</idEquipoVisitante>
+            <golesLocal>28</golesLocal>
+            <golesVisitante>26</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>21</idPartido>
+            <idEquipoLocal>3</idEquipoLocal>
+            <idEquipoVisitante>2</idEquipoVisitante>
+            <golesLocal>25</golesLocal>
+            <golesVisitante>23</golesVisitante>
+        </partido>
+        <!-- Jornada 8 (vuelta) -->
+        <partido>
+            <idPartido>22</idPartido>
+            <idEquipoLocal>4</idEquipoLocal>
+            <idEquipoVisitante>1</idEquipoVisitante>
+            <golesLocal>23</golesLocal>
+            <golesVisitante>25</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>23</idPartido>
+            <idEquipoLocal>3</idEquipoLocal>
+            <idEquipoVisitante>5</idEquipoVisitante>
+            <golesLocal>27</golesLocal>
+            <golesVisitante>24</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>24</idPartido>
+            <idEquipoLocal>2</idEquipoLocal>
+            <idEquipoVisitante>6</idEquipoVisitante>
+            <golesLocal>22</golesLocal>
+            <golesVisitante>20</golesVisitante>
+        </partido>
+        <!-- Jornada 9 (vuelta) -->
+        <partido>
+            <idPartido>25</idPartido>
+            <idEquipoLocal>3</idEquipoLocal>
+            <idEquipoVisitante>1</idEquipoVisitante>
+            <golesLocal>21</golesLocal>
+            <golesVisitante>29</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>26</idPartido>
+            <idEquipoLocal>2</idEquipoLocal>
+            <idEquipoVisitante>4</idEquipoVisitante>
+            <golesLocal>24</golesLocal>
+            <golesVisitante>22</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>27</idPartido>
+            <idEquipoLocal>6</idEquipoLocal>
+            <idEquipoVisitante>5</idEquipoVisitante>
+            <golesLocal>26</golesLocal>
+            <golesVisitante>28</golesVisitante>
+        </partido>
+        <!-- Jornada 10 (vuelta) -->
+        <partido>
+            <idPartido>28</idPartido>
+            <idEquipoLocal>2</idEquipoLocal>
+            <idEquipoVisitante>1</idEquipoVisitante>
+            <golesLocal>20</golesLocal>
+            <golesVisitante>21</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>29</idPartido>
+            <idEquipoLocal>6</idEquipoLocal>
+            <idEquipoVisitante>3</idEquipoVisitante>
+            <golesLocal>23</golesLocal>
+            <golesVisitante>22</golesVisitante>
+        </partido>
+        <partido>
+            <idPartido>30</idPartido>
+            <idEquipoLocal>5</idEquipoLocal>
+            <idEquipoVisitante>4</idEquipoVisitante>
+            <golesLocal>27</golesLocal>
+            <golesVisitante>25</golesVisitante>
+        </partido>
+    </partidos>
+    <jornadas>
+        <jornada>
+            <idJornada>1</idJornada>
+            <idPartidos>1,2,3</idPartidos>
+        </jornada>
+        <jornada>
+            <idJornada>2</idJornada>
+            <idPartidos>4,5,6</idPartidos>
+        </jornada>
+        <jornada>
+            <idJornada>3</idJornada>
+            <idPartidos>7,8,9</idPartidos>
+        </jornada>
+        <jornada>
+            <idJornada>4</idJornada>
+            <idPartidos>10,11,12</idPartidos>
+        </jornada>
+        <jornada>
+            <idJornada>5</idJornada>
+            <idPartidos>13,14,15</idPartidos>
+        </jornada>
+        <jornada>
+            <idJornada>6</idJornada>
+            <idPartidos>16,17,18</idPartidos>
+        </jornada>
+        <jornada>
+            <idJornada>7</idJornada>
+            <idPartidos>19,20,21</idPartidos>
+        </jornada>
+        <jornada>
+            <idJornada>8</idJornada>
+            <idPartidos>22,23,24</idPartidos>
+        </jornada>
+        <jornada>
+            <idJornada>9</idJornada>
+            <idPartidos>25,26,27</idPartidos>
+        </jornada>
+        <jornada>
+            <idJornada>10</idJornada>
+            <idPartidos>28,29,30</idPartidos>
+        </jornada>
+    </jornadas>
+    <temporadas>
+        <temporada>
+            <idTemporada>1</idTemporada>
+            <nombreTemporada>2022 / 2023</nombreTemporada>
+            <finalizada>true</finalizada>
+        </temporada>
+    </temporadas>
 </ligaBalonmano>
