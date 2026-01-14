@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <federacionBalonmano xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="general.xsd">
 
     <temporadas>
@@ -20,7 +20,7 @@
                             <peso>80kg</peso>
                             <dorsal>24</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Eder Sánchez.png"/>
                         </jugador>
                         <jugador id="JU002" equipo="E001">
                             <nombre>Rodney Javier Guachire</nombre>
@@ -30,7 +30,7 @@
                             <peso>72kg</peso>
                             <dorsal>33</dorsal>
                             <posicion>Lateral Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Rodney Javier Guachire.png"/>
                         </jugador>
                         <jugador id="JU003" equipo="E001">
                             <nombre>Alex Xabier</nombre>
@@ -40,7 +40,7 @@
                             <peso>85kg</peso>
                             <dorsal>10</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Alex Xabier.png"/>
                         </jugador>
                         <jugador id="JU004" equipo="E001">
                             <nombre>Igor López</nombre>
@@ -50,7 +50,7 @@
                             <peso>78kg</peso>
                             <dorsal>20</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Igor López.png"/>
                         </jugador>
                         <jugador id="JU005" equipo="E001">
                             <nombre>Jaciel Jesús Vilorio</nombre>
@@ -60,7 +60,7 @@
                             <peso>74kg</peso>
                             <dorsal>60</dorsal>
                             <posicion>Lateral Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Jaciel Jesús Vilorio.png"/>
                         </jugador>
                         <jugador id="JU006" equipo="E001">
                             <nombre>Yulian</nombre>
@@ -70,17 +70,17 @@
                             <peso>73kg</peso>
                             <dorsal>78</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Yulian.png"/>
                         </jugador>
                         <jugador id="JU007" equipo="E001">
                             <nombre>Hugo Barrios</nombre>
                             <edad>27</edad>
                             <nacionalidad>España</nacionalidad>
-                            <altura>184cm</altura>
+                            <altura>191cm</altura>
                             <peso>82kg</peso>
                             <dorsal>80</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Hugo Barrios.png"/>
                         </jugador>
                         <jugador id="JU008" equipo="E001">
                             <nombre>Erik Rodríguez</nombre>
@@ -90,7 +90,7 @@
                             <peso>69kg</peso>
                             <dorsal>50</dorsal>
                             <posicion>Lateral Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Erik Rodríguez.png"/>
                         </jugador>
                         <jugador id="JU009" equipo="E001">
                             <nombre>Daniel Herrera</nombre>
@@ -100,7 +100,7 @@
                             <peso>88kg</peso>
                             <dorsal>12</dorsal>
                             <posicion>Portero</posicion>
-                            <foto url=""/>
+                            <foto url="Daniel Herrera.png"/>
                         </jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/BARCELONA.png"/>
@@ -121,7 +121,7 @@
                             <peso>86kg</peso>
                             <dorsal>1</dorsal>
                             <posicion>Portero</posicion>
-                            <foto url=""/>
+                            <foto url="Javier Torres.png"/>
                         </jugador>
                         <jugador id="JU011" equipo="E002">
                             <nombre>Lucas Silva</nombre>
@@ -131,7 +131,7 @@
                             <peso>81kg</peso>
                             <dorsal>2</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Lucas Silva.png"/>
                         </jugador>
                         <jugador id="JU012" equipo="E002">
                             <nombre>Andrés Iniesta</nombre>
@@ -141,7 +141,7 @@
                             <peso>68kg</peso>
                             <dorsal>3</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Andrés Iniesta.png"/>
                         </jugador>
                         <jugador id="JU013" equipo="E002">
                             <nombre>Felipe Melo</nombre>
@@ -151,7 +151,7 @@
                             <peso>83kg</peso>
                             <dorsal>4</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Felipe Melo.png"/>
                         </jugador>
                         <jugador id="JU014" equipo="E002">
                             <nombre>Gabriel Barbosa</nombre>
@@ -161,7 +161,7 @@
                             <peso>75kg</peso>
                             <dorsal>5</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Gabriel Barbosa.png"/>
                         </jugador>
                         <jugador id="JU015" equipo="E002">
                             <nombre>Oscar Martínez</nombre>
@@ -171,7 +171,7 @@
                             <peso>80kg</peso>
                             <dorsal>6</dorsal>
                             <posicion>Lateral Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Oscar Martínez.png"/>
                         </jugador>
                         <jugador id="JU016" equipo="E002">
                             <nombre>Pablo Hernández</nombre>
@@ -181,7 +181,7 @@
                             <peso>70kg</peso>
                             <dorsal>7</dorsal>
                             <posicion>Lateral Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Pablo Hernández.png"/>
                         </jugador>
                         <jugador id="JU017" equipo="E002">
                             <nombre>Mateo García</nombre>
@@ -191,7 +191,7 @@
                             <peso>72kg</peso>
                             <dorsal>8</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Mateo García.png"/>
                         </jugador>
                         <jugador id="JU018" equipo="E002">
                             <nombre>Nicolás Otamendi</nombre>
@@ -201,7 +201,7 @@
                             <peso>82kg</peso>
                             <dorsal>9</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Nicolás Otamendi.png"/>
                         </jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/ZARAGOZABM.png"/>
@@ -222,7 +222,7 @@
                             <peso>60kg</peso>
                             <dorsal>10</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Marco Verratti.png"/>
                         </jugador>
                         <jugador id="JU020" equipo="E003">
                             <nombre>Kylian Mbappé</nombre>
@@ -232,7 +232,7 @@
                             <peso>75kg</peso>
                             <dorsal>7</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Kylian Mbappé.png"/>
                         </jugador>
                         <jugador id="JU021" equipo="E003">
                             <nombre>Neymar Jr</nombre>
@@ -242,7 +242,7 @@
                             <peso>68kg</peso>
                             <dorsal>11</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Neymar Jr.png"/>
                         </jugador>
                         <jugador id="JU022" equipo="E003">
                             <nombre>Lionel Messi</nombre>
@@ -252,7 +252,7 @@
                             <peso>72kg</peso>
                             <dorsal>30</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Lionel Messi.png"/>
                         </jugador>
                         <jugador id="JU023" equipo="E003">
                             <nombre>Sergio Ramos</nombre>
@@ -262,7 +262,7 @@
                             <peso>82kg</peso>
                             <dorsal>4</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Sergio Ramos.png"/>
                         </jugador>
                         <jugador id="JU024" equipo="E003">
                             <nombre>Gianluigi Donnarumma</nombre>
@@ -272,7 +272,7 @@
                             <peso>90kg</peso>
                             <dorsal>50</dorsal>
                             <posicion>Portero</posicion>
-                            <foto url=""/>
+                            <foto url="Gianluigi Donnarumma.png"/>
                         </jugador>
                         <jugador id="JU025" equipo="E003">
                             <nombre>Achraf Hakimi</nombre>
@@ -282,7 +282,7 @@
                             <peso>73kg</peso>
                             <dorsal>2</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Achraf Hakimi.png"/>
                         </jugador>
                         <jugador id="JU026" equipo="E003">
                             <nombre>Marquinhos</nombre>
@@ -292,7 +292,7 @@
                             <peso>79kg</peso>
                             <dorsal>3</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Marquinhos.png"/>
                         </jugador>
                         <jugador id="JU027" equipo="E003">
                             <nombre>Ángel Di María</nombre>
@@ -302,7 +302,7 @@
                             <peso>75kg</peso>
                             <dorsal>18</dorsal>
                             <posicion>Lateral Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Ángel Di María.png"/>
                         </jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/VALENCIA.png"/>
@@ -323,7 +323,7 @@
                             <peso>81kg</peso>
                             <dorsal>9</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Karim Benzema.png"/>
                         </jugador>
                         <jugador id="JU029" equipo="E004">
                             <nombre>Vinícius Júnior</nombre>
@@ -333,7 +333,7 @@
                             <peso>73kg</peso>
                             <dorsal>7</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Vinícius Júnior.png"/>
                         </jugador>
                         <jugador id="JU030" equipo="E004">
                             <nombre>Luka Modrić</nombre>
@@ -343,7 +343,7 @@
                             <peso>66kg</peso>
                             <dorsal>10</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Luka Modrić.png"/>
                         </jugador>
                         <jugador id="JU031" equipo="E004">
                             <nombre>Toni Kroos</nombre>
@@ -353,7 +353,7 @@
                             <peso>76kg</peso>
                             <dorsal>8</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Toni Kroos.png"/>
                         </jugador>
                         <jugador id="JU032" equipo="E004">
                             <nombre>Thibaut Courtois</nombre>
@@ -363,7 +363,7 @@
                             <peso>96kg</peso>
                             <dorsal>1</dorsal>
                             <posicion>Portero</posicion>
-                            <foto url=""/>
+                            <foto url="Thibaut Courtois.png"/>
                         </jugador>
                         <jugador id="JU033" equipo="E004">
                             <nombre>Casemiro</nombre>
@@ -373,7 +373,7 @@
                             <peso>84kg</peso>
                             <dorsal>14</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Casemiro.png"/>
                         </jugador>
                         <jugador id="JU034" equipo="E004">
                             <nombre>David Alaba</nombre>
@@ -383,7 +383,7 @@
                             <peso>78kg</peso>
                             <dorsal>4</dorsal>
                             <posicion>Lateral Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="David Alaba.png"/>
                         </jugador>
                         <jugador id="JU035" equipo="E004">
                             <nombre>Éder Militão</nombre>
@@ -393,7 +393,7 @@
                             <peso>78kg</peso>
                             <dorsal>3</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Éder Militão.png"/>
                         </jugador>
                         <jugador id="JU036" equipo="E004">
                             <nombre>Rodrygo</nombre>
@@ -403,7 +403,7 @@
                             <peso>65kg</peso>
                             <dorsal>11</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Rodrygo.png"/>
                         </jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/VIGO.png"/>
@@ -424,7 +424,7 @@
                             <peso>71kg</peso>
                             <dorsal>11</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Mohamed Salah.png"/>
                         </jugador>
                         <jugador id="JU038" equipo="E005">
                             <nombre>Virgil van Dijk</nombre>
@@ -434,7 +434,7 @@
                             <peso>92kg</peso>
                             <dorsal>4</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Virgil van Dijk.png"/>
                         </jugador>
                         <jugador id="JU039" equipo="E005">
                             <nombre>Alisson Becker</nombre>
@@ -444,7 +444,7 @@
                             <peso>91kg</peso>
                             <dorsal>1</dorsal>
                             <posicion>Portero</posicion>
-                            <foto url=""/>
+                            <foto url="Alisson Becker.png"/>
                         </jugador>
                         <jugador id="JU040" equipo="E005">
                             <nombre>Trent Alexander-Arnold</nombre>
@@ -454,7 +454,7 @@
                             <peso>70kg</peso>
                             <dorsal>66</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Trent Alexander-Arnold.png"/>
                         </jugador>
                         <jugador id="JU041" equipo="E005">
                             <nombre>Roberto Firmino</nombre>
@@ -464,7 +464,7 @@
                             <peso>76kg</peso>
                             <dorsal>9</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Roberto Firmino.png"/>
                         </jugador>
                         <jugador id="JU042" equipo="E005">
                             <nombre>Thiago Alcântara</nombre>
@@ -474,7 +474,7 @@
                             <peso>70kg</peso>
                             <dorsal>6</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Thiago Alcântara.png"/>
                         </jugador>
                         <jugador id="JU043" equipo="E005">
                             <nombre>Fabinho</nombre>
@@ -484,7 +484,7 @@
                             <peso>78kg</peso>
                             <dorsal>3</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Fabinho.png"/>
                         </jugador>
                         <jugador id="JU044" equipo="E005">
                             <nombre>Andrew Robertson</nombre>
@@ -494,7 +494,7 @@
                             <peso>70kg</peso>
                             <dorsal>26</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Andrew Robertson.png"/>
                         </jugador>
                         <jugador id="JU045" equipo="E005">
                             <nombre>Jordan Henderson</nombre>
@@ -504,7 +504,7 @@
                             <peso>77kg</peso>
                             <dorsal>14</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Jordan Henderson.png"/>
                         </jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/SEVILLABM.png"/>
@@ -525,7 +525,7 @@
                             <peso>92kg</peso>
                             <dorsal>1</dorsal>
                             <posicion>Portero</posicion>
-                            <foto url=""/>
+                            <foto url="Manuel Neuer.png"/>
                         </jugador>
                         <jugador id="JU047" equipo="E006">
                             <nombre>Robert Lewandowski</nombre>
@@ -535,7 +535,7 @@
                             <peso>81kg</peso>
                             <dorsal>9</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Robert Lewandowski.png"/>
                         </jugador>
                         <jugador id="JU048" equipo="E006">
                             <nombre>Thomas Müller</nombre>
@@ -545,7 +545,7 @@
                             <peso>75kg</peso>
                             <dorsal>25</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Thomas Müller.png"/>
                         </jugador>
                         <jugador id="JU049" equipo="E006">
                             <nombre>Joshua Kimmich</nombre>
@@ -555,7 +555,7 @@
                             <peso>75kg</peso>
                             <dorsal>6</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Joshua Kimmich.png"/>
                         </jugador>
                         <jugador id="JU050" equipo="E006">
                             <nombre>Leroy Sané</nombre>
@@ -565,7 +565,7 @@
                             <peso>75kg</peso>
                             <dorsal>10</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Leroy Sané.png"/>
                         </jugador>
                         <jugador id="JU051" equipo="E006">
                             <nombre>Serge Gnabry</nombre>
@@ -575,7 +575,7 @@
                             <peso>77kg</peso>
                             <dorsal>7</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Serge Gnabry.png"/>
                         </jugador>
                         <jugador id="JU052" equipo="E006">
                             <nombre>Alphonso Davies</nombre>
@@ -585,7 +585,7 @@
                             <peso>75kg</peso>
                             <dorsal>19</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Alphonso Davies.png"/>
                         </jugador>
                         <jugador id="JU053" equipo="E006">
                             <nombre>Kingsley Coman</nombre>
@@ -595,7 +595,7 @@
                             <peso>71kg</peso>
                             <dorsal>29</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Kingsley Coman.png"/>
                         </jugador>
                         <jugador id="JU054" equipo="E006">
                             <nombre>Dayot Upamecano</nombre>
@@ -605,7 +605,7 @@
                             <peso>90kg</peso>
                             <dorsal>2</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Dayot Upamecano.png"/>
                         </jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/BILBAO.png"/>
@@ -830,7 +830,7 @@
                             <peso>80kg</peso>
                             <dorsal>24</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Karim\ Benzema\.png"/>
                         </jugador>
                         <jugador id="JU002" equipo="E001">
                             <nombre>Rodney Javier Guachire</nombre>
@@ -839,7 +839,7 @@
                             <peso>72kg</peso>
                             <dorsal>33</dorsal>
                             <posicion>Lateral Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Ángel\ Di\ María\.png"/>
                         </jugador>
                         <jugador id="JU003" equipo="E001">
                             <nombre>Alex Xabier</nombre>
@@ -848,7 +848,7 @@
                             <peso>85kg</peso>
                             <dorsal>10</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Marquinhos\.png"/>
                         </jugador>
                         <jugador id="JU004" equipo="E001">
                             <nombre>Igor López</nombre>
@@ -857,7 +857,7 @@
                             <peso>78kg</peso>
                             <dorsal>20</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Achraf\ Hakimi\.png"/>
                         </jugador>
                         <jugador id="JU005" equipo="E001">
                             <nombre>Jaciel Jesús Vilorio</nombre>
@@ -866,7 +866,7 @@
                             <peso>74kg</peso>
                             <dorsal>60</dorsal>
                             <posicion>Lateral Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Gianluigi\ Donnarumma\.png"/>
                         </jugador>
                         <jugador id="JU006" equipo="E001">
                             <nombre>Yulian</nombre>
@@ -875,7 +875,7 @@
                             <peso>73kg</peso>
                             <dorsal>78</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Sergio\ Ramos\.png"/>
                         </jugador>
                         <jugador id="JU007" equipo="E001">
                             <nombre>Hugo Barrios</nombre>
@@ -884,7 +884,7 @@
                             <peso>82kg</peso>
                             <dorsal>80</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Lionel\ Messi\.png"/>
                         </jugador>
                         <jugador id="JU008" equipo="E001">
                             <nombre>Erik Rodríguez</nombre>
@@ -893,7 +893,7 @@
                             <peso>69kg</peso>
                             <dorsal>50</dorsal>
                             <posicion>Lateral Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Neymar\ Jr\.png"/>
                         </jugador>
                         <jugador id="JU009" equipo="E001">
                             <nombre>Daniel Herrera</nombre>
@@ -902,7 +902,7 @@
                             <peso>88kg</peso>
                             <dorsal>12</dorsal>
                             <posicion>Portero</posicion>
-                            <foto url=""/>
+                            <foto url="Kylian\ Mbappé\.png"/>
                         </jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/BARCELONA.png"/>
@@ -922,7 +922,7 @@
                             <peso>86kg</peso>
                             <dorsal>1</dorsal>
                             <posicion>Portero</posicion>
-                            <foto url=""/>
+                            <foto url="Marco\ Verratti\.png"/>
                         </jugador>
                         <jugador id="JU011" equipo="E002">
                             <nombre>Lucas Silva</nombre>
@@ -931,7 +931,7 @@
                             <peso>81kg</peso>
                             <dorsal>2</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Nicolás\ Otamendi\.png"/>
                         </jugador>
                         <jugador id="JU012" equipo="E002">
                             <nombre>Andrés Iniesta</nombre>
@@ -940,7 +940,7 @@
                             <peso>68kg</peso>
                             <dorsal>3</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Mateo\ García\.png"/>
                         </jugador>
                         <jugador id="JU013" equipo="E002">
                             <nombre>Felipe Melo</nombre>
@@ -949,7 +949,7 @@
                             <peso>83kg</peso>
                             <dorsal>4</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Pablo\ Hernández\.png"/>
                         </jugador>
                         <jugador id="JU014" equipo="E002">
                             <nombre>Gabriel Barbosa</nombre>
@@ -958,7 +958,7 @@
                             <peso>75kg</peso>
                             <dorsal>5</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Oscar\ Martínez\.png"/>
                         </jugador>
                         <jugador id="JU015" equipo="E002">
                             <nombre>Oscar Martínez</nombre>
@@ -967,7 +967,7 @@
                             <peso>80kg</peso>
                             <dorsal>6</dorsal>
                             <posicion>Lateral Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Oscar Martínez.png"/>
                         </jugador>
                         <jugador id="JU016" equipo="E002">
                             <nombre>Pablo Hernández</nombre>
@@ -976,7 +976,7 @@
                             <peso>70kg</peso>
                             <dorsal>7</dorsal>
                             <posicion>Lateral Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Pablo Hernández.png"/>
                         </jugador>
                         <jugador id="JU017" equipo="E002">
                             <nombre>Mateo García</nombre>
@@ -985,7 +985,7 @@
                             <peso>72kg</peso>
                             <dorsal>8</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Mateo García.png"/>
                         </jugador>
                         <jugador id="JU018" equipo="E002">
                             <nombre>Nicolás Otamendi</nombre>
@@ -994,7 +994,7 @@
                             <peso>82kg</peso>
                             <dorsal>9</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Nicolás Otamendi.png"/>
                         </jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/ZARAGOZABM.png"/>
@@ -1014,7 +1014,7 @@
                             <peso>60kg</peso>
                             <dorsal>10</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Marco Verratti.png"/>
                         </jugador>
                         <jugador id="JU020" equipo="E003">
                             <nombre>Kylian Mbappé</nombre>
@@ -1023,7 +1023,7 @@
                             <peso>75kg</peso>
                             <dorsal>7</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Kylian Mbappé.png"/>
                         </jugador>
                         <jugador id="JU021" equipo="E003">
                             <nombre>Neymar Jr</nombre>
@@ -1032,7 +1032,7 @@
                             <peso>68kg</peso>
                             <dorsal>11</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Neymar Jr.png"/>
                         </jugador>
                         <jugador id="JU022" equipo="E003">
                             <nombre>Lionel Messi</nombre>
@@ -1041,7 +1041,7 @@
                             <peso>72kg</peso>
                             <dorsal>30</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Lionel Messi.png"/>
                         </jugador>
                         <jugador id="JU023" equipo="E003">
                             <nombre>Sergio Ramos</nombre>
@@ -1050,7 +1050,7 @@
                             <peso>82kg</peso>
                             <dorsal>4</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Sergio Ramos.png"/>
                         </jugador>
                         <jugador id="JU024" equipo="E003">
                             <nombre>Gianluigi Donnarumma</nombre>
@@ -1059,7 +1059,7 @@
                             <peso>90kg</peso>
                             <dorsal>50</dorsal>
                             <posicion>Portero</posicion>
-                            <foto url=""/>
+                            <foto url="Gianluigi Donnarumma.png"/>
                         </jugador>
                         <jugador id="JU025" equipo="E003">
                             <nombre>Achraf Hakimi</nombre>
@@ -1068,7 +1068,7 @@
                             <peso>73kg</peso>
                             <dorsal>2</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Achraf Hakimi.png"/>
                         </jugador>
                         <jugador id="JU026" equipo="E003">
                             <nombre>Marquinhos</nombre>
@@ -1077,7 +1077,7 @@
                             <peso>79kg</peso>
                             <dorsal>3</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Marquinhos.png"/>
                         </jugador>
                         <jugador id="JU027" equipo="E003">
                             <nombre>Ángel Di María</nombre>
@@ -1086,7 +1086,7 @@
                             <peso>75kg</peso>
                             <dorsal>18</dorsal>
                             <posicion>Lateral Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Ángel Di María.png"/>
                         </jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/VALENCIA.png"/>
@@ -1106,7 +1106,7 @@
                             <peso>81kg</peso>
                             <dorsal>9</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Karim Benzema.png"/>
                         </jugador>
                         <jugador id="JU029" equipo="E004">
                             <nombre>Vinícius Júnior</nombre>
@@ -1115,7 +1115,7 @@
                             <peso>73kg</peso>
                             <dorsal>7</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Vinícius Júnior.png"/>
                         </jugador>
                         <jugador id="JU030" equipo="E004">
                             <nombre>Luka Modrić</nombre>
@@ -1124,7 +1124,7 @@
                             <peso>66kg</peso>
                             <dorsal>10</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Luka Modrić.png"/>
                         </jugador>
                         <jugador id="JU031" equipo="E004">
                             <nombre>Toni Kroos</nombre>
@@ -1133,7 +1133,7 @@
                             <peso>76kg</peso>
                             <dorsal>8</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Toni Kroos.png"/>
                         </jugador>
                         <jugador id="JU032" equipo="E004">
                             <nombre>Thibaut Courtois</nombre>
@@ -1142,7 +1142,7 @@
                             <peso>96kg</peso>
                             <dorsal>1</dorsal>
                             <posicion>Portero</posicion>
-                            <foto url=""/>
+                            <foto url="Thibaut Courtois.png"/>
                         </jugador>
                         <jugador id="JU033" equipo="E004">
                             <nombre>Casemiro</nombre>
@@ -1151,7 +1151,7 @@
                             <peso>84kg</peso>
                             <dorsal>14</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Casemiro.png"/>
                         </jugador>
                         <jugador id="JU034" equipo="E004">
                             <nombre>David Alaba</nombre>
@@ -1160,7 +1160,7 @@
                             <peso>78kg</peso>
                             <dorsal>4</dorsal>
                             <posicion>Lateral Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="David Alaba.png"/>
                         </jugador>
                         <jugador id="JU035" equipo="E004">
                             <nombre>Éder Militão</nombre>
@@ -1169,7 +1169,7 @@
                             <peso>78kg</peso>
                             <dorsal>3</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Éder Militão.png"/>
                         </jugador>
                         <jugador id="JU036" equipo="E004">
                             <nombre>Rodrygo</nombre>
@@ -1178,7 +1178,7 @@
                             <peso>65kg</peso>
                             <dorsal>11</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Rodrygo.png"/>
                         </jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/VIGO.png"/>
@@ -1198,7 +1198,7 @@
                             <peso>71kg</peso>
                             <dorsal>11</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Mohamed Salah.png"/>
                         </jugador>
                         <jugador id="JU038" equipo="E005">
                             <nombre>Virgil van Dijk</nombre>
@@ -1207,7 +1207,7 @@
                             <peso>92kg</peso>
                             <dorsal>4</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Virgil van Dijk.png"/>
                         </jugador>
                         <jugador id="JU039" equipo="E005">
                             <nombre>Alisson Becker</nombre>
@@ -1216,7 +1216,7 @@
                             <peso>91kg</peso>
                             <dorsal>1</dorsal>
                             <posicion>Portero</posicion>
-                            <foto url=""/>
+                            <foto url="Alisson Becker.png"/>
                         </jugador>
                         <jugador id="JU040" equipo="E005">
                             <nombre>Trent Alexander-Arnold</nombre>
@@ -1225,7 +1225,7 @@
                             <peso>70kg</peso>
                             <dorsal>66</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Trent Alexander-Arnold.png"/>
                         </jugador>
                         <jugador id="JU041" equipo="E005">
                             <nombre>Roberto Firmino</nombre>
@@ -1234,7 +1234,7 @@
                             <peso>76kg</peso>
                             <dorsal>9</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Roberto Firmino.png"/>
                         </jugador>
                         <jugador id="JU042" equipo="E005">
                             <nombre>Thiago Alcântara</nombre>
@@ -1243,7 +1243,7 @@
                             <peso>70kg</peso>
                             <dorsal>6</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Thiago Alcântara.png"/>
                         </jugador>
                         <jugador id="JU043" equipo="E005">
                             <nombre>Fabinho</nombre>
@@ -1252,7 +1252,7 @@
                             <peso>78kg</peso>
                             <dorsal>3</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Fabinho.png"/>
                         </jugador>
                         <jugador id="JU044" equipo="E005">
                             <nombre>Andrew Robertson</nombre>
@@ -1261,7 +1261,7 @@
                             <peso>70kg</peso>
                             <dorsal>26</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Andrew Robertson.png"/>
                         </jugador>
                         <jugador id="JU045" equipo="E005">
                             <nombre>Jordan Henderson</nombre>
@@ -1270,7 +1270,7 @@
                             <peso>77kg</peso>
                             <dorsal>14</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Jordan Henderson.png"/>
                         </jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/SEVILLABM.png"/>
@@ -1290,7 +1290,7 @@
                             <peso>92kg</peso>
                             <dorsal>1</dorsal>
                             <posicion>Portero</posicion>
-                            <foto url=""/>
+                            <foto url="Manuel Neuer.png"/>
                         </jugador>
                         <jugador id="JU047" equipo="E006">
                             <nombre>Robert Lewandowski</nombre>
@@ -1299,7 +1299,7 @@
                             <peso>81kg</peso>
                             <dorsal>9</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Robert Lewandowski.png"/>
                         </jugador>
                         <jugador id="JU048" equipo="E006">
                             <nombre>Thomas Müller</nombre>
@@ -1308,7 +1308,7 @@
                             <peso>75kg</peso>
                             <dorsal>25</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Thomas Müller.png"/>
                         </jugador>
                         <jugador id="JU049" equipo="E006">
                             <nombre>Joshua Kimmich</nombre>
@@ -1317,7 +1317,7 @@
                             <peso>75kg</peso>
                             <dorsal>6</dorsal>
                             <posicion>Central</posicion>
-                            <foto url=""/>
+                            <foto url="Joshua Kimmich.png"/>
                         </jugador>
                         <jugador id="JU050" equipo="E006">
                             <nombre>Leroy Sané</nombre>
@@ -1326,7 +1326,7 @@
                             <peso>75kg</peso>
                             <dorsal>10</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Leroy Sané.png"/>
                         </jugador>
                         <jugador id="JU051" equipo="E006">
                             <nombre>Serge Gnabry</nombre>
@@ -1335,7 +1335,7 @@
                             <peso>77kg</peso>
                             <dorsal>7</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Serge Gnabry.png"/>
                         </jugador>
                         <jugador id="JU052" equipo="E006">
                             <nombre>Alphonso Davies</nombre>
@@ -1344,7 +1344,7 @@
                             <peso>75kg</peso>
                             <dorsal>19</dorsal>
                             <posicion>Extremo Izquierdo</posicion>
-                            <foto url=""/>
+                            <foto url="Alphonso Davies.png"/>
                         </jugador>
                         <jugador id="JU053" equipo="E006">
                             <nombre>Kingsley Coman</nombre>
@@ -1353,7 +1353,7 @@
                             <peso>71kg</peso>
                             <dorsal>29</dorsal>
                             <posicion>Extremo Derecho</posicion>
-                            <foto url=""/>
+                            <foto url="Kingsley Coman.png"/>
                         </jugador>
                         <jugador id="JU054" equipo="E006">
                             <nombre>Dayot Upamecano</nombre>
@@ -1362,7 +1362,7 @@
                             <peso>90kg</peso>
                             <dorsal>2</dorsal>
                             <posicion>Pivote</posicion>
-                            <foto url=""/>
+                            <foto url="Dayot Upamecano.png"/>
                         </jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/BILBAO.png"/>
@@ -1580,15 +1580,15 @@
                     <golesFavor>312</golesFavor>
                     <golesContra>218</golesContra>
                     <jugadores>
-                        <jugador id="JU001" equipo="E001"><nombre>Eder Sánchez</nombre><nacionalidad>España</nacionalidad><altura>182cm</altura><peso>80kg</peso><dorsal>24</dorsal><posicion>Extremo Izquierdo</posicion><foto url=""/></jugador>
-                        <jugador id="JU002" equipo="E001"><nombre>Rodney Javier Guachire</nombre><nacionalidad>Paraguay</nacionalidad><altura>175cm</altura><peso>72kg</peso><dorsal>33</dorsal><posicion>Lateral Izquierdo</posicion><foto url=""/></jugador>
-                        <jugador id="JU003" equipo="E001"><nombre>Alex Xabier</nombre><nacionalidad>España</nacionalidad><altura>188cm</altura><peso>85kg</peso><dorsal>10</dorsal><posicion>Central</posicion><foto url=""/></jugador>
-                        <jugador id="JU004" equipo="E001"><nombre>Igor López</nombre><nacionalidad>España</nacionalidad><altura>180cm</altura><peso>78kg</peso><dorsal>20</dorsal><posicion>Extremo Derecho</posicion><foto url=""/></jugador>
-                        <jugador id="JU005" equipo="E001"><nombre>Jaciel Jesús Vilorio</nombre><nacionalidad>Republica Dominicana</nacionalidad><altura>177cm</altura><peso>74kg</peso><dorsal>60</dorsal><posicion>Lateral Derecho</posicion><foto url=""/></jugador>
-                        <jugador id="JU006" equipo="E001"><nombre>Yulian</nombre><nacionalidad>colombia</nacionalidad><altura>179cm</altura><peso>73kg</peso><dorsal>78</dorsal><posicion>Pivote</posicion><foto url=""/></jugador>
-                        <jugador id="JU007" equipo="E001"><nombre>Hugo Barrios</nombre><nacionalidad>España</nacionalidad><altura>184cm</altura><peso>82kg</peso><dorsal>80</dorsal><posicion>Extremo Izquierdo</posicion><foto url=""/></jugador>
-                        <jugador id="JU008" equipo="E001"><nombre>Erik Rodríguez</nombre><nacionalidad>Portugal</nacionalidad><altura>173cm</altura><peso>69kg</peso><dorsal>50</dorsal><posicion>Lateral Izquierdo</posicion><foto url=""/></jugador>
-                        <jugador id="JU009" equipo="E001"><nombre>Daniel Herrera</nombre><nacionalidad>Italia</nacionalidad><altura>191cm</altura><peso>88kg</peso><dorsal>12</dorsal><posicion>Portero</posicion><foto url=""/></jugador>
+                        <jugador id="JU001" equipo="E001"><nombre>Eder Sánchez</nombre><nacionalidad>España</nacionalidad><altura>182cm</altura><peso>80kg</peso><dorsal>24</dorsal><posicion>Extremo Izquierdo</posicion><foto url="Gabriel\ Barbosa\.png"/></jugador>
+                        <jugador id="JU002" equipo="E001"><nombre>Rodney Javier Guachire</nombre><nacionalidad>Paraguay</nacionalidad><altura>175cm</altura><peso>72kg</peso><dorsal>33</dorsal><posicion>Lateral Izquierdo</posicion><foto url="Felipe\ Melo\.png"/></jugador>
+                        <jugador id="JU003" equipo="E001"><nombre>Alex Xabier</nombre><nacionalidad>España</nacionalidad><altura>188cm</altura><peso>85kg</peso><dorsal>10</dorsal><posicion>Central</posicion><foto url="Andrés\ Iniesta\.png"/></jugador>
+                        <jugador id="JU004" equipo="E001"><nombre>Igor López</nombre><nacionalidad>España</nacionalidad><altura>180cm</altura><peso>78kg</peso><dorsal>20</dorsal><posicion>Extremo Derecho</posicion><foto url="Lucas\ Silva\.png"/></jugador>
+                        <jugador id="JU005" equipo="E001"><nombre>Jaciel Jesús Vilorio</nombre><nacionalidad>Republica Dominicana</nacionalidad><altura>177cm</altura><peso>74kg</peso><dorsal>60</dorsal><posicion>Lateral Derecho</posicion><foto url="Javier\ Torres\.png"/></jugador>
+                        <jugador id="JU006" equipo="E001"><nombre>Yulian</nombre><nacionalidad>colombia</nacionalidad><altura>179cm</altura><peso>73kg</peso><dorsal>78</dorsal><posicion>Pivote</posicion><foto url="Daniel\ Herrera\.png"/></jugador>
+                        <jugador id="JU007" equipo="E001"><nombre>Hugo Barrios</nombre><nacionalidad>España</nacionalidad><altura>184cm</altura><peso>82kg</peso><dorsal>80</dorsal><posicion>Extremo Izquierdo</posicion><foto url="Erik\ Rodríguez\.png"/></jugador>
+                        <jugador id="JU008" equipo="E001"><nombre>Erik Rodríguez</nombre><nacionalidad>Portugal</nacionalidad><altura>173cm</altura><peso>69kg</peso><dorsal>50</dorsal><posicion>Lateral Izquierdo</posicion><foto url="Hugo\ Barrios\.png"/></jugador>
+                        <jugador id="JU009" equipo="E001"><nombre>Daniel Herrera</nombre><nacionalidad>Italia</nacionalidad><altura>191cm</altura><peso>88kg</peso><dorsal>12</dorsal><posicion>Portero</posicion><foto url="Yulian\.png"/></jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/BARCELONA.png"/>
                 </equipo>
@@ -1600,15 +1600,15 @@
                     <golesFavor>285</golesFavor>
                     <golesContra>241</golesContra>
                     <jugadores>
-                        <jugador id="JU010" equipo="E002"><nombre>Javier Torres</nombre><nacionalidad>España</nacionalidad><altura>190cm</altura><peso>86kg</peso><dorsal>1</dorsal><posicion>Portero</posicion><foto url=""/></jugador>
-                        <jugador id="JU011" equipo="E002"><nombre>Lucas Silva</nombre><nacionalidad>Brasil</nacionalidad><altura>183cm</altura><peso>81kg</peso><dorsal>2</dorsal><posicion>Extremo Izquierdo</posicion><foto url=""/></jugador>
-                        <jugador id="JU012" equipo="E002"><nombre>Andrés Iniesta</nombre><nacionalidad>España</nacionalidad><altura>171cm</altura><peso>68kg</peso><dorsal>3</dorsal><posicion>Central</posicion><foto url=""/></jugador>
-                        <jugador id="JU013" equipo="E002"><nombre>Felipe Melo</nombre><nacionalidad>Brasil</nacionalidad><altura>183cm</altura><peso>83kg</peso><dorsal>4</dorsal><posicion>Pivote</posicion><foto url=""/></jugador>
-                        <jugador id="JU014" equipo="E002"><nombre>Gabriel Barbosa</nombre><nacionalidad>Brasil</nacionalidad><altura>178cm</altura><peso>75kg</peso><dorsal>5</dorsal><posicion>Extremo Derecho</posicion><foto url=""/></jugador>
-                        <jugador id="JU015" equipo="E002"><nombre>Oscar Martínez</nombre><nacionalidad>España</nacionalidad><altura>185cm</altura><peso>80kg</peso><dorsal>6</dorsal><posicion>Lateral Izquierdo</posicion><foto url=""/></jugador>
-                        <jugador id="JU016" equipo="E002"><nombre>Pablo Hernández</nombre><nacionalidad>España</nacionalidad><altura>174cm</altura><peso>70kg</peso><dorsal>7</dorsal><posicion>Lateral Derecho</posicion><foto url=""/></jugador>
-                        <jugador id="JU017" equipo="E002"><nombre>Mateo García</nombre><nacionalidad>Portugal</nacionalidad><altura>176cm</altura><peso>72kg</peso><dorsal>8</dorsal><posicion>Central</posicion><foto url=""/></jugador>
-                        <jugador id="JU018" equipo="E002"><nombre>Nicolás Otamendi</nombre><nacionalidad>Argentina</nacionalidad><altura>183cm</altura><peso>82kg</peso><dorsal>9</dorsal><posicion>Extremo Izquierdo</posicion><foto url=""/></jugador>
+                        <jugador id="JU010" equipo="E002"><nombre>Javier Torres</nombre><nacionalidad>España</nacionalidad><altura>190cm</altura><peso>86kg</peso><dorsal>1</dorsal><posicion>Portero</posicion><foto url="Jaciel\ Jesús\ Vilorio\.png"/></jugador>
+                        <jugador id="JU011" equipo="E002"><nombre>Lucas Silva</nombre><nacionalidad>Brasil</nacionalidad><altura>183cm</altura><peso>81kg</peso><dorsal>2</dorsal><posicion>Extremo Izquierdo</posicion><foto url="Igor\ López\.png"/></jugador>
+                        <jugador id="JU012" equipo="E002"><nombre>Andrés Iniesta</nombre><nacionalidad>España</nacionalidad><altura>171cm</altura><peso>68kg</peso><dorsal>3</dorsal><posicion>Central</posicion><foto url="Alex\ Xabier\.png"/></jugador>
+                        <jugador id="JU013" equipo="E002"><nombre>Felipe Melo</nombre><nacionalidad>Brasil</nacionalidad><altura>183cm</altura><peso>83kg</peso><dorsal>4</dorsal><posicion>Pivote</posicion><foto url="Rodney\ Javier\ Guachire\.png"/></jugador>
+                        <jugador id="JU014" equipo="E002"><nombre>Gabriel Barbosa</nombre><nacionalidad>Brasil</nacionalidad><altura>178cm</altura><peso>75kg</peso><dorsal>5</dorsal><posicion>Extremo Derecho</posicion><foto url="Eder\ Sánchez\.png"/></jugador>
+                        <jugador id="JU015" equipo="E002"><nombre>Oscar Martínez</nombre><nacionalidad>España</nacionalidad><altura>185cm</altura><peso>80kg</peso><dorsal>6</dorsal><posicion>Lateral Izquierdo</posicion><foto url="Oscar Martínez.png"/></jugador>
+                        <jugador id="JU016" equipo="E002"><nombre>Pablo Hernández</nombre><nacionalidad>España</nacionalidad><altura>174cm</altura><peso>70kg</peso><dorsal>7</dorsal><posicion>Lateral Derecho</posicion><foto url="Pablo Hernández.png"/></jugador>
+                        <jugador id="JU017" equipo="E002"><nombre>Mateo García</nombre><nacionalidad>Portugal</nacionalidad><altura>176cm</altura><peso>72kg</peso><dorsal>8</dorsal><posicion>Central</posicion><foto url="Mateo García.png"/></jugador>
+                        <jugador id="JU018" equipo="E002"><nombre>Nicolás Otamendi</nombre><nacionalidad>Argentina</nacionalidad><altura>183cm</altura><peso>82kg</peso><dorsal>9</dorsal><posicion>Extremo Izquierdo</posicion><foto url="Nicolás Otamendi.png"/></jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/ZARAGOZABM.png"/>
                 </equipo>
@@ -1620,15 +1620,15 @@
                     <golesFavor>268</golesFavor>
                     <golesContra>254</golesContra>
                     <jugadores>
-                        <jugador id="JU019" equipo="E003"><nombre>Marco Verratti</nombre><nacionalidad>Italia</nacionalidad><altura>165cm</altura><peso>60kg</peso><dorsal>10</dorsal><posicion>Central</posicion><foto url=""/></jugador>
-                        <jugador id="JU020" equipo="E003"><nombre>Kylian Mbappé</nombre><nacionalidad>Francia</nacionalidad><altura>178cm</altura><peso>75kg</peso><dorsal>7</dorsal><posicion>Extremo Derecho</posicion><foto url=""/></jugador>
-                        <jugador id="JU021" equipo="E003"><nombre>Neymar Jr</nombre><nacionalidad>Brasil</nacionalidad><altura>175cm</altura><peso>68kg</peso><dorsal>11</dorsal><posicion>Extremo Izquierdo</posicion><foto url=""/></jugador>
-                        <jugador id="JU022" equipo="E003"><nombre>Lionel Messi</nombre><nacionalidad>Argentina</nacionalidad><altura>170cm</altura><peso>72kg</peso><dorsal>30</dorsal><posicion>Central</posicion><foto url=""/></jugador>
-                        <jugador id="JU023" equipo="E003"><nombre>Sergio Ramos</nombre><nacionalidad>España</nacionalidad><altura>184cm</altura><peso>82kg</peso><dorsal>4</dorsal><posicion>Pivote</posicion><foto url=""/></jugador>
-                        <jugador id="JU024" equipo="E003"><nombre>Gianluigi Donnarumma</nombre><nacionalidad>Italia</nacionalidad><altura>196cm</altura><peso>90kg</peso><dorsal>50</dorsal><posicion>Portero</posicion><foto url=""/></jugador>
-                        <jugador id="JU025" equipo="E003"><nombre>Achraf Hakimi</nombre><nacionalidad>Marueccos</nacionalidad><altura>181cm</altura><peso>73kg</peso><dorsal>2</dorsal><posicion>Extremo Derecho</posicion><foto url=""/></jugador>
-                        <jugador id="JU026" equipo="E003"><nombre>Marquinhos</nombre><nacionalidad>Brasil</nacionalidad><altura>183cm</altura><peso>79kg</peso><dorsal>3</dorsal><posicion>Extremo Izquierdo</posicion><foto url=""/></jugador>
-                        <jugador id="JU027" equipo="E003"><nombre>Ángel Di María</nombre><nacionalidad>Argentina</nacionalidad><altura>178cm</altura><peso>75kg</peso><dorsal>18</dorsal><posicion>Lateral Derecho</posicion><foto url=""/></jugador>
+                        <jugador id="JU019" equipo="E003"><nombre>Marco Verratti</nombre><nacionalidad>Italia</nacionalidad><altura>165cm</altura><peso>60kg</peso><dorsal>10</dorsal><posicion>Central</posicion><foto url="Marco Verratti.png"/></jugador>
+                        <jugador id="JU020" equipo="E003"><nombre>Kylian Mbappé</nombre><nacionalidad>Francia</nacionalidad><altura>178cm</altura><peso>75kg</peso><dorsal>7</dorsal><posicion>Extremo Derecho</posicion><foto url="Kylian Mbappé.png"/></jugador>
+                        <jugador id="JU021" equipo="E003"><nombre>Neymar Jr</nombre><nacionalidad>Brasil</nacionalidad><altura>175cm</altura><peso>68kg</peso><dorsal>11</dorsal><posicion>Extremo Izquierdo</posicion><foto url="Neymar Jr.png"/></jugador>
+                        <jugador id="JU022" equipo="E003"><nombre>Lionel Messi</nombre><nacionalidad>Argentina</nacionalidad><altura>170cm</altura><peso>72kg</peso><dorsal>30</dorsal><posicion>Central</posicion><foto url="Lionel Messi.png"/></jugador>
+                        <jugador id="JU023" equipo="E003"><nombre>Sergio Ramos</nombre><nacionalidad>España</nacionalidad><altura>184cm</altura><peso>82kg</peso><dorsal>4</dorsal><posicion>Pivote</posicion><foto url="Sergio Ramos.png"/></jugador>
+                        <jugador id="JU024" equipo="E003"><nombre>Gianluigi Donnarumma</nombre><nacionalidad>Italia</nacionalidad><altura>196cm</altura><peso>90kg</peso><dorsal>50</dorsal><posicion>Portero</posicion><foto url="Gianluigi Donnarumma.png"/></jugador>
+                        <jugador id="JU025" equipo="E003"><nombre>Achraf Hakimi</nombre><nacionalidad>Marueccos</nacionalidad><altura>181cm</altura><peso>73kg</peso><dorsal>2</dorsal><posicion>Extremo Derecho</posicion><foto url="Achraf Hakimi.png"/></jugador>
+                        <jugador id="JU026" equipo="E003"><nombre>Marquinhos</nombre><nacionalidad>Brasil</nacionalidad><altura>183cm</altura><peso>79kg</peso><dorsal>3</dorsal><posicion>Extremo Izquierdo</posicion><foto url="Marquinhos.png"/></jugador>
+                        <jugador id="JU027" equipo="E003"><nombre>Ángel Di María</nombre><nacionalidad>Argentina</nacionalidad><altura>178cm</altura><peso>75kg</peso><dorsal>18</dorsal><posicion>Lateral Derecho</posicion><foto url="Ángel Di María.png"/></jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/VALENCIA.png"/>
                 </equipo>
@@ -1640,15 +1640,15 @@
                     <golesFavor>275</golesFavor>
                     <golesContra>263</golesContra>
                     <jugadores>
-                        <jugador id="JU028" equipo="E004"><nombre>Karim Benzema</nombre><nacionalidad>Francia</nacionalidad><altura>185cm</altura><peso>81kg</peso><dorsal>9</dorsal><posicion>Pivote</posicion><foto url=""/></jugador>
-                        <jugador id="JU029" equipo="E004"><nombre>Vinícius Júnior</nombre><nacionalidad>Brasil</nacionalidad><altura>176cm</altura><peso>73kg</peso><dorsal>7</dorsal><posicion>Extremo Izquierdo</posicion><foto url=""/></jugador>
-                        <jugador id="JU030" equipo="E004"><nombre>Luka Modrić</nombre><nacionalidad>Croacia</nacionalidad><altura>172cm</altura><peso>66kg</peso><dorsal>10</dorsal><posicion>Central</posicion><foto url=""/></jugador>
-                        <jugador id="JU031" equipo="E004"><nombre>Toni Kroos</nombre><nacionalidad>Alemania</nacionalidad><altura>183cm</altura><peso>76kg</peso><dorsal>8</dorsal><posicion>Central</posicion><foto url=""/></jugador>
-                        <jugador id="JU032" equipo="E004"><nombre>Thibaut Courtois</nombre><nacionalidad>Bélgica</nacionalidad><altura>200cm</altura><peso>96kg</peso><dorsal>1</dorsal><posicion>Portero</posicion><foto url=""/></jugador>
-                        <jugador id="JU033" equipo="E004"><nombre>Casemiro</nombre><nacionalidad>Brasil</nacionalidad><altura>185cm</altura><peso>84kg</peso><dorsal>14</dorsal><posicion>Pivote</posicion><foto url=""/></jugador>
-                        <jugador id="JU034" equipo="E004"><nombre>David Alaba</nombre><nacionalidad>Austria</nacionalidad><altura>180cm</altura><peso>78kg</peso><dorsal>4</dorsal><posicion>Lateral Izquierdo</posicion><foto url=""/></jugador>
-                        <jugador id="JU035" equipo="E004"><nombre>Éder Militão</nombre><nacionalidad>Brasil</nacionalidad><altura>186cm</altura><peso>78kg</peso><dorsal>3</dorsal><posicion>Extremo Izquierdo</posicion><foto url=""/></jugador>
-                        <jugador id="JU036" equipo="E004"><nombre>Rodrygo</nombre><nacionalidad>Brasil</nacionalidad><altura>174cm</altura><peso>65kg</peso><dorsal>11</dorsal><posicion>Extremo Derecho</posicion><foto url=""/></jugador>
+                        <jugador id="JU028" equipo="E004"><nombre>Karim Benzema</nombre><nacionalidad>Francia</nacionalidad><altura>185cm</altura><peso>81kg</peso><dorsal>9</dorsal><posicion>Pivote</posicion><foto url="Karim Benzema.png"/></jugador>
+                        <jugador id="JU029" equipo="E004"><nombre>Vinícius Júnior</nombre><nacionalidad>Brasil</nacionalidad><altura>176cm</altura><peso>73kg</peso><dorsal>7</dorsal><posicion>Extremo Izquierdo</posicion><foto url="Vinícius Júnior.png"/></jugador>
+                        <jugador id="JU030" equipo="E004"><nombre>Luka Modrić</nombre><nacionalidad>Croacia</nacionalidad><altura>172cm</altura><peso>66kg</peso><dorsal>10</dorsal><posicion>Central</posicion><foto url="Luka Modrić.png"/></jugador>
+                        <jugador id="JU031" equipo="E004"><nombre>Toni Kroos</nombre><nacionalidad>Alemania</nacionalidad><altura>183cm</altura><peso>76kg</peso><dorsal>8</dorsal><posicion>Central</posicion><foto url="Toni Kroos.png"/></jugador>
+                        <jugador id="JU032" equipo="E004"><nombre>Thibaut Courtois</nombre><nacionalidad>Bélgica</nacionalidad><altura>200cm</altura><peso>96kg</peso><dorsal>1</dorsal><posicion>Portero</posicion><foto url="Thibaut Courtois.png"/></jugador>
+                        <jugador id="JU033" equipo="E004"><nombre>Casemiro</nombre><nacionalidad>Brasil</nacionalidad><altura>185cm</altura><peso>84kg</peso><dorsal>14</dorsal><posicion>Pivote</posicion><foto url="Casemiro.png"/></jugador>
+                        <jugador id="JU034" equipo="E004"><nombre>David Alaba</nombre><nacionalidad>Austria</nacionalidad><altura>180cm</altura><peso>78kg</peso><dorsal>4</dorsal><posicion>Lateral Izquierdo</posicion><foto url="David Alaba.png"/></jugador>
+                        <jugador id="JU035" equipo="E004"><nombre>Éder Militão</nombre><nacionalidad>Brasil</nacionalidad><altura>186cm</altura><peso>78kg</peso><dorsal>3</dorsal><posicion>Extremo Izquierdo</posicion><foto url="Éder Militão.png"/></jugador>
+                        <jugador id="JU036" equipo="E004"><nombre>Rodrygo</nombre><nacionalidad>Brasil</nacionalidad><altura>174cm</altura><peso>65kg</peso><dorsal>11</dorsal><posicion>Extremo Derecho</posicion><foto url="Rodrygo.png"/></jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/VIGO.png"/>
                 </equipo>
@@ -1660,15 +1660,15 @@
                     <golesFavor>241</golesFavor>
                     <golesContra>283</golesContra>
                     <jugadores>
-                        <jugador id="JU037" equipo="E005"><nombre>Mohamed Salah</nombre><nacionalidad>Egipto</nacionalidad><altura>175cm</altura><peso>71kg</peso><dorsal>11</dorsal><posicion>Extremo Derecho</posicion><foto url=""/></jugador>
-                        <jugador id="JU038" equipo="E005"><nombre>Virgil van Dijk</nombre><nacionalidad>Países Bajos</nacionalidad><altura>193cm</altura><peso>92kg</peso><dorsal>4</dorsal><posicion>Pivote</posicion><foto url=""/></jugador>
-                        <jugador id="JU039" equipo="E005"><nombre>Alisson Becker</nombre><nacionalidad>Brasil</nacionalidad><altura>191cm</altura><peso>91kg</peso><dorsal>1</dorsal><posicion>Portero</posicion><foto url=""/></jugador>
-                        <jugador id="JU040" equipo="E005"><nombre>Trent Alexander-Arnold</nombre><nacionalidad>Inglaterra</nacionalidad><altura>180cm</altura><peso>70kg</peso><dorsal>66</dorsal><posicion>Extremo Derecho</posicion><foto url=""/></jugador>
-                        <jugador id="JU041" equipo="E005"><nombre>Roberto Firmino</nombre><nacionalidad>Brasil</nacionalidad><altura>181cm</altura><peso>76kg</peso><dorsal>9</dorsal><posicion>Central</posicion><foto url=""/></jugador>
-                        <jugador id="JU042" equipo="E005"><nombre>Thiago Alcântara</nombre><nacionalidad>España</nacionalidad><altura>174cm</altura><peso>70kg</peso><dorsal>6</dorsal><posicion>Central</posicion><foto url=""/></jugador>
-                        <jugador id="JU043" equipo="E005"><nombre>Fabinho</nombre><nacionalidad>Brasil</nacionalidad><altura>188cm</altura><peso>78kg</peso><dorsal>3</dorsal><posicion>Pivote</posicion><foto url=""/></jugador>
-                        <jugador id="JU044" equipo="E005"><nombre>Andrew Robertson</nombre><nacionalidad>Escocia</nacionalidad><altura>178cm</altura><peso>70kg</peso><dorsal>26</dorsal><posicion>Extremo Izquierdo</posicion><foto url=""/></jugador>
-                        <jugador id="JU045" equipo="E005"><nombre>Jordan Henderson</nombre><nacionalidad>Inglaterra</nacionalidad><altura>182cm</altura><peso>77kg</peso><dorsal>14</dorsal><posicion>Central</posicion><foto url=""/></jugador>
+                        <jugador id="JU037" equipo="E005"><nombre>Mohamed Salah</nombre><nacionalidad>Egipto</nacionalidad><altura>175cm</altura><peso>71kg</peso><dorsal>11</dorsal><posicion>Extremo Derecho</posicion><foto url="Mohamed Salah.png"/></jugador>
+                        <jugador id="JU038" equipo="E005"><nombre>Virgil van Dijk</nombre><nacionalidad>Países Bajos</nacionalidad><altura>193cm</altura><peso>92kg</peso><dorsal>4</dorsal><posicion>Pivote</posicion><foto url="Virgil van Dijk.png"/></jugador>
+                        <jugador id="JU039" equipo="E005"><nombre>Alisson Becker</nombre><nacionalidad>Brasil</nacionalidad><altura>191cm</altura><peso>91kg</peso><dorsal>1</dorsal><posicion>Portero</posicion><foto url="Alisson Becker.png"/></jugador>
+                        <jugador id="JU040" equipo="E005"><nombre>Trent Alexander-Arnold</nombre><nacionalidad>Inglaterra</nacionalidad><altura>180cm</altura><peso>70kg</peso><dorsal>66</dorsal><posicion>Extremo Derecho</posicion><foto url="Trent Alexander-Arnold.png"/></jugador>
+                        <jugador id="JU041" equipo="E005"><nombre>Roberto Firmino</nombre><nacionalidad>Brasil</nacionalidad><altura>181cm</altura><peso>76kg</peso><dorsal>9</dorsal><posicion>Central</posicion><foto url="Roberto Firmino.png"/></jugador>
+                        <jugador id="JU042" equipo="E005"><nombre>Thiago Alcântara</nombre><nacionalidad>España</nacionalidad><altura>174cm</altura><peso>70kg</peso><dorsal>6</dorsal><posicion>Central</posicion><foto url="Thiago Alcântara.png"/></jugador>
+                        <jugador id="JU043" equipo="E005"><nombre>Fabinho</nombre><nacionalidad>Brasil</nacionalidad><altura>188cm</altura><peso>78kg</peso><dorsal>3</dorsal><posicion>Pivote</posicion><foto url="Fabinho.png"/></jugador>
+                        <jugador id="JU044" equipo="E005"><nombre>Andrew Robertson</nombre><nacionalidad>Escocia</nacionalidad><altura>178cm</altura><peso>70kg</peso><dorsal>26</dorsal><posicion>Extremo Izquierdo</posicion><foto url="Andrew Robertson.png"/></jugador>
+                        <jugador id="JU045" equipo="E005"><nombre>Jordan Henderson</nombre><nacionalidad>Inglaterra</nacionalidad><altura>182cm</altura><peso>77kg</peso><dorsal>14</dorsal><posicion>Central</posicion><foto url="Jordan Henderson.png"/></jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/SEVILLABM.png"/>
                 </equipo>
@@ -1680,15 +1680,15 @@
                     <golesFavor>296</golesFavor>
                     <golesContra>234</golesContra>
                     <jugadores>
-                        <jugador id="JU046" equipo="E006"><nombre>Manuel Neuer</nombre><nacionalidad>Alemania</nacionalidad><altura>193cm</altura><peso>92kg</peso><dorsal>1</dorsal><posicion>Portero</posicion><foto url=""/></jugador>
-                        <jugador id="JU047" equipo="E006"><nombre>Robert Lewandowski</nombre><nacionalidad>Polonia</nacionalidad><altura>185cm</altura><peso>81kg</peso><dorsal>9</dorsal><posicion>Pivote</posicion><foto url=""/></jugador>
-                        <jugador id="JU048" equipo="E006"><nombre>Thomas Müller</nombre><nacionalidad>Alemania</nacionalidad><altura>186cm</altura><peso>75kg</peso><dorsal>25</dorsal><posicion>Central</posicion><foto url=""/></jugador>
-                        <jugador id="JU049" equipo="E006"><nombre>Joshua Kimmich</nombre><nacionalidad>Alemania</nacionalidad><altura>177cm</altura><peso>75kg</peso><dorsal>6</dorsal><posicion>Central</posicion><foto url=""/></jugador>
-                        <jugador id="JU050" equipo="E006"><nombre>Leroy Sané</nombre><nacionalidad>Alemania</nacionalidad><altura>183cm</altura><peso>75kg</peso><dorsal>10</dorsal><posicion>Extremo Izquierdo</posicion><foto url=""/></jugador>
-                        <jugador id="JU051" equipo="E006"><nombre>Serge Gnabry</nombre><nacionalidad>Alemania</nacionalidad><altura>176cm</altura><peso>77kg</peso><dorsal>7</dorsal><posicion>Extremo Derecho</posicion><foto url=""/></jugador>
-                        <jugador id="JU052" equipo="E006"><nombre>Alphonso Davies</nombre><nacionalidad>Canadá</nacionalidad><altura>183cm</altura><peso>75kg</peso><dorsal>19</dorsal><posicion>Extremo Izquierdo</posicion><foto url=""/></jugador>
-                        <jugador id="JU053" equipo="E006"><nombre>Kingsley Coman</nombre><nacionalidad>Francia</nacionalidad><altura>178cm</altura><peso>71kg</peso><dorsal>29</dorsal><posicion>Extremo Derecho</posicion><foto url=""/></jugador>
-                        <jugador id="JU054" equipo="E006"><nombre>Dayot Upamecano</nombre><nacionalidad>Francia</nacionalidad><altura>186cm</altura><peso>90kg</peso><dorsal>2</dorsal><posicion>Pivote</posicion><foto url=""/></jugador>
+                        <jugador id="JU046" equipo="E006"><nombre>Manuel Neuer</nombre><nacionalidad>Alemania</nacionalidad><altura>193cm</altura><peso>92kg</peso><dorsal>1</dorsal><posicion>Portero</posicion><foto url="Manuel Neuer.png"/></jugador>
+                        <jugador id="JU047" equipo="E006"><nombre>Robert Lewandowski</nombre><nacionalidad>Polonia</nacionalidad><altura>185cm</altura><peso>81kg</peso><dorsal>9</dorsal><posicion>Pivote</posicion><foto url="Robert Lewandowski.png"/></jugador>
+                        <jugador id="JU048" equipo="E006"><nombre>Thomas Müller</nombre><nacionalidad>Alemania</nacionalidad><altura>186cm</altura><peso>75kg</peso><dorsal>25</dorsal><posicion>Central</posicion><foto url="Thomas Müller.png"/></jugador>
+                        <jugador id="JU049" equipo="E006"><nombre>Joshua Kimmich</nombre><nacionalidad>Alemania</nacionalidad><altura>177cm</altura><peso>75kg</peso><dorsal>6</dorsal><posicion>Central</posicion><foto url="Joshua Kimmich.png"/></jugador>
+                        <jugador id="JU050" equipo="E006"><nombre>Leroy Sané</nombre><nacionalidad>Alemania</nacionalidad><altura>183cm</altura><peso>75kg</peso><dorsal>10</dorsal><posicion>Extremo Izquierdo</posicion><foto url="Leroy Sané.png"/></jugador>
+                        <jugador id="JU051" equipo="E006"><nombre>Serge Gnabry</nombre><nacionalidad>Alemania</nacionalidad><altura>176cm</altura><peso>77kg</peso><dorsal>7</dorsal><posicion>Extremo Derecho</posicion><foto url="Serge Gnabry.png"/></jugador>
+                        <jugador id="JU052" equipo="E006"><nombre>Alphonso Davies</nombre><nacionalidad>Canadá</nacionalidad><altura>183cm</altura><peso>75kg</peso><dorsal>19</dorsal><posicion>Extremo Izquierdo</posicion><foto url="Alphonso Davies.png"/></jugador>
+                        <jugador id="JU053" equipo="E006"><nombre>Kingsley Coman</nombre><nacionalidad>Francia</nacionalidad><altura>178cm</altura><peso>71kg</peso><dorsal>29</dorsal><posicion>Extremo Derecho</posicion><foto url="Kingsley Coman.png"/></jugador>
+                        <jugador id="JU054" equipo="E006"><nombre>Dayot Upamecano</nombre><nacionalidad>Francia</nacionalidad><altura>186cm</altura><peso>90kg</peso><dorsal>2</dorsal><posicion>Pivote</posicion><foto url="Dayot Upamecano.png"/></jugador>
                     </jugadores>
                     <escudo url="./imagenes/imagenes_Logos/BILBAO.png"/>
                 </equipo>

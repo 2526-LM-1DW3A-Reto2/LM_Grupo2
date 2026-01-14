@@ -8,6 +8,7 @@
     <xsl:template match="jugador">
         <div class="cardJugador">
             <h3><xsl:value-of select="nombre"/></h3>
+            <img src="" alt=""/>
             <p><strong>Equipo: </strong> <xsl:value-of select="ancestor::equipo/nombre"/></p>
             <p><strong>Nacionalidad: </strong> <xsl:value-of select="nacionalidad"/></p>
             <p><strong>Edad: </strong> <xsl:value-of select="edad"/> años</p>

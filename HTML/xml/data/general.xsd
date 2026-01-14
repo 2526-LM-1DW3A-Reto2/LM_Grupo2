@@ -39,6 +39,10 @@
                                                                                             name="nombre"
                                                                                             type="xs:string" />
                                                                                         <xs:element
+                                                                                            name="edad"
+                                                                                            minOccurs="0"
+                                                                                            type="xs:string" />
+                                                                                        <xs:element
                                                                                             name="nacionalidad"
                                                                                             type="xs:string" />
                                                                                         <xs:element
@@ -99,7 +103,18 @@
                                                                     </xs:complexType>
                                                                 </xs:element>
                                                             </xs:sequence>
-                                                            <xs:attribute name="id" use="required" />
+                                                            <xs:attribute name="id" use="required">
+                                                                <xs:simpleType>
+                                                                    <xs:restriction base="xs:string">
+                                                                        <xs:enumeration value="E001" />
+                                                                        <xs:enumeration value="E002" />
+                                                                        <xs:enumeration value="E003" />
+                                                                        <xs:enumeration value="E004" />
+                                                                        <xs:enumeration value="E005" />
+                                                                        <xs:enumeration value="E006" />
+                                                                    </xs:restriction>
+                                                                </xs:simpleType>
+                                                            </xs:attribute>
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
@@ -168,7 +183,22 @@
                                                                     </xs:complexType>
                                                                 </xs:element>
                                                             </xs:sequence>
-                                                            <xs:attribute name="id" use="required" />
+                                                            <xs:attribute name="id" use="required">
+                                                                <xs:simpleType>
+                                                                    <xs:restriction base="xs:string">
+                                                                        <xs:enumeration value="J021" />
+                                                                        <xs:enumeration value="J022" />
+                                                                        <xs:enumeration value="J023" />
+                                                                        <xs:enumeration value="J024" />
+                                                                        <xs:enumeration value="J025" />
+                                                                        <xs:enumeration value="J026" />
+                                                                        <xs:enumeration value="J027" />
+                                                                        <xs:enumeration value="J028" />
+                                                                        <xs:enumeration value="J029" />
+                                                                        <xs:enumeration value="J030" />
+                                                                    </xs:restriction>
+                                                                </xs:simpleType>
+                                                            </xs:attribute>
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
