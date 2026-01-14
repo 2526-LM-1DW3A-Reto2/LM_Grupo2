@@ -46,7 +46,7 @@
                         <td><xsl:value-of select="$PE"/></td>
                         <td><xsl:value-of select="$PP"/></td>
                         <td><xsl:value-of select="$GF"/></td>
-                        <td><xsl:value-of select="$GC"/></td>
+                        <td><xsl:value-of aselect="$GC"/></td>
                         <td>
                             <xsl:choose>
                                 <xsl:when test="$DIF %gt; 0">+<xsl:value-of select="$DIF"/></xsl:when>
