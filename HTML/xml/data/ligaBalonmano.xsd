@@ -11,7 +11,6 @@
                                     <xs:sequence>
                                         <xs:element name="idEquipo" type="xs:string" />
                                         <xs:element name="nombreEquipo" type="xs:string" />
-                                        <xs:element name="fundacion" type="xs:string" />
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>

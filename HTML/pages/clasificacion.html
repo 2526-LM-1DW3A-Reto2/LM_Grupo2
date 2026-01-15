@@ -1,0 +1,239 @@
+<h1 class="tituloPagina">Clasificación General</h1>
+
+<!-- Navegación rápida interna -->
+<div class="quick-nav" style="margin-bottom: 3rem; text-align: center">
+  <a href="#tabla-clasificacion" class="btnInterno" title="Ir a tabla"
+    >Ver Tabla</a
+  >
+  <a
+    href="#criterios-desempate"
+    class="btnInterno"
+    style="margin-left: 1rem"
+    title="Ver criterios"
+    >Criterios</a
+  >
+  <a
+    href="#estadisticas"
+    class="btnInterno"
+    style="margin-left: 1rem"
+    title="Ver estadísticas"
+    >Estadísticas</a
+  >
+</div>
+
+<!-- TABLA DE CLASIFICACIÓN CON XML  -->
+<section class="seccion">
+  <h2>Tabla de clasificación</h2>
+  <figure class="temporadasDropdown">
+    <select id="selectorTemporada" class="btnTemporadas btnInterno">
+      <option value="">Cargando temporadas...</option>
+    </select>
+  </figure>
+  <div class="tablaContenedor">
+    <section id="tablaClasificacion"></section>
+  </div>
+</section>
+
+<!-- TABLA DE CLASIFICACIÓN -->
+
+<!-- GALERÍA DE IMÁGENES - MOMENTOS DESTACADOS -->
+<section class="seccion" id="galeria-clasificacion">
+  <h2>Momentos Destacados de la Temporada</h2>
+  <div class="galeriaImagenes">
+    <!-- Imagen 1: Líder -->
+    <figure class="galeriaItem">
+      <img
+        src="imagenes/barcelona-lider.jpg"
+        alt="FC Barcelona celebrando su liderato invicto en la competición"
+        title="FC Barcelona - Líder invicto"
+        width="800"
+        height="600"
+        border="0"
+        align="center"
+        hspace="10"
+        vspace="10"
+      />
+      <figcaption>FC Barcelona mantiene el liderato invicto</figcaption>
+    </figure>
+
+    <!-- Imagen 2: Batalla por el podio -->
+    <figure class="galeriaItem">
+      <img
+        src="imagenes/podio-batalla.jpg"
+        alt="Jugadores de Zaragoza BM y Valencia HC disputando la segunda posición"
+        title="Lucha por el segundo puesto"
+        width="800"
+        height="600"
+        border="0"
+        hspace="10"
+        vspace="10"
+      />
+      <figcaption>Intensa batalla por el podio</figcaption>
+    </figure>
+
+    <!-- Imagen 3: Emoción -->
+    <figure class="galeriaItem">
+      <img
+        src="imagenes/emocion-liga.jpg"
+        alt="Aficionados celebrando en las gradas durante un partido emocionante"
+        title="La pasión de la afición"
+        width="800"
+        height="600"
+        border="0"
+        align="center"
+        hspace="10"
+        vspace="10"
+      />
+      <figcaption>La pasión del balonmano español</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- CRITERIOS DE DESEMPATE -->
+<section class="seccion" id="criterios-desempate">
+  <h2>Criterios de Desempate</h2>
+  <div class="cajaCriterios">
+    <p>
+      <strong
+        >En caso de empate a puntos entre dos o más equipos, se aplicarán los
+        siguientes criterios en orden de preferencia:</strong
+      >
+    </p>
+    <ol>
+      <li>
+        <strong>Diferencia de goles</strong> en los enfrentamientos directos
+        entre los equipos empatados (goles a favor menos goles en contra en
+        partidos mutuos)
+      </li>
+      <li>
+        <strong>Mayor número de goles a favor</strong> en los enfrentamientos
+        directos entre los equipos empatados
+      </li>
+      <li>
+        <strong>Diferencia general de goles</strong> en toda la competición
+        (todos los partidos de la temporada)
+      </li>
+      <li>
+        <strong>Mayor número de goles a favor</strong> en toda la competición
+        regular
+      </li>
+      <li>
+        <strong>Menor número de sanciones disciplinarias</strong>
+        acumuladas (tarjetas amarillas y rojas convertidas a puntos de
+        penalización)
+      </li>
+      <li>
+        <strong>Fair Play</strong> - Mejor comportamiento deportivo evaluado por
+        el comité técnico de la federación
+      </li>
+      <li>
+        En caso de persistir el empate después de aplicar todos los criterios
+        anteriores, se realizará un
+        <strong>sorteo oficial</strong> en presencia de representantes de ambos
+        clubes y la federación
+      </li>
+    </ol>
+    <p style="margin-top: 1.5rem">
+      <em
+        ><strong>Leyenda de la tabla:</strong> PJ (Partidos Jugados), PG
+        (Partidos Ganados), PE (Partidos Empatados), PP (Partidos Perdidos), GF
+        (Goles a Favor), GC (Goles en Contra), DIF (Diferencia de Goles), PTS
+        (Puntos Totales)</em
+      >
+    </p>
+    <p>
+      <strong>Sistema de puntuación oficial:</strong> Victoria = 2 puntos |
+      Empate = 1 punto | Derrota = 0 puntos
+    </p>
+  </div>
+</section>
+
+<!-- VIDEO: ANÁLISIS DE LA CLASIFICACIÓN -->
+<section class="seccion" id="video-analisis">
+  <h2>📺 Análisis de la Clasificación</h2>
+  <div class="videoContenedor">
+    <video
+      width="100%"
+      height="100%"
+      controls
+      poster="imagenes/video-clasificacion-poster.jpg"
+    >
+      <source src="videos/analisis-clasificacion.mp4" type="video/mp4" />
+      <source src="videos/analisis-clasificacion.webm" type="video/webm" />
+      <source src="videos/analisis-clasificacion.ogg" type="video/ogg" />
+      Tu navegador no soporta el elemento de video.
+      <a href="videos/analisis-clasificacion.mp4" title="Descargar video"
+        >Descargar análisis en video</a
+      >
+    </video>
+  </div>
+  <p style="text-align: center; margin-top: 1rem; color: #666">
+    <em>Análisis experto de la situación actual de la tabla</em>
+  </p>
+</section>
+
+<!-- AUDIO: COMENTARIOS DEL EXPERTO -->
+<section class="seccion" id="audio-comentario">
+  <h2>🎙️ Comentario Experto sobre la Clasificación</h2>
+  <div class="audioContenedor">
+    <audio controls preload="metadata">
+      <source src="audio/comentario-clasificacion.mp3" type="audio/mpeg" />
+      <source src="audio/comentario-clasificacion.ogg" type="audio/ogg" />
+      <source src="audio/comentario-clasificacion.wav" type="audio/wav" />
+      Tu navegador no soporta el elemento de audio.
+      <a href="audio/comentario-clasificacion.mp3" title="Descargar audio"
+        >Descargar comentario</a
+      >
+    </audio>
+    <p style="margin-top: 1rem; text-align: center">
+      <em
+        >Análisis en profundidad de la clasificación actual por nuestro
+        experto</em
+      >
+    </p>
+  </div>
+</section>
+
+<!-- ENLACES EXTERNOS -->
+<section class="seccion" id="enlaces-stats">
+  <h2>🔗 Estadísticas y Análisis</h2>
+  <ul class="linksExternos">
+    <li>
+      <a
+        href="https://www.asobal.es/clasificacion"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Clasificación oficial ASOBAL"
+      >
+        📊 Clasificación Oficial ASOBAL
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.eurohandball.com/rankings/"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Rankings europeos"
+      >
+        🌍 Rankings Europeos EHF
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.sofascore.com/es/balonmano"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Estadísticas en vivo"
+      >
+        📈 Estadísticas en Vivo - SofaScore
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- BOTÓN VOLVER ARRIBA -->
+<div style="text-align: center; margin: 3rem 0">
+  <a href="#" class="btnInterno" title="Volver al inicio de la página">
+    ⬆ Volver arriba
+  </a>
+</div>

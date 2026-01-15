@@ -1,0 +1,185 @@
+<h1 class="tituloPagina">Jugadores</h1>
+
+<!-- Navegación rápida interna -->
+<div class="quick-nav" style="margin-bottom: 3rem; text-align: center">
+  <a href="#estadisticas" class="btnInterno" title="Ver estadísticas"
+    >Estadísticas</a
+  >
+  <a
+    href="#filtros"
+    class="btnInterno"
+    style="margin-left: 1rem"
+    title="Ver filtros"
+    >Filtrar</a
+  >
+  <a
+    href="#grid-jugadores"
+    class="btnInterno"
+    style="margin-left: 1rem"
+    title="Ver jugadores"
+    >Jugadores</a
+  >
+  <a
+    href="#info-jugadores"
+    class="btnInterno"
+    style="margin-left: 1rem"
+    title="Ver información"
+    >Información</a
+  >
+</div>
+
+<!-- SELECTOR DE TEMPORADA -->
+<div
+  class="selectorTemporadaContainer"
+  style="text-align: center; margin-bottom: 2rem"
+>
+  <label
+    for="selectorTemporada"
+    style="
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin-right: 1rem;
+    "
+  >
+    📅 Seleccionar Temporada:
+  </label>
+  <select
+    id="selectorTemporada"
+    style="
+      padding: 0.8rem 1.5rem;
+      border: 2px solid var(--primary);
+      border-radius: 10px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--dark);
+      cursor: pointer;
+      background: white;
+    "
+  >
+    <!-- Las opciones se cargarán dinámicamente -->
+  </select>
+</div>
+
+<!-- FILTROS DE BÚSQUEDA -->
+<div class="filtrosJugadores" id="filtros">
+  <div class="filtroItem">
+    <label for="filtroEquipo">🏆 Filtrar por Equipo</label>
+    <select id="filtroEquipo">
+      <option value="todos">Todos los equipos</option>
+      <!-- Las opciones se cargarán dinámicamente desde XML -->
+    </select>
+  </div>
+
+  <div class="filtroItem">
+    <label for="buscarJugador">🔍 Buscar Jugador</label>
+    <input type="text" id="buscarJugador" placeholder="Nombre del jugador..." />
+  </div>
+
+  <div class="filtroItem">
+    <label for="filtroPosicion">⚽ Filtrar por Posición</label>
+    <select id="filtroPosicion">
+      <option value="todos">Todas las posiciones</option>
+      <option value="Portero">Portero</option>
+      <option value="Extremo Izquierdo">Extremo Izquierdo</option>
+      <option value="Extremo Derecho">Extremo Derecho</option>
+      <option value="Lateral Izquierdo">Lateral Izquierdo</option>
+      <option value="Lateral Derecho">Lateral Derecho</option>
+      <option value="Central">Central</option>
+      <option value="Pivote">Pivote</option>
+    </select>
+  </div>
+</div>
+
+<!-- ESTADÍSTICAS DESTACADAS -->
+<section class="estadisticasDestacadas" id="estadisticas">
+  <h2 style="color: var(--primary); margin-bottom: 1.5rem; text-align: center">
+    📊 Estadísticas de la Liga
+  </h2>
+  <div class="statsGrid">
+    <div class="statCard">
+      <span class="statNumero" id="totalJugadores">0</span>
+      <span class="statLabel">Jugadores Total</span>
+    </div>
+    <div class="statCard">
+      <span class="statNumero" id="totalEquipos">0</span>
+      <span class="statLabel">Equipos</span>
+    </div>
+    <div class="statCard">
+      <span class="statNumero" id="totalNacionalidades">0</span>
+      <span class="statLabel">Nacionalidades</span>
+    </div>
+    <div class="statCard">
+      <span class="statNumero" id="edadPromedio">0</span>
+      <span class="statLabel">Edad Promedio</span>
+    </div>
+  </div>
+</section>
+
+<!-- Mensaje de carga -->
+<div id="mensajeCarga" style="text-align: center; padding: 3rem">
+  <p style="font-size: 1.2rem; color: var(--primary)">
+    ⏳ Cargando jugadores desde XML...
+  </p>
+</div>
+
+<!-- GRID DE JUGADORES -->
+<section class="seccion" id="grid-jugadores">
+  <h2>Jugadores de la Liga</h2>
+  <section class="gridJugadores" id="gridJugadores">
+    <!-- Los jugadores se cargarán aquí dinámicamente desde XML -->
+  </section>
+</section>
+
+<!-- Mensaje si no hay resultados -->
+<div class="noResultados" id="noResultados" style="display: none">
+  <h3>😔 No se encontraron jugadores</h3>
+  <p>Intenta cambiar los filtros de búsqueda</p>
+</div>
+
+<!-- INFORMACIÓN ADICIONAL -->
+<section class="seccion" id="info-jugadores" style="margin-top: 4rem">
+  <h2>Información sobre los Jugadores</h2>
+  <div class="cardContenedor">
+    <!-- Card 1 -->
+    <article class="card">
+      <div class="cardIcono">⭐</div>
+      <h3>Profesionales de Élite</h3>
+      <p>
+        Todos los jugadores de la liga son profesionales de alto nivel que
+        cumplen con los estándares más exigentes de la federación, garantizando
+        espectáculo y calidad en cada partido.
+      </p>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <div class="cardIcono">🎯</div>
+      <h3>Formación Continua</h3>
+      <p>
+        Los jugadores reciben formación técnica y táctica constante de sus
+        cuerpos técnicos, además de preparación física especializada y
+        seguimiento médico personalizado.
+      </p>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <div class="cardIcono">🏅</div>
+      <h3>Diversidad Internacional</h3>
+      <p>
+        La liga cuenta con jugadores de múltiples nacionalidades, enriqueciendo
+        la competición con diferentes estilos de juego y experiencias
+        internacionales.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- BOTÓN VOLVER ARRIBA -->
+<div style="text-align: center; margin: 3rem 0">
+  <a href="#" class="btnInterno" title="Volver al inicio de la página">
+    ⬆ Volver arriba
+  </a>
+</div>

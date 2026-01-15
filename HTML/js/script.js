@@ -364,3 +364,28 @@ $(document).ready(function() {
         console.error("Error al cargar los archivos XML o XSL.");
     });
 });
+
+// FUNCIÓN DE CARGA DE LAS PÁGINAS 
+
+$(document).ready(function() {
+    
+    // Escuchamos el click en cualquier botón con la clase btn-nav
+    $('.btnMenu').on('click', function() {
+        // Obtenemos el nombre del archivo desde el atributo data-archivo
+        let archivo = $(this).data('archivo');
+        
+        // 1. Opcional: Podrías añadir una animación de carga
+        $('#contenedorPrincipal').fadeOut(200, function() {
+            
+            // 2. Cargamos el contenido del archivo .html
+            $(this).load(archivo, function(response, status, xhr) {
+                if (status == "error") {
+                    $(this).html("<p>Error al cargar el contenido: " + xhr.statusText + "</p>");
+                }
+                
+                // 3. Mostramos el contenedor con el nuevo contenido
+                $(this).fadeIn(200);
+            });
+        });
+    });
+});

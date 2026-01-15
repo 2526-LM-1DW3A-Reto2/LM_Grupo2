@@ -18,7 +18,7 @@
             </thead>
             <tbody>
                 <xsl:for-each select="equipos/equipo">
-                    <xsl:sort select="(count(/ligaBalonmano/partidos/partido[(idEquipo = idEquipoLocal and golesLocal > golesVisitante) or (idEquipo = idEquipoVisitante and golesVisitante > golesLocal)]) * 3) + count(/ligaBalonmano/partidos/partido[idEquipo = idEquipoLocal or idEquipo = idEquipoVisitante][golesLocal = golesVisitante])" data-type="number" order="descending"/>
+                    <xsl:sort select="(count(/ligaBalonmano/partidos/partido[(idEquipoLocal=current()/ID or idEquipoVisitante=current()/ID)][(idEquipoLocal=current()/ID and golesLocal > golesVisitante) or (idEquipoVisitante=current()/ID and golesVisitante > golesLocal)]) * 3) + count(/ligaBalonmano/partidos/partido[(idEquipoLocal=current()/ID or idEquipoVisitante=current()/ID) and golesLocal = golesVisitante])" data-type="number" order="descending"/>
                     <xsl:variable name="idEquipo" select="idEquipo"/>
                     <xsl:variable name="partidos" select="/ligaBalonmano/partidos/partido[($idEquipo = idEquipoLocal or $idEquipo = idEquipoVisitante)]"/>
                     <xsl:variable name="PG" select="count($partidos[($idEquipo = idEquipoLocal and golesLocal > golesVisitante) or ($idEquipo = idEquipoVisitante and golesVisitante > golesLocal)])"/>

@@ -4,32 +4,26 @@
         <equipo>
             <idEquipo>1</idEquipo>
             <nombreEquipo>FC Barcelona</nombreEquipo>
-            <fundacion>1959</fundacion>
         </equipo>
         <equipo>
             <idEquipo>2</idEquipo>
             <nombreEquipo>Atlético de Madrid</nombreEquipo>
-            <fundacion>1972</fundacion>
         </equipo>
         <equipo>
             <idEquipo>3</idEquipo>
             <nombreEquipo>Sevilla BM</nombreEquipo>
-            <fundacion>1923</fundacion>
         </equipo>
         <equipo>
             <idEquipo>4</idEquipo>
             <nombreEquipo>Zaragoza BM</nombreEquipo>
-            <fundacion>1986</fundacion>
         </equipo>
         <equipo>
             <idEquipo>5</idEquipo>
             <nombreEquipo>Valencia HC</nombreEquipo>
-            <fundacion>1935</fundacion>
         </equipo>
         <equipo>
             <idEquipo>6</idEquipo>
             <nombreEquipo>Athletic Club</nombreEquipo>
-            <fundacion>1898</fundacion>
         </equipo>
     </equipos>
     <jugadores>
