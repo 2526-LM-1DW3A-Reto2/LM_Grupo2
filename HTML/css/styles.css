@@ -95,7 +95,6 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 2.5rem;
-  box-shadow: 0 10px 30px rgba(8, 8, 8, 0.3);
   transform: rotate(0deg);
   transition: all 0.3s ease;
 }
@@ -451,7 +450,6 @@ main {
   background-color: lightgray;
   width: 200px;
 }
-
 
 /* Tabla general */
 table {
@@ -830,7 +828,7 @@ table tbody tr:last-child {
   padding: 0.8rem 1rem;
   border: 2px solid #e0e0e0;
   border-radius: 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.95rem;
   transition: all 0.3s ease;
 }
@@ -853,7 +851,7 @@ table tbody tr:last-child {
 /* Tarjeta de jugador */
 .cardJugador {
   background: white;
-  border-radius:10px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -961,7 +959,11 @@ table tbody tr:last-child {
 
 /* Estadísticas destacadas */
 .estadisticasDestacadas {
-  background: linear-gradient(135deg, rgba(196, 30, 58, 0.05), rgba(255, 196, 0, 0.05));
+  background: linear-gradient(
+    135deg,
+    rgba(196, 30, 58, 0.05),
+    rgba(255, 196, 0, 0.05)
+  );
   border-radius: 20px;
   padding: 2.5rem;
   margin: 3rem 0;
@@ -1025,15 +1027,15 @@ table tbody tr:last-child {
   .filtrosJugadores {
     flex-direction: column;
   }
-  
+
   .filtroItem {
     width: 100%;
   }
-  
+
   .gridJugadores {
     grid-template-columns: 1fr;
   }
-  
+
   .statsGrid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1043,13 +1045,13 @@ table tbody tr:last-child {
   .statsGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .jugadorAvatar {
     width: 80px;
     height: 80px;
     font-size: 2rem;
   }
-  
+
   .jugadorNombre {
     font-size: 1.1rem;
   }
@@ -1304,12 +1306,11 @@ footer::before {
     padding: 1rem 1.5rem;
   }
   .tablaContenedor {
-  overflow-x: auto;
-  width: 100%;
+    overflow-x: auto;
+    width: 100%;
   }
   #selectorTemporada option {
     font-size: 10px;
-    
   }
 }
 
