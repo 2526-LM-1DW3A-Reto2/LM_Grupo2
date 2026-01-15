@@ -2,7 +2,7 @@
 
 // Define las rutas y selectores
 const xslFile = "xml/XSLT/clasificacion.xsl";
-const xmlFileDefault = "xml/data/general.xml"; // Archivo XML de la temporada actual
+const xmlFileDefault = "xml/data/ligaBalonmano.xml"; // Archivo XML de la temporada actual
 const containerId = "#tablaClasificacion";
 const linkClass = ".linkClasificacion";
 
@@ -57,7 +57,7 @@ function loadAndTransformXML(xmlFileName, temporadaId) {
 // --- Función para cargar dinámicamente las temporadas del XML ---
 function cargarTemporadas() {
   $.ajax({
-    url: 'xml/data/general.xml',
+    url: 'xml/data/ligaBalonmano.xml',
     dataType: 'xml',
     success: function(xmlDoc) {
       // Busca todos los nodos <temporada>
@@ -144,7 +144,7 @@ function cargarJugadores() {
 
     // Cargar el archivo XML
     $.ajax({
-        url: 'xml/data/general.xml',
+        url: 'xml/data/ligaBalonmano.xml',
         dataType: 'text',
         success: function(xmlText) {
             // Parseamos el XML
@@ -330,3 +330,37 @@ function aplicarFiltros() {
         $('#noResultados').hide();
     }
 }
+
+
+$(document).ready(function() {
+    const xmlPath = 'xml/data/ligaBalonmano.xml';
+    const xslPath = 'xml/XSLT/clasificacionCopia.xsl';
+    const targetId = '#tablaClasificacion';
+
+    // Cargamos ambos archivos simultáneamente usando $.when
+    $.when($.ajax(xmlPath), $.ajax(xslPath)).done(function(xmlResponse, xslResponse) {
+        
+        const xml = xmlResponse[0];
+        const xsl = xslResponse[0];
+
+        // Validar si el navegador soporta XSLTProcessor (Navegadores modernos)
+        if (window.XSLTProcessor) {
+            const xsltProcessor = new XSLTProcessor();
+            xsltProcessor.importStylesheet(xsl);
+            
+            const resultDocument = xsltProcessor.transformToFragment(xml, document);
+            
+            $(targetId).empty().append(resultDocument);
+        } 
+        // Soporte para Internet Explorer (Legacy)
+        else if (window.ActiveXObject || "ActiveXObject" in window) {
+            const ex = xml.transformNode(xsl);
+            $(targetId).html(ex);
+        }
+        else {
+            console.error("Tu navegador no soporta transformación XSLT en el cliente.");
+        }
+    }).fail(function() {
+        console.error("Error al cargar los archivos XML o XSL.");
+    });
+});

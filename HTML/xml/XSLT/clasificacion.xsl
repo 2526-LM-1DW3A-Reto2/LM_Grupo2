@@ -16,7 +16,7 @@
                 </tr>
             </thead>
             <tbody>
-                <xsl:for-each select="ligaBalonmano/equipos/equipo">
+                <xsl:for-each select="equipos/equipo">
                     <xsl:variable name="idEquipo" select="idEquipo"/>
                     <xsl:variable name="partidos" select="/ligaBalonmano/partidos/partido[(idEquipoLocal=$idEquipo or idEquipoVisitante=$idEquipo)]"/>
                     <xsl:variable name="PJ" select="count($partidos)"/>
