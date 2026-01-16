@@ -2,8 +2,11 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/ligaBalonmano">
         <table>
-            <thead>
-                <tr style="background-color: black;">
+            <thead style="background-color: black;">
+                <tr>
+                    <th colspan="10">Temporada: <xsl:value-of select="temporadas/temporada/nombreTemporada"/></th>
+                </tr>
+                <tr>
                     <th>Posicion</th>
                     <th>Equipo</th>
                     <th>PJ</th>

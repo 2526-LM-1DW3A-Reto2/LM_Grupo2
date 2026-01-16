@@ -143,8 +143,19 @@ body {
   padding: 0 2rem;
 }
 
+.btnMenu {
+  background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    font: inherit; /* Hereda la fuente del contenedor padre */
+    color: inherit; /* Hereda el color de texto del padre */
+    outline: none;  /* Quita el contorno al hacer clic */
+}
+
 /* Enlaces del menú */
-.header nav ul li a {
+.header nav ul li button {
   display: block;
   color: var(--dark);
   text-decoration: none;
@@ -156,7 +167,7 @@ body {
 }
 
 /* Línea inferior animada en los enlaces */
-.header nav ul li a::before {
+.header nav ul li button::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -169,12 +180,12 @@ body {
 }
 
 /* Efecto hover y activo en enlaces */
-.header nav ul li a:hover::before,
-.header nav ul li a.active::before {
+.header nav ul li button:hover::before,
+.header nav ul li button.active::before {
   width: 80%;
 }
 
-.header nav ul li a.active {
+.header nav ul li button.active {
   color: var(--primary);
 }
 .contenedorBurger {
