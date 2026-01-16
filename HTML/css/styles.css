@@ -704,6 +704,21 @@ table tbody tr:last-child {
   width: 100%;
 }
 
+/* Celda de equipo con escudo */
+.equipoCell {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.escudoMini {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
 /* Dropdown de temporadas (legacy) */
 .temporadasDropdown {
   display: inline-block;
@@ -848,7 +863,7 @@ table tbody tr:last-child {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-  align-items: end;
+  align-items: center;
 }
 
 .filtroItem {

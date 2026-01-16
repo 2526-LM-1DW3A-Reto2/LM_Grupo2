@@ -17,7 +17,7 @@
                         <xsl:choose>
                             <xsl:when test="foto/@url != ''">
                                 <img>
-                                    <xsl:attribute name="src">imagenes/jugadores/<xsl:value-of select="foto/@url"/></xsl:attribute>
+                                    <xsl:attribute name="src"><xsl:value-of select="foto/@url"/></xsl:attribute>
                                     <xsl:attribute name="alt"><xsl:value-of select="nombre"/></xsl:attribute>
                                     <xsl:attribute name="onerror">this.src='imagenes/jugador-default.png'</xsl:attribute>
                                 </img>

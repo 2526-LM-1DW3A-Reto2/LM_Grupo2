@@ -4,7 +4,7 @@
     <xsl:param name="temporadaId" select="''"/>
     
     <xsl:template match="/federacionBalonmano">
-        <table clas="tableClasificacion">
+        <table class="tableClasificacion">
             <thead>
                 <tr>
                     <th>Pos</th>
@@ -26,9 +26,13 @@
                     <xsl:sort select="ganados" data-type="number" order="descending"/>
                     <xsl:sort select="empatados" data-type="number" order="descending"/>
                     <xsl:sort select="golesFavor - golesContra" data-type="number" order="descending"/>
+                    <xsl:sort select="golesFavor" data-type="number" order="descending"/>
                     <tr>
                         <td><xsl:value-of select="position()"/></td>
-                        <td><xsl:value-of select="nombre"/></td>
+                        <td class="equipoCell">
+                            <img class="escudoMini" src="{escudo/@url}" alt="{nombre}"/>
+                            <xsl:value-of select="nombre"/>
+                        </td>
                         <td><xsl:value-of select="ganados + empatados + perdidos"/></td>
                         <td><xsl:value-of select="ganados"/></td>
                         <td><xsl:value-of select="empatados"/></td>
