@@ -29,73 +29,96 @@
 </div>
 
 <!-- SELECTOR DE TEMPORADA -->
-<div
-  class="selectorTemporadaContainer"
-  style="text-align: center; margin-bottom: 2rem"
->
-  <label
-    for="selectorTemporada"
-    style="
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--dark);
-      margin-right: 1rem;
-    "
+<section class="seccion" style="margin-bottom: 2rem">
+  <h2>Seleccionar Temporada</h2>
+  <div
+    class="selectorTemporadaContainer"
+    style="text-align: center; margin-bottom: 1rem"
   >
-    📅 Seleccionar Temporada:
-  </label>
-  <select
-    id="selectorTemporada"
-    style="
-      padding: 0.8rem 1.5rem;
-      border: 2px solid var(--primary);
-      border-radius: 10px;
-      font-family: 'Poppins', sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--dark);
-      cursor: pointer;
-      background: white;
-    "
-  >
-    <!-- Las opciones se cargarán dinámicamente -->
-  </select>
-</div>
+    <label
+      for="selectorTemporadaJugadores"
+      style="font-weight: bold; margin-right: 10px"
+    >
+      📅 Temporada:
+    </label>
+    <select
+      id="selectorTemporadaJugadores"
+      class="btnInterno"
+      style="padding: 8px 15px; cursor: pointer"
+    >
+      <option value="">-- Selecciona una temporada --</option>
+    </select>
+  </div>
+</section>
 
 <!-- FILTROS DE BÚSQUEDA -->
-<div class="filtrosJugadores" id="filtros">
-  <div class="filtroItem">
-    <label for="filtroEquipo">🏆 Filtrar por Equipo</label>
-    <select id="filtroEquipo">
-      <option value="todos">Todos los equipos</option>
-      <!-- Las opciones se cargarán dinámicamente desde XML -->
-    </select>
-  </div>
+<section class="seccion filtrosJugadores" id="filtros">
+  <h2>Filtros de Búsqueda</h2>
+  <div
+    class="filtrosContainer"
+    style="
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      align-items: flex-end;
+    "
+  >
+    <div class="filtroItem">
+      <label for="buscarJugador">🔍 Buscar por Nombre</label>
+      <input
+        type="text"
+        id="buscarJugador"
+        placeholder="Escribe el nombre..."
+        style="
+          padding: 8px 12px;
+          border: 2px solid var(--primary);
+          border-radius: 8px;
+          font-size: 1rem;
+        "
+      />
+    </div>
 
-  <div class="filtroItem">
-    <label for="buscarJugador">🔍 Buscar Jugador</label>
-    <input type="text" id="buscarJugador" placeholder="Nombre del jugador..." />
-  </div>
+    <div class="filtroItem">
+      <label for="filtroEquipo">🏆 Filtrar por Equipo</label>
+      <select
+        id="filtroEquipo"
+        class="btnInterno"
+        style="padding: 8px 15px; cursor: pointer"
+      >
+        <option value="todos">Todos los equipos</option>
+        <!-- Las opciones se cargarán dinámicamente desde XML -->
+      </select>
+    </div>
 
-  <div class="filtroItem">
-    <label for="filtroPosicion">⚽ Filtrar por Posición</label>
-    <select id="filtroPosicion">
-      <option value="todos">Todas las posiciones</option>
-      <option value="Portero">Portero</option>
-      <option value="Extremo Izquierdo">Extremo Izquierdo</option>
-      <option value="Extremo Derecho">Extremo Derecho</option>
-      <option value="Lateral Izquierdo">Lateral Izquierdo</option>
-      <option value="Lateral Derecho">Lateral Derecho</option>
-      <option value="Central">Central</option>
-      <option value="Pivote">Pivote</option>
-    </select>
+    <div class="filtroItem">
+      <label for="filtroPosicion">⚽ Filtrar por Posición</label>
+      <select
+        id="filtroPosicion"
+        class="btnInterno"
+        style="padding: 8px 15px; cursor: pointer"
+      >
+        <option value="todos">Todas las posiciones</option>
+        <!-- Las opciones se cargarán dinámicamente desde XML -->
+      </select>
+    </div>
+
+    <div class="filtroItem">
+      <button
+        id="btnLimpiarFiltros"
+        class="btnInterno"
+        style="padding: 8px 15px; cursor: pointer"
+      >
+        🗑️ Limpiar Filtros
+      </button>
+    </div>
   </div>
-</div>
+</section>
 
 <!-- ESTADÍSTICAS DESTACADAS -->
-<section class="estadisticasDestacadas" id="estadisticas">
+<section class="estadisticasDestacadas seccion" id="estadisticas">
   <h2 style="color: var(--primary); margin-bottom: 1.5rem; text-align: center">
-    📊 Estadísticas de la Liga
+    📊 Estadísticas de la Temporada
   </h2>
   <div class="statsGrid">
     <div class="statCard">
@@ -127,7 +150,7 @@
 <!-- GRID DE JUGADORES -->
 <section class="seccion" id="grid-jugadores">
   <h2>Jugadores de la Liga</h2>
-  <section class="gridJugadores" id="gridJugadores">
+  <section id="gridJugadores">
     <!-- Los jugadores se cargarán aquí dinámicamente desde XML -->
   </section>
 </section>

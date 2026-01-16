@@ -2,15 +2,8 @@
 
 <!-- Navegación rápida interna -->
 <div class="quick-nav" style="margin-bottom: 3rem; text-align: center">
-  <a href="#proximos-partidos" class="btnInterno" title="Ver próximos partidos"
-    >Próximos Partidos</a
-  >
-  <a
-    href="#jornada-5"
-    class="btnInterno"
-    style="margin-left: 1rem"
-    title="Ver jornada 5"
-    >Jornada 5</a
+  <a href="#calendario-partidos" class="btnInterno" title="Ver partidos"
+    >Partidos</a
   >
   <a
     href="#galeria-calendario"
@@ -19,126 +12,107 @@
     title="Ver galería"
     >Galería</a
   >
+  <a
+    href="#video-jornada"
+    class="btnInterno"
+    style="margin-left: 1rem"
+    title="Ver video"
+    >Videos</a
+  >
 </div>
 
-<!-- JORNADA 6 - PRÓXIMOS PARTIDOS -->
-<section class="seccion" id="proximos-partidos">
-  <h2>⚡ Jornada 6 - Próximos Partidos</h2>
-
-  <!-- Partido 1 -->
-  <div class="cardPartido">
-    <div class="cardEquipos">
-      <div class="equipo">
-        <img
-          src="imagenes/imagenes_Logos/ATLETICO MADRID.png"
-          alt="escudo Atletico Madrid"
-          width="50"
-          height="50"
-        />
-        <div class="nombreEquipo">Atlético Madrid</div>
-      </div>
-      <span class="match-vs">VS</span>
-      <div class="equipo">
-        <img
-          src="imagenes/imagenes_Logos/VALENCIA.png"
-          alt="escudo Valencia HC"
-          width="100"
-          height="100"
-        />
-        <div class="nombreEquipo">Valencia HC</div>
-      </div>
+<!-- SELECTOR DE TEMPORADA Y FILTROS -->
+<section class="seccion" style="margin-bottom: 2rem">
+  <h2>Filtros</h2>
+  <div
+    class="filtrosCalendario"
+    style="
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      align-items: flex-end;
+    "
+  >
+    <!-- Selector de Temporada -->
+    <div class="filtroItem">
+      <label
+        for="selectorTemporadaCalendario"
+        style="font-weight: bold; display: block; margin-bottom: 8px"
+      >
+        📅 Temporada:
+      </label>
+      <select
+        id="selectorTemporadaCalendario"
+        class="btnInterno"
+        style="padding: 8px 15px; cursor: pointer; min-width: 200px"
+      >
+        <option value="">-- Selecciona una temporada --</option>
+      </select>
     </div>
-    <div class="partidoInfo">
-      <div class="partidoFecha">Sábado 12/10/2025</div>
-      <small>18:30h - Vistalegre Arena</small>
+
+    <!-- Filtro de Equipo -->
+    <div class="filtroItem">
+      <label
+        for="filtroEquipoCalendario"
+        style="font-weight: bold; display: block; margin-bottom: 8px"
+      >
+        🏆 Filtrar por Equipo:
+      </label>
+      <select
+        id="filtroEquipoCalendario"
+        class="btnInterno"
+        style="padding: 8px 15px; cursor: pointer; min-width: 200px"
+      >
+        <option value="todos">Todos los equipos</option>
+      </select>
+    </div>
+
+    <!-- Botón limpiar filtros -->
+    <div class="filtroItem">
+      <button
+        id="btnLimpiarFiltrosCalendario"
+        class="btnInterno"
+        style="padding: 8px 15px; cursor: pointer"
+      >
+        🔄 Limpiar filtros
+      </button>
     </div>
   </div>
 
-  <!-- Partido 2 -->
-  <div class="cardPartido">
-    <div class="cardEquipos">
-      <div class="equipo">
-        <img
-          src="imagenes/imagenes_Logos/SEVILLABM.png"
-          alt="escudo Sevilla BM"
-          width="50"
-          height="50"
-        />
-        <div class="nombreEquipo">Sevilla BM</div>
-      </div>
-      <span class="match-vs">VS</span>
-      <div class="equipo">
-        <img
-          src="imagenes/imagenes_Logos/BARCELONA.png"
-          alt="Escudo FC Barcelona"
-          width="50"
-          height="50"
-        />
-        <div class="nombreEquipo">FC Barcelona</div>
-      </div>
+  <!-- Estadísticas rápidas -->
+  <div
+    class="estadisticasCalendario"
+    style="
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    "
+  >
+    <div class="statCalendario">
+      <span class="statLabel">📊 Total Jornadas:</span>
+      <span id="totalJornadas" class="statValor">0</span>
     </div>
-    <div class="partidoInfo">
-      <div class="partidoFecha">Sábado 12/10/2025</div>
-      <small>20:00h - San Pablo</small>
+    <div class="statCalendario">
+      <span class="statLabel">⚽ Partidos Jugados:</span>
+      <span id="partidosJugados" class="statValor">0</span>
+    </div>
+    <div class="statCalendario">
+      <span class="statLabel">⏳ Partidos Pendientes:</span>
+      <span id="partidosPendientes" class="statValor">0</span>
     </div>
   </div>
+</section>
 
-  <!-- Partido 3 -->
-  <div class="cardPartido">
-    <div class="cardEquipos">
-      <div class="equipo">
-        <img
-          src="imagenes/imagenes_Logos/BILBAO.png"
-          alt="escudo Bilbao HC"
-          width="50"
-          height="50"
-        />
-        <div class="nombreEquipo">Bilbao HC</div>
-      </div>
-      <span class="match-vs">VS</span>
-      <div class="equipo">
-        <img
-          src="imagenes/imagenes_Logos/GRANADA.png"
-          alt="escudo Granada HC"
-          width="40"
-          height="50"
-        />
-        <div class="nombreEquipo">Granada HC</div>
-      </div>
-    </div>
-    <div class="partidoInfo">
-      <div class="partidoFecha">Domingo 13/10/2025</div>
-      <small>12:00h - Bilbao Arena</small>
-    </div>
-  </div>
-
-  <!-- Partido 4 -->
-  <div class="cardPartido">
-    <div class="cardEquipos">
-      <div class="equipo">
-        <img
-          src="imagenes/imagenes_Logos/VIGO.png"
-          alt="escudo  Vigo BM"
-          width="40"
-          height="50"
-        />
-        <div class="nombreEquipo">Vigo BM</div>
-      </div>
-      <span class="match-vs">VS</span>
-      <div class="equipo">
-        <img
-          src="imagenes/imagenes_Logos/ZARAGOZABM.png"
-          alt="escudo Zaragoza BM"
-          width="80"
-          height="80"
-        />
-        <div class="nombreEquipo">Zaragoza BM</div>
-      </div>
-    </div>
-    <div class="partidoInfo">
-      <div class="partidoFecha">Domingo 13/10/2025</div>
-      <small>18:00h - Fontes do Sar</small>
-    </div>
+<!-- CALENDARIO DE PARTIDOS -->
+<section class="seccion" id="calendario-partidos">
+  <h2>🏐 Jornadas y Partidos</h2>
+  <div id="calendarioContainer">
+    <p style="text-align: center; color: #666">
+      Selecciona una temporada para ver el calendario de partidos
+    </p>
   </div>
 </section>
 
@@ -193,11 +167,6 @@
       <figcaption>Zaragoza 30-27 Bilbao</figcaption>
     </figure>
   </div>
-</section>
-
-<section class="seccion">
-  <h2>Prueba de jornada desde XML</h2>
-  <article id="contJornada"></article>
 </section>
 
 <!-- VIDEO: RESUMEN JORNADA ANTERIOR -->

@@ -24,8 +24,29 @@
 <!-- TABLA DE CLASIFICACIÓN CON XML  -->
 <section class="seccion">
   <h2>Tabla de clasificación</h2>
+
+  <!-- Selector de temporada -->
+  <div
+    class="selectorTemporada"
+    style="margin-bottom: 1.5rem; text-align: center"
+  >
+    <label for="selectTemporada" style="font-weight: bold; margin-right: 10px"
+      >Seleccionar Temporada:</label
+    >
+    <select
+      id="selectTemporada"
+      class="btnInterno"
+      style="padding: 8px 15px; cursor: pointer"
+    >
+      <option value="">-- Selecciona una temporada --</option>
+    </select>
+  </div>
+
   <div class="tablaContenedor">
     <section id="tablaClasificacion">
+      <p style="text-align: center; color: #666">
+        Selecciona una temporada para ver la clasificación
+      </p>
     </section>
   </div>
 </section>

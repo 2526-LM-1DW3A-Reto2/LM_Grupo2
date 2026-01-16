@@ -1,184 +1,56 @@
-<h1 class="tituloPagina">Equipos Temporada 2025/2026</h1>
+<h1 class="tituloPagina">Equipos</h1>
 
 <!-- Navegación rápida interna -->
 <div class="quick-nav" style="margin-bottom: 3rem; text-align: center">
-  <a href="#fc-barcelona" class="btnInterno" title="Ir a FC Barcelona"
-    >FC Barcelona</a
-  >
-  <a
-    href="#valencia-hc"
-    class="btnInterno"
-    style="margin-left: 1rem"
-    title="Ir a Valencia HC"
-    >Valencia HC</a
-  >
+  <a href="#grid-equipos" class="btnInterno" title="Ver equipos">Equipos</a>
   <a
     href="#galeria-equipos"
     class="btnInterno"
     style="margin-left: 1rem"
     title="Ver galería"
-    >Galería de Equipos</a
+    >Galería</a
+  >
+  <a
+    href="#info-equipos"
+    class="btnInterno"
+    style="margin-left: 1rem"
+    title="Ver información"
+    >Información</a
   >
 </div>
 
-<!-- GRID DE EQUIPOS CON ID PARA MARCADORES -->
-<div class="gridEquipos">
-  <!-- Equipo 1: FC Barcelona -->
-  <article class="cardEquipo" id="fc-barcelona">
-    <img
-      src="imagenes/imagenes_Logos/BARCELONA.png"
-      alt="escudo FC Barcelona"
-      width="50"
-      height="50"
-    />
-    <h3>FC Barcelona</h3>
-    <p><strong>Fundado:</strong> 1942</p>
-    <p><strong>Estadio:</strong> Palau Blaugrana</p>
-    <p><strong>Capacidad:</strong> 7,585</p>
-    <p><strong>Jugadores:</strong> 9</p>
-    <p><strong>Entrenador:</strong> Corinne Diacre</p>
-    <p style="margin-top: 1rem">
-      <a
-        href="https://www.fcbarcelona.es/es/balonmano"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="Web oficial FC Barcelona"
-      >
-        🌐 Web oficial
-      </a>
-    </p>
-  </article>
+<!-- SELECTOR DE TEMPORADA -->
+<section class="seccion" style="margin-bottom: 2rem">
+  <h2>Seleccionar Temporada</h2>
+  <div
+    class="selectorTemporadaContainer"
+    style="text-align: center; margin-bottom: 1rem"
+  >
+    <label
+      for="selectorTemporadaEquipos"
+      style="font-weight: bold; margin-right: 10px"
+    >
+      📅 Temporada:
+    </label>
+    <select
+      id="selectorTemporadaEquipos"
+      class="btnInterno"
+      style="padding: 8px 15px; cursor: pointer"
+    >
+      <option value="">-- Selecciona una temporada --</option>
+    </select>
+  </div>
+</section>
 
-  <!-- Equipo 2: Atlético Madrid -->
-  <article class="cardEquipo" id="atletico-madrid">
-    <img
-      src="imagenes/imagenes_Logos/ATLETICO MADRID.png"
-      alt="escudo Atletico Madrid"
-      width="50"
-      height="50"
-    />
-    <h3>Atlético Madrid</h3>
-    <p><strong>Fundado:</strong> 1958</p>
-    <p><strong>Estadio:</strong> Vistalegre Arena</p>
-    <p><strong>Capacidad:</strong> 15,000</p>
-    <p><strong>Jugadores:</strong> 9</p>
-    <p><strong>Entrenador:</strong> Xavi Pascual</p>
-    <p style="margin-top: 1rem">
-      <a
-        href="https://www.atleticodemadrid.com/balonmano"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="Web oficial Atlético Madrid"
-      >
-        🌐 Web oficial
-      </a>
+<!-- GRID DE EQUIPOS -->
+<section class="seccion" id="grid-equipos">
+  <h2>Equipos Participantes</h2>
+  <div id="gridEquipos">
+    <p style="text-align: center; color: #666">
+      Selecciona una temporada para ver los equipos
     </p>
-  </article>
-
-  <!-- Equipo 3: Valencia HC -->
-  <article class="cardEquipo" id="valencia-hc">
-    <img
-      src="imagenes/imagenes_Logos/VALENCIA.png"
-      alt="escudo Valencia HC"
-      width="100"
-      height="100"
-    />
-    <h3>Valencia HC</h3>
-    <p><strong>Fundado:</strong> 1952</p>
-    <p><strong>Estadio:</strong> Fuente San Luis</p>
-    <p><strong>Capacidad:</strong> 9,000</p>
-    <p><strong>Jugadores:</strong> 9</p>
-    <p><strong>Entrenador:</strong> Cristina Cabeza</p>
-    <p style="margin-top: 1rem">
-      <a
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="Web oficial Valencia HC"
-      >
-        🌐 Web oficial
-      </a>
-    </p>
-  </article>
-
-  <!-- Equipo 4: Sevilla BM -->
-  <article class="cardEquipo" id="sevilla-bm">
-    <img
-      src="imagenes/imagenes_Logos/SEVILLABM.png"
-      alt="escudo Sevilla BM"
-      width="50"
-      height="50"
-    />
-    <h3>Sevilla BM</h3>
-    <p><strong>Fundado:</strong> 1985</p>
-    <p><strong>Estadio:</strong> San Pablo</p>
-    <p><strong>Capacidad:</strong> 7,200</p>
-    <p><strong>Jugadores:</strong> 9</p>
-    <p><strong>Entrenador:</strong> Sarina Wiegman</p>
-    <p style="margin-top: 1rem">
-      <a
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="Web oficial Sevilla BM"
-      >
-        🌐 Web oficial
-      </a>
-    </p>
-  </article>
-
-  <!-- Equipo 5: Zaragoza BM -->
-  <article class="cardEquipo" id="zaragoza-bm">
-    <img
-      src="imagenes/imagenes_Logos/ZARAGOZABM.png"
-      alt="escudo Zaragoza BM"
-      width="80"
-      height="80"
-    />
-    <h3>Zaragoza BM</h3>
-    <p><strong>Fundado:</strong> 1933</p>
-    <p><strong>Estadio:</strong> Príncipe Felipe</p>
-    <p><strong>Capacidad:</strong> 10,744</p>
-    <p><strong>Jugadores:</strong> 9</p>
-    <p><strong>Entrenador:</strong> Montse Puche</p>
-    <p style="margin-top: 1rem">
-      <a
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="Web oficial Zaragoza BM"
-      >
-        🌐 Web oficial
-      </a>
-    </p>
-  </article>
-
-  <!-- Equipo 6: Bilbao HC -->
-  <article class="cardEquipo" id="bilbao-hc">
-    <img
-      src="imagenes/imagenes_Logos/BILBAO.png"
-      alt="escudo Bilbao HC"
-      width="50"
-      height="50"
-    />
-    <h3>Bilbao HC</h3>
-    <p><strong>Fundado:</strong> 1990</p>
-    <p><strong>Estadio:</strong> Bilbao Arena</p>
-    <p><strong>Capacidad:</strong> 10,000</p>
-    <p><strong>Jugadores:</strong> 9</p>
-    <p><strong>Entrenador:</strong> Iraia Iturregi</p>
-    <p style="margin-top: 1rem">
-      <a
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="Web oficial Bilbao HC"
-      >
-        🌐 Web oficial
-      </a>
-    </p>
-  </article>
-</div>
+  </div>
+</section>
 
 <!-- GALERÍA DE IMÁGENES DE EQUIPOS -->
 <section class="seccion" id="galeria-equipos">

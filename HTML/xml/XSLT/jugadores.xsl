@@ -1,33 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<xsl:key name="nombre" match="jugador" use="nombre" />
-    <xsl:template match="/">
-        <xsl:apply-templates select="federacionBalonmano/temporadas/temporada/equipos/equipo/jugadores/jugador[generate-id() = generate-id(key('nombre', nombre)[1])]" />
-    </xsl:template>
+    <!-- Parámetro para seleccionar la temporada -->
+    <xsl:param name="temporadaId" select="''"/>
     
-    <xsl:template match="jugador">
-        <div class="cardJugador">
-            <h3><xsl:value-of select="nombre"/></h3>
-            <img src="" alt=""/>
-            <p><strong>Equipo: </strong> <xsl:value-of select="ancestor::equipo/nombre"/></p>
-            <p><strong>Nacionalidad: </strong> <xsl:value-of select="nacionalidad"/></p>
-            <p><strong>Edad: </strong> <xsl:value-of select="edad"/> años</p>
-            <p><strong>Altura: </strong> <xsl:value-of select="altura"/></p>
-            <p><strong>Peso: </strong> <xsl:value-of select="peso"/></p>
-            <p><strong>Dorsal: </strong> <xsl:value-of select="dorsal"/></p>
-            <p><strong>Posición: </strong> <xsl:value-of select="posicion"/></p>
-            <div class="fotoJugador">
-                <xsl:if test="foto/@url != ''">
-                    <img>
-                        <xsl:attribute name="src">
-                            <xsl:value-of select="foto/@url"/>
-                        </xsl:attribute>
-                        <xsl:attribute name="alt">
-                            <xsl:value-of select="nombre"/>
-                        </xsl:attribute>
-                    </img>
-                </xsl:if>
-            </div>
+    <xsl:template match="/federacionBalonmano">
+        <div class="gridJugadores">
+            <xsl:for-each select="temporadas/temporada[@id=$temporadaId]/equipos/equipo/jugadores/jugador">
+                <xsl:sort select="nombre" order="ascending"/>
+                <div class="fichaJugador" 
+                     data-nombre="{translate(nombre, 'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÑ', 'abcdefghijklmnopqrstuvwxyzáéíóúñ')}" 
+                     data-equipo="{ancestor::equipo/nombre}" 
+                     data-posicion="{posicion}">
+                    <div class="fichaFoto">
+                        <xsl:choose>
+                            <xsl:when test="foto/@url != ''">
+                                <img>
+                                    <xsl:attribute name="src">imagenes/jugadores/<xsl:value-of select="foto/@url"/></xsl:attribute>
+                                    <xsl:attribute name="alt"><xsl:value-of select="nombre"/></xsl:attribute>
+                                    <xsl:attribute name="onerror">this.src='imagenes/jugador-default.png'</xsl:attribute>
+                                </img>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <img src="imagenes/jugador-default.png" alt="Sin foto"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </div>
+                    <div class="fichaInfo">
+                        <h3 class="fichaNombre"><xsl:value-of select="nombre"/></h3>
+                        <p class="fichaEquipo">
+                            <span class="fichaLabel">🏆 Equipo:</span>
+                            <span class="fichaValor"><xsl:value-of select="ancestor::equipo/nombre"/></span>
+                        </p>
+                        <p class="fichaPosicion">
+                            <span class="fichaLabel">⚽ Posición:</span>
+                            <span class="fichaValor"><xsl:value-of select="posicion"/></span>
+                        </p>
+                        <p class="fichaEdad">
+                            <span class="fichaLabel">📅 Edad:</span>
+                            <span class="fichaValor"><xsl:value-of select="edad"/> años</span>
+                        </p>
+                        <p class="fichaAltura">
+                            <span class="fichaLabel">📏 Altura:</span>
+                            <span class="fichaValor"><xsl:value-of select="altura"/></span>
+                        </p>
+                        <p class="fichaPeso">
+                            <span class="fichaLabel">⚖️ Peso:</span>
+                            <span class="fichaValor"><xsl:value-of select="peso"/></span>
+                        </p>
+                        <p class="fichaNacionalidad">
+                            <span class="fichaLabel">🌍 Nacionalidad:</span>
+                            <span class="fichaValor"><xsl:value-of select="nacionalidad"/></span>
+                        </p>
+                        <p class="fichaDorsal">
+                            <span class="fichaLabel">🔢 Dorsal:</span>
+                            <span class="fichaValor">#<xsl:value-of select="dorsal"/></span>
+                        </p>
+                    </div>
+                </div>
+            </xsl:for-each>
         </div>
     </xsl:template>
 </xsl:stylesheet>
