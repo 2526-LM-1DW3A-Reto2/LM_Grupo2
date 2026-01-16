@@ -701,7 +701,6 @@ table tbody tr:last-child {
 }
 
 .tablaContenedor {
-  overflow-x: auto;
   width: 100%;
 }
 

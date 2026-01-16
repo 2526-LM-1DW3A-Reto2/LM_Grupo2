@@ -1,4 +1,24 @@
 $(document).ready(function () {
+  // Títulos de página según la sección
+  const titulosPagina = {
+    "inicio.html": "Federación Española de Balonmano - Inicio",
+    "clasificacion.html": "Federación Española de Balonmano - Clasificación",
+    "jugadores.html": "Federación Española de Balonmano - Jugadores",
+    "equipos.html": "Federación Española de Balonmano - Equipos",
+    "calendario.html": "Federación Española de Balonmano - Calendario",
+    "multimedia.html": "Federación Española de Balonmano - Multimedia"
+  };
+
+  // Función para actualizar el título de la página
+  function actualizarTitulo(archivo) {
+    for (let key in titulosPagina) {
+      if (archivo.includes(key)) {
+        document.title = titulosPagina[key];
+        break;
+      }
+    }
+  }
+
   // 1. Cargar por defecto inicio.html y luego cargar datos dinámicos
   $("#contenedorPrincipal").load("pages/inicio.html", function () {
     cargarDatosInicio();
@@ -10,6 +30,9 @@ $(document).ready(function () {
     $(this).addClass("active");
 
     let archivo = $(this).data("archivo");
+
+    // Actualizar el título de la página
+    actualizarTitulo(archivo);
 
     // CARGA CON CALLBACK:
     // El tercer parámetro es una función que se ejecuta SOLO cuando el archivo ya cargó
