@@ -74,9 +74,14 @@
                             <span class="fichaValor"><xsl:value-of select="count(jugadores/jugador)"/></span>
                         </p>
                         
-                        <button class="btnVerPlantilla" data-equipo="{nombre}">
-                            👥 Ver Plantilla
-                        </button>
+                        <div class="botonesEquipo">
+                            <button class="btnVerPlantilla" data-equipo="{nombre}">
+                                👥 Ver Plantilla
+                            </button>
+                            <button class="btnVerPartidos" data-equipo="{nombre}">
+                                ⚽ Ver Partidos
+                            </button>
+                        </div>
                     </div>
                 </div>
             </xsl:for-each>

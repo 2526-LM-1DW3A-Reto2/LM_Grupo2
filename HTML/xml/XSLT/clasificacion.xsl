@@ -4,7 +4,7 @@
     <xsl:param name="temporadaId" select="''"/>
     
     <xsl:template match="/federacionBalonmano">
-        <table>
+        <table clas="tableClasificacion">
             <thead>
                 <tr>
                     <th>Pos</th>

@@ -1,51 +1,17 @@
 <h1 class="tituloPagina">Calendario de Partidos</h1>
 
-<!-- Navegación rápida interna -->
-<div class="quick-nav" style="margin-bottom: 3rem; text-align: center">
-  <a href="#calendario-partidos" class="btnInterno" title="Ver partidos"
-    >Partidos</a
-  >
-  <a
-    href="#galeria-calendario"
-    class="btnInterno"
-    style="margin-left: 1rem"
-    title="Ver galería"
-    >Galería</a
-  >
-  <a
-    href="#video-jornada"
-    class="btnInterno"
-    style="margin-left: 1rem"
-    title="Ver video"
-    >Videos</a
-  >
-</div>
-
 <!-- SELECTOR DE TEMPORADA Y FILTROS -->
-<section class="seccion" style="margin-bottom: 2rem">
+<section class="seccion seccionConMargen">
   <h2>Filtros</h2>
-  <div
-    class="filtrosCalendario"
-    style="
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      justify-content: center;
-      align-items: flex-end;
-    "
-  >
+  <div class="filtrosCalendario">
     <!-- Selector de Temporada -->
     <div class="filtroItem">
-      <label
-        for="selectorTemporadaCalendario"
-        style="font-weight: bold; display: block; margin-bottom: 8px"
-      >
+      <label for="selectorTemporadaCalendario" class="labelSelector labelBlock">
         📅 Temporada:
       </label>
       <select
         id="selectorTemporadaCalendario"
-        class="btnInterno"
-        style="padding: 8px 15px; cursor: pointer; min-width: 200px"
+        class="btnInterno selectMinWidth"
       >
         <option value="">-- Selecciona una temporada --</option>
       </select>
@@ -53,44 +19,24 @@
 
     <!-- Filtro de Equipo -->
     <div class="filtroItem">
-      <label
-        for="filtroEquipoCalendario"
-        style="font-weight: bold; display: block; margin-bottom: 8px"
-      >
+      <label for="filtroEquipoCalendario" class="labelSelector labelBlock">
         🏆 Filtrar por Equipo:
       </label>
-      <select
-        id="filtroEquipoCalendario"
-        class="btnInterno"
-        style="padding: 8px 15px; cursor: pointer; min-width: 200px"
-      >
+      <select id="filtroEquipoCalendario" class="btnInterno selectMinWidth">
         <option value="todos">Todos los equipos</option>
       </select>
     </div>
 
     <!-- Botón limpiar filtros -->
     <div class="filtroItem">
-      <button
-        id="btnLimpiarFiltrosCalendario"
-        class="btnInterno"
-        style="padding: 8px 15px; cursor: pointer"
-      >
+      <button id="btnLimpiarFiltrosCalendario" class="btnInterno">
         🔄 Limpiar filtros
       </button>
     </div>
   </div>
 
   <!-- Estadísticas rápidas -->
-  <div
-    class="estadisticasCalendario"
-    style="
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: 1.5rem;
-      flex-wrap: wrap;
-    "
-  >
+  <div class="estadisticasCalendario">
     <div class="statCalendario">
       <span class="statLabel">📊 Total Jornadas:</span>
       <span id="totalJornadas" class="statValor">0</span>
@@ -110,7 +56,7 @@
 <section class="seccion" id="calendario-partidos">
   <h2>🏐 Jornadas y Partidos</h2>
   <div id="calendarioContainer">
-    <p style="text-align: center; color: #666">
+    <p class="textoPlaceholder">
       Selecciona una temporada para ver el calendario de partidos
     </p>
   </div>
@@ -188,7 +134,7 @@
       >
     </video>
   </div>
-  <p style="text-align: center; margin-top: 1rem; color: #666">
+  <p class="videoCaption">
     <em>Todos los goles y mejores jugadas de la jornada 5</em>
   </p>
 </section>
@@ -327,7 +273,7 @@
         >Descargar comentarios</a
       >
     </audio>
-    <p style="margin-top: 1rem; text-align: center">
+    <p class="audioCaption">
       <em
         >Análisis completo de todos los partidos de la jornada 5 por nuestros
         expertos</em
@@ -496,11 +442,9 @@
 <section class="seccion" id="calendario-completo">
   <h2>📆 Información de la Temporada</h2>
   <div class="cajaCriterios">
-    <h3 style="color: var(--primary); margin-bottom: 1.5rem">
-      Datos de la Competición
-    </h3>
+    <h3>Datos de la Competición</h3>
 
-    <div style="margin-bottom: 1.5rem">
+    <div class="datosCompeticion">
       <p><strong>📅 Fecha de inicio:</strong> Septiembre 2024</p>
       <p><strong>📅 Fecha de finalización:</strong> Abril 2025</p>
       <p><strong>🔢 Total de jornadas:</strong> 14 jornadas (ida y vuelta)</p>
@@ -511,10 +455,8 @@
       </p>
     </div>
 
-    <h4 style="color: var(--accent); margin-top: 2rem; margin-bottom: 1rem">
-      Horarios Habituales
-    </h4>
-    <ul style="margin-left: 2rem; line-height: 2">
+    <h4>Horarios Habituales</h4>
+    <ul class="listaHorarios">
       <li><strong>Sábados:</strong> Partidos a las 18:00h, 18:30h y 20:00h</li>
       <li><strong>Domingos:</strong> Partidos a las 12:00h, 17:00h y 18:00h</li>
       <li>
@@ -522,10 +464,8 @@
       </li>
     </ul>
 
-    <h4 style="color: var(--accent); margin-top: 2rem; margin-bottom: 1rem">
-      Normas de Asistencia
-    </h4>
-    <ul style="margin-left: 2rem; line-height: 2">
+    <h4>Normas de Asistencia</h4>
+    <ul class="listaHorarios">
       <li>Se recomienda llegar al pabellón con 30 minutos de antelación</li>
       <li>Las entradas se pueden adquirir online o en taquilla</li>
       <li>Descuentos para abonados, familias y grupos</li>
@@ -620,15 +560,13 @@
 <section class="seccion" id="suscripcion">
   <h2>🔔 Mantente Informado</h2>
   <div class="cajaCriterios">
-    <h3 style="color: var(--primary); margin-bottom: 1rem">
-      Suscríbete al Calendario
-    </h3>
-    <p style="margin-bottom: 1.5rem">
+    <h3>Suscríbete al Calendario</h3>
+    <p class="descripcionSuscripcion">
       Recibe notificaciones sobre próximos partidos, cambios de horario y
       resultados en tiempo real.
     </p>
 
-    <ul style="list-style: none; padding: 0; line-height: 2.5">
+    <ul class="listaVentajas">
       <li>✅ Alertas de partidos 24 horas antes</li>
       <li>✅ Resultados en directo</li>
       <li>✅ Cambios de horario automáticos</li>
@@ -636,10 +574,10 @@
       <li>✅ Compatible con Google Calendar y Apple Calendar</li>
     </ul>
 
-    <p style="margin-top: 2rem">
+    <p class="contactoCalendario">
       <strong>📧 Contacto:</strong> Para más información sobre el calendario,
       escribir a
-      <a href="mailto:calendario@rfebm.es" style="color: var(--primary)"
+      <a href="mailto:calendario@rfebm.es" class="linkContacto"
         >calendario@rfebm.es</a
       >
     </p>
@@ -647,7 +585,7 @@
 </section>
 
 <!-- BOTÓN VOLVER ARRIBA -->
-<div style="text-align: center; margin: 3rem 0">
+<div class="volverArribaContainer">
   <a href="#" class="btnInterno" title="Volver al inicio de la página">
     ⬆ Volver arriba
   </a>

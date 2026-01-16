@@ -1,42 +1,13 @@
 <h1 class="tituloPagina">Equipos</h1>
 
-<!-- Navegación rápida interna -->
-<div class="quick-nav" style="margin-bottom: 3rem; text-align: center">
-  <a href="#grid-equipos" class="btnInterno" title="Ver equipos">Equipos</a>
-  <a
-    href="#galeria-equipos"
-    class="btnInterno"
-    style="margin-left: 1rem"
-    title="Ver galería"
-    >Galería</a
-  >
-  <a
-    href="#info-equipos"
-    class="btnInterno"
-    style="margin-left: 1rem"
-    title="Ver información"
-    >Información</a
-  >
-</div>
-
 <!-- SELECTOR DE TEMPORADA -->
-<section class="seccion" style="margin-bottom: 2rem">
+<section class="seccion seccionConMargen">
   <h2>Seleccionar Temporada</h2>
-  <div
-    class="selectorTemporadaContainer"
-    style="text-align: center; margin-bottom: 1rem"
-  >
-    <label
-      for="selectorTemporadaEquipos"
-      style="font-weight: bold; margin-right: 10px"
-    >
+  <div class="selectorTemporadaContainer">
+    <label for="selectorTemporadaEquipos" class="labelSelector">
       📅 Temporada:
     </label>
-    <select
-      id="selectorTemporadaEquipos"
-      class="btnInterno"
-      style="padding: 8px 15px; cursor: pointer"
-    >
+    <select id="selectorTemporadaEquipos">
       <option value="">-- Selecciona una temporada --</option>
     </select>
   </div>
@@ -46,7 +17,7 @@
 <section class="seccion" id="grid-equipos">
   <h2>Equipos Participantes</h2>
   <div id="gridEquipos">
-    <p style="text-align: center; color: #666">
+    <p class="textoPlaceholder">
       Selecciona una temporada para ver los equipos
     </p>
   </div>
@@ -124,7 +95,7 @@
       >
     </video>
   </div>
-  <p style="text-align: center; margin-top: 1rem; color: #666">
+  <p class="videoCaption">
     <em>Presentación oficial de todos los equipos participantes</em>
   </p>
 </section>
@@ -172,29 +143,25 @@
 <section class="seccion" id="estadisticas-equipos">
   <h2>Estadísticas por Equipo</h2>
   <div class="cajaCriterios">
-    <h3 style="color: var(--primary); margin-bottom: 1.5rem">
-      Datos Destacados de la Temporada
-    </h3>
-    <ul style="list-style: none; padding: 0">
-      <li style="margin-bottom: 1rem">
+    <h3>Datos Destacados de la Temporada</h3>
+    <ul>
+      <li>
         🏆 <strong>Líder:</strong> FC Barcelona con 10 puntos y 5 victorias
         consecutivas
       </li>
-      <li style="margin-bottom: 1rem">
+      <li>
         ⚡ <strong>Más goleador:</strong> FC Barcelona con 156 goles a favor
       </li>
-      <li style="margin-bottom: 1rem">
+      <li>
         🛡️ <strong>Mejor defensa:</strong> Valencia HC con solo 136 goles en
         contra
       </li>
-      <li style="margin-bottom: 1rem">
+      <li>
         🏠 <strong>Mayor capacidad:</strong> Atlético Madrid con 15,000
         espectadores
       </li>
-      <li style="margin-bottom: 1rem">
-        📅 <strong>Más veterano:</strong> Zaragoza BM fundado en 1933
-      </li>
-      <li style="margin-bottom: 1rem">
+      <li>📅 <strong>Más veterano:</strong> Zaragoza BM fundado en 1933</li>
+      <li>
         👨‍👩‍👧‍👦 <strong>Plantilla más amplia:</strong> FC Barcelona con 16 jugadores
       </li>
     </ul>
@@ -239,7 +206,7 @@
 </section>
 
 <!-- BOTÓN VOLVER ARRIBA -->
-<div style="text-align: center; margin: 3rem 0">
+<div class="volverArribaContainer">
   <a href="#" class="btnInterno" title="Volver al inicio de la página">
     ⬆ Volver arriba
   </a>

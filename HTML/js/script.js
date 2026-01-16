@@ -1,6 +1,8 @@
 $(document).ready(function () {
-  // 1. Cargar por defecto inicio.html
-  $("#contenedorPrincipal").load("pages/inicio.html");
+  // 1. Cargar por defecto inicio.html y luego cargar datos dinámicos
+  $("#contenedorPrincipal").load("pages/inicio.html", function () {
+    cargarDatosInicio();
+  });
 
   // 2. Función para el menú
   $(".btnMenu").on("click", function () {
@@ -12,6 +14,10 @@ $(document).ready(function () {
     // CARGA CON CALLBACK:
     // El tercer parámetro es una función que se ejecuta SOLO cuando el archivo ya cargó
     $("#contenedorPrincipal").load(archivo, function () {
+      // Si el archivo que acabamos de cargar es el de inicio
+      if (archivo.includes("inicio.html")) {
+        cargarDatosInicio();
+      }
       // Si el archivo que acabamos de cargar es el de la clasificación
       if (archivo.includes("clasificacion.html")) {
         cargarTemporadas();
@@ -31,6 +37,80 @@ $(document).ready(function () {
     });
   });
 });
+
+// ==================== INICIO ====================
+
+// Variables globales para inicio
+let xmlDocInicio = null;
+let xslDocInicio = null;
+
+// Cargar datos dinámicos de la página de inicio
+function cargarDatosInicio() {
+  const xmlUrl = "xml/data/general.xml";
+  const xslUrl = "xml/XSLT/inicio.xsl";
+
+  $.when(
+    $.ajax({ url: xmlUrl, dataType: "xml" }),
+    $.ajax({ url: xslUrl, dataType: "xml" }),
+  )
+    .done(function (xmlResp, xslResp) {
+      xmlDocInicio = xmlResp[0];
+      xslDocInicio = xslResp[0];
+
+      // Obtener la última temporada
+      const temporadas = $(xmlDocInicio).find("temporada");
+      const ultimaTemporada = temporadas.last().attr("id");
+
+      // Transformar y mostrar
+      cargarContenidoInicio(ultimaTemporada);
+    })
+    .fail(function (err) {
+      console.error("Error cargando XML/XSLT de inicio:", err);
+      $("#contenidoInicioXSLT").html(
+        '<p class="mensajeError">No se pudieron cargar los datos. Si estás abriendo el archivo directamente (file://), sirve el sitio desde un servidor local.</p>',
+      );
+    });
+}
+
+// Cargar el contenido de inicio con la temporada especificada
+function cargarContenidoInicio(temporadaId) {
+  const $contenedor = $("#contenidoInicioXSLT");
+  if (!$contenedor.length || !xmlDocInicio || !xslDocInicio) return;
+
+  try {
+    const processor = new XSLTProcessor();
+    processor.importStylesheet(xslDocInicio);
+    processor.setParameter(null, "temporadaId", temporadaId);
+    const fragment = processor.transformToFragment(xmlDocInicio, document);
+    $contenedor.empty().append(fragment);
+
+    // Configurar eventos de los botones "Ver más"
+    configurarBotonesVerMas();
+  } catch (e) {
+    console.error("Error transformando XSLT de inicio:", e);
+    $contenedor.html(
+      '<p class="mensajeError">No se pudo renderizar el contenido de inicio.</p>',
+    );
+  }
+}
+
+// Configurar los botones "Ver más" para navegar a otras páginas
+function configurarBotonesVerMas() {
+  $(".btnVerMas")
+    .off("click")
+    .on("click", function () {
+      const archivo = $(this).data("archivo");
+      $(".btnMenu").removeClass("active");
+      $(".btnMenu[data-archivo='" + archivo + "']").addClass("active");
+
+      $("#contenedorPrincipal").load(archivo, function () {
+        if (archivo.includes("clasificacion.html")) cargarTemporadas();
+        if (archivo.includes("jugadores.html")) cargarTemporadasJugadores();
+        if (archivo.includes("equipos.html")) cargarTemporadasEquipos();
+        if (archivo.includes("calendario.html")) cargarTemporadasCalendario();
+      });
+    });
+}
 
 // ==================== CLASIFICACIÓN ====================
 
@@ -177,13 +257,13 @@ function cargarTemporadasJugadores() {
       // Ocultar mensaje de carga
       $("#mensajeCarga").hide();
 
-      // Cargar automáticamente la primera temporada si existe
+      // Cargar automáticamente la última temporada si existe
       if (temporadas.length > 0) {
-        const primeraTemporada = temporadas.first().attr("id");
-        $select.val(primeraTemporada);
-        temporadaActualJugadores = primeraTemporada;
-        cargarJugadoresTemporada(primeraTemporada);
-        cargarFiltrosJugadores(primeraTemporada);
+        const ultimaTemporada = temporadas.last().attr("id");
+        $select.val(ultimaTemporada);
+        temporadaActualJugadores = ultimaTemporada;
+        cargarJugadoresTemporada(ultimaTemporada);
+        cargarFiltrosJugadores(ultimaTemporada);
       }
     })
     .fail(function (err) {
@@ -354,6 +434,9 @@ function aplicarFiltrosJugadores() {
   } else {
     $("#noResultados").hide();
   }
+
+  // Actualizar estadísticas basándose en los jugadores visibles
+  actualizarEstadisticasJugadoresFiltrados();
 }
 
 // Limpiar todos los filtros
@@ -363,33 +446,48 @@ function limpiarFiltros() {
   $("#filtroPosicion").val("todos");
 }
 
-// Actualizar estadísticas de jugadores
+// Actualizar estadísticas de jugadores (inicial, desde XML)
 function actualizarEstadisticasJugadores(temporadaId) {
-  const $temporada = $(xmlDocJugadores).find(`temporada[id="${temporadaId}"]`);
+  // Llamar a la función que calcula desde los elementos visibles
+  // Esto se ejecuta después de cargar los jugadores
+  setTimeout(function () {
+    actualizarEstadisticasJugadoresFiltrados();
+  }, 50);
+}
 
-  // Total de jugadores
-  const totalJugadores = $temporada.find("jugador").length;
+// Actualizar estadísticas basándose en los jugadores visibles (filtrados)
+function actualizarEstadisticasJugadoresFiltrados() {
+  const $jugadoresVisibles = $(".fichaJugador:visible");
+
+  // Total de jugadores visibles
+  const totalJugadores = $jugadoresVisibles.length;
   $("#totalJugadores").text(totalJugadores);
 
-  // Total de equipos
-  const totalEquipos = $temporada.find("equipo").length;
-  $("#totalEquipos").text(totalEquipos);
+  // Equipos únicos de los jugadores visibles
+  const equipos = [];
+  $jugadoresVisibles.each(function () {
+    const equipo = $(this).data("equipo");
+    if (equipo && equipos.indexOf(equipo) === -1) {
+      equipos.push(equipo);
+    }
+  });
+  $("#totalEquipos").text(equipos.length);
 
-  // Nacionalidades únicas
+  // Nacionalidades únicas de los jugadores visibles
   const nacionalidades = [];
-  $temporada.find("jugador nacionalidad").each(function () {
-    const nac = $(this).text().toLowerCase();
+  $jugadoresVisibles.each(function () {
+    const nac = $(this).data("nacionalidad");
     if (nac && nacionalidades.indexOf(nac) === -1) {
       nacionalidades.push(nac);
     }
   });
   $("#totalNacionalidades").text(nacionalidades.length);
 
-  // Edad promedio
+  // Edad promedio de los jugadores visibles
   let sumaEdades = 0;
   let contadorEdades = 0;
-  $temporada.find("jugador edad").each(function () {
-    const edad = parseInt($(this).text());
+  $jugadoresVisibles.each(function () {
+    const edad = parseInt($(this).data("edad"));
     if (!isNaN(edad)) {
       sumaEdades += edad;
       contadorEdades++;
@@ -490,8 +588,9 @@ function cargarEquiposTemporada(temporadaId) {
   }
 }
 
-// Configurar eventos de los botones "Ver Plantilla"
+// Configurar eventos de los botones "Ver Plantilla" y "Ver Partidos"
 function configurarBotonesVerPlantilla() {
+  // Botón Ver Plantilla
   $(".btnVerPlantilla")
     .off("click")
     .on("click", function () {
@@ -508,6 +607,26 @@ function configurarBotonesVerPlantilla() {
 
       $("#contenedorPrincipal").load("pages/jugadores.html", function () {
         cargarTemporadasJugadoresConFiltro(temporada, equipoNombre);
+      });
+    });
+
+  // Botón Ver Partidos
+  $(".btnVerPartidos")
+    .off("click")
+    .on("click", function () {
+      const equipoNombre = $(this).data("equipo");
+      const temporada = temporadaActualEquipos;
+
+      // Guardar en sessionStorage para usarlo en la página de calendario
+      sessionStorage.setItem("filtroEquipoDesdeEquipos", equipoNombre);
+      sessionStorage.setItem("temporadaDesdeEquipos", temporada);
+
+      // Navegar a la página de calendario
+      $(".btnMenu").removeClass("active");
+      $(".btnMenu[data-archivo='pages/calendario.html']").addClass("active");
+
+      $("#contenedorPrincipal").load("pages/calendario.html", function () {
+        cargarTemporadasCalendarioConFiltro(temporada, equipoNombre);
       });
     });
 }
@@ -830,4 +949,77 @@ function actualizarEstadisticasFiltradas(equipoNombre) {
   $("#totalJornadas").text(jornadas);
   $("#partidosJugados").text(jugados);
   $("#partidosPendientes").text(pendientes);
+}
+
+// Cargar calendario con filtro preseleccionado (desde equipos)
+function cargarTemporadasCalendarioConFiltro(temporadaId, equipoNombre) {
+  const xmlUrl = "xml/data/general.xml";
+  const xslUrl = "xml/XSLT/calendario.xsl";
+
+  $.when(
+    $.ajax({ url: xmlUrl, dataType: "xml" }),
+    $.ajax({ url: xslUrl, dataType: "xml" }),
+  )
+    .done(function (xmlResp, xslResp) {
+      xmlDocCalendario = xmlResp[0];
+      xslDocCalendario = xslResp[0];
+
+      // Obtener todas las temporadas del XML
+      const temporadas = $(xmlDocCalendario).find("temporada");
+      const $select = $("#selectorTemporadaCalendario");
+
+      // Limpiar opciones existentes (excepto la primera)
+      $select.find("option:not(:first)").remove();
+
+      // Añadir una opción por cada temporada
+      temporadas.each(function () {
+        const id = $(this).attr("id");
+        const textoMostrar = id.replace("_", "/");
+        $select.append(
+          $("<option>", {
+            value: id,
+            text: "Temporada " + textoMostrar,
+          }),
+        );
+      });
+
+      // Evento cuando cambia la selección de temporada
+      $select.off("change").on("change", function () {
+        const temporadaSeleccionada = $(this).val();
+        if (temporadaSeleccionada) {
+          temporadaActualCalendario = temporadaSeleccionada;
+          cargarCalendarioTemporada(temporadaSeleccionada);
+          cargarFiltrosCalendario(temporadaSeleccionada);
+        } else {
+          $("#calendarioContainer").html(
+            '<p style="text-align: center; color: #666;">Selecciona una temporada para ver el calendario de partidos</p>',
+          );
+        }
+      });
+
+      // Configurar eventos de filtros
+      configurarFiltrosCalendario();
+
+      // Cargar la temporada especificada
+      $select.val(temporadaId);
+      temporadaActualCalendario = temporadaId;
+      cargarCalendarioTemporada(temporadaId);
+      cargarFiltrosCalendario(temporadaId);
+
+      // Aplicar el filtro de equipo después de un pequeño delay
+      setTimeout(function () {
+        $("#filtroEquipoCalendario").val(equipoNombre);
+        aplicarFiltrosCalendario();
+
+        // Limpiar sessionStorage
+        sessionStorage.removeItem("filtroEquipoDesdeEquipos");
+        sessionStorage.removeItem("temporadaDesdeEquipos");
+      }, 100);
+    })
+    .fail(function (err) {
+      console.error("Error cargando XML/XSLT:", err);
+      $("#calendarioContainer").html(
+        '<p class="mensajeError">No se pudieron cargar los datos.</p>',
+      );
+    });
 }

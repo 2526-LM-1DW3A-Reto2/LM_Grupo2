@@ -1,108 +1,25 @@
 <h1 class="tituloPagina">Clasificación General</h1>
 
-<!-- Navegación rápida interna -->
-<div class="quick-nav" style="margin-bottom: 3rem; text-align: center">
-  <a href="#tabla-clasificacion" class="btnInterno" title="Ir a tabla"
-    >Ver Tabla</a
-  >
-  <a
-    href="#criterios-desempate"
-    class="btnInterno"
-    style="margin-left: 1rem"
-    title="Ver criterios"
-    >Criterios</a
-  >
-  <a
-    href="#estadisticas"
-    class="btnInterno"
-    style="margin-left: 1rem"
-    title="Ver estadísticas"
-    >Estadísticas</a
-  >
-</div>
-
 <!-- TABLA DE CLASIFICACIÓN CON XML  -->
 <section class="seccion">
   <h2>Tabla de clasificación</h2>
 
   <!-- Selector de temporada -->
-  <div
-    class="selectorTemporada"
-    style="margin-bottom: 1.5rem; text-align: center"
-  >
-    <label for="selectTemporada" style="font-weight: bold; margin-right: 10px"
+  <div class="selectorTemporadaContainer">
+    <label for="selectTemporada" class="labelSelector"
       >Seleccionar Temporada:</label
     >
-    <select
-      id="selectTemporada"
-      class="btnInterno"
-      style="padding: 8px 15px; cursor: pointer"
-    >
+    <select id="selectTemporada" class="btnInterno">
       <option value="">-- Selecciona una temporada --</option>
     </select>
   </div>
 
   <div class="tablaContenedor">
     <section id="tablaClasificacion">
-      <p style="text-align: center; color: #666">
+      <p class="textoPlaceholder">
         Selecciona una temporada para ver la clasificación
       </p>
     </section>
-  </div>
-</section>
-
-<!-- TABLA DE CLASIFICACIÓN -->
-
-<!-- GALERÍA DE IMÁGENES - MOMENTOS DESTACADOS -->
-<section class="seccion" id="galeria-clasificacion">
-  <h2>Momentos Destacados de la Temporada</h2>
-  <div class="galeriaImagenes">
-    <!-- Imagen 1: Líder -->
-    <figure class="galeriaItem">
-      <img
-        src="imagenes/barcelona-lider.jpg"
-        alt="FC Barcelona celebrando su liderato invicto en la competición"
-        title="FC Barcelona - Líder invicto"
-        width="800"
-        height="600"
-        border="0"
-        align="center"
-        hspace="10"
-        vspace="10"
-      />
-      <figcaption>FC Barcelona mantiene el liderato invicto</figcaption>
-    </figure>
-
-    <!-- Imagen 2: Batalla por el podio -->
-    <figure class="galeriaItem">
-      <img
-        src="imagenes/podio-batalla.jpg"
-        alt="Jugadores de Zaragoza BM y Valencia HC disputando la segunda posición"
-        title="Lucha por el segundo puesto"
-        width="800"
-        height="600"
-        border="0"
-        hspace="10"
-        vspace="10"
-      />
-      <figcaption>Intensa batalla por el podio</figcaption>
-    </figure>
-
-    <!-- Imagen 3: Emoción -->
-    <figure class="galeriaItem">
-      <img
-        src="imagenes/emocion-liga.jpg"
-        alt="Aficionados celebrando en las gradas durante un partido emocionante"
-        title="La pasión de la afición"
-        width="800"
-        height="600"
-        border="0"
-        align="center"
-        hspace="10"
-        vspace="10"
-      />
-      <figcaption>La pasión del balonmano español</figcaption>
-    </figure>
   </div>
 </section>
 
@@ -118,21 +35,14 @@
     </p>
     <ol>
       <li>
-        <strong>Diferencia de goles</strong> en los enfrentamientos directos
-        entre los equipos empatados (goles a favor menos goles en contra en
-        partidos mutuos)
+        <strong>Número de victorias</strong>
       </li>
       <li>
-        <strong>Mayor número de goles a favor</strong> en los enfrentamientos
-        directos entre los equipos empatados
+        <strong>Número de empates</strong>
       </li>
       <li>
         <strong>Diferencia general de goles</strong> en toda la competición
         (todos los partidos de la temporada)
-      </li>
-      <li>
-        <strong>Mayor número de goles a favor</strong> en toda la competición
-        regular
       </li>
       <li>
         <strong>Menor número de sanciones disciplinarias</strong>
@@ -150,7 +60,7 @@
         clubes y la federación
       </li>
     </ol>
-    <p style="margin-top: 1.5rem">
+    <p class="leyendaTabla">
       <em
         ><strong>Leyenda de la tabla:</strong> PJ (Partidos Jugados), PG
         (Partidos Ganados), PE (Partidos Empatados), PP (Partidos Perdidos), GF
@@ -184,7 +94,7 @@
       >
     </video>
   </div>
-  <p style="text-align: center; margin-top: 1rem; color: #666">
+  <p class="videoCaption">
     <em>Análisis experto de la situación actual de la tabla</em>
   </p>
 </section>
@@ -202,7 +112,7 @@
         >Descargar comentario</a
       >
     </audio>
-    <p style="margin-top: 1rem; text-align: center">
+    <p class="audioCaption">
       <em
         >Análisis en profundidad de la clasificación actual por nuestro
         experto</em
@@ -249,7 +159,7 @@
 </section>
 
 <!-- BOTÓN VOLVER ARRIBA -->
-<div style="text-align: center; margin: 3rem 0">
+<div class="volverArribaContainer">
   <a href="#" class="btnInterno" title="Volver al inicio de la página">
     ⬆ Volver arriba
   </a>

@@ -10,7 +10,9 @@
                 <div class="fichaJugador" 
                      data-nombre="{translate(nombre, 'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÑ', 'abcdefghijklmnopqrstuvwxyzáéíóúñ')}" 
                      data-equipo="{ancestor::equipo/nombre}" 
-                     data-posicion="{posicion}">
+                     data-posicion="{posicion}"
+                     data-edad="{edad}"
+                     data-nacionalidad="{translate(nacionalidad, 'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÑ', 'abcdefghijklmnopqrstuvwxyzáéíóúñ')}">
                     <div class="fichaFoto">
                         <xsl:choose>
                             <xsl:when test="foto/@url != ''">
