@@ -67,28 +67,11 @@
                                                                                     </xs:sequence>
                                                                                     <xs:attribute
                                                                                         name="id"
+                                                                                        type="xs:ID"
                                                                                         use="required" />
                                                                                     <xs:attribute
                                                                                         name="equipo"
-                                                                                        use="required">
-                                                                                        <xs:simpleType>
-                                                                                            <xs:restriction
-                                                                                                base="xs:string">
-                                                                                                <xs:enumeration
-                                                                                                    value="E001" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E002" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E003" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E004" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E005" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E006" />
-                                                                                            </xs:restriction>
-                                                                                        </xs:simpleType>
-                                                                                    </xs:attribute>
+                                                                                        use="required" />
                                                                                 </xs:complexType>
                                                                             </xs:element>
                                                                         </xs:sequence>
@@ -101,18 +84,8 @@
                                                                     </xs:complexType>
                                                                 </xs:element>
                                                             </xs:sequence>
-                                                            <xs:attribute name="id" use="required">
-                                                                <xs:simpleType>
-                                                                    <xs:restriction base="xs:string">
-                                                                        <xs:enumeration value="E001" />
-                                                                        <xs:enumeration value="E002" />
-                                                                        <xs:enumeration value="E003" />
-                                                                        <xs:enumeration value="E004" />
-                                                                        <xs:enumeration value="E005" />
-                                                                        <xs:enumeration value="E006" />
-                                                                    </xs:restriction>
-                                                                </xs:simpleType>
-                                                            </xs:attribute>
+                                                            <xs:attribute name="id" type="xs:ID"
+                                                                use="required" />
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
@@ -144,71 +117,22 @@
                                                                                     </xs:sequence>
                                                                                     <xs:attribute
                                                                                         name="id"
+                                                                                        type="xs:ID"
                                                                                         use="required" />
                                                                                     <xs:attribute
                                                                                         name="local"
-                                                                                        use="required">
-                                                                                        <xs:simpleType>
-                                                                                            <xs:restriction
-                                                                                                base="xs:string">
-                                                                                                <xs:enumeration
-                                                                                                    value="E001" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E002" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E003" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E004" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E005" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E006" />
-                                                                                            </xs:restriction>
-                                                                                        </xs:simpleType>
-                                                                                    </xs:attribute>
+                                                                                        use="required" />
                                                                                     <xs:attribute
                                                                                         name="visitante"
-                                                                                        use="required">
-                                                                                        <xs:simpleType>
-                                                                                            <xs:restriction
-                                                                                                base="xs:string">
-                                                                                                <xs:enumeration
-                                                                                                    value="E001" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E002" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E003" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E004" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E005" />
-                                                                                                <xs:enumeration
-                                                                                                    value="E006" />
-                                                                                            </xs:restriction>
-                                                                                        </xs:simpleType>
-                                                                                    </xs:attribute>
+                                                                                        use="required" />
                                                                                 </xs:complexType>
                                                                             </xs:element>
                                                                         </xs:sequence>
                                                                     </xs:complexType>
                                                                 </xs:element>
                                                             </xs:sequence>
-                                                            <xs:attribute name="id" use="required">
-                                                                <xs:simpleType>
-                                                                    <xs:restriction base="xs:string">
-                                                                        <xs:enumeration value="J1" />
-                                                                        <xs:enumeration value="J10" />
-                                                                        <xs:enumeration value="J2" />
-                                                                        <xs:enumeration value="J3" />
-                                                                        <xs:enumeration value="J4" />
-                                                                        <xs:enumeration value="J5" />
-                                                                        <xs:enumeration value="J6" />
-                                                                        <xs:enumeration value="J7" />
-                                                                        <xs:enumeration value="J8" />
-                                                                        <xs:enumeration value="J9" />
-                                                                    </xs:restriction>
-                                                                </xs:simpleType>
-                                                            </xs:attribute>
+                                                            <xs:attribute name="id" type="xs:ID"
+                                                                use="required" />
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>

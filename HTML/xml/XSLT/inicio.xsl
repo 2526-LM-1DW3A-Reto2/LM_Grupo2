@@ -49,46 +49,46 @@
                 <h2>🏆 Clasificación Actual</h2>
                 <span class="temporadaLabel">Temporada <xsl:value-of select="translate($temporadaId, '_', '/')"/></span>
             </div>
-            
-            <table class="tablaClasificacionInicio">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Equipo</th>
-                        <th>PJ</th>
-                        <th>G</th>
-                        <th>E</th>
-                        <th>P</th>
-                        <th>GF</th>
-                        <th>GC</th>
-                        <th>Pts</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <xsl:for-each select="$equipos">
-                        <xsl:sort select="(ganados * 2) + empatados" data-type="number" order="descending"/>
-                        <xsl:sort select="golesFavor - golesContra" data-type="number" order="descending"/>
+            <section class="contenedorTablaInicio">
+                <table class="tablaClasificacionInicio">
+                    <thead>
                         <tr>
-                            <xsl:if test="position() = 1">
-                                <xsl:attribute name="class">lider</xsl:attribute>
-                            </xsl:if>
-                            <td><xsl:value-of select="position()"/></td>
-                            <td class="equipoCell">
-                                <img src="{escudo/@url}" alt="{nombre}" class="escudoMini"/>
-                                <xsl:value-of select="nombre"/>
-                            </td>
-                            <td><xsl:value-of select="ganados + empatados + perdidos"/></td>
-                            <td><xsl:value-of select="ganados"/></td>
-                            <td><xsl:value-of select="empatados"/></td>
-                            <td><xsl:value-of select="perdidos"/></td>
-                            <td><xsl:value-of select="golesFavor"/></td>
-                            <td><xsl:value-of select="golesContra"/></td>
-                            <td class="puntos"><xsl:value-of select="(ganados * 3) + empatados"/></td>
+                            <th>#</th>
+                            <th>Equipo</th>
+                            <th>PJ</th>
+                            <th>G</th>
+                            <th>E</th>
+                            <th>P</th>
+                            <th>GF</th>
+                            <th>GC</th>
+                            <th>Pts</th>
                         </tr>
-                    </xsl:for-each>
-                </tbody>
-            </table>
-            
+                    </thead>
+                    <tbody>
+                        <xsl:for-each select="$equipos">
+                            <xsl:sort select="(ganados * 2) + empatados" data-type="number" order="descending"/>
+                            <xsl:sort select="golesFavor - golesContra" data-type="number" order="descending"/>
+                            <tr>
+                                <xsl:if test="position() = 1">
+                                    <xsl:attribute name="class">lider</xsl:attribute>
+                                </xsl:if>
+                                <td><xsl:value-of select="position()"/></td>
+                                <td class="equipoCell">
+                                    <img src="{escudo/@url}" alt="{nombre}" class="escudoMini"/>
+                                    <xsl:value-of select="nombre"/>
+                                </td>
+                                <td><xsl:value-of select="ganados + empatados + perdidos"/></td>
+                                <td><xsl:value-of select="ganados"/></td>
+                                <td><xsl:value-of select="empatados"/></td>
+                                <td><xsl:value-of select="perdidos"/></td>
+                                <td><xsl:value-of select="golesFavor"/></td>
+                                <td><xsl:value-of select="golesContra"/></td>
+                                <td class="puntos"><xsl:value-of select="(ganados * 3) + empatados"/></td>
+                            </tr>
+                        </xsl:for-each>
+                    </tbody>
+                </table>
+            </section>
             <div class="verMasContainer">
                 <button class="btnVerMas" data-archivo="pages/clasificacion.html">Ver clasificación completa →</button>
             </div>
@@ -98,35 +98,42 @@
         <section class="seccion seccionInicio" id="partidos-inicio">
             <div class="seccionHeaderInicio">
                 <h2>⚽ Últimos Partidos</h2>
-                <span class="temporadaLabel">Jornada <xsl:value-of select="substring-after($ultimaJornada/@id, 'J')"/></span>
+                <span class="temporadaLabel">Partidos Finalizados</span>
             </div>
             
             <div class="contenedorPartidosInicio">
-                <xsl:for-each select="$ultimaJornada/partidos/partido">
-                    <xsl:variable name="localId" select="@local"/>
-                    <xsl:variable name="visitanteId" select="@visitante"/>
-                    <xsl:variable name="equipoLocal" select="$equipos[@id=$localId]"/>
-                    <xsl:variable name="equipoVisitante" select="$equipos[@id=$visitanteId]"/>
-                    
-                    <div class="cardPartidoInicio">
-                        <div class="partidoJornada">Jornada <xsl:value-of select="substring-after($ultimaJornada/@id, 'J')"/></div>
-                        <div class="partidoEquipos">
-                            <div class="equipoPartido">
-                                <img src="{$equipoLocal/escudo/@url}" alt="{$equipoLocal/nombre}" class="escudoPartido"/>
-                                <span class="nombreEquipoPartido"><xsl:value-of select="$equipoLocal/nombre"/></span>
+                <!-- Obtener todos los partidos finalizados de todas las jornadas -->
+                <xsl:for-each select="$jornadas/partidos/partido[estado='Finalizado']">
+                    <!-- Ordenar por jornada descendente (últimas primero) -->
+                    <xsl:sort select="count(ancestor::jornada/preceding-sibling::jornada)" data-type="number" order="descending"/>
+                    <!-- Limitar a los últimos 3 partidos -->
+                    <xsl:if test="position() &lt;= 3">
+                        <xsl:variable name="localId" select="@local"/>
+                        <xsl:variable name="visitanteId" select="@visitante"/>
+                        <xsl:variable name="equipoLocal" select="$equipos[@id=$localId]"/>
+                        <xsl:variable name="equipoVisitante" select="$equipos[@id=$visitanteId]"/>
+                        <xsl:variable name="jornadaActual" select="ancestor::jornada"/>
+                        
+                        <div class="cardPartidoInicio">
+                            <div class="partidoJornada">Jornada <xsl:value-of select="substring-after($jornadaActual/@id, 'J')"/></div>
+                            <div class="partidoEquipos">
+                                <div class="equipoPartido">
+                                    <img src="{$equipoLocal/escudo/@url}" alt="{$equipoLocal/nombre}" class="escudoPartido"/>
+                                    <span class="nombreEquipoPartido"><xsl:value-of select="$equipoLocal/nombre"/></span>
+                                </div>
+                                <div class="marcador">
+                                    <span class="golesLocal"><xsl:value-of select="golesLocal"/></span>
+                                    <span class="separador">-</span>
+                                    <span class="golesVisitante"><xsl:value-of select="golesVisitante"/></span>
+                                </div>
+                                <div class="equipoPartido">
+                                    <img src="{$equipoVisitante/escudo/@url}" alt="{$equipoVisitante/nombre}" class="escudoPartido"/>
+                                    <span class="nombreEquipoPartido"><xsl:value-of select="$equipoVisitante/nombre"/></span>
+                                </div>
                             </div>
-                            <div class="marcador">
-                                <span class="golesLocal"><xsl:value-of select="golesLocal"/></span>
-                                <span class="separador">-</span>
-                                <span class="golesVisitante"><xsl:value-of select="golesVisitante"/></span>
-                            </div>
-                            <div class="equipoPartido">
-                                <img src="{$equipoVisitante/escudo/@url}" alt="{$equipoVisitante/nombre}" class="escudoPartido"/>
-                                <span class="nombreEquipoPartido"><xsl:value-of select="$equipoVisitante/nombre"/></span>
-                            </div>
+                            <div class="partidoEstado"><xsl:value-of select="estado"/></div>
                         </div>
-                        <div class="partidoEstado"><xsl:value-of select="estado"/></div>
-                    </div>
+                    </xsl:if>
                 </xsl:for-each>
             </div>
             

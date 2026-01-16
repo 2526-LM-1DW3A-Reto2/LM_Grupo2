@@ -6,7 +6,7 @@ $(document).ready(function () {
     "jugadores.html": "Federación Española de Balonmano - Jugadores",
     "equipos.html": "Federación Española de Balonmano - Equipos",
     "calendario.html": "Federación Española de Balonmano - Calendario",
-    "multimedia.html": "Federación Española de Balonmano - Multimedia"
+    "multimedia.html": "Federación Española de Balonmano - Multimedia",
   };
 
   // Función para actualizar el título de la página
@@ -18,6 +18,80 @@ $(document).ready(function () {
       }
     }
   }
+
+  // ==================== MENÚ HAMBURGUESA ====================
+
+  // Función para verificar si estamos en modo móvil
+  function esModoMovil() {
+    return window.innerWidth <= 768;
+  }
+
+  // Función para inicializar el menú móvil
+  function inicializarMenuMovil() {
+    const $menu = $("#menu");
+    const $btnBurger = $("#btnToggle");
+
+    if (esModoMovil()) {
+      $menu.addClass("menuMovil");
+    } else {
+      $menu.removeClass("menuMovil menuAbierto");
+      $btnBurger.removeClass("active");
+      $("body").css("overflow", "");
+    }
+  }
+
+  // Ejecutar al cargar la página
+  inicializarMenuMovil();
+
+  // Ejecutar cuando cambie el tamaño de la ventana
+  $(window).on("resize", function () {
+    inicializarMenuMovil();
+  });
+
+  // Toggle del menú hamburguesa
+  $("#btnToggle").on("click", function () {
+    const $menu = $("#menu");
+    const $this = $(this);
+
+    $this.toggleClass("active");
+    $menu.toggleClass("menuAbierto");
+
+    // Prevenir scroll del body cuando el menú está abierto
+    if ($menu.hasClass("menuAbierto")) {
+      $("body").css("overflow", "hidden");
+    } else {
+      $("body").css("overflow", "");
+    }
+  });
+
+  // Cerrar menú al hacer clic en un enlace del menú
+  $("#menu .btnMenu").on("click", function () {
+    if (esModoMovil()) {
+      $("#menu").removeClass("menuAbierto");
+      $("#btnToggle").removeClass("active");
+      $("body").css("overflow", "");
+    }
+  });
+
+  // Cerrar menú al hacer clic fuera (en el fondo)
+  $("#menu.menuMovil").on("click", function (e) {
+    if (e.target === this) {
+      $(this).removeClass("menuAbierto");
+      $("#btnToggle").removeClass("active");
+      $("body").css("overflow", "");
+    }
+  });
+
+  // Cerrar menú con tecla Escape
+  $(document).on("keydown", function (e) {
+    if (e.key === "Escape" && $("#menu").hasClass("menuAbierto")) {
+      $("#menu").removeClass("menuAbierto");
+      $("#btnToggle").removeClass("active");
+      $("body").css("overflow", "");
+    }
+  });
+
+  // ==================== FIN MENÚ HAMBURGUESA ====================
 
   // 1. Cargar por defecto inicio.html y luego cargar datos dinámicos
   $("#contenedorPrincipal").load("pages/inicio.html", function () {

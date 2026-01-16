@@ -5,7 +5,7 @@
     Fecha: Octubre 2025
     Descripción: Página de inicio de la web de la Federación Española de Balonmano
 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <!-- Configuración de caracteres y viewport -->
@@ -36,8 +36,12 @@
     <title>Federación Española de Balonmano - Inicio</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="imagenes/imagenes_Logos/logoFederacion.ico" />
-    <link rel="shortcut icon" href="imagenes/imagenes_Logos/logoFederacion.ico" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="imagenes/iconos/logoFederacion.ico"
+    />
+    <link rel="shortcut icon" href="imagenes/iconos/logoFederacion.ico" />
 
     <!-- Hoja de estilos externa -->
     <link rel="stylesheet" href="css/styles.css" />
@@ -67,27 +71,42 @@
         </div>
       </div>
       <div class="contenedorBurger">
-        <a class="btnBurger" id="btnToggle">
-          <p>Menú</p>
-          <img src="imagenes/menu.png" alt="" />
-        </a>
+        <button class="btnBurger" id="btnToggle" aria-label="Abrir menú">
+          <span class="burgerTexto">Menú</span>
+          <img
+            src="imagenes/iconos/menuHamburguesa.png"
+            alt="Menú"
+            class="burgerIcon"
+          />
+          <span class="burgerClose">✕</span>
+        </button>
       </div>
       <nav id="menu">
         <ul>
           <li>
-            <button class="btnMenu active" data-archivo="pages/inicio.html">Inicio</button>
+            <button class="btnMenu active" data-archivo="pages/inicio.html">
+              Inicio
+            </button>
           </li>
           <li>
-            <button class="btnMenu" data-archivo="pages/jugadores.html">Jugadores</button>
+            <button class="btnMenu" data-archivo="pages/jugadores.html">
+              Jugadores
+            </button>
           </li>
           <li>
-            <button class="btnMenu" data-archivo="pages/equipos.html">Equipos</button>
+            <button class="btnMenu" data-archivo="pages/equipos.html">
+              Equipos
+            </button>
           </li>
           <li>
-            <button class="btnMenu" data-archivo="pages/clasificacion.html">Clasificación</button>
+            <button class="btnMenu" data-archivo="pages/clasificacion.html">
+              Clasificación
+            </button>
           </li>
           <li>
-            <button class="btnMenu" data-archivo="pages/calendario.html">Calendario</button>
+            <button class="btnMenu" data-archivo="pages/calendario.html">
+              Calendario
+            </button>
           </li>
         </ul>
       </nav>
@@ -96,9 +115,7 @@
     <!-- MENÚ DE NAVEGACIÓN -->
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main id="contenedorPrincipal">
-
-    </main>
+    <main id="contenedorPrincipal"></main>
     <!-- PIE DE PÁGINA -->
     <footer>
       <div class="footerContenido">

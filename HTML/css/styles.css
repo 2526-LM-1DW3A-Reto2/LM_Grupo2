@@ -213,20 +213,157 @@ body {
   width: auto;
   display: none;
   justify-content: center;
+  padding: 0 2rem 1rem 2rem;
 }
 
 .btnBurger {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
   color: white;
   text-decoration: none;
-  z-index: 1000;
+  z-index: 1001;
+  background: linear-gradient(135deg, var(--primary) 0%, #a01830 100%);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(196, 30, 58, 0.3);
 }
 
-.btnBurger img {
-  width: 25px;
+/* Cuando el menú está abierto, posicionar el botón de cerrar en la esquina */
+.btnBurger.active {
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  padding: 0.8rem 1.2rem;
+}
+
+.btnBurger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(196, 30, 58, 0.4);
+}
+
+.btnBurger:active {
+  transform: translateY(0);
+}
+
+.burgerIcon {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.burgerClose {
+  display: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.burgerTexto {
+  transition: opacity 0.3s ease;
+}
+
+/* Estado activo del menú hamburguesa */
+.btnBurger.active .burgerIcon {
+  display: none;
+}
+
+.btnBurger.active .burgerClose {
+  display: block;
+}
+
+.btnBurger.active .burgerTexto {
+  display: none;
+}
+
+.btnBurger.active::after {
+  content: "Cerrar";
+  margin-right: 5px;
+}
+
+/* Estilos del menú móvil */
+#menu.menuMovil {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, var(--dark) 0%, var(--accent) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+#menu.menuMovil.menuAbierto {
+  opacity: 1;
+  visibility: visible;
+}
+
+#menu.menuMovil ul {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#menu.menuMovil ul li {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+#menu.menuMovil.menuAbierto ul li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#menu.menuMovil.menuAbierto ul li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+#menu.menuMovil.menuAbierto ul li:nth-child(2) {
+  transition-delay: 0.15s;
+}
+#menu.menuMovil.menuAbierto ul li:nth-child(3) {
+  transition-delay: 0.2s;
+}
+#menu.menuMovil.menuAbierto ul li:nth-child(4) {
+  transition-delay: 0.25s;
+}
+#menu.menuMovil.menuAbierto ul li:nth-child(5) {
+  transition-delay: 0.3s;
+}
+#menu.menuMovil.menuAbierto ul li:nth-child(6) {
+  transition-delay: 0.35s;
+}
+
+#menu.menuMovil ul li button {
+  color: white;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+}
+
+#menu.menuMovil ul li button::before {
+  background: var(--secondary);
+}
+
+#menu.menuMovil ul li button.active {
+  color: var(--secondary);
 }
 
 /* ===================================
@@ -2568,6 +2705,10 @@ footer::before {
     gap: 2rem;
   }
 
+  .contenedorTablaInicio {
+    overflow-x: auto;
+  }
+
   nav ul {
     flex-wrap: wrap;
   }
@@ -2896,13 +3037,23 @@ footer::before {
 /* ===================================
    26. RESPONSIVE - MÓVILES PEQUEÑOS (max-width: 570px)
    =================================== */
+@media (max-width: 768px) {
+  /* Mostrar el botón hamburguesa */
+  .contenedorBurger {
+    display: flex;
+  }
+
+  /* Ocultar el menú normal */
+  #menu:not(.menuMovil) {
+    display: none;
+  }
+
+  /* El menú móvil se controla con las clases menuMovil y menuAbierto */
+}
+
 @media (max-width: 570px) {
   .header nav {
     width: 100%;
-  }
-
-  #menu {
-    display: none;
   }
 
   .header nav ul {
@@ -2914,9 +3065,14 @@ footer::before {
     width: 100%;
   }
 
-  .contenedorBurger {
-    display: flex;
-    padding: 0 0 1rem 0;
+  .btnBurger {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .burgerIcon {
+    width: 20px;
+    height: 20px;
   }
 }
 
