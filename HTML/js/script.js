@@ -152,7 +152,7 @@ let xslDocInicio = null;
 
 // Cargar datos dinámicos de la página de inicio
 function cargarDatosInicio() {
-  const xmlUrl = "xml/data/general.xml";
+  const xmlUrl = "xml/data/ligaBalonmano.xml";
   const xslUrl = "xml/XSLT/inicio.xsl";
 
   $.when(
@@ -225,7 +225,7 @@ let xslDocGlobal = null;
 
 // Cargar las temporadas disponibles y mostrar clasificación
 function cargarTemporadas() {
-  const xmlUrl = "xml/data/general.xml";
+  const xmlUrl = "xml/data/ligaBalonmano.xml";
   const xslUrl = "xml/XSLT/clasificacion.xsl";
 
   $.when(
@@ -310,7 +310,7 @@ let temporadaActualJugadores = null;
 
 // Cargar las temporadas disponibles para la sección de jugadores
 function cargarTemporadasJugadores() {
-  const xmlUrl = "xml/data/general.xml";
+  const xmlUrl = "xml/data/ligaBalonmano.xml";
   const xslUrl = "xml/XSLT/jugadores.xsl";
 
   $.when(
@@ -594,7 +594,7 @@ function actualizarEstadisticasJugadoresFiltrados() {
 
 // Cargar jugadores con filtro preseleccionado (desde equipos)
 function cargarTemporadasJugadoresConFiltro(temporadaId, equipoNombre) {
-  const xmlUrl = "xml/data/general.xml";
+  const xmlUrl = "xml/data/ligaBalonmano.xml";
   const xslUrl = "xml/XSLT/jugadores.xsl";
 
   $.when(
@@ -676,7 +676,7 @@ let temporadaActualEquipos = null;
 
 // Cargar las temporadas disponibles para la sección de equipos
 function cargarTemporadasEquipos() {
-  const xmlUrl = "xml/data/general.xml";
+  const xmlUrl = "xml/data/ligaBalonmano.xml";
   const xslUrl = "xml/XSLT/equipos.xsl";
 
   $.when(
@@ -800,7 +800,7 @@ function configurarBotonesEquipos() {
 
 // Cargar jugadores con filtro preseleccionado (desde equipos)
 function cargarTemporadasJugadoresConFiltro(temporadaId, equipoNombre) {
-  const xmlUrl = "xml/data/general.xml";
+  const xmlUrl = "xml/data/ligaBalonmano.xml";
   const xslUrl = "xml/XSLT/jugadores.xsl";
 
   $.when(
@@ -884,7 +884,7 @@ let temporadaActualCalendario = null;
 
 // Cargar las temporadas disponibles para la sección de calendario
 function cargarTemporadasCalendario() {
-  const xmlUrl = "xml/data/general.xml";
+  const xmlUrl = "xml/data/ligaBalonmano.xml";
   const xslUrl = "xml/XSLT/calendario.xsl";
 
   $.when(
@@ -1114,7 +1114,7 @@ function actualizarEstadisticasFiltradas(equipoNombre) {
 
 // Cargar calendario con filtro preseleccionado (desde equipos)
 function cargarTemporadasCalendarioConFiltro(temporadaId, equipoNombre) {
-  const xmlUrl = "xml/data/general.xml";
+  const xmlUrl = "xml/data/ligaBalonmano.xml";
   const xslUrl = "xml/XSLT/calendario.xsl";
 
   $.when(
