@@ -1,0 +1,3171 @@
+/* 
+===================================
+HOJA DE ESTILOS - FEDERACIÓN ESPAÑOLA DE BALONMANO
+===================================
+Proyecto: Web de la Federación Española de Balonmano
+Versión: 3.0 (Reorganizado)
+Descripción: Estilos principales organizados por secciones
+===================================
+
+ÍNDICE:
+1. RESET Y CONFIGURACIÓN BASE
+2. VARIABLES CSS
+3. CABECERA (HEADER)
+4. NAVEGACIÓN (NAV)
+5. CONTENIDO PRINCIPAL (MAIN)
+6. SECCIÓN HERO
+7. TÍTULOS Y SECCIONES
+8. BOTONES
+9. TARJETAS (CARDS)
+10. TABLAS
+11. SELECTORES DE TEMPORADA
+12. FILTROS
+13. GALERÍA DE IMÁGENES
+14. CONTENEDORES MULTIMEDIA
+15. PÁGINA DE INICIO DINÁMICA
+16. PÁGINA DE CLASIFICACIÓN
+17. PÁGINA DE JUGADORES
+18. PÁGINA DE EQUIPOS
+19. PÁGINA DE CALENDARIO
+20. ESTADÍSTICAS
+21. LISTAS Y ENLACES
+22. PIE DE PÁGINA (FOOTER)
+23. UTILIDADES Y HELPERS
+24. RESPONSIVE - TABLETS (max-width: 1024px)
+25. RESPONSIVE - MÓVILES (max-width: 768px)
+26. RESPONSIVE - MÓVILES PEQUEÑOS (max-width: 570px)
+27. RESPONSIVE - MÓVILES MUY PEQUEÑOS (max-width: 480px)
+===================================
+*/
+
+/* Importación de fuentes de Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap");
+
+/* ===================================
+   1. RESET Y CONFIGURACIÓN BASE
+   =================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  background: var(--light);
+  overflow-x: hidden;
+}
+
+/* ===================================
+   2. VARIABLES CSS
+   =================================== */
+:root {
+  --primary: #c41e3a;
+  --secondary: #ffc400;
+  --dark: #1a1a2e;
+  --light: #f8f9fa;
+  --accent: #0f3460;
+}
+
+/* ===================================
+   3. CABECERA (HEADER)
+   =================================== */
+.header {
+  background: linear-gradient(135deg, var(--dark) 0%, var(--accent) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: var(--primary);
+  opacity: 0.1;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.headerContenido {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo {
+  width: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.logo img {
+  width: 80px;
+}
+
+.logo:hover {
+  transform: rotate(5deg) scale(1.05);
+}
+
+.headerTitulo h1 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.headerTitulo p {
+  color: var(--secondary);
+  font-weight: 300;
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+}
+
+/* ===================================
+   4. NAVEGACIÓN (NAV)
+   =================================== */
+.header nav {
+  background: rgba(255, 255, 255, 0.98);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.btnMenu {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  outline: none;
+}
+
+.header nav ul li button {
+  display: block;
+  color: var(--dark);
+  text-decoration: none;
+  padding: 1.2rem 2rem;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.header nav ul li button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.header nav ul li button:hover::before,
+.header nav ul li button.active::before {
+  width: 80%;
+}
+
+.header nav ul li button.active {
+  color: var(--primary);
+}
+
+/* Menú hamburguesa (móvil) */
+.contenedorBurger {
+  width: auto;
+  display: none;
+  justify-content: center;
+  padding: 0 2rem 1rem 2rem;
+}
+
+.btnBurger {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  text-decoration: none;
+  z-index: 1001;
+  background: linear-gradient(135deg, var(--primary) 0%, #a01830 100%);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(196, 30, 58, 0.3);
+}
+
+/* Cuando el menú está abierto, posicionar el botón de cerrar en la esquina */
+.btnBurger.active {
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  padding: 0.8rem 1.2rem;
+}
+
+.btnBurger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(196, 30, 58, 0.4);
+}
+
+.btnBurger:active {
+  transform: translateY(0);
+}
+
+.burgerIcon {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.burgerClose {
+  display: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.burgerTexto {
+  transition: opacity 0.3s ease;
+}
+
+/* Estado activo del menú hamburguesa */
+.btnBurger.active .burgerIcon {
+  display: none;
+}
+
+.btnBurger.active .burgerClose {
+  display: block;
+}
+
+.btnBurger.active .burgerTexto {
+  display: none;
+}
+
+.btnBurger.active::after {
+  content: "Cerrar";
+  margin-right: 5px;
+}
+
+/* Estilos del menú móvil */
+#menu.menuMovil {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, var(--dark) 0%, var(--accent) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+#menu.menuMovil.menuAbierto {
+  opacity: 1;
+  visibility: visible;
+}
+
+#menu.menuMovil ul {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#menu.menuMovil ul li {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+#menu.menuMovil.menuAbierto ul li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#menu.menuMovil.menuAbierto ul li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+#menu.menuMovil.menuAbierto ul li:nth-child(2) {
+  transition-delay: 0.15s;
+}
+#menu.menuMovil.menuAbierto ul li:nth-child(3) {
+  transition-delay: 0.2s;
+}
+#menu.menuMovil.menuAbierto ul li:nth-child(4) {
+  transition-delay: 0.25s;
+}
+#menu.menuMovil.menuAbierto ul li:nth-child(5) {
+  transition-delay: 0.3s;
+}
+#menu.menuMovil.menuAbierto ul li:nth-child(6) {
+  transition-delay: 0.35s;
+}
+
+#menu.menuMovil ul li button {
+  color: white;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+}
+
+#menu.menuMovil ul li button::before {
+  background: var(--secondary);
+}
+
+#menu.menuMovil ul li button.active {
+  color: var(--secondary);
+}
+
+/* ===================================
+   5. CONTENIDO PRINCIPAL (MAIN)
+   =================================== */
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem;
+  min-height: 70vh;
+}
+
+/* ===================================
+   6. SECCIÓN HERO
+   =================================== */
+.hero {
+  background: linear-gradient(
+    135deg,
+    var(--dark) 0%,
+    var(--accent) 50%,
+    var(--primary) 100%
+  );
+  border-radius: 30px;
+  padding: 5rem 3rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.heroContenido {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+.heroEstadisticas {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.estadistica {
+  text-align: center;
+}
+
+.estadisticaNumero {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--secondary);
+  display: block;
+}
+
+.estadisticaLabel {
+  color: white;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.heroMultimedia {
+  padding: 3rem 2rem;
+}
+
+/* ===================================
+   7. TÍTULOS Y SECCIONES
+   =================================== */
+.tituloPagina {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.tituloPagina::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-radius: 5px;
+}
+
+.seccion {
+  margin-bottom: 4rem;
+}
+
+.seccion h2 {
+  font-size: 2rem;
+  color: var(--dark);
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.seccionConMargen {
+  margin-bottom: 2rem;
+}
+
+.subtituloSeccion {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--dark);
+}
+
+.subtituloEstadisticas {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.subtituloMultimedia {
+  text-align: center;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+/* ===================================
+   8. BOTONES
+   =================================== */
+.btnInterno {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, var(--secondary), #ffb700);
+  color: var(--dark);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(255, 196, 0, 0.3);
+  margin: 15px;
+}
+
+.btnInterno:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(255, 196, 0, 0.5);
+}
+
+.btnInternoConMargen {
+  margin-top: 2rem;
+}
+
+.btnVerMas {
+  background: linear-gradient(135deg, var(--secondary), #ffb700);
+  color: var(--dark);
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(255, 196, 0, 0.3);
+}
+
+.btnVerMas:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 196, 0, 0.5);
+}
+
+.verMasContainer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Botones CTA */
+.ctaBotones {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===================================
+   9. TARJETAS (CARDS)
+   =================================== */
+.cardContenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.card {
+  background: white;
+  border-radius: 25px;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.cardIcono {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--primary), #e63946);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  box-shadow: 0 10px 30px rgba(196, 30, 58, 0.3);
+}
+
+.card h3 {
+  color: var(--dark);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+/* Tarjetas de partidos */
+.cardPartido {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardPartido::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--primary), var(--secondary));
+}
+
+.cardPartido:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.cardEquipos {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex: 1;
+}
+
+.equipo {
+  text-align: center;
+  flex: 1;
+}
+
+.nombreEquipo {
+  font-weight: 700;
+  color: var(--dark);
+  font-size: 1.1rem;
+}
+
+.team-badge-small {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--accent), var(--primary));
+  border-radius: 12px;
+  margin: 0 auto 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.partidoResultado {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.match-vs {
+  color: #999;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.partidoInfo {
+  text-align: right;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.partidoFecha {
+  font-weight: 600;
+  color: var(--dark);
+}
+
+/* Tarjetas de equipos */
+.cardEquipo {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.cardEquipo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cardEquipo:hover::before {
+  opacity: 0.05;
+}
+
+.cardEquipo:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.team-badge {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, var(--primary), #e63946);
+  border-radius: 25px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+  box-shadow: 0 15px 40px rgba(196, 30, 58, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.cardEquipo h3 {
+  font-size: 1.3rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+}
+
+.cardEquipo p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* ===================================
+   10. TABLAS
+   =================================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 3rem;
+}
+
+table thead {
+  background-color: #000;
+}
+
+table th {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+table td {
+  padding: 1.5rem 1rem;
+  color: var(--dark);
+  border-bottom: 1px solid #f0f0f0;
+  text-align: center;
+}
+
+table tbody tr {
+  transition: all 0.3s ease;
+}
+
+table tbody tr:hover {
+  background: #f8f9fa;
+  transform: scale(1.01);
+}
+
+table tbody tr:nth-child(1) {
+  background: linear-gradient(90deg, rgba(255, 217, 0, 0.227), transparent);
+  font-weight: 600;
+}
+
+table tbody tr:nth-child(2) {
+  background: linear-gradient(90deg, rgba(109, 109, 109, 0.186), transparent);
+}
+
+table tbody tr:last-child {
+  background: linear-gradient(90deg, rgba(255, 0, 0, 0.073), transparent);
+}
+
+.tableTemporada {
+  color: black;
+  padding: 0 0 1rem 0;
+  font-size: 1rem;
+}
+
+.tablaContenedor {
+  width: 100%;
+}
+
+/* Celda de equipo con escudo */
+.equipoCell {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.escudoMini {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+/* Dropdown de temporadas (legacy) */
+.temporadasDropdown {
+  display: inline-block;
+}
+
+.temporadasDropdown .btnTemporadas {
+  display: inline-block;
+  background-color: grey;
+  font-family: inherit;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.temporadasDropdown a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.temporadasDropdown .dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: lightgray;
+  min-width: 200px;
+  box-shadow: 4px 4px 10px hsla(0, 0%, 0%, 80%);
+}
+
+.temporadasDropdown:hover button {
+  background-color: black;
+}
+
+.temporadasDropdown:hover .dropdownContent {
+  display: block;
+}
+
+.temporadasDropdown a:hover {
+  background-color: grey;
+}
+
+/* ===================================
+   11. SELECTORES DE TEMPORADA
+   =================================== */
+.selectorTemporadaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.selectorTemporadaContainer label {
+  font-size: 1.1rem;
+  color: var(--dark);
+}
+
+.labelSelector {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.labelBlock {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#selectTemporada,
+#selectorTemporadaJugadores,
+#selectorTemporadaEquipos,
+#selectorTemporadaCalendario,
+#filtroEquipo,
+#filtroPosicion,
+#filtroEquipoCalendario {
+  padding: 0.8rem 2.5rem 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: var(--dark);
+  background: linear-gradient(135deg, var(--secondary), #ffb700);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(255, 196, 0, 0.3);
+  transition: all 0.3s ease;
+  background-repeat: no-repeat;
+  min-width: 220px;
+}
+
+#selectTemporada:hover,
+#selectorTemporadaJugadores:hover,
+#selectorTemporadaEquipos:hover,
+#selectorTemporadaCalendario:hover,
+#filtroEquipo:hover,
+#filtroPosicion:hover,
+#filtroEquipoCalendario:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(255, 196, 0, 0.5);
+}
+
+#selectTemporada:focus,
+#selectorTemporadaJugadores:focus,
+#selectorTemporadaEquipos:focus,
+#selectorTemporadaCalendario:focus,
+#filtroEquipo:focus,
+#filtroPosicion:focus,
+#filtroEquipoCalendario:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 3px rgba(255, 196, 0, 0.5),
+    0 12px 35px rgba(255, 196, 0, 0.4);
+}
+
+#selectTemporada option,
+#selectorTemporadaJugadores option,
+#selectorTemporadaEquipos option,
+#selectorTemporadaCalendario option,
+#filtroEquipo option,
+#filtroPosicion option,
+#filtroEquipoCalendario option {
+  background-color: white;
+  color: var(--dark);
+  padding: 0.8rem;
+  font-weight: 500;
+}
+
+/* ===================================
+   12. FILTROS
+   =================================== */
+.filtrosJugadores {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.filtrosContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.filtroItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filtroItem label {
+  font-weight: 600;
+  color: var(--dark);
+  font-size: 0.9rem;
+}
+
+.filtroItem input,
+.filtroItem select {
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  width: 100%;
+  background: white;
+}
+
+.filtroItem input:focus,
+.filtroItem select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.1);
+}
+
+.filtroItem button {
+  height: 100%;
+  min-height: 46px;
+}
+
+.inputBusqueda {
+  padding: 8px 12px;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.selectMinWidth {
+  min-width: 200px;
+}
+
+.filtrosCalendario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* ===================================
+   13. GALERÍA DE IMÁGENES
+   =================================== */
+.galeriaImagenes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.galeriaItem {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.galeriaItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.galeriaItem img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.galeriaItem figcaption {
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--dark);
+  font-weight: 600;
+}
+
+/* ===================================
+   14. CONTENEDORES MULTIMEDIA
+   =================================== */
+.videoContenedor {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  background: var(--dark);
+  border-radius: 25px;
+  margin: 3rem 0;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.videoContenedor iframe,
+.videoContenedor video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.videoContenedorMargin {
+  margin-top: 2rem;
+}
+
+.videoCaption {
+  margin-top: 1rem;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+
+.audioContenedor {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.audioContenedor audio {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.audioContenedorMargin {
+  margin-top: 2rem;
+}
+
+.audioCaption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+
+.audioFull {
+  width: 100%;
+}
+
+.multimediaNav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.articuloMultimedia {
+  margin-bottom: 3rem;
+}
+
+.contenidoMultimedia {
+  padding: 2rem;
+}
+
+.metaVideoContainer {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.metaTag {
+  background: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* CTA Multimedia */
+.ctaMultimediaBox {
+  text-align: center;
+  margin: 3rem 0;
+  padding: 3rem;
+  background: linear-gradient(
+    135deg,
+    rgba(196, 30, 58, 0.1),
+    rgba(255, 196, 0, 0.1)
+  );
+  border-radius: 20px;
+}
+
+.ctaMultimediaBoxAlt {
+  text-align: center;
+  margin: 3rem 0;
+  padding: 3rem;
+  background: linear-gradient(
+    135deg,
+    rgba(15, 52, 96, 0.1),
+    rgba(196, 30, 58, 0.1)
+  );
+  border-radius: 20px;
+}
+
+.ctaTitulo {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ctaTituloAlt {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.ctaDescripcion {
+  margin-bottom: 2rem;
+}
+
+.seccionPlataforma {
+  margin-bottom: 2rem;
+}
+
+.listaPlataformas {
+  margin-left: 2rem;
+  line-height: 2;
+}
+
+.listaNotificaciones {
+  margin-top: 1rem;
+}
+
+/* ===================================
+   15. PÁGINA DE INICIO DINÁMICA
+   =================================== */
+.seccionInicio {
+  background: white;
+  border-radius: 25px;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.seccionHeaderInicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--secondary);
+}
+
+.seccionHeaderInicio h2 {
+  margin: 0;
+  color: var(--dark);
+  font-size: 1.8rem;
+}
+
+.temporadaLabel {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Tabla clasificación inicio */
+.tablaClasificacionInicio {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0;
+}
+
+.tablaClasificacionInicio thead {
+  background-color: #000;
+}
+
+.tablaClasificacionInicio th {
+  padding: 1rem 0.8rem;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.tablaClasificacionInicio td {
+  padding: 1rem 0.8rem;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tablaClasificacionInicio .equipoCell {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: 600;
+}
+
+.tablaClasificacionInicio .escudoMini {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.tablaClasificacionInicio .puntos {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.tablaClasificacionInicio tr.lider {
+  background: linear-gradient(90deg, rgba(255, 217, 0, 0.2), transparent);
+}
+
+.tablaClasificacionInicio tbody tr:hover {
+  background: #f8f9fa;
+}
+
+/* Grid de equipos inicio */
+.gridEquiposInicio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.cardEquipoInicio {
+  background: linear-gradient(135deg, #f8f9fa, white);
+  border-radius: 20px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.cardEquipoInicio:hover {
+  transform: translateY(-5px);
+  border-color: var(--secondary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.escudoEquipoInicio {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.cardEquipoInicio h3 {
+  color: var(--dark);
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.infoEquipoInicio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Contenedor partidos inicio */
+.contenedorPartidosInicio {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.cardPartidoInicio {
+  background: linear-gradient(135deg, #f8f9fa, white);
+  border-radius: 15px;
+  padding: 1.5rem;
+  border-left: 4px solid var(--primary);
+  transition: all 0.3s ease;
+}
+
+.cardPartidoInicio:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.partidoJornada {
+  text-align: center;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.partidoEquipos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.equipoPartido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.escudoPartido {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.nombreEquipoPartido {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--dark);
+}
+
+.marcador {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.golesLocal,
+.golesVisitante {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.separador {
+  color: #ccc;
+}
+
+.partidoEstado {
+  text-align: center;
+  color: #28a745;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+/* Grid jugadores inicio */
+.gridJugadoresInicio {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+/* MVP Container - Mejores Valorados */
+.mvpContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cardMvp {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  background: linear-gradient(145deg, #ffffff, #f8f9fa);
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  border: 3px solid transparent;
+}
+
+.cardMvp:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+  border-color: var(--secondary);
+}
+
+.cardMvp:first-child {
+  border-color: gold;
+  box-shadow: 0 15px 50px rgba(255, 215, 0, 0.3);
+}
+
+.mvpFotoContainer {
+  position: relative;
+  height: 250px;
+  background: linear-gradient(
+    135deg,
+    var(--dark) 0%,
+    var(--primary) 50%,
+    var(--accent) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.mvpFoto {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.cardMvp:hover .mvpFoto {
+  transform: scale(1.1);
+}
+
+.mvpMedalla {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 2.5rem;
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.3));
+}
+
+.mvpValoracion {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-weight: 800;
+  font-size: 1.3rem;
+  box-shadow: 0 5px 20px rgba(40, 167, 69, 0.5);
+}
+
+.mvpInfo {
+  padding: 1.5rem;
+  text-align: center;
+  background: white;
+}
+
+.mvpDorsal {
+  display: inline-block;
+  background: var(--secondary);
+  color: var(--dark);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.mvpNombre {
+  color: var(--dark);
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+}
+
+.mvpEquipo {
+  display: block;
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.mvpPosicion {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent), var(--primary));
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Card jugador inicio */
+.cardJugadorInicio {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.cardJugadorInicio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.fotoJugadorInicio {
+  position: relative;
+  height: 180px;
+  background: linear-gradient(135deg, var(--dark), var(--accent));
+  overflow: hidden;
+}
+
+.fotoJugadorInicio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dorsalJugador {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--secondary);
+  color: var(--dark);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.valoracionJugador {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+}
+
+.infoJugadorInicio {
+  padding: 1rem;
+  text-align: center;
+}
+
+.infoJugadorInicio h4 {
+  color: var(--dark);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.equipoJugador {
+  display: block;
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.posicionJugador {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent), var(--primary));
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Stats grid inicio */
+.statsGridInicio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.statCardInicio {
+  background: linear-gradient(
+    135deg,
+    rgba(196, 30, 58, 0.05),
+    rgba(255, 196, 0, 0.05)
+  );
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.statCardInicio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.statNumeroInicio {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.statNumeroInicio.equipoGoleador {
+  font-size: 1.2rem;
+}
+
+.statLabelInicio {
+  color: #666;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* ===================================
+   16. PÁGINA DE CLASIFICACIÓN
+   =================================== */
+/* Los estilos de tabla ya están definidos en la sección 10 */
+
+/* ===================================
+   17. PÁGINA DE JUGADORES
+   =================================== */
+.gridJugadores {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin: 2.5rem 0;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.fichaJugador {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.13);
+  transition:
+    transform 0.3s cubic-bezier(0.4, 2, 0.6, 1),
+    box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+  position: relative;
+}
+
+.fichaJugador::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.fichaJugador:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+.fichaFoto {
+  width: 100%;
+  height: 260px;
+  background: linear-gradient(135deg, var(--dark) 0%, var(--accent) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.fichaFoto::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.fichaFoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.fichaJugador:hover .fichaFoto img {
+  transform: scale(1.06);
+}
+
+.fichaInfo {
+  flex: 1 1 auto;
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fichaNombre {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--secondary);
+  text-align: center;
+}
+
+.fichaInfo p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #f3f3f3;
+  font-size: 1rem;
+}
+
+.fichaInfo p:last-child {
+  border-bottom: none;
+}
+
+.fichaLabel {
+  color: #666;
+  font-weight: 500;
+}
+
+.fichaValor {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.fichaEquipo .fichaValor {
+  color: var(--primary);
+}
+
+.fichaPosicion .fichaValor {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  padding: 3px 10px;
+  border-radius: 15px;
+  font-size: 0.95rem;
+}
+
+.fichaDorsal .fichaValor {
+  background: var(--secondary);
+  color: var(--dark);
+  padding: 3px 12px;
+  border-radius: 50%;
+  font-weight: 800;
+}
+
+/* Cabecera del jugador (detalle) */
+.jugadorHeader {
+  background: linear-gradient(135deg, var(--dark), var(--accent));
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.jugadorAvatar {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, var(--primary), #e63946);
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 800;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.jugadorNombre {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.jugadorEquipo {
+  color: var(--secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.jugadorInfo {
+  padding: 1.5rem;
+}
+
+.infoItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.infoItem:last-child {
+  border-bottom: none;
+}
+
+.infoLabel {
+  color: #666;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.infoValue {
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.banderaNacionalidad {
+  display: inline-block;
+  margin-right: 0.3rem;
+  font-size: 1.1rem;
+}
+
+/* Mensaje sin resultados */
+.noResultados {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  color: #666;
+}
+
+.noResultados h3 {
+  font-size: 1.5rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.noResultados p {
+  color: #666;
+}
+
+/* ===================================
+   18. PÁGINA DE EQUIPOS
+   =================================== */
+.gridEquipos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.fichaEquipo {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.fichaEquipo:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.fichaEscudo {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px;
+}
+
+.fichaEscudo img {
+  max-width: 140px;
+  max-height: 140px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.fichaEquipo:hover .fichaEscudo img {
+  transform: scale(1.1);
+}
+
+.fichaEquipoInfo {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.fichaEquipoNombre {
+  font-size: 1.4rem;
+  color: var(--dark);
+  margin: 0 0 1rem 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.fichaEquipoStats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.statItem {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 0.8rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.statLabel {
+  display: block;
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+
+.statValor {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.fichaEquipoGoles {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.fichaEquipoGoles p {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fichaEquipoGoles .fichaLabel {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.fichaEquipoGoles .fichaValor {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.fichaEquipoGoles .golesFavor {
+  color: #28a745;
+}
+
+.fichaEquipoGoles .golesContra {
+  color: #dc3545;
+}
+
+.fichaEquipoGoles .diferencia {
+  color: var(--primary);
+}
+
+.fichaEquipoPuntos {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.puntosLabel {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+
+.puntosValor {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.fichaEquipoJugadores {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  color: #555;
+}
+
+.fichaEquipoJugadores .fichaLabel {
+  font-size: 0.9rem;
+}
+
+.fichaEquipoJugadores .fichaValor {
+  font-weight: 700;
+  color: var(--primary);
+  margin-left: 0.5rem;
+}
+
+.botonesEquipo {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.btnVerPlantilla,
+.btnVerPartidos {
+  flex: 1;
+  padding: 0.8rem 0.5rem;
+  background: linear-gradient(135deg, var(--dark), #2c3e50);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnVerPlantilla:hover {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  transform: scale(1.02);
+}
+
+.btnVerPartidos {
+  background: linear-gradient(135deg, var(--accent), #1a5276);
+}
+
+.btnVerPartidos:hover {
+  background: linear-gradient(135deg, var(--secondary), #f39c12);
+  color: var(--dark);
+  transform: scale(1.02);
+}
+
+/* ===================================
+   19. PÁGINA DE CALENDARIO
+   =================================== */
+.calendarioContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.jornadaBloque {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.jornadaTitulo {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  padding: 1rem 1.5rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.jornadaNumero {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.partidosGrid {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fichaPartido {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+  border-radius: 12px;
+  padding: 1.5rem;
+  gap: 1rem;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.fichaPartido:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary);
+}
+
+.equipoLocal,
+.equipoVisitante {
+  text-align: center;
+}
+
+.escudoPartido {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.escudoPartido img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.etiquetaLocal,
+.etiquetaVisitante {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.etiquetaLocal {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.etiquetaVisitante {
+  background: #fce4ec;
+  color: #c2185b;
+}
+
+.marcadorPartido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 120px;
+}
+
+.resultado {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.golesLocal.ganador,
+.golesVisitante.ganador {
+  color: var(--primary);
+}
+
+.separadorGoles {
+  color: #999;
+  font-weight: 300;
+}
+
+.resultado.sinJugar {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.vsText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.estadoPartido {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.estadoPartido.finalizado {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.estadoPartido.pendiente {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+/* Estadísticas del calendario */
+.estadisticasCalendario {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.statCalendario {
+  background: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.statCalendario .statLabel {
+  font-size: 0.85rem;
+  color: #666;
+  margin-right: 0.5rem;
+}
+
+.statCalendario .statValor {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+/* ===================================
+   20. ESTADÍSTICAS
+   =================================== */
+.estadisticasDestacadas {
+  background: linear-gradient(
+    135deg,
+    rgba(196, 30, 58, 0.05),
+    rgba(255, 196, 0, 0.05)
+  );
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin: 3rem 0;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.statCard {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.statNumero {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* ===================================
+   21. LISTAS Y ENLACES
+   =================================== */
+.linksExternos {
+  list-style: none;
+  padding: 0;
+}
+
+.linksExternos li {
+  margin-bottom: 1rem;
+}
+
+.linksExternos a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: white;
+  color: var(--dark);
+  text-decoration: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+}
+
+.linksExternos a:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  color: var(--primary);
+}
+
+.listaHorarios {
+  margin-left: 2rem;
+  line-height: 2;
+}
+
+.listaVentajas {
+  list-style: none;
+  padding: 0;
+  line-height: 2.5;
+}
+
+/* Artículos de noticias */
+.articulosNoticias {
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.articulosNoticias:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.noticiaImagen {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.contenidoNoticias {
+  padding: 2.5rem;
+}
+
+.metaNoticias {
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.articulosNoticias h3 {
+  font-size: 1.8rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.articulosNoticias p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* Caja de criterios */
+.cajaCriterios {
+  background: linear-gradient(
+    135deg,
+    rgba(196, 30, 58, 0.05),
+    rgba(255, 196, 0, 0.05)
+  );
+  border-radius: 20px;
+  padding: 2.5rem;
+  border-left: 5px solid var(--primary);
+}
+
+.cajaCriterios h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.cajaCriterios h4 {
+  color: var(--accent);
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.cajaCriterios ol {
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+}
+
+.cajaCriterios ul {
+  list-style-position: inside;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+.cajaCriterios li {
+  margin-bottom: 0.5rem;
+  color: var(--dark);
+  line-height: 1.8;
+}
+
+.cajaCriterios strong {
+  color: var(--primary);
+}
+
+.cajaCriterios p {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  color: #666;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+/* ===================================
+   22. PIE DE PÁGINA (FOOTER)
+   =================================== */
+footer {
+  background: linear-gradient(135deg, var(--dark) 0%, #0d0d1a 100%);
+  color: white;
+  padding: 4rem 0 2rem;
+  margin-top: 5rem;
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.footerContenido {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.footerSeccion h3 {
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.footerSeccion p,
+.footerSeccion li {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.8rem;
+  font-weight: 300;
+}
+
+.footerSeccion ul {
+  list-style: none;
+}
+
+.footerSeccion a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.footerSeccion a:hover {
+  color: var(--secondary);
+  transform: translateX(5px);
+}
+
+.redesLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.redesLinks a {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--primary), #e63946);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  transform: translateX(0);
+}
+
+.redesLinks a:hover {
+  background: linear-gradient(135deg, #e63946, var(--secondary));
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(196, 30, 58, 0.4);
+}
+
+.footerAbajo {
+  text-align: center;
+  padding-top: 3rem;
+  margin-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+}
+
+.footerAbajo a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footerAbajo a:hover {
+  color: var(--secondary);
+}
+
+/* ===================================
+   23. UTILIDADES Y HELPERS
+   =================================== */
+.mensajeCarga {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.textoCargando {
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.mensajeError {
+  color: #dc3545;
+  text-align: center;
+  padding: 2rem;
+  background: #fff3f3;
+  border-radius: 10px;
+}
+
+.textoPlaceholder {
+  text-align: center;
+  color: #666;
+}
+
+.volverArribaContainer {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.volverArribaContainerTop {
+  text-align: center;
+  margin: 3rem 0 0;
+}
+
+.leyendaTabla {
+  margin-top: 1.5rem;
+}
+
+.datosCompeticion {
+  margin-bottom: 1.5rem;
+}
+
+.descripcionSuscripcion {
+  margin-bottom: 1.5rem;
+}
+
+.contactoCalendario {
+  margin-top: 2rem;
+}
+
+.linkContacto {
+  color: var(--primary);
+}
+
+/* ===================================
+   24. RESPONSIVE - TABLETS (max-width: 1024px)
+   =================================== */
+@media (max-width: 1024px) {
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .heroEstadisticas {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .contenedorTablaInicio {
+    overflow-x: auto;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  nav ul li a {
+    padding: 1rem 1.5rem;
+  }
+
+  .tablaContenedor {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  #selectorTemporada option {
+    font-size: 10px;
+  }
+
+  .gridJugadores {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .fichaFoto {
+    height: 180px;
+  }
+
+  .mvpContainer {
+    gap: 1.5rem;
+  }
+
+  .cardMvp {
+    min-width: 250px;
+  }
+
+  .mvpFotoContainer {
+    height: 200px;
+  }
+
+  .mvpFoto {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* ===================================
+   25. RESPONSIVE - MÓVILES (max-width: 768px)
+   =================================== */
+@media (max-width: 768px) {
+  /* Main */
+  main {
+    padding: 2rem 1.5rem;
+  }
+
+  /* Header */
+  .headerContenido {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 3rem 2rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  /* Títulos */
+  .tituloPagina {
+    font-size: 2rem;
+  }
+
+  /* Navegación */
+  .header nav ul li a {
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+
+  /* Cards */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cardPartido {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .partidoInfo {
+    text-align: center;
+  }
+
+  /* Tablas */
+  .tablaContenedor {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  table thead th {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  table tbody td {
+    font-size: 10px;
+    padding: 10px 0;
+  }
+
+  /* Footer */
+  .footerContenido {
+    padding: 0 1.5rem;
+  }
+
+  /* Filtros */
+  .filtrosJugadores {
+    flex-direction: column;
+  }
+
+  .filtrosContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filtroItem {
+    width: 100%;
+  }
+
+  /* Grid de jugadores */
+  .gridJugadores {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .fichaFoto {
+    height: 220px;
+  }
+
+  .fichaNombre {
+    font-size: 1.2rem;
+  }
+
+  /* Stats */
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Selectores de temporada */
+  .selectorTemporadaContainer {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  #selectTemporada,
+  #selectorTemporadaJugadores,
+  #selectorTemporadaEquipos,
+  #selectorTemporadaCalendario,
+  #filtroEquipo,
+  #filtroPosicion,
+  #filtroEquipoCalendario {
+    min-width: 100%;
+    max-width: 300px;
+  }
+
+  /* Grid de equipos */
+  .gridEquipos {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .fichaEscudo {
+    min-height: 150px;
+    padding: 1.5rem;
+  }
+
+  .fichaEscudo img {
+    max-width: 120px;
+    max-height: 120px;
+  }
+
+  .fichaEquipoNombre {
+    font-size: 1.2rem;
+  }
+
+  .statValor {
+    font-size: 1.3rem;
+  }
+
+  .puntosValor {
+    font-size: 2rem;
+  }
+
+  /* Calendario */
+  .fichaPartido {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .equipoLocal {
+    order: 1;
+  }
+
+  .marcadorPartido {
+    order: 2;
+    border-top: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
+    padding: 1rem 0;
+  }
+
+  .equipoVisitante {
+    order: 3;
+  }
+
+  .escudoPartido {
+    width: 60px;
+    height: 60px;
+  }
+
+  .resultado {
+    font-size: 1.8rem;
+  }
+
+  .nombreEquipoPartido {
+    font-size: 0.95rem;
+  }
+
+  .estadisticasCalendario {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .filtrosCalendario {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+
+  .filtrosCalendario .filtroItem {
+    width: 100%;
+  }
+
+  .filtrosCalendario select,
+  .filtrosCalendario button {
+    width: 100%;
+  }
+
+  /* Multimedia */
+  .multimediaNav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .metaVideoContainer {
+    justify-content: center;
+  }
+
+  .ctaBotones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Inicio dinámico */
+  .seccionInicio {
+    padding: 1.5rem;
+  }
+
+  .seccionHeaderInicio {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .seccionHeaderInicio h2 {
+    font-size: 1.4rem;
+  }
+
+  .gridEquiposInicio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contenedorPartidosInicio {
+    grid-template-columns: 1fr;
+  }
+
+  .gridJugadoresInicio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .statsGridInicio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tablaClasificacionInicio th,
+  .tablaClasificacionInicio td {
+    padding: 0.6rem 0.4rem;
+    font-size: 0.75rem;
+  }
+
+  .tablaClasificacionInicio .escudoMini {
+    width: 25px;
+    height: 25px;
+  }
+
+  .partidoEquipos {
+    flex-direction: column;
+  }
+
+  .marcador {
+    font-size: 1.5rem;
+  }
+
+  /* MVP */
+  .mvpContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardMvp {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+/* ===================================
+   26. RESPONSIVE - MÓVILES PEQUEÑOS (max-width: 570px)
+   =================================== */
+@media (max-width: 768px) {
+  /* Mostrar el botón hamburguesa */
+  .contenedorBurger {
+    display: flex;
+  }
+
+  /* Ocultar el menú normal */
+  #menu:not(.menuMovil) {
+    display: none;
+  }
+
+  /* El menú móvil se controla con las clases menuMovil y menuAbierto */
+}
+
+@media (max-width: 570px) {
+  .header nav {
+    width: 100%;
+  }
+
+  .header nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header nav ul li a.active::before {
+    width: 100%;
+  }
+
+  .btnBurger {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .burgerIcon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* ===================================
+   27. RESPONSIVE - MÓVILES MUY PEQUEÑOS (max-width: 480px)
+   =================================== */
+@media (max-width: 480px) {
+  /* Stats */
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Jugador avatar */
+  .jugadorAvatar {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+
+  .jugadorNombre {
+    font-size: 1.1rem;
+  }
+
+  /* Filtros */
+  .filtrosContainer {
+    grid-template-columns: 1fr;
+  }
+
+  /* Grid de jugadores */
+  .gridJugadores {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .fichaInfo {
+    padding: 1rem;
+  }
+
+  .fichaInfo p {
+    font-size: 0.85rem;
+  }
+
+  /* Grid de equipos */
+  .gridEquipos {
+    grid-template-columns: 1fr;
+  }
+
+  .fichaEquipoStats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Calendario */
+  .jornadaTitulo {
+    padding: 0.8rem 1rem;
+  }
+
+  .jornadaNumero {
+    font-size: 1.1rem;
+  }
+
+  .partidosGrid {
+    padding: 1rem;
+  }
+
+  .fichaPartido {
+    padding: 1rem;
+  }
+
+  .escudoPartido {
+    width: 50px;
+    height: 50px;
+  }
+
+  .resultado {
+    font-size: 1.5rem;
+  }
+
+  .golesLocal,
+  .golesVisitante {
+    min-width: 35px;
+  }
+
+  /* Inicio dinámico */
+  .gridEquiposInicio,
+  .gridJugadoresInicio {
+    grid-template-columns: 1fr;
+  }
+
+  .statsGridInicio {
+    grid-template-columns: 1fr;
+  }
+
+  .statNumeroInicio {
+    font-size: 2rem;
+  }
+}
