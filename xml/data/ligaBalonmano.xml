@@ -3,22 +3,7 @@
     xsi:noNamespaceSchemaLocation="general.xsd">
 
     <temporadas>
-        
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <temporada id="Temporada_2025_26">
+        <temporada id="Temporada_2025_26">
             <equipos>
                 <equipo id="E001">
                     <nombre>Barcelona</nombre>
@@ -830,7 +815,7 @@
                 </jornada>
             </jornadas>
         </temporada>
-            <temporada id="2027">
+        <temporada id="2027">
             <equipos>
                 <equipo id="E008">
                     <nombre>Barcelona</nombre>
@@ -1642,7 +1627,7 @@
                 </jornada>
             </jornadas>
         </temporada>
-            <temporada id="2028">
+        <temporada id="2028">
             <equipos>
                 <equipo id="E015">
                     <nombre>Barcelona</nombre>
@@ -2454,7 +2439,7 @@
                 </jornada>
             </jornadas>
         </temporada>
-            <temporada id="2030">
+        <temporada id="2030">
             <equipos>
                 <equipo id="E022">
                     <nombre>Barcelona</nombre>
@@ -3266,7 +3251,7 @@
                 </jornada>
             </jornadas>
         </temporada>
-            <temporada id="2032">
+        <temporada id="2032">
             <equipos>
                 <equipo id="E029">
                     <nombre>Barcelona</nombre>
@@ -4068,7 +4053,7 @@
                 </jornada>
             </jornadas>
         </temporada>
-            <temporada id="hola">
+        <temporada id="hola">
             <equipos>
                 <equipo id="E036">
                     <nombre>Barcelona</nombre>
@@ -4870,7 +4855,7 @@
                 </jornada>
             </jornadas>
         </temporada>
-            <temporada id="examen">
+        <temporada id="examen">
             <equipos>
                 <equipo id="E043">
                     <nombre>Barcelona</nombre>
@@ -5859,7 +5844,7 @@
                 </jornada>
             </jornadas>
         </temporada>
-            <temporada id="EDER">
+        <temporada id="EDER">
             <equipos>
                 <equipo id="E052">
                     <nombre>Barcelona</nombre>
@@ -6848,8 +6833,7 @@
                 </jornada>
             </jornadas>
         </temporada>
-            
-            <temporada id="2060">
+        <temporada id="2060">
             <equipos>
                 <equipo id="E060">
                     <nombre>Barcelona</nombre>
