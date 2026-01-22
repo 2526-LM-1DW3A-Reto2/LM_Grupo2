@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <federacionBalonmano xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="general.xsd">
+    xsi:noNamespaceSchemaLocation="ligaBalonmano.xsd">
 
     <temporadas>
         <temporada id="Temporada_2025_26">
